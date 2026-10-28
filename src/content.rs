@@ -16,7 +16,16 @@ pub struct CardDef {
     /// alphabet | vocab | grammar | phrase
     pub kind: String,
     pub front: String,
+    /// Prononciation de `front`, à la française (syllabe accentuée en majuscules).
+    #[serde(default)]
+    pub pron: Option<String>,
+    /// Consigne de la question (sinon une consigne par défaut selon le type).
+    #[serde(default)]
+    pub question: Option<String>,
     pub back: String,
+    /// Mauvaises réponses proposées (sinon tirées des autres cartes du même type).
+    #[serde(default)]
+    pub wrong: Vec<String>,
     #[serde(default)]
     pub note: Option<String>,
     /// Ordre d'apparition des nouvelles cartes (plus petit = plus tôt).
@@ -55,6 +64,7 @@ mod tests {
                 c.kind
             );
             assert!(!c.front.trim().is_empty() && !c.back.trim().is_empty());
+            assert!(!c.wrong.contains(&c.back), "la bonne réponse est aussi une mauvaise : {}", c.id);
         }
     }
 }

@@ -1,7 +1,7 @@
 //! Popups GTK4 en layer-shell : une carte dans un coin de l'écran, par-dessus
 //! les fenêtres, sans dépendre du démon de notifications.
 
-use crate::db::Card;
+use crate::quiz::Quiz;
 use crate::srs::Grade;
 use anyhow::{Result, bail};
 use gtk::glib;
@@ -14,103 +14,77 @@ use std::time::Duration;
 /// Sans réponse, la popup se referme seule au bout de ce délai.
 const TIMEOUT_SECS: f64 = 45.0;
 const TIMEOUT: &str = "__timeout";
+const CLOSED: &str = "__closed";
 
 pub enum Outcome {
     Graded(Grade),
-    /// « Plus tard » : on repousse sans noter.
+    /// Partie toute seule : reportée sans pénalité, comme « Plus tard ».
     Later,
     /// Popup fermée sans réponse.
     Dismissed,
 }
 
-/// Présente une carte. Bloque jusqu'à ce que l'utilisateur réponde ou ferme.
-pub fn present(card: &Card, now: i64) -> Result<Outcome> {
-    let p = Prompt::for_card(card, now);
-    let popup = Popup::new(&p.title)?;
+/// Pose la question. Bloque jusqu'à la réponse, la fermeture ou le délai.
+pub fn present(quiz: &Quiz) -> Result<Outcome> {
+    let popup = Popup::new(&quiz.header)?;
+    popup.question.set_label(&quiz.big);
+    popup.pron.set_label(quiz.pron.as_deref().unwrap_or_default());
+    popup.pron.set_visible(quiz.pron.is_some());
+    popup.prompt.set_label(&quiz.prompt);
 
-    let outcome = if card.kind == "grammar" {
-        let note = card
-            .note
-            .as_deref()
-            .map(|n| format!("\n\n<i>{}</i>", esc(n)))
-            .unwrap_or_default();
-        let action = popup.ask(
-            &card.front,
-            &format!("{}{}", esc(&card.back), note),
-            &[("good", "Compris"), ("again", "À revoir"), ("later", "Plus tard")],
-        );
-        to_outcome(&action)
-    } else {
-        let first = popup.ask(
-            &p.question,
-            &format!("<i>{}</i>", p.hint),
-            &[("reveal", "Révéler"), ("later", "Plus tard")],
-        );
-        match first.as_str() {
-            "reveal" => to_outcome(&popup.ask(
-                &p.question,
-                &p.answer,
-                &[("good", "Je savais"), ("again", "Pas su")],
-            )),
-            "later" | TIMEOUT => Outcome::Later,
-            _ => Outcome::Dismissed,
+    let buttons: Vec<gtk::Button> = quiz
+        .choices
+        .iter()
+        .enumerate()
+        .map(|(i, c)| popup.button(&i.to_string(), c, &["choice"]))
+        .collect();
+    let later = popup.button("later", "Plus tard", &["later"]);
+    popup.win.present();
+
+    let picked = popup.wait();
+    let outcome = match picked.parse::<usize>() {
+        Ok(i) => {
+            let ok = i == quiz.correct;
+            for (j, b) in buttons.iter().enumerate() {
+                b.set_sensitive(false);
+                if j == quiz.correct {
+                    b.add_css_class("right");
+                } else if j == i {
+                    b.add_css_class("wrong");
+                }
+            }
+            later.set_visible(false);
+            popup.prompt.set_label(if ok { "✓ Bonne réponse !" } else { "✗ Pas tout à fait" });
+            popup.prompt.add_css_class(if ok { "ok" } else { "ko" });
+            if let Some(n) = &quiz.note {
+                popup.body.set_label(n);
+                popup.body.set_visible(true);
+            }
+            popup.button("next", "Continuer", &["primary", "next"]).grab_focus();
+            popup.wait();
+            Outcome::Graded(if ok { Grade::Good } else { Grade::Again })
         }
+        Err(_) if picked == "later" || picked == TIMEOUT => Outcome::Later,
+        Err(_) => Outcome::Dismissed,
     };
     popup.close();
     Ok(outcome)
 }
 
-struct Prompt {
-    title: String,
-    question: String,
-    hint: &'static str,
-    answer: String,
-}
-
-impl Prompt {
-    fn for_card(card: &Card, now: i64) -> Self {
-        let note = card
-            .note
-            .as_deref()
-            .map(|n| format!("\n\n<i>{}</i>", esc(n)))
-            .unwrap_or_default();
-        // Une fois la carte un peu connue, on pose parfois la question à l'envers.
-        let reverse = matches!(card.kind.as_str(), "vocab" | "phrase") && card.reps >= 2 && now % 2 == 0;
-
-        let label = match card.kind.as_str() {
-            "alphabet" => "🔤 Alphabet",
-            "grammar" => "📘 Grammaire",
-            "phrase" => "💬 Expression",
-            _ => "🇷🇺 Vocabulaire",
-        };
-        let new_tag = if card.due.is_none() { " · nouveau" } else { "" };
-
-        let (question, hint, answer) = if reverse {
-            (
-                card.back.clone(),
-                "Comment on dit ça en russe ?",
-                format!("<big><b>{}</b></big>{}", esc(&card.front), note),
-            )
-        } else {
-            let hint = match card.kind.as_str() {
-                "alphabet" => "Quel son ?",
-                "grammar" => "",
-                _ => "Ça veut dire quoi ?",
-            };
-            (
-                card.front.clone(),
-                hint,
-                format!("<big><b>{}</b></big>{}", esc(&card.back), note),
-            )
-        };
-
-        Self {
-            title: format!("{label}{new_tag}"),
-            question,
-            hint,
-            answer,
-        }
-    }
+/// Petite popup d'info (pause, erreurs…), refermée au bout de 5 s.
+pub fn info(summary: &str, body: &str) {
+    let Ok(popup) = Popup::new("Rusky") else {
+        eprintln!("{summary} : {body}");
+        return;
+    };
+    popup.question.set_label(summary);
+    popup.prompt.set_label(body);
+    popup.timer.set_visible(false);
+    let m = popup.main.clone();
+    glib::timeout_add_seconds_local_once(5, move || m.quit());
+    popup.win.present();
+    popup.main.run();
+    popup.close();
 }
 
 const CSS: &str = r#"
@@ -136,20 +110,29 @@ window.rusky { background: transparent; }
 .close { min-width: 24px; min-height: 24px; padding: 0; border-radius: 8px;
          background: none; box-shadow: none; border: none; color: #8b8d94; }
 .close:hover { background: alpha(#ffffff, 0.06); color: #ececef; }
-.content { transition: opacity 150ms ease-in-out; }
-.content.fading { opacity: 0; }
-.question { font-size: 30px; font-weight: 700; margin: 12px 0 4px 0; }
-.body { font-size: 14px; color: #b4b6bd; }
-.actions { margin-top: 16px; }
-progressbar.timer { margin: 16px 0 -6px 0; }
-progressbar.timer trough { min-height: 2px; background: alpha(#ffffff, 0.06); border-radius: 1px; }
-progressbar.timer progress { min-height: 2px; background: alpha(#7aa2f7, 0.7); border-radius: 1px; }
-.actions button { border-radius: 9px; padding: 7px 16px; border: 1px solid alpha(#ffffff, 0.06);
+.question { font-size: 30px; font-weight: 700; margin-top: 12px; }
+.pron { font-size: 14px; color: #8b8d94; margin-top: 2px; }
+.prompt { font-size: 14px; color: #b4b6bd; margin-top: 10px; }
+.prompt.ok { color: #8bd5a0; font-weight: 600; }
+.prompt.ko { color: #f08a8a; font-weight: 600; }
+.body { font-size: 13px; color: #b4b6bd; margin-top: 10px; }
+.actions { margin-top: 14px; }
+.actions button { border-radius: 9px; padding: 8px 14px; border: 1px solid alpha(#ffffff, 0.06);
                   background: #26282d; color: #ececef; box-shadow: none; font-weight: 500;
                   transition: background 120ms; }
 .actions button:hover { background: #2e3036; }
+.actions button:disabled { color: #8b8d94; }
+.actions button.right, .actions button.right:disabled
+  { background: alpha(#8bd5a0, 0.16); border-color: alpha(#8bd5a0, 0.6); color: #c9f0d4; }
+.actions button.wrong, .actions button.wrong:disabled
+  { background: alpha(#f08a8a, 0.14); border-color: alpha(#f08a8a, 0.55); color: #f6c4c4; }
 .actions button.primary { background: #7aa2f7; border-color: transparent; color: #0f1115; font-weight: 600; }
 .actions button.primary:hover { background: #8fb2fa; }
+.actions button.later { background: none; border: none; color: #8b8d94; padding: 4px; }
+.actions button.later:hover { color: #ececef; }
+progressbar.timer { margin: 16px 0 -6px 0; }
+progressbar.timer trough { min-height: 2px; background: alpha(#ffffff, 0.06); border-radius: 1px; }
+progressbar.timer progress { min-height: 2px; background: alpha(#7aa2f7, 0.7); border-radius: 1px; }
 "#;
 
 fn init() -> Result<()> {
@@ -177,18 +160,19 @@ fn pump(ms: u64) {
     main.run();
 }
 
-/// Une carte à l'écran (en haut à droite), réutilisée entre question et réponse.
+/// Une carte à l'écran, en haut à droite.
 struct Popup {
     win: gtk::Window,
     card: gtk::Box,
-    content: gtk::Box,
     question: gtk::Label,
+    pron: gtk::Label,
+    prompt: gtk::Label,
     body: gtk::Label,
     actions: gtk::Box,
-    main: glib::MainLoop,
-    chosen: Rc<RefCell<String>>,
     timer: gtk::ProgressBar,
     hover: Rc<Cell<bool>>,
+    main: glib::MainLoop,
+    chosen: Rc<RefCell<String>>,
 }
 
 impl Popup {
@@ -201,14 +185,11 @@ impl Popup {
         win.set_keyboard_mode(KeyboardMode::OnDemand);
         win.set_anchor(Edge::Top, true);
         win.set_anchor(Edge::Right, true);
-        // La marge de la carte (ombre) complète ce décalage.
-        win.set_margin(Edge::Top, 0);
-        win.set_margin(Edge::Right, 0);
 
         let card = gtk::Box::builder()
             .orientation(gtk::Orientation::Vertical)
             .css_classes(["card", "hidden"])
-            .width_request(412)  // 340 px de carte + marges de l'ombre
+            .width_request(412) // 340 px de carte + marges de l'ombre
             .build();
 
         let top = gtk::Box::new(gtk::Orientation::Horizontal, 8);
@@ -223,21 +204,53 @@ impl Popup {
         top.append(&close);
         card.append(&top);
 
-        let content = gtk::Box::builder().orientation(gtk::Orientation::Vertical).css_classes(["content"]).build();
-        let question = gtk::Label::builder().wrap(true).justify(gtk::Justification::Center).css_classes(["question"]).build();
-        let body = gtk::Label::builder()
-            .wrap(true)
-            .max_width_chars(36)
-            .justify(gtk::Justification::Center)
-            .css_classes(["body"])
+        let label = |class: &str| {
+            gtk::Label::builder()
+                .wrap(true)
+                .max_width_chars(34)
+                .justify(gtk::Justification::Center)
+                .css_classes([class])
+                .build()
+        };
+        let (question, pron, prompt, body) = (label("question"), label("pron"), label("prompt"), label("body"));
+        body.set_visible(false);
+        let actions = gtk::Box::builder()
+            .orientation(gtk::Orientation::Vertical)
+            .spacing(6)
+            .css_classes(["actions"])
             .build();
-        let actions = gtk::Box::builder().spacing(8).halign(gtk::Align::Center).css_classes(["actions"]).build();
-        content.append(&question);
-        content.append(&body);
-        content.append(&actions);
-        card.append(&content);
+        for w in [&question, &pron, &prompt, &body] {
+            card.append(w);
+        }
+        card.append(&actions);
         let timer = gtk::ProgressBar::builder().fraction(1.0).css_classes(["timer"]).build();
         card.append(&timer);
+        win.set_child(Some(&card));
+
+        let main = glib::MainLoop::new(None, false);
+        let chosen = Rc::new(RefCell::new(String::new()));
+        let quit = {
+            let (m, c) = (main.clone(), chosen.clone());
+            move || {
+                c.replace(CLOSED.into());
+                m.quit();
+            }
+        };
+        let q = quit.clone();
+        close.connect_clicked(move |_| q());
+        let q = quit.clone();
+        win.connect_close_request(move |_| {
+            q();
+            glib::Propagation::Stop
+        });
+        let keys = gtk::EventControllerKey::new();
+        keys.connect_key_pressed(move |_, k, _, _| {
+            if k == gtk::gdk::Key::Escape {
+                quit();
+            }
+            glib::Propagation::Proceed
+        });
+        win.add_controller(keys);
 
         // Souris sur la carte : le décompte s'arrête.
         let hover = Rc::new(Cell::new(false));
@@ -247,37 +260,11 @@ impl Popup {
         let h = hover.clone();
         motion.connect_leave(move |_| h.set(false));
         card.add_controller(motion);
-        win.set_child(Some(&card));
-
-        let main = glib::MainLoop::new(None, false);
-        let chosen = Rc::new(RefCell::new(String::new()));
-        let (m, c) = (main.clone(), chosen.clone());
-        close.connect_clicked(move |_| {
-            c.replace("__closed".into());
-            m.quit();
-        });
-        let (m, c) = (main.clone(), chosen.clone());
-        win.connect_close_request(move |_| {
-            c.replace("__closed".into());
-            m.quit();
-            glib::Propagation::Stop
-        });
-        let keys = gtk::EventControllerKey::new();
-        let (m, c) = (main.clone(), chosen.clone());
-        keys.connect_key_pressed(move |_, k, _, _| {
-            if k == gtk::gdk::Key::Escape {
-                c.replace("__closed".into());
-                m.quit();
-            }
-            glib::Propagation::Proceed
-        });
-        win.add_controller(keys);
 
         // Seule la carte capte les clics : la marge transparente laisse passer.
         let c = card.clone();
         win.connect_map(move |w| {
-            let c = c.clone();
-            let w = w.clone();
+            let (c, w) = (c.clone(), w.clone());
             glib::idle_add_local_once(move || {
                 if let (Some(b), Some(s)) = (c.compute_bounds(&w), w.surface()) {
                     let r = gtk::cairo::RectangleInt::new(
@@ -289,40 +276,24 @@ impl Popup {
             });
         });
 
-        Ok(Self { win, card, content, question, body, actions, main, chosen, timer, hover })
+        Ok(Self { win, card, question, pron, prompt, body, actions, timer, hover, main, chosen })
     }
 
-    /// Affiche une question (fondu si la carte est déjà visible) et attend un bouton.
-    fn ask(&self, question: &str, body: &str, actions: &[(&str, &str)]) -> String {
-        let shown = self.win.is_visible();
-        if shown {
-            self.content.add_css_class("fading");
-            pump(150);
-        }
-        self.question.set_label(question);
-        self.body.set_markup(body);
-        self.body.set_visible(!body.is_empty());
-        while let Some(child) = self.actions.first_child() {
-            self.actions.remove(&child);
-        }
-        for (i, (id, label)) in actions.iter().enumerate() {
-            let b = gtk::Button::with_label(label);
-            if i == 0 {
-                b.add_css_class("primary");
-            }
-            let (id, c, m) = (id.to_string(), self.chosen.clone(), self.main.clone());
-            b.connect_clicked(move |_| {
-                c.replace(id.clone());
-                m.quit();
-            });
-            self.actions.append(&b);
-        }
-        if shown {
-            self.content.remove_css_class("fading");
-        } else {
-            self.win.present();
-        }
-        // Décompte (repart à zéro à chaque étape), en pause au survol.
+    /// Ajoute un bouton qui termine l'attente en renvoyant `id`.
+    fn button(&self, id: &str, label: &str, classes: &[&str]) -> gtk::Button {
+        let text = gtk::Label::builder().label(label).wrap(true).justify(gtk::Justification::Center).build();
+        let b = gtk::Button::builder().child(&text).css_classes(classes.to_vec()).build();
+        let (id, c, m) = (id.to_string(), self.chosen.clone(), self.main.clone());
+        b.connect_clicked(move |_| {
+            c.replace(id.clone());
+            m.quit();
+        });
+        self.actions.append(&b);
+        b
+    }
+
+    /// Attend un clic, avec le décompte (repart à zéro à chaque appel, en pause au survol).
+    fn wait(&self) -> String {
         let left = Rc::new(Cell::new(TIMEOUT_SECS));
         let done = Rc::new(Cell::new(false));
         self.timer.set_fraction(1.0);
@@ -347,6 +318,11 @@ impl Popup {
         });
         self.main.run();
         done.set(true);
+        // La carte a pu changer de taille : la zone cliquable suit.
+        if let (Some(b), Some(s)) = (self.card.compute_bounds(&self.win), self.win.surface()) {
+            let r = gtk::cairo::RectangleInt::new(b.x() as i32, b.y() as i32, b.width() as i32, 2000);
+            s.set_input_region(Some(&gtk::cairo::Region::create_rectangle(&r)));
+        }
         self.chosen.take()
     }
 
@@ -357,40 +333,4 @@ impl Popup {
         self.win.destroy();
         while glib::MainContext::default().iteration(false) {}
     }
-
-    /// Ferme toute seule au bout de `secs` secondes.
-    fn wait(&self, secs: u32) {
-        let m = self.main.clone();
-        glib::timeout_add_seconds_local_once(secs, move || m.quit());
-        self.win.present();
-        self.main.run();
-    }
-}
-
-fn to_outcome(action: &str) -> Outcome {
-    match action {
-        "good" => Outcome::Graded(Grade::Good),
-        "again" => Outcome::Graded(Grade::Again),
-        // Partie toute seule : reportée sans pénalité, comme « Plus tard ».
-        "later" | TIMEOUT => Outcome::Later,
-        _ => Outcome::Dismissed,
-    }
-}
-
-/// Échappe le texte pour le balisage Pango.
-fn esc(s: &str) -> String {
-    glib::markup_escape_text(s).to_string()
-}
-
-/// Petite popup d'info (pause, erreurs…), refermée au bout de 5 s.
-pub fn info(summary: &str, body: &str) {
-    let Ok(popup) = Popup::new("Rusky") else {
-        eprintln!("{summary} : {body}");
-        return;
-    };
-    popup.question.set_label(summary);
-    popup.body.set_markup(&esc(body));
-    popup.timer.set_visible(false);
-    popup.wait(5);
-    popup.close();
 }

@@ -2,6 +2,7 @@ mod config;
 mod content;
 mod db;
 mod popup;
+mod quiz;
 mod srs;
 
 use anyhow::{Result, bail};
@@ -48,6 +49,9 @@ enum Cmd {
         /// Exemple ou remarque
         #[arg(short, long)]
         note: Option<String>,
+        /// Prononciation à la française, syllabe accentuée en majuscules (ma-la-KO)
+        #[arg(short, long)]
+        pron: Option<String>,
     },
     /// Importe des cartes depuis un fichier TOML
     Import { file: PathBuf },
@@ -93,13 +97,15 @@ fn main() -> Result<()> {
         }
         Cmd::Review { count } => review(count),
         Cmd::Stats => stats(),
-        Cmd::Add { front, back, kind, note } => {
+        Cmd::Add { front, back, kind, note, pron } => {
             if !["alphabet", "vocab", "grammar", "phrase"].contains(&kind.as_str()) {
                 bail!("type inconnu : {kind} (alphabet, vocab, grammar ou phrase)");
             }
             let db = open_db()?;
             let id = format!("perso-{}", Local::now().timestamp_millis());
-            db.upsert(&content::CardDef { id, kind, front, back, note, level: 0 })?;
+            db.upsert(&content::CardDef {
+                id, kind, front, pron, question: None, back, wrong: vec![], note, level: 0,
+            })?;
             println!("Carte ajoutée ✓ Elle sortira parmi les prochaines nouvelles cartes.");
             Ok(())
         }
@@ -137,7 +143,7 @@ fn show_one(db: &Db, cfg: &config::Config) -> Result<bool> {
     let Some(mut card) = db.next_card(t, day_start(), &cfg.kinds, cfg.max_new_per_day)? else {
         return Ok(false);
     };
-    match popup::present(&card, t)? {
+    match popup::present(&quiz::build(db, &card, t)?)? {
         Outcome::Graded(g) => grade(db, &mut card, g)?,
         // Une carte déjà vue repoussée revient au tour suivant ; une nouvelle reste nouvelle.
         Outcome::Later => db.snooze(&card, now() + (cfg.interval_minutes as i64) * 60)?,
@@ -195,23 +201,33 @@ fn review(count: usize) -> Result<()> {
             println!("\nPlus rien à réviser pour l'instant 🎉");
             break;
         };
-        println!("\n── {} ──", card.kind);
-        println!("  {}", card.front);
-        if read("  [Entrée] pour voir la réponse ")?.is_none() {
-            break;
+        let q = quiz::build(&db, &card, t)?;
+        println!("\n── {} ──", q.header);
+        println!("  {}", q.big);
+        if let Some(p) = &q.pron {
+            println!("  ({p})");
         }
-        println!("  → {}", card.back);
-        if let Some(n) = &card.note {
-            println!("    {n}");
+        println!("  {}", q.prompt);
+        for (i, c) in q.choices.iter().enumerate() {
+            println!("    {}. {c}", i + 1);
         }
-        let Some(ans) = read("  Tu savais ? [o]ui / [n]on / [q]uitter : ")? else {
+        let Some(ans) = read("  Ta réponse (numéro, ou q pour quitter) : ")? else {
             break;
         };
-        match ans.trim().to_lowercase().as_str() {
-            "q" => break,
-            "n" => grade(&db, &mut card, Grade::Again)?,
-            _ => grade(&db, &mut card, Grade::Good)?,
+        let ans = ans.trim();
+        if ans == "q" {
+            break;
         }
+        let ok = ans.parse::<usize>().ok() == Some(q.correct + 1);
+        if ok {
+            println!("  ✓ Bonne réponse !");
+        } else {
+            println!("  ✗ La bonne réponse : {}", q.choices[q.correct]);
+        }
+        if let Some(n) = &q.note {
+            println!("    {n}");
+        }
+        grade(&db, &mut card, if ok { Grade::Good } else { Grade::Again })?;
         done += 1;
     }
     println!("{done} carte(s) révisée(s).");

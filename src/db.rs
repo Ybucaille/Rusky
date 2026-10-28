@@ -9,7 +9,10 @@ pub struct Card {
     pub id: String,
     pub kind: String,
     pub front: String,
+    pub pron: Option<String>,
+    pub question: Option<String>,
     pub back: String,
+    pub wrong: Vec<String>,
     pub note: Option<String>,
     pub ease: f64,
     /// Intervalle courant en secondes.
@@ -66,36 +69,49 @@ impl Db {
             );
             ",
         )?;
+        // Colonnes ajoutées après coup : on les crée sur les anciennes bases.
+        for col in ["pron", "question", "wrong"] {
+            let _ = conn.execute(&format!("ALTER TABLE cards ADD COLUMN {col} TEXT"), []);
+        }
         Ok(Self { conn })
     }
 
     /// Ajoute ou met à jour le texte d'une carte, sans toucher à sa progression.
     pub fn upsert(&self, c: &CardDef) -> Result<()> {
-        self.conn.execute(
-            "INSERT INTO cards (id, kind, front, back, note, level)
-             VALUES (?1, ?2, ?3, ?4, ?5, ?6)
-             ON CONFLICT(id) DO UPDATE SET
-                kind = excluded.kind, front = excluded.front, back = excluded.back,
-                note = excluded.note, level = excluded.level",
-            params![c.id, c.kind, c.front, c.back, c.note, c.level],
-        )?;
-        Ok(())
+        upsert(&self.conn, c)
     }
 
     pub fn upsert_all(&mut self, cards: &[CardDef]) -> Result<()> {
         let tx = self.conn.transaction()?;
         for c in cards {
-            tx.execute(
-                "INSERT INTO cards (id, kind, front, back, note, level)
-                 VALUES (?1, ?2, ?3, ?4, ?5, ?6)
-                 ON CONFLICT(id) DO UPDATE SET
-                    kind = excluded.kind, front = excluded.front, back = excluded.back,
-                    note = excluded.note, level = excluded.level",
-                params![c.id, c.kind, c.front, c.back, c.note, c.level],
-            )?;
+            upsert(&tx, c)?;
         }
         tx.commit()?;
         Ok(())
+    }
+
+    #[cfg(test)]
+    pub fn card(&self, id: &str) -> Result<Card> {
+        Ok(self.conn.query_row(
+            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong
+             FROM cards WHERE id = ?1",
+            [id],
+            row_to_card,
+        )?)
+    }
+
+    /// Mauvaises réponses tirées au hasard parmi les autres cartes du même type.
+    pub fn distractors(&self, card: &Card, reverse: bool, n: usize) -> Result<Vec<String>> {
+        let mut stmt = self.conn.prepare(
+            "SELECT front, pron, back FROM cards
+             WHERE kind = ?1 AND id <> ?2 AND back <> ?3 AND front <> ?4
+             ORDER BY random() LIMIT ?5",
+        )?;
+        let rows = stmt.query_map(params![card.kind, card.id, card.back, card.front, n as i64], |r| {
+            let (front, pron, back): (String, Option<String>, String) = (r.get(0)?, r.get(1)?, r.get(2)?);
+            Ok(if reverse { crate::quiz::with_pron(&front, pron.as_deref()) } else { back })
+        })?;
+        Ok(rows.collect::<Result<_, _>>()?)
     }
 
     /// Choisit la prochaine carte : d'abord celles à revoir, sinon une nouvelle
@@ -110,7 +126,7 @@ impl Db {
         let allowed = |k: &str| kinds.is_empty() || kinds.iter().any(|x| x == k);
 
         let mut stmt = self.conn.prepare(
-            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due
+            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong
              FROM cards WHERE due IS NOT NULL AND due <= ?1 ORDER BY due",
         )?;
         let due: Vec<Card> = stmt
@@ -130,7 +146,7 @@ impl Db {
         }
 
         let mut stmt = self.conn.prepare(
-            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due
+            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong
              FROM cards WHERE due IS NULL ORDER BY level, rowid",
         )?;
         let fresh: Vec<Card> = stmt
@@ -241,12 +257,31 @@ impl Db {
     }
 }
 
+fn upsert(conn: &Connection, c: &CardDef) -> Result<()> {
+    conn.execute(
+        "INSERT INTO cards (id, kind, front, back, note, level, pron, question, wrong)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)
+         ON CONFLICT(id) DO UPDATE SET
+            kind = excluded.kind, front = excluded.front, back = excluded.back,
+            note = excluded.note, level = excluded.level, pron = excluded.pron,
+            question = excluded.question, wrong = excluded.wrong",
+        params![c.id, c.kind, c.front, c.back, c.note, c.level, c.pron, c.question, c.wrong.join("\n")],
+    )?;
+    Ok(())
+}
+
 fn row_to_card(r: &rusqlite::Row) -> rusqlite::Result<Card> {
     Ok(Card {
         id: r.get(0)?,
         kind: r.get(1)?,
         front: r.get(2)?,
+        pron: r.get(10)?,
+        question: r.get(11)?,
         back: r.get(3)?,
+        wrong: r
+            .get::<_, Option<String>>(12)?
+            .map(|w| w.lines().map(String::from).collect())
+            .unwrap_or_default(),
         note: r.get(4)?,
         ease: r.get(5)?,
         interval: r.get(6)?,
@@ -266,7 +301,10 @@ mod tests {
             id: id.into(),
             kind: kind.into(),
             front: "f".into(),
+            pron: None,
+            question: None,
             back: "b".into(),
+            wrong: vec![],
             note: None,
             level,
         }

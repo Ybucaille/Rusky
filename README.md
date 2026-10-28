@@ -35,7 +35,11 @@ systemctl --user enable --now rusky.service
 
 Rusky affiche sa propre popup (GTK4 + layer-shell) en haut à droite de l'écran, par-dessus les fenêtres, sans passer par le démon de notifications. Il faut un compositeur qui gère `wlr-layer-shell` (Hyprland, Sway, niri…).
 
-« Révéler » montre la réponse, puis tu réponds « Je savais » ou « Pas su ». Le ✕ ou Échap ferme sans noter. Sans réponse, elle se referme seule au bout de 45 s (la fine barre en bas montre le temps restant, et se met en pause quand ta souris est sur la carte) : la carte est alors reportée comme avec « Plus tard ». Tant que tu n'as pas répondu, aucune autre popup n'arrive : rien ne s'accumule.
+Chaque carte est une question à choix multiple : tu cliques sur une des trois réponses, la popup te dit si c'est juste et affiche l'explication, puis « Continuer ». Une bonne réponse espace la carte, une mauvaise la fait revenir vite.
+
+Sous chaque mot russe, sa prononciation à la française, avec la syllabe sur laquelle on appuie en MAJUSCULES : молоко́ se lit « ma-la-KO ».
+
+« Plus tard », le ✕ ou Échap ferment sans noter. Sans réponse, la popup se referme seule au bout de 45 s (la fine barre en bas montre le temps restant et se met en pause quand ta souris est sur la carte) : la carte est alors reportée comme avec « Plus tard ». Tant que tu n'as pas répondu, aucune autre popup n'arrive.
 
 ## Commandes
 
@@ -43,10 +47,10 @@ Rusky affiche sa propre popup (GTK4 + layer-shell) en haut à droite de l'écran
 |---|---|
 | `rusky run` | Lance le démon |
 | `rusky now` | Une carte tout de suite |
-| `rusky review -c 20` | Session de révision dans le terminal |
+| `rusky review -c 20` | Le même quiz dans le terminal |
 | `rusky stats` | Progression, réussite du jour, série |
 | `rusky pause 60` | Pause d'une heure (`rusky resume` pour reprendre) |
-| `rusky add "кот" "chat" -n "Он спит."` | Ajoute ta carte (`-k grammar`, `phrase`, `alphabet`) |
+| `rusky add "кот" "chat" -p "kot"` | Ajoute ta carte (`-n` explication, `-k grammar`, `phrase`, `alphabet`) |
 | `rusky import mes-cartes.toml` | Importe un paquet de cartes |
 | `rusky paths` | Où sont la config et la base |
 
@@ -73,9 +77,12 @@ Même format que `data/cards.toml`. Le caractère ´ des accents se tape avec la
 id = "perso-cuisine-001"   # unique, sert à garder ta progression
 kind = "vocab"
 front = "сыр"
+pron = "syr"               # prononciation, syllabe accentuée en MAJUSCULES
 back = "fromage"
-note = "Я люблю́ сыр."
+note = "Я люблю́ сыр (ya liou-BLIOU syr) = J'aime le fromage."
 level = 1                  # plus petit = apparaît plus tôt
+# Optionnels : question = "…" (la consigne) et wrong = ["…", "…"] (les mauvaises
+# réponses ; sinon elles sont tirées des autres cartes du même type).
 ```
 
 Réimporter un fichier met à jour le texte des cartes sans perdre ta progression.
@@ -84,6 +91,6 @@ Réimporter un fichier met à jour le texte des cartes sans perdre ta progressio
 
 - Nouvelle carte sue → revient dans 4 h, puis 1 jour, 3 jours, puis l'intervalle est multiplié (×2,5 au départ).
 - Pas sue → revient dans 10 minutes, et deviendra un peu plus fréquente à l'avenir.
-- Une fois connue, une carte de vocabulaire est parfois posée à l'envers (français → russe).
+- Une fois connue, une carte de vocabulaire ou d'expression est parfois posée à l'envers (français → russe).
 
 Les données sont dans `~/.local/share/rusky/rusky.db` (SQLite).
