@@ -5,10 +5,7 @@ pkgrel=1
 pkgdesc="Popups pour apprendre le russe (vocabulaire, grammaire, alphabet, expressions)"
 arch=('x86_64' 'aarch64')
 license=('MIT')
-depends=('gcc-libs')
-optdepends=('swaync: notifications avec boutons cliquables (recommandé sous Hyprland)'
-            'mako: notifications (boutons via makoctl menu)'
-            'dunst: notifications (boutons via le menu contextuel)')
+depends=('gcc-libs' 'gtk4' 'gtk4-layer-shell')
 makedepends=('cargo')
 options=('!lto')
 

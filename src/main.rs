@@ -1,14 +1,14 @@
 mod config;
 mod content;
 mod db;
-mod notify;
+mod popup;
 mod srs;
 
 use anyhow::{Result, bail};
 use chrono::{Local, TimeZone, Timelike};
 use clap::{Parser, Subcommand};
 use db::{Card, Db};
-use notify::Outcome;
+use popup::Outcome;
 use srs::Grade;
 use std::io::{self, BufRead, Write};
 use std::path::PathBuf;
@@ -16,7 +16,7 @@ use std::thread::sleep;
 use std::time::Duration;
 
 #[derive(Parser)]
-#[command(name = "rusky", version, about = "Apprends le russe par petites notifications")]
+#[command(name = "rusky", version, about = "Apprends le russe par petites popups")]
 struct Cli {
     #[command(subcommand)]
     cmd: Cmd,
@@ -87,7 +87,7 @@ fn main() -> Result<()> {
             let cfg = config::load()?;
             let db = open_db()?;
             if !show_one(&db, &cfg)? {
-                notify::info("Rusky", "Rien à réviser pour l'instant. Reviens plus tard !");
+                popup::info("Rusky", "Rien à réviser pour l'instant. Reviens plus tard !");
             }
             Ok(())
         }
@@ -137,7 +137,7 @@ fn show_one(db: &Db, cfg: &config::Config) -> Result<bool> {
     let Some(mut card) = db.next_card(t, day_start(), &cfg.kinds, cfg.max_new_per_day)? else {
         return Ok(false);
     };
-    match notify::present(&card, t)? {
+    match popup::present(&card, t)? {
         Outcome::Graded(g) => grade(db, &mut card, g)?,
         // Une carte déjà vue repoussée revient au tour suivant ; une nouvelle reste nouvelle.
         Outcome::Later => db.snooze(&card, now() + (cfg.interval_minutes as i64) * 60)?,
@@ -168,7 +168,7 @@ fn run() -> Result<()> {
 
         if !paused && active
             && let Err(e) = show_one(&db, &cfg) {
-                // Pas de serveur de notifs (session pas encore prête…) : on réessaie plus tard.
+                // Pas encore d'écran Wayland (session pas prête…) : on réessaie plus tard.
                 eprintln!("rusky : impossible d'afficher la popup : {e:#}");
                 sleep(Duration::from_secs(60));
                 continue;

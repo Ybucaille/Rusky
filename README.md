@@ -31,16 +31,11 @@ Si tu utilises uwsm (ou une session avec `graphical-session.target`), tu peux pa
 systemctl --user enable --now rusky.service
 ```
 
-## Les boutons des notifications
+## La popup
 
-Rusky utilise les boutons d'action des notifications. Selon ton démon :
+Rusky affiche sa propre popup (GTK4 + layer-shell) en haut à droite de l'écran, par-dessus les fenêtres, sans passer par le démon de notifications. Il faut un compositeur qui gère `wlr-layer-shell` (Hyprland, Sway, niri…).
 
-- **swaync** (recommandé) : les boutons s'affichent directement dans la popup.
-- **mako** : les boutons ne sont pas affichés. Ajoute un raccourci dans Hyprland :
-  `bind = SUPER, N, exec, makoctl menu -- wofi -d -p Rusky`
-- **dunst** : ouvre le menu des actions avec le raccourci `context` (Ctrl+Shift+. par défaut).
-
-Un clic sur la popup révèle la réponse. Tant que tu n'as pas répondu, aucune autre popup n'arrive : rien ne s'accumule.
+« Révéler » montre la réponse, puis tu réponds « Je savais » ou « Pas su ». Le ✕ ou Échap ferme sans noter. Tant que tu n'as pas répondu, aucune autre popup n'arrive : rien ne s'accumule.
 
 ## Commandes
 
