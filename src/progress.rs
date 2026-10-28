@@ -1,6 +1,7 @@
 //! XP et niveaux : un niveau se débloque quand assez de cartes du précédent sont acquises.
 
-use crate::db::Db;
+use crate::db::{Card, Db};
+use crate::srs::{self, Grade};
 use anyhow::Result;
 
 pub const XP_GOOD: i64 = 10;
@@ -54,6 +55,20 @@ pub fn level(db: &Db) -> Result<Level> {
     })
 }
 
+/// Note la carte, compte l'XP. Renvoie le niveau qui vient de s'ouvrir, s'il y en a un.
+pub fn answer(db: &Db, card: &mut Card, good: bool, now: i64) -> Result<Option<i64>> {
+    let g = if good { Grade::Good } else { Grade::Again };
+    srs::schedule(card, g, now);
+    db.save_review(card, g, now)?;
+    record(db, good)
+}
+
+/// Message d'ouverture d'un niveau.
+pub fn unlocked_message(db: &Db, tier: i64) -> Result<String> {
+    let (_, total) = db.tier_counts(tier, 0)?;
+    Ok(format!("Niveau {tier} : {}, {total} nouvelles cartes à découvrir.", name(tier)))
+}
+
 /// Ajoute l'XP d'une réponse. Renvoie le niveau qui vient de s'ouvrir, s'il y en a un.
 pub fn record(db: &Db, good: bool) -> Result<Option<i64>> {
     db.add_xp(if good { XP_GOOD } else { XP_MISS })?;
@@ -69,7 +84,6 @@ pub fn record(db: &Db, good: bool) -> Result<Option<i64>> {
 mod tests {
     use super::*;
     use crate::content::CardDef;
-    use crate::srs::Grade;
     use std::path::Path;
 
     fn def(id: &str, tier: i64) -> CardDef {

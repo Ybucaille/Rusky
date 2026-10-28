@@ -58,7 +58,11 @@ pub fn config_path() -> Result<PathBuf> {
     Ok(dirs()?.config_dir().join("config.toml"))
 }
 
+/// Base de données ; `RUSKY_DB` permet d'en utiliser une autre (essais, démo).
 pub fn db_path() -> Result<PathBuf> {
+    if let Some(p) = std::env::var_os("RUSKY_DB") {
+        return Ok(PathBuf::from(p));
+    }
     let dir = dirs()?.data_dir().to_path_buf();
     fs::create_dir_all(&dir)?;
     Ok(dir.join("rusky.db"))

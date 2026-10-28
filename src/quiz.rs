@@ -4,8 +4,11 @@ use crate::db::{Card, Db};
 use anyhow::Result;
 
 pub struct Quiz {
-    /// « 🔤 Alphabet · nouveau »
-    pub header: String,
+    /// alphabet | vocab | grammar | phrase
+    pub kind: String,
+    pub tier: i64,
+    /// Carte jamais vue.
+    pub is_new: bool,
     /// Le texte en gros (russe, ou français si la question est à l'envers).
     pub big: String,
     /// Prononciation sous le texte en gros.
@@ -16,6 +19,23 @@ pub struct Quiz {
     pub correct: usize,
     /// Explication montrée après la réponse.
     pub note: Option<String>,
+}
+
+impl Quiz {
+    /// « VOCABULAIRE · NIVEAU 2 · NOUVEAU »
+    pub fn header(&self) -> String {
+        let new = if self.is_new { " · nouveau" } else { "" };
+        format!("{} · niveau {}{new}", kind_label(&self.kind), self.tier).to_uppercase()
+    }
+}
+
+pub fn kind_label(kind: &str) -> &'static str {
+    match kind {
+        "alphabet" => "Alphabet",
+        "grammar" => "Grammaire",
+        "phrase" => "Expression",
+        _ => "Vocabulaire",
+    }
 }
 
 /// Mot russe suivi de sa prononciation : « кот (kot) ».
@@ -30,14 +50,6 @@ pub fn build(db: &Db, card: &Card, now: i64) -> Result<Quiz> {
     // Une fois la carte un peu connue, on pose parfois la question à l'envers.
     let reverse = matches!(card.kind.as_str(), "vocab" | "phrase") && card.reps >= 2 && now % 2 == 0;
 
-    let label = match card.kind.as_str() {
-        "alphabet" => "🔤 Alphabet",
-        "grammar" => "📘 Grammaire",
-        "phrase" => "💬 Expression",
-        _ => "🇷🇺 Vocabulaire",
-    };
-    let new_tag = if card.due.is_none() { " · nouveau" } else { "" };
-    let label = format!("Niv. {} · {label}", card.tier);
 
     let (big, pron, prompt, answer) = if reverse {
         (
@@ -68,7 +80,9 @@ pub fn build(db: &Db, card: &Card, now: i64) -> Result<Quiz> {
     let correct = choices.iter().position(|c| *c == answer).unwrap_or(0);
 
     Ok(Quiz {
-        header: format!("{label}{new_tag}"),
+        kind: card.kind.clone(),
+        tier: card.tier,
+        is_new: card.due.is_none(),
         big,
         pron: pron.filter(|p| !p.is_empty()),
         prompt,

@@ -5,7 +5,7 @@ pkgrel=1
 pkgdesc="Popups pour apprendre le russe (vocabulaire, grammaire, alphabet, expressions)"
 arch=('x86_64' 'aarch64')
 license=('MIT')
-depends=('gcc-libs' 'gtk4' 'gtk4-layer-shell')
+depends=('gcc-libs' 'gtk4' 'gtk4-layer-shell' 'noto-fonts')
 makedepends=('cargo')
 options=('!lto')
 
@@ -24,5 +24,5 @@ check() {
 package() {
   install -Dm755 "$srcdir/target/release/rusky" "$pkgdir/usr/bin/rusky"
   install -Dm644 "$startdir/systemd/rusky.service" "$pkgdir/usr/lib/systemd/user/rusky.service"
-  install -Dm644 "$startdir/data/cards.toml" "$pkgdir/usr/share/rusky/cards-exemple.toml"
+  install -Dm644 -t "$pkgdir/usr/share/rusky/cartes" "$startdir"/data/niveau-*.toml
 }

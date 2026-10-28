@@ -35,6 +35,20 @@ pub struct Stats {
     pub streak_days: i64,
 }
 
+/// Sessions lancées depuis la fenêtre de révision.
+#[derive(Clone, Copy, PartialEq, Eq, Debug)]
+pub enum Session {
+    /// Cartes dues, puis bientôt dues.
+    Review,
+    /// Cartes déjà ratées au moins une fois.
+    Mistakes,
+    /// Cartes jamais vues des niveaux débloqués.
+    New,
+}
+
+const CARD_COLUMNS: &str =
+    "id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong, tier";
+
 pub struct Db {
     conn: Connection,
 }
@@ -94,8 +108,7 @@ impl Db {
     #[cfg(test)]
     pub fn card(&self, id: &str) -> Result<Card> {
         Ok(self.conn.query_row(
-            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong, tier
-             FROM cards WHERE id = ?1",
+            &format!("SELECT {CARD_COLUMNS} FROM cards WHERE id = ?1"),
             [id],
             row_to_card,
         )?)
@@ -128,8 +141,7 @@ impl Db {
         let allowed = |k: &str| kinds.is_empty() || kinds.iter().any(|x| x == k);
 
         let mut stmt = self.conn.prepare(
-            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong, tier
-             FROM cards WHERE due IS NOT NULL AND due <= ?1 ORDER BY due",
+            &format!("SELECT {CARD_COLUMNS} FROM cards WHERE due IS NOT NULL AND due <= ?1 ORDER BY due"),
         )?;
         let due: Vec<Card> = stmt
             .query_map([now], row_to_card)?
@@ -148,8 +160,7 @@ impl Db {
         }
 
         let mut stmt = self.conn.prepare(
-            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong, tier
-             FROM cards WHERE due IS NULL AND tier <= ?1 ORDER BY tier, level, rowid",
+            &format!("SELECT {CARD_COLUMNS} FROM cards WHERE due IS NULL AND tier <= ?1 ORDER BY tier, level, rowid"),
         )?;
         let fresh: Vec<Card> = stmt
             .query_map([max_tier], row_to_card)?
@@ -256,11 +267,7 @@ impl Db {
              FROM log ORDER BY d DESC",
         )?;
         let days: Vec<i64> = stmt.query_map([], |r| r.get(0))?.collect::<Result<_, _>>()?;
-        let today: i64 = self.conn.query_row(
-            "SELECT CAST(julianday(date(?1, 'unixepoch', 'localtime')) AS INTEGER)",
-            [now],
-            |r| r.get(0),
-        )?;
+        let today = self.julian_day(now)?;
         let mut streak = 0;
         if let Some(&first) = days.first()
             && today - first <= 1 {
@@ -286,6 +293,125 @@ impl Db {
             streak_days: streak,
         })
     }
+
+    /// Révisions par jour sur les `days` derniers jours (le plus ancien d'abord) : (total, réussies).
+    pub fn daily(&self, now: i64, days: i64) -> Result<Vec<(i64, i64)>> {
+        let today = self.julian_day(now)?;
+        let mut out = vec![(0, 0); days as usize];
+        let mut stmt = self.conn.prepare(
+            "SELECT CAST(julianday(date(ts, 'unixepoch', 'localtime')) AS INTEGER) AS d,
+                    COUNT(*), SUM(good)
+             FROM log WHERE ts >= ?1 GROUP BY d",
+        )?;
+        let rows = stmt.query_map([now - days * 86_400 - 86_400], |r| {
+            Ok((r.get::<_, i64>(0)?, r.get::<_, i64>(1)?, r.get::<_, i64>(2)?))
+        })?;
+        for row in rows {
+            let (d, total, good) = row?;
+            let i = days - 1 - (today - d);
+            if (0..days).contains(&i) {
+                out[i as usize] = (total, good);
+            }
+        }
+        Ok(out)
+    }
+
+    /// (révisions, réussies) depuis `since`.
+    pub fn accuracy_since(&self, since: i64) -> Result<(i64, i64)> {
+        Ok(self.conn.query_row(
+            "SELECT COUNT(*), COALESCE(SUM(good), 0) FROM log WHERE ts >= ?1",
+            [since],
+            |r| Ok((r.get(0)?, r.get(1)?)),
+        )?)
+    }
+
+    /// Réussite par type de carte : (type, révisions, réussies).
+    pub fn kind_accuracy(&self) -> Result<Vec<(String, i64, i64)>> {
+        let mut stmt = self.conn.prepare(
+            "SELECT c.kind, COUNT(*), SUM(l.good) FROM log l JOIN cards c ON c.id = l.card_id
+             GROUP BY c.kind",
+        )?;
+        let rows = stmt.query_map([], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)))?;
+        Ok(rows.collect::<Result<_, _>>()?)
+    }
+
+    /// Par niveau : (niveau, cartes vues, cartes acquises, total).
+    pub fn tier_overview(&self, acquired_reps: i64) -> Result<Vec<(i64, i64, i64, i64)>> {
+        let mut stmt = self.conn.prepare(
+            "SELECT tier, COUNT(due), COUNT(CASE WHEN reps >= ?1 THEN 1 END), COUNT(*)
+             FROM cards GROUP BY tier ORDER BY tier",
+        )?;
+        let rows = stmt.query_map([acquired_reps], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?)))?;
+        Ok(rows.collect::<Result<_, _>>()?)
+    }
+
+    /// Les cartes les plus souvent ratées.
+    pub fn hardest(&self, n: usize) -> Result<Vec<Card>> {
+        self.cards_where("lapses > 0 ORDER BY lapses DESC, due LIMIT ?1", params![n as i64])
+    }
+
+    /// Plus longue série de jours consécutifs avec au moins une révision.
+    pub fn best_streak(&self) -> Result<i64> {
+        let mut stmt = self.conn.prepare(
+            "SELECT DISTINCT CAST(julianday(date(ts, 'unixepoch', 'localtime')) AS INTEGER) AS d
+             FROM log ORDER BY d",
+        )?;
+        let days: Vec<i64> = stmt.query_map([], |r| r.get(0))?.collect::<Result<_, _>>()?;
+        let (mut best, mut cur, mut prev) = (0, 0, i64::MIN);
+        for d in days {
+            cur = if d == prev + 1 { cur + 1 } else { 1 };
+            best = best.max(cur);
+            prev = d;
+        }
+        Ok(best)
+    }
+
+    /// Cartes d'une session de révision lancée à la main.
+    pub fn session_cards(&self, mode: Session, n: usize, now: i64, max_tier: i64) -> Result<Vec<Card>> {
+        let n = n as i64;
+        match mode {
+            // D'abord ce qui est dû, puis ce qui le sera bientôt.
+            Session::Review => self.cards_where(
+                "due IS NOT NULL ORDER BY (due > ?1), due LIMIT ?2",
+                params![now, n],
+            ),
+            Session::Mistakes => self.cards_where(
+                "id IN (SELECT card_id FROM log WHERE good = 0) ORDER BY lapses DESC, due LIMIT ?1",
+                params![n],
+            ),
+            Session::New => self.cards_where(
+                "due IS NULL AND tier <= ?1 ORDER BY tier, level, rowid LIMIT ?2",
+                params![max_tier, n],
+            ),
+        }
+    }
+
+    /// Nombre de cartes disponibles pour chaque session : (dues, ratées, nouvelles).
+    pub fn session_counts(&self, now: i64, max_tier: i64) -> Result<(i64, i64, i64)> {
+        Ok(self.conn.query_row(
+            "SELECT
+                (SELECT COUNT(*) FROM cards WHERE due IS NOT NULL AND due <= ?1),
+                (SELECT COUNT(DISTINCT card_id) FROM log WHERE good = 0),
+                (SELECT COUNT(*) FROM cards WHERE due IS NULL AND tier <= ?2)",
+            params![now, max_tier],
+            |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+        )?)
+    }
+
+    fn cards_where(&self, clause: &str, p: &[&dyn rusqlite::ToSql]) -> Result<Vec<Card>> {
+        let mut stmt = self.conn.prepare(&format!("SELECT {CARD_COLUMNS} FROM cards WHERE {clause}"))?;
+        let rows = stmt.query_map(p, row_to_card)?;
+        Ok(rows.collect::<Result<_, _>>()?)
+    }
+
+    fn julian_day(&self, ts: i64) -> Result<i64> {
+        Ok(self.conn.query_row(
+            "SELECT CAST(julianday(date(?1, 'unixepoch', 'localtime')) AS INTEGER)",
+            [ts],
+            |r| r.get(0),
+        )?)
+    }
+
 }
 
 fn upsert(conn: &Connection, c: &CardDef) -> Result<()> {

@@ -6,11 +6,13 @@ mod progress;
 mod pron;
 mod quiz;
 mod srs;
+mod ui;
+mod window;
 
 use anyhow::{Result, bail};
 use chrono::{Local, TimeZone, Timelike};
 use clap::{Parser, Subcommand};
-use db::{Card, Db};
+use db::Db;
 use popup::Outcome;
 use srs::Grade;
 use std::io::{self, BufRead, Write};
@@ -21,12 +23,16 @@ use std::time::Duration;
 #[derive(Parser)]
 #[command(name = "rusky", version, about = "Apprends le russe par petites popups")]
 struct Cli {
+    /// Sans commande : ouvre la fenêtre de révision
     #[command(subcommand)]
-    cmd: Cmd,
+    cmd: Option<Cmd>,
 }
 
 #[derive(Subcommand)]
 enum Cmd {
+    /// Ouvre la fenêtre de révision : progression, statistiques, sessions
+    #[command(visible_aliases = ["menu", "révision"])]
+    Revision,
     /// Lance le démon : une popup toutes les N minutes
     Run,
     /// Affiche une carte tout de suite
@@ -87,7 +93,8 @@ fn open_db() -> Result<Db> {
 
 fn main() -> Result<()> {
     let cli = Cli::parse();
-    match cli.cmd {
+    match cli.cmd.unwrap_or(Cmd::Revision) {
+        Cmd::Revision => window::open(open_db()?),
         Cmd::Run => run(),
         Cmd::Now => {
             let cfg = config::load()?;
@@ -148,8 +155,8 @@ fn show_one(db: &Db, cfg: &config::Config) -> Result<bool> {
     };
     match popup::present(&quiz::build(db, &card, t)?)? {
         Outcome::Graded(g) => {
-            if let Some(tier) = grade(db, &mut card, g)? {
-                popup::info("🎉 Niveau débloqué !", &unlocked_message(db, tier)?);
+            if let Some(tier) = progress::answer(db, &mut card, g == Grade::Good, now())? {
+                popup::info("Niveau débloqué", &progress::unlocked_message(db, tier)?);
             }
         }
         // Une carte déjà vue repoussée revient au tour suivant ; une nouvelle reste nouvelle.
@@ -157,19 +164,6 @@ fn show_one(db: &Db, cfg: &config::Config) -> Result<bool> {
         Outcome::Dismissed => {}
     }
     Ok(true)
-}
-
-/// Note la carte et compte l'XP. Renvoie le niveau qui vient de s'ouvrir, s'il y en a un.
-fn grade(db: &Db, card: &mut Card, g: Grade) -> Result<Option<i64>> {
-    let t = now();
-    srs::schedule(card, g, t);
-    db.save_review(card, g, t)?;
-    progress::record(db, g == Grade::Good)
-}
-
-fn unlocked_message(db: &Db, tier: i64) -> Result<String> {
-    let (_, total) = db.tier_counts(tier, 0)?;
-    Ok(format!("Niveau {tier} : {}, {total} nouvelles cartes à découvrir.", progress::name(tier)))
 }
 
 fn run() -> Result<()> {
@@ -216,7 +210,7 @@ fn review(count: usize) -> Result<()> {
             break;
         };
         let q = quiz::build(&db, &card, t)?;
-        println!("\n── {} ──", q.header);
+        println!("\n── {} ──", q.header());
         println!("  {}", q.big);
         if let Some(p) = &q.pron {
             println!("  ({p})");
@@ -241,8 +235,8 @@ fn review(count: usize) -> Result<()> {
         if let Some(n) = &q.note {
             println!("    {n}");
         }
-        if let Some(tier) = grade(&db, &mut card, if ok { Grade::Good } else { Grade::Again })? {
-            println!("\n  🎉 Niveau débloqué ! {}", unlocked_message(&db, tier)?);
+        if let Some(tier) = progress::answer(&db, &mut card, ok, now())? {
+            println!("\n  🎉 Niveau débloqué ! {}", progress::unlocked_message(&db, tier)?);
         }
         done += 1;
     }
