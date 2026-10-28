@@ -2,6 +2,7 @@ mod config;
 mod content;
 mod db;
 mod popup;
+mod pron;
 mod quiz;
 mod srs;
 
