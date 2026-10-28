@@ -1,0 +1,237 @@
+# niveau = 8
+# Aisance : société, travail, nuances d'émotion, registre soutenu, verbes à préfixes.
+
+@vocab
+госуда́рство | État |
+прави́тельство | gouvernement |
+вла́сть | pouvoir, autorités |
+зако́н | loi |
+суд | tribunal |
+вы́боры | élections |
+голосова́ть | voter |
+депута́т | député |
+граждани́н | citoyen |
+нало́г | impôt |
+пе́нсия | retraite |
+безрабо́тица | chômage |
+бе́дность | pauvreté |
+нера́венство | inégalité |
+права́ челове́ка | droits de l'homme |
+свобо́да сло́ва | liberté d'expression |
+по́длинный | authentique |
+вы́года | profit, avantage |
+убы́ток | perte (financière) |
+дохо́д | revenu |
+расхо́д | dépense |
+креди́т | prêt |
+долг | dette, devoir |
+сде́лка | marché, transaction |
+догово́р | contrat, accord |
+сотру́дник | employé |
+руководи́тель | dirigeant |
+подчинённый | subordonné |
+до́лжность | poste |
+о́тдел | service, département |
+совеща́ние | réunion de travail |
+отчёт | rapport |
+срок | délai |
+увольне́ние | licenciement |
+повыше́ние | promotion |
+кандида́т | candidat |
+собесе́дование | entretien d'embauche |
+резюме́ | CV |
+о́тпуск по боле́зни | arrêt maladie |
+командиро́вка | déplacement professionnel |
+наро́д | peuple |
+поколе́ние | génération |
+обы́чай | coutume |
+тради́ция | tradition |
+ве́ра | foi |
+ро́дина | patrie |
+иммигра́нт | immigré |
+бе́женец | réfugié |
+грани́ца | frontière |
+у́ровень жи́зни | niveau de vie |
+здравоохране́ние | santé publique |
+образова́ние | éducation, enseignement |
+окружа́ющая среда́ | environnement |
+загрязне́ние | pollution |
+измене́ние кли́мата | changement climatique |
+исто́чник | source |
+поро́г | seuil |
+тенде́нция | tendance |
+после́дствие | conséquence |
+го́рдость | fierté |
+сты́д | honte |
+вина́ | culpabilité, faute |
+раска́яние | remords |
+зло́сть | colère |
+оби́да | rancune, vexation |
+отча́яние | désespoir |
+тре́вога | anxiété, alarme |
+облегче́ние | soulagement |
+восто́рг | enthousiasme |
+не́жность | tendresse |
+равноду́шие | indifférence |
+ре́вность | jalousie (amoureuse) |
+за́висть | envie |
+ску́ка | ennui |
+волне́ние | émotion, trac |
+впечатле́ние | impression |
+воспомина́ние | souvenir |
+предчу́вствие | pressentiment |
+намере́ние | intention |
+сомне́ние | doute |
+убежде́ние | conviction |
+предрассу́док | préjugé |
+заблужде́ние | erreur, illusion |
+доказа́ть | prouver |
+опровергну́ть | réfuter |
+утвержда́ть | affirmer |
+отрица́ть | nier |
+подчёркивать | souligner |
+упомина́ть | mentionner |
+намека́ть | faire allusion |
+возража́ть | objecter |
+одобря́ть | approuver |
+осужда́ть | condamner |
+критикова́ть | critiquer |
+опра́вдываться | se justifier |
+извиня́ться | s'excuser |
+жа́ловаться | se plaindre |
+угрожа́ть | menacer |
+обма́нывать | tromper, mentir |
+преда́ть | trahir |
+справля́ться | s'en sortir, faire face |
+сдава́ться | abandonner, se rendre |
+наста́ивать | insister |
+колеба́ться | hésiter |
+расстра́иваться | être contrarié |
+успока́иваться | se calmer |
+влюби́ться | tomber amoureux |
+развести́сь | divorcer |
+подружи́ться | devenir amis |
+поссо́риться | se fâcher |
+помири́ться | se réconcilier |
+вы́расти | grandir (avoir grandi) |
+переезжа́ть | déménager |
+устра́иваться | s'installer, trouver un emploi |
+увольня́ться | démissionner |
+зараба́тывать | gagner (de l'argent) |
+тра́тить | dépenser |
+копи́ть | économiser |
+одолжи́ть | prêter |
+занима́ть | emprunter, occuper |
+возвраща́ть | rendre |
+переходи́ть доро́гу | traverser la rue |
+переводи́ть | traduire, transférer |
+передава́ть | transmettre |
+пересма́тривать | revoir, réexaminer |
+переду́мать | changer d'avis |
+перегиба́ть | exagérer |
+подде́рживать | soutenir |
+подгота́вливать | préparer |
+подпи́сывать | signer |
+подозрева́ть | soupçonner |
+приду́мать | inventer, imaginer |
+привлека́ть | attirer |
+признава́ться | avouer |
+производи́ть | produire |
+проверя́ть | vérifier |
+рассчи́тывать | compter sur |
+распространя́ть | répandre |
+сокраща́ть | réduire, abréger |
+соглаша́ться | accepter, être d'accord |
+сопровожда́ть | accompagner |
+уделя́ть внима́ние | consacrer de l'attention |
+удивля́ться | s'étonner |
+уча́ствовать | participer |
+явля́ться | être (soutenu), apparaître | Москва́ явля́ется столи́цей Росси́и.
+очеви́дно | évidemment |
+постепе́нно | progressivement |
+сравни́тельно | relativement |
+в основно́м | principalement |
+тем бо́лее | d'autant plus |
+и́менно поэ́тому | c'est justement pourquoi |
+несмотря́ на | malgré |
+благодаря́ | grâce à |
+всле́дствие | par suite de |
+в тече́ние | pendant |
+в связи́ с | en lien avec |
+по сравне́нию с | par rapport à |
+с одно́й стороны́ | d'un côté |
+с друго́й стороны́ | d'un autre côté |
+таки́м о́бразом | ainsi |
+в результа́те | en conséquence |
+по кра́йней ме́ре | au moins |
+кста́ти | au fait |
+вро́де бы | apparemment |
+как бу́дто | comme si |
+незави́симый | indépendant |
+равнопра́вный | égal en droits |
+обще́ственный | public, social |
+ли́чный | personnel |
+сро́чный | urgent |
+досту́пный | accessible |
+эффекти́вный | efficace |
+спо́рный | discutable |
+неизбе́жный | inévitable |
+значи́тельный | considérable |
+сомни́тельный | douteux |
+очеви́дный | évident |
+насто́йчивый | insistant |
+ре́зкий | brusque, tranchant |
+осторо́жный | prudent |
+легкомы́сленный | frivole, insouciant |
+отве́тственный | responsable |
+самостоя́тельный | autonome |
+доброжела́тельный | bienveillant |
+
+@phrase
+Я бы так не сказа́л | Je ne dirais pas ça |
+Пожа́луй, ты прав | Tu as peut-être raison |
+Соверше́нно ве́рно | Tout à fait exact |
+Ни в ко́ем ра́зе | Sûrement pas (familier) |
+Ещё как! | Et comment ! |
+Как бы то ни бы́ло | Quoi qu'il en soit |
+Само́ собо́й разуме́ется | Cela va de soi |
+Ре́чь идёт о… | Il s'agit de… |
+Де́ло не в де́ньгах | Ce n'est pas une question d'argent |
+С мое́й то́чки зре́ния | De mon point de vue |
+Я приде́рживаюсь друго́го мне́ния | Je suis d'un autre avis |
+Э́то спо́рный вопро́с | C'est une question discutable |
+Ины́ми слова́ми | Autrement dit |
+Что каса́ется меня́ | En ce qui me concerne |
+Хо́чешь не хо́чешь | Que tu le veuilles ou non |
+Ма́ло ли что | On ne sait jamais |
+Ещё не ве́чер | Rien n'est encore joué | Mot à mot : « ce n'est pas encore le soir ».
+Пусть бу́дет так | Soit |
+Как ни в чём не быва́ло | Comme si de rien n'était |
+Всему́ своё вре́мя | Chaque chose en son temps |
+Не вопро́с! | Pas de souci ! |
+В то́м-то и де́ло | C'est bien ça le problème |
+Мне от э́того ни хо́лодно ни жа́рко | Ça ne me fait ni chaud ni froid |
+Ру́ки прочь! | Bas les pattes ! |
+Ла́дно, прое́хали | Bon, passons |
+Я в шо́ке | Je suis choqué |
+Ну ты и ска́жешь! | Tu en as de bonnes ! |
+Э́то уже́ сли́шком | Là, c'est trop |
+Ничего́ не попи́шешь | On n'y peut rien |
+Учи́ться никогда́ не по́здно | Il n'est jamais trop tard pour apprendre |
+
+@grammar
+несмотря́ на дождь | Que veut dire cette expression ? | malgré la pluie | à cause de la pluie ; après la pluie | несмотря́ на + complément = malgré. благодаря́ + datif = grâce à.
+Москва́ явля́ется столи́цей. | Pourquoi столи́цей ? | Après явля́ться, l'attribut prend la forme en -ой / -ом | Parce que c'est au pluriel ; C'est une faute | явля́ться (être, style écrit) et стать (devenir) veulent l'instrumental : стать врачо́м.
+Он стал врачо́м. | Que veut dire cette phrase ? | Il est devenu médecin. | Il est allé chez le médecin. ; Il était médecin. | стать + instrumental = devenir.
+Кни́га, напи́санная в 1900 году́ | Que veut dire напи́санная ? | écrite | qui écrit ; à écrire | Participe passé passif : напи́санный = écrit. Style surtout écrit.
+Я ду́маю об э́том. | Pourquoi об et pas о ? | о devient об devant une voyelle | C'est une autre préposition ; C'est plus poli | о ма́ме, об э́том, обо мне́ : la préposition s'adapte au son qui suit.
+Он сказа́л, что придёт. | Que veut dire cette phrase ? | Il a dit qu'il viendrait. | Il a dit qu'il est venu. ; Il dit qu'il vient. | En russe, le discours rapporté garde le temps d'origine : « il viendra » reste au futur.
+Он спроси́л, придёт ли она́. | Que veut dire ли ici ? | si (question indirecte) | quand ; parce que | Pour une question indirecte oui/non : verbe + ли. Не зна́ю, придёт ли он = Je ne sais pas s'il viendra.
+Чем бо́льше чита́ешь, тем бо́льше зна́ешь. | Que veut dire la phrase ? | Plus on lit, plus on sait. | On lit plus qu'on ne sait. ; Il faut lire pour savoir. | чем…, тем… = plus…, plus…
+Ему́ не́куда идти́. | Que veut dire cette phrase ? | Il n'a nulle part où aller. | Il ne veut aller nulle part. ; Il est allé quelque part. | не́куда, не́где, не́кого + infinitif = il n'y a pas où, personne à…
+Кому́-то звони́л. | Que veut dire кому́-то ? | à quelqu'un (on ne sait pas qui) | à n'importe qui ; à personne | -то = quelqu'un de précis mais inconnu ; -нибудь = n'importe qui.
+Предлага́ю пойти́ в кино́. | Que veut dire cette phrase ? | Je propose d'aller au cinéma. | Je suis allé au cinéma. ; On m'a proposé le cinéma. | предлага́ть + infinitif = proposer de faire.
+вме́сто того́ что́бы | Вме́сто того́ что́бы рабо́тать, он спит. Sens ? | au lieu de travailler, il dort | il dort pour travailler ; il travaille en dormant | вме́сто того́ что́бы + infinitif = au lieu de.
+Ско́лько лет, ско́лько зим! | Quand dit-on cela ? | Quand on revoit quelqu'un après longtemps | Pour souhaiter un bon anniversaire ; Pour parler de la météo | Mot à mot : « combien d'étés, combien d'hivers ».
+перечита́ть | Que veut dire le préfixe пере- ici ? | refaire, relire | lire à voix haute ; lire jusqu'au bout | пере- = de nouveau (перечита́ть, переде́лать) ou à travers (перейти́ доро́гу).
+недоспа́ть | Que veut dire недоспа́ть ? | ne pas assez dormir | trop dormir ; s'endormir | недо- = pas assez : недооце́нивать = sous-estimer. пере- peut aussi dire « trop » : перее́сть = trop manger.

@@ -1,0 +1,758 @@
+# Cartes du niveau 7 de rusky (généré, prononciation calculée).
+tier = 7
+
+[[card]]
+id = "t7b-voc-001"
+kind = "vocab"
+front = "па́спорт"
+back = "passeport"
+level = 1
+
+[[card]]
+id = "t7b-voc-002"
+kind = "vocab"
+front = "ви́за"
+back = "visa"
+level = 2
+
+[[card]]
+id = "t7b-voc-003"
+kind = "vocab"
+front = "тамо́жня"
+back = "douane"
+level = 3
+
+[[card]]
+id = "t7b-voc-004"
+kind = "vocab"
+front = "бага́ж"
+back = "bagages"
+level = 4
+
+[[card]]
+id = "t7b-voc-005"
+kind = "vocab"
+front = "ре́йс"
+back = "vol (avion)"
+level = 5
+
+[[card]]
+id = "t7b-voc-006"
+kind = "vocab"
+front = "поса́дка"
+back = "embarquement, atterrissage"
+level = 6
+
+[[card]]
+id = "t7b-voc-007"
+kind = "vocab"
+front = "вы́лет"
+back = "départ (d'un vol)"
+level = 7
+
+[[card]]
+id = "t7b-voc-008"
+kind = "vocab"
+front = "прилёт"
+back = "arrivée (d'un vol)"
+level = 8
+
+[[card]]
+id = "t7b-voc-009"
+kind = "vocab"
+front = "расписа́ние"
+back = "horaire"
+level = 9
+
+[[card]]
+id = "t7b-voc-010"
+kind = "vocab"
+front = "опозда́ние"
+back = "retard"
+level = 10
+
+[[card]]
+id = "t7b-voc-011"
+kind = "vocab"
+front = "переса́дка"
+back = "correspondance"
+level = 11
+
+[[card]]
+id = "t7b-voc-012"
+kind = "vocab"
+front = "бронь"
+back = "réservation"
+level = 12
+
+[[card]]
+id = "t7b-voc-013"
+kind = "vocab"
+front = "но́мер в гости́нице"
+back = "chambre d'hôtel"
+level = 13
+
+[[card]]
+id = "t7b-voc-014"
+kind = "vocab"
+front = "тури́ст"
+back = "touriste"
+level = 14
+
+[[card]]
+id = "t7b-voc-015"
+kind = "vocab"
+front = "экску́рсия"
+back = "visite guidée"
+level = 15
+
+[[card]]
+id = "t7b-voc-016"
+kind = "vocab"
+front = "достопримеча́тельность"
+back = "curiosité touristique"
+level = 16
+
+[[card]]
+id = "t7b-voc-017"
+kind = "vocab"
+front = "сувени́р"
+back = "souvenir (objet)"
+level = 17
+
+[[card]]
+id = "t7b-voc-018"
+kind = "vocab"
+front = "путеводи́тель"
+back = "guide (livre)"
+level = 18
+
+[[card]]
+id = "t7b-voc-019"
+kind = "vocab"
+front = "пляж"
+back = "plage"
+level = 19
+
+[[card]]
+id = "t7b-voc-020"
+kind = "vocab"
+front = "пала́тка"
+back = "tente"
+level = 20
+
+[[card]]
+id = "t7b-voc-021"
+kind = "vocab"
+front = "костёр"
+back = "feu de camp"
+level = 21
+
+[[card]]
+id = "t7b-voc-022"
+kind = "vocab"
+front = "поли́клиника"
+back = "centre médical"
+level = 22
+
+[[card]]
+id = "t7b-voc-023"
+kind = "vocab"
+front = "реце́пт"
+back = "ordonnance, recette"
+level = 23
+
+[[card]]
+id = "t7b-voc-024"
+kind = "vocab"
+front = "у́кол"
+back = "piqûre"
+level = 24
+
+[[card]]
+id = "t7b-voc-025"
+kind = "vocab"
+front = "ана́лиз"
+back = "analyse"
+level = 25
+
+[[card]]
+id = "t7b-voc-026"
+kind = "vocab"
+front = "давле́ние"
+back = "pression, tension"
+level = 26
+
+[[card]]
+id = "t7b-voc-027"
+kind = "vocab"
+front = "боль"
+back = "douleur"
+level = 27
+
+[[card]]
+id = "t7b-voc-028"
+kind = "vocab"
+front = "ра́на"
+back = "blessure"
+level = 28
+
+[[card]]
+id = "t7b-voc-029"
+kind = "vocab"
+front = "перело́м"
+back = "fracture"
+level = 29
+
+[[card]]
+id = "t7b-voc-030"
+kind = "vocab"
+front = "аллерги́я"
+back = "allergie"
+level = 30
+
+[[card]]
+id = "t7b-voc-031"
+kind = "vocab"
+front = "ка́шель"
+back = "toux"
+level = 31
+
+[[card]]
+id = "t7b-voc-032"
+kind = "vocab"
+front = "на́сморк"
+back = "rhume (nez qui coule)"
+level = 32
+
+[[card]]
+id = "t7b-voc-033"
+kind = "vocab"
+front = "выздора́вливать"
+back = "guérir"
+level = 33
+
+[[card]]
+id = "t7b-voc-034"
+kind = "vocab"
+front = "лечи́ть"
+back = "soigner"
+level = 34
+
+[[card]]
+id = "t7b-voc-035"
+kind = "vocab"
+front = "страхо́вка"
+back = "assurance"
+level = 35
+
+[[card]]
+id = "t7b-voc-036"
+kind = "vocab"
+front = "спра́вка"
+back = "certificat, attestation"
+level = 36
+
+[[card]]
+id = "t7b-voc-037"
+kind = "vocab"
+front = "докуме́нт"
+back = "document"
+level = 37
+
+[[card]]
+id = "t7b-voc-038"
+kind = "vocab"
+front = "бланк"
+back = "formulaire"
+level = 38
+
+[[card]]
+id = "t7b-voc-039"
+kind = "vocab"
+front = "заявле́ние"
+back = "demande écrite"
+level = 39
+
+[[card]]
+id = "t7b-voc-040"
+kind = "vocab"
+front = "по́дпись"
+back = "signature"
+level = 40
+
+[[card]]
+id = "t7b-voc-041"
+kind = "vocab"
+front = "печа́ть"
+back = "tampon"
+level = 41
+
+[[card]]
+id = "t7b-voc-042"
+kind = "vocab"
+front = "пропи́ска"
+back = "enregistrement de résidence"
+level = 42
+
+[[card]]
+id = "t7b-voc-043"
+kind = "vocab"
+front = "квита́нция"
+back = "reçu"
+level = 43
+
+[[card]]
+id = "t7b-voc-044"
+kind = "vocab"
+front = "счёт в ба́нке"
+back = "compte bancaire"
+level = 44
+
+[[card]]
+id = "t7b-voc-045"
+kind = "vocab"
+front = "перево́д де́нег"
+back = "virement"
+level = 45
+
+[[card]]
+id = "t7b-voc-046"
+kind = "vocab"
+front = "ка́рточка"
+back = "carte (bancaire)"
+level = 46
+
+[[card]]
+id = "t7b-voc-047"
+kind = "vocab"
+front = "нали́чные"
+back = "espèces"
+level = 47
+
+[[card]]
+id = "t7b-voc-048"
+kind = "vocab"
+front = "банкома́т"
+back = "distributeur"
+level = 48
+
+[[card]]
+id = "t7b-voc-049"
+kind = "vocab"
+front = "ски́дка"
+back = "réduction"
+level = 49
+
+[[card]]
+id = "t7b-voc-050"
+kind = "vocab"
+front = "распрода́жа"
+back = "soldes"
+level = 50
+
+[[card]]
+id = "t7b-voc-051"
+kind = "vocab"
+front = "доста́вка"
+back = "livraison"
+level = 51
+
+[[card]]
+id = "t7b-voc-052"
+kind = "vocab"
+front = "зака́з"
+back = "commande"
+level = 52
+
+[[card]]
+id = "t7b-voc-053"
+kind = "vocab"
+front = "верну́ть"
+back = "rendre, rembourser"
+level = 53
+
+[[card]]
+id = "t7b-voc-054"
+kind = "vocab"
+front = "обме́н"
+back = "échange"
+level = 54
+
+[[card]]
+id = "t7b-voc-055"
+kind = "vocab"
+front = "гаранти́я"
+back = "garantie"
+level = 55
+
+[[card]]
+id = "t7b-voc-056"
+kind = "vocab"
+front = "приложе́ние"
+back = "application"
+level = 56
+
+[[card]]
+id = "t7b-voc-057"
+kind = "vocab"
+front = "уведомле́ние"
+back = "notification"
+level = 57
+
+[[card]]
+id = "t7b-voc-058"
+kind = "vocab"
+front = "ссы́лка"
+back = "lien"
+level = 58
+
+[[card]]
+id = "t7b-voc-059"
+kind = "vocab"
+front = "файл"
+back = "fichier"
+level = 59
+
+[[card]]
+id = "t7b-voc-060"
+kind = "vocab"
+front = "па́пка"
+back = "dossier"
+level = 60
+
+[[card]]
+id = "t7b-voc-061"
+kind = "vocab"
+front = "по́чта (электро́нная)"
+back = "e-mail"
+level = 61
+
+[[card]]
+id = "t7b-voc-062"
+kind = "vocab"
+front = "логи́н"
+back = "identifiant"
+level = 62
+
+[[card]]
+id = "t7b-voc-063"
+kind = "vocab"
+front = "акка́унт"
+back = "compte (en ligne)"
+level = 63
+
+[[card]]
+id = "t7b-voc-064"
+kind = "vocab"
+front = "обновле́ние"
+back = "mise à jour"
+level = 64
+
+[[card]]
+id = "t7b-voc-065"
+kind = "vocab"
+front = "подключе́ние"
+back = "connexion"
+level = 65
+
+[[card]]
+id = "t7b-voc-066"
+kind = "vocab"
+front = "сеть"
+back = "réseau"
+level = 66
+
+[[card]]
+id = "t7b-voc-067"
+kind = "vocab"
+front = "по́иск"
+back = "recherche"
+level = 67
+
+[[card]]
+id = "t7b-voc-068"
+kind = "vocab"
+front = "кла́виша"
+back = "touche"
+level = 68
+
+[[card]]
+id = "t7b-voc-069"
+kind = "vocab"
+front = "мы́шка"
+back = "souris (d'ordinateur)"
+level = 69
+
+[[card]]
+id = "t7b-voc-070"
+kind = "vocab"
+front = "скриншо́т"
+back = "capture d'écran"
+level = 70
+
+[[card]]
+id = "t7b-voc-071"
+kind = "vocab"
+front = "лайк"
+back = "like"
+level = 71
+
+[[card]]
+id = "t7b-voc-072"
+kind = "vocab"
+front = "подпи́счик"
+back = "abonné"
+level = 72
+
+[[card]]
+id = "t7b-voc-073"
+kind = "vocab"
+front = "блог"
+back = "blog"
+level = 73
+
+[[card]]
+id = "t7b-voc-074"
+kind = "vocab"
+front = "ви́део"
+back = "vidéo"
+level = 74
+
+[[card]]
+id = "t7b-voc-075"
+kind = "vocab"
+front = "стрим"
+back = "stream"
+level = 75
+
+[[card]]
+id = "t7b-voc-076"
+kind = "vocab"
+front = "чат"
+back = "chat (discussion)"
+level = 76
+
+[[card]]
+id = "t7b-voc-077"
+kind = "vocab"
+front = "сма́йлик"
+back = "émoji"
+level = 77
+
+[[card]]
+id = "t7b-voc-078"
+kind = "vocab"
+front = "перепи́ска"
+back = "correspondance, échange de messages"
+level = 78
+
+[[card]]
+id = "t7b-voc-079"
+kind = "vocab"
+front = "выкла́дывать"
+back = "publier, poster"
+level = 79
+
+[[card]]
+id = "t7b-voc-080"
+kind = "vocab"
+front = "листа́ть"
+back = "faire défiler"
+level = 80
+
+[[card]]
+id = "t7b-voc-081"
+kind = "vocab"
+front = "скро́ллить"
+back = "scroller"
+level = 81
+
+[[card]]
+id = "t7b-voc-082"
+kind = "vocab"
+front = "гугли́ть"
+back = "googler"
+level = 82
+
+[[card]]
+id = "t7b-voc-083"
+kind = "vocab"
+front = "пересла́ть"
+back = "transférer (un message)"
+level = 83
+
+[[card]]
+id = "t7b-voc-084"
+kind = "vocab"
+front = "вздремну́ть"
+back = "faire une sieste"
+level = 84
+
+[[card]]
+id = "t7b-voc-085"
+kind = "vocab"
+front = "опереди́ть"
+back = "devancer"
+level = 85
+
+[[card]]
+id = "t7b-voc-086"
+kind = "vocab"
+front = "отложи́ть"
+back = "reporter, mettre de côté"
+level = 86
+
+[[card]]
+id = "t7b-voc-087"
+kind = "vocab"
+front = "отмени́ть"
+back = "annuler"
+level = 87
+
+[[card]]
+id = "t7b-voc-088"
+kind = "vocab"
+front = "перенести́"
+back = "déplacer, reporter"
+level = 88
+
+[[card]]
+id = "t7b-voc-089"
+kind = "vocab"
+front = "предупреди́ть"
+back = "prévenir"
+level = 89
+
+[[card]]
+id = "t7b-voc-090"
+kind = "vocab"
+front = "напо́мнить"
+back = "rappeler (à quelqu'un)"
+level = 90
+
+[[card]]
+id = "t7b-voc-091"
+kind = "vocab"
+front = "уговори́ть"
+back = "persuader"
+level = 91
+
+[[card]]
+id = "t7b-voc-092"
+kind = "vocab"
+front = "отказа́ться"
+back = "refuser"
+level = 92
+
+[[card]]
+id = "t7b-voc-093"
+kind = "vocab"
+front = "согласи́ться"
+back = "accepter"
+level = 93
+
+[[card]]
+id = "t7b-voc-094"
+kind = "vocab"
+front = "пообеща́ть"
+back = "promettre"
+level = 94
+
+[[card]]
+id = "t7b-voc-095"
+kind = "vocab"
+front = "обиде́ться"
+back = "se vexer"
+level = 95
+
+[[card]]
+id = "t7b-voc-096"
+kind = "vocab"
+front = "удиви́ть"
+back = "surprendre"
+level = 96
+
+[[card]]
+id = "t7b-voc-097"
+kind = "vocab"
+front = "испуга́ться"
+back = "prendre peur"
+level = 97
+
+[[card]]
+id = "t7b-voc-098"
+kind = "vocab"
+front = "обра́доваться"
+back = "se réjouir"
+level = 98
+
+[[card]]
+id = "t7b-voc-099"
+kind = "vocab"
+front = "разочарова́ться"
+back = "être déçu"
+level = 99
+
+[[card]]
+id = "t7b-voc-100"
+kind = "vocab"
+front = "привы́кнуть"
+back = "s'habituer"
+level = 100
+
+[[card]]
+id = "t7b-voc-101"
+kind = "vocab"
+front = "оста́ться"
+back = "rester"
+level = 101
+
+[[card]]
+id = "t7b-voc-102"
+kind = "vocab"
+front = "исче́знуть"
+back = "disparaître"
+level = 102
+
+[[card]]
+id = "t7b-voc-103"
+kind = "vocab"
+front = "появи́ться"
+back = "apparaître"
+level = 103
+
+[[card]]
+id = "t7b-voc-104"
+kind = "vocab"
+front = "случи́ться"
+back = "arriver, se produire"
+level = 104
+
+[[card]]
+id = "t7b-voc-105"
+kind = "vocab"
+front = "зави́сеть от"
+back = "dépendre de"
+level = 105
+
+[[card]]
+id = "t7b-voc-106"
+kind = "vocab"
+front = "сто́ить того́"
+back = "valoir la peine"
+level = 106
+
+[[card]]
+id = "t7b-voc-107"
+kind = "vocab"
+front = "име́ть в виду́"
+back = "vouloir dire, sous-entendre"
+level = 107
+
+[[card]]
+id = "t7b-voc-108"
+kind = "vocab"
+front = "обраща́ться к"
+back = "s'adresser à"
+level = 108

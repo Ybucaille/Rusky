@@ -1,0 +1,795 @@
+# Cartes du niveau 5 de rusky (généré, prononciation calculée).
+tier = 5
+
+[[card]]
+id = "t5b-voc-001"
+kind = "vocab"
+front = "полице́йский"
+back = "policier"
+level = 1
+
+[[card]]
+id = "t5b-voc-002"
+kind = "vocab"
+front = "пожа́рный"
+back = "pompier"
+level = 2
+
+[[card]]
+id = "t5b-voc-003"
+kind = "vocab"
+front = "продаве́ц"
+back = "vendeur"
+level = 3
+
+[[card]]
+id = "t5b-voc-004"
+kind = "vocab"
+front = "покупа́тель"
+back = "client, acheteur"
+level = 4
+
+[[card]]
+id = "t5b-voc-005"
+kind = "vocab"
+front = "води́тель"
+back = "conducteur"
+level = 5
+
+[[card]]
+id = "t5b-voc-006"
+kind = "vocab"
+front = "лётчик"
+back = "pilote"
+level = 6
+
+[[card]]
+id = "t5b-voc-007"
+kind = "vocab"
+front = "по́вар"
+back = "cuisinier"
+level = 7
+
+[[card]]
+id = "t5b-voc-008"
+kind = "vocab"
+front = "медсестра́"
+back = "infirmière"
+level = 8
+
+[[card]]
+id = "t5b-voc-009"
+kind = "vocab"
+front = "адвока́т"
+back = "avocat"
+level = 9
+
+[[card]]
+id = "t5b-voc-010"
+kind = "vocab"
+front = "бухга́лтер"
+back = "comptable"
+level = 10
+
+[[card]]
+id = "t5b-voc-011"
+kind = "vocab"
+front = "программи́ст"
+back = "programmeur"
+level = 11
+
+[[card]]
+id = "t5b-voc-012"
+kind = "vocab"
+front = "строи́тель"
+back = "ouvrier du bâtiment"
+level = 12
+
+[[card]]
+id = "t5b-voc-013"
+kind = "vocab"
+front = "фе́рмер"
+back = "agriculteur"
+level = 13
+
+[[card]]
+id = "t5b-voc-014"
+kind = "vocab"
+front = "музыка́нт"
+back = "musicien"
+level = 14
+
+[[card]]
+id = "t5b-voc-015"
+kind = "vocab"
+front = "спортсме́н"
+back = "sportif"
+level = 15
+
+[[card]]
+id = "t5b-voc-016"
+kind = "vocab"
+front = "перево́дчик"
+back = "traducteur"
+level = 16
+
+[[card]]
+id = "t5b-voc-017"
+kind = "vocab"
+front = "дире́ктор"
+back = "directeur"
+level = 17
+
+[[card]]
+id = "t5b-voc-018"
+kind = "vocab"
+front = "секрета́рь"
+back = "secrétaire"
+level = 18
+
+[[card]]
+id = "t5b-voc-019"
+kind = "vocab"
+front = "учёный"
+back = "scientifique"
+level = 19
+
+[[card]]
+id = "t5b-voc-020"
+kind = "vocab"
+front = "пенсионе́р"
+back = "retraité"
+level = 20
+
+[[card]]
+id = "t5b-voc-021"
+kind = "vocab"
+front = "плечо́"
+back = "épaule"
+level = 21
+
+[[card]]
+id = "t5b-voc-022"
+kind = "vocab"
+front = "ше́я"
+back = "cou"
+level = 22
+
+[[card]]
+id = "t5b-voc-023"
+kind = "vocab"
+front = "грудь"
+back = "poitrine"
+level = 23
+
+[[card]]
+id = "t5b-voc-024"
+kind = "vocab"
+front = "коле́но"
+back = "genou"
+level = 24
+
+[[card]]
+id = "t5b-voc-025"
+kind = "vocab"
+front = "ло́коть"
+back = "coude"
+level = 25
+
+[[card]]
+id = "t5b-voc-026"
+kind = "vocab"
+front = "кровь"
+back = "sang"
+level = 26
+
+[[card]]
+id = "t5b-voc-027"
+kind = "vocab"
+front = "кость"
+back = "os"
+level = 27
+
+[[card]]
+id = "t5b-voc-028"
+kind = "vocab"
+front = "ко́жа"
+back = "peau"
+level = 28
+
+[[card]]
+id = "t5b-voc-029"
+kind = "vocab"
+front = "язы́к (во рту́)"
+back = "langue (dans la bouche)"
+level = 29
+
+[[card]]
+id = "t5b-voc-030"
+kind = "vocab"
+front = "губа́"
+back = "lèvre"
+level = 30
+
+[[card]]
+id = "t5b-voc-031"
+kind = "vocab"
+front = "бровь"
+back = "sourcil"
+level = 31
+
+[[card]]
+id = "t5b-voc-032"
+kind = "vocab"
+front = "борода́"
+back = "barbe"
+level = 32
+
+[[card]]
+id = "t5b-voc-033"
+kind = "vocab"
+front = "усы́"
+back = "moustache"
+level = 33
+
+[[card]]
+id = "t5b-voc-034"
+kind = "vocab"
+front = "зо́нтик"
+back = "parapluie"
+level = 34
+
+[[card]]
+id = "t5b-voc-035"
+kind = "vocab"
+front = "очки́"
+back = "lunettes"
+level = 35
+
+[[card]]
+id = "t5b-voc-036"
+kind = "vocab"
+front = "часы́"
+back = "montre, horloge"
+level = 36
+
+[[card]]
+id = "t5b-voc-037"
+kind = "vocab"
+front = "кошелёк"
+back = "porte-monnaie"
+level = 37
+
+[[card]]
+id = "t5b-voc-038"
+kind = "vocab"
+front = "рюкза́к"
+back = "sac à dos"
+level = 38
+
+[[card]]
+id = "t5b-voc-039"
+kind = "vocab"
+front = "чемода́н"
+back = "valise"
+level = 39
+
+[[card]]
+id = "t5b-voc-040"
+kind = "vocab"
+front = "пи́сьменный стол"
+back = "bureau (meuble)"
+level = 40
+
+[[card]]
+id = "t5b-voc-041"
+kind = "vocab"
+front = "каранда́ш"
+back = "crayon"
+level = 41
+
+[[card]]
+id = "t5b-voc-042"
+kind = "vocab"
+front = "тетра́дь"
+back = "cahier"
+level = 42
+
+[[card]]
+id = "t5b-voc-043"
+kind = "vocab"
+front = "бума́га"
+back = "papier"
+level = 43
+
+[[card]]
+id = "t5b-voc-044"
+kind = "vocab"
+front = "ру́чка (для письма́)"
+back = "stylo"
+level = 44
+
+[[card]]
+id = "t5b-voc-045"
+kind = "vocab"
+front = "но́жницы"
+back = "ciseaux"
+level = 45
+
+[[card]]
+id = "t5b-voc-046"
+kind = "vocab"
+front = "ве́щи"
+back = "affaires"
+level = 46
+
+[[card]]
+id = "t5b-voc-047"
+kind = "vocab"
+front = "игру́шка"
+back = "jouet"
+level = 47
+
+[[card]]
+id = "t5b-voc-048"
+kind = "vocab"
+front = "мяч"
+back = "ballon"
+level = 48
+
+[[card]]
+id = "t5b-voc-049"
+kind = "vocab"
+front = "велосипе́д"
+back = "vélo"
+level = 49
+
+[[card]]
+id = "t5b-voc-050"
+kind = "vocab"
+front = "фотоаппара́т"
+back = "appareil photo"
+level = 50
+
+[[card]]
+id = "t5b-voc-051"
+kind = "vocab"
+front = "планше́т"
+back = "tablette"
+level = 51
+
+[[card]]
+id = "t5b-voc-052"
+kind = "vocab"
+front = "нау́шники"
+back = "écouteurs"
+level = 52
+
+[[card]]
+id = "t5b-voc-053"
+kind = "vocab"
+front = "заря́дка"
+back = "chargeur ; gymnastique"
+level = 53
+
+[[card]]
+id = "t5b-voc-054"
+kind = "vocab"
+front = "батаре́йка"
+back = "pile"
+level = 54
+
+[[card]]
+id = "t5b-voc-055"
+kind = "vocab"
+front = "пульт"
+back = "télécommande"
+level = 55
+
+[[card]]
+id = "t5b-voc-056"
+kind = "vocab"
+front = "телеви́зор"
+back = "télévision"
+level = 56
+
+[[card]]
+id = "t5b-voc-057"
+kind = "vocab"
+front = "пылесо́с"
+back = "aspirateur"
+level = 57
+
+[[card]]
+id = "t5b-voc-058"
+kind = "vocab"
+front = "стира́льная маши́на"
+back = "machine à laver"
+level = 58
+
+[[card]]
+id = "t5b-voc-059"
+kind = "vocab"
+front = "ча́йник"
+back = "bouilloire"
+level = 59
+
+[[card]]
+id = "t5b-voc-060"
+kind = "vocab"
+front = "сковорода́"
+back = "poêle"
+level = 60
+
+[[card]]
+id = "t5b-voc-061"
+kind = "vocab"
+front = "кастрю́ля"
+back = "casserole"
+level = 61
+
+[[card]]
+id = "t5b-voc-062"
+kind = "vocab"
+front = "бу́лочка"
+back = "petit pain"
+level = 62
+
+[[card]]
+id = "t5b-voc-063"
+kind = "vocab"
+front = "пече́нье"
+back = "biscuit"
+level = 63
+
+[[card]]
+id = "t5b-voc-064"
+kind = "vocab"
+front = "торт"
+back = "gâteau"
+level = 64
+
+[[card]]
+id = "t5b-voc-065"
+kind = "vocab"
+front = "моро́женое"
+back = "glace"
+level = 65
+
+[[card]]
+id = "t5b-voc-066"
+kind = "vocab"
+front = "шокола́д"
+back = "chocolat"
+level = 66
+
+[[card]]
+id = "t5b-voc-067"
+kind = "vocab"
+front = "мёд"
+back = "miel"
+level = 67
+
+[[card]]
+id = "t5b-voc-068"
+kind = "vocab"
+front = "варе́нье"
+back = "confiture"
+level = 68
+
+[[card]]
+id = "t5b-voc-069"
+kind = "vocab"
+front = "ка́ша"
+back = "bouillie, porridge"
+level = 69
+
+[[card]]
+id = "t5b-voc-070"
+kind = "vocab"
+front = "гре́чка"
+back = "sarrasin"
+note = "Base de la cuisine russe."
+level = 70
+
+[[card]]
+id = "t5b-voc-071"
+kind = "vocab"
+front = "рис"
+back = "riz"
+level = 71
+
+[[card]]
+id = "t5b-voc-072"
+kind = "vocab"
+front = "макаро́ны"
+back = "pâtes"
+level = 72
+
+[[card]]
+id = "t5b-voc-073"
+kind = "vocab"
+front = "колбаса́"
+back = "saucisson"
+level = 73
+
+[[card]]
+id = "t5b-voc-074"
+kind = "vocab"
+front = "лук"
+back = "oignon"
+level = 74
+
+[[card]]
+id = "t5b-voc-075"
+kind = "vocab"
+front = "чесно́к"
+back = "ail"
+level = 75
+
+[[card]]
+id = "t5b-voc-076"
+kind = "vocab"
+front = "морко́вь"
+back = "carotte"
+level = 76
+
+[[card]]
+id = "t5b-voc-077"
+kind = "vocab"
+front = "капу́ста"
+back = "chou"
+level = 77
+
+[[card]]
+id = "t5b-voc-078"
+kind = "vocab"
+front = "огуре́ц"
+back = "concombre"
+level = 78
+
+[[card]]
+id = "t5b-voc-079"
+kind = "vocab"
+front = "гриб"
+back = "champignon"
+level = 79
+
+[[card]]
+id = "t5b-voc-080"
+kind = "vocab"
+front = "я́года"
+back = "baie"
+level = 80
+
+[[card]]
+id = "t5b-voc-081"
+kind = "vocab"
+front = "клубни́ка"
+back = "fraise"
+level = 81
+
+[[card]]
+id = "t5b-voc-082"
+kind = "vocab"
+front = "виногра́д"
+back = "raisin"
+level = 82
+
+[[card]]
+id = "t5b-voc-083"
+kind = "vocab"
+front = "апельси́н"
+back = "orange"
+level = 83
+
+[[card]]
+id = "t5b-voc-084"
+kind = "vocab"
+front = "лимо́н"
+back = "citron"
+level = 84
+
+[[card]]
+id = "t5b-voc-085"
+kind = "vocab"
+front = "гру́ша"
+back = "poire"
+level = 85
+
+[[card]]
+id = "t5b-voc-086"
+kind = "vocab"
+front = "ви́шня"
+back = "cerise"
+level = 86
+
+[[card]]
+id = "t5b-voc-087"
+kind = "vocab"
+front = "арбу́з"
+back = "pastèque"
+level = 87
+
+[[card]]
+id = "t5b-voc-088"
+kind = "vocab"
+front = "оре́х"
+back = "noix"
+level = 88
+
+[[card]]
+id = "t5b-voc-089"
+kind = "vocab"
+front = "пе́рец"
+back = "poivre, poivron"
+level = 89
+
+[[card]]
+id = "t5b-voc-090"
+kind = "vocab"
+front = "у́ксус"
+back = "vinaigre"
+level = 90
+
+[[card]]
+id = "t5b-voc-091"
+kind = "vocab"
+front = "просыпа́ться ра́но"
+back = "se réveiller tôt"
+level = 91
+
+[[card]]
+id = "t5b-voc-092"
+kind = "vocab"
+front = "засыпа́ть"
+back = "s'endormir"
+level = 92
+
+[[card]]
+id = "t5b-voc-093"
+kind = "vocab"
+front = "умыва́ться"
+back = "se débarbouiller"
+level = 93
+
+[[card]]
+id = "t5b-voc-094"
+kind = "vocab"
+front = "причёсываться"
+back = "se coiffer"
+level = 94
+
+[[card]]
+id = "t5b-voc-095"
+kind = "vocab"
+front = "бри́ться"
+back = "se raser"
+level = 95
+
+[[card]]
+id = "t5b-voc-096"
+kind = "vocab"
+front = "за́втракать"
+back = "prendre le petit-déjeuner"
+level = 96
+
+[[card]]
+id = "t5b-voc-097"
+kind = "vocab"
+front = "обе́дать"
+back = "déjeuner"
+level = 97
+
+[[card]]
+id = "t5b-voc-098"
+kind = "vocab"
+front = "у́жинать"
+back = "dîner"
+level = 98
+
+[[card]]
+id = "t5b-voc-099"
+kind = "vocab"
+front = "спеши́ть"
+back = "se dépêcher"
+level = 99
+
+[[card]]
+id = "t5b-voc-100"
+kind = "vocab"
+front = "успева́ть"
+back = "avoir le temps, réussir à temps"
+level = 100
+
+[[card]]
+id = "t5b-voc-101"
+kind = "vocab"
+front = "про́бовать"
+back = "goûter, essayer"
+level = 101
+
+[[card]]
+id = "t5b-voc-102"
+kind = "vocab"
+front = "теря́ть"
+back = "perdre"
+level = 102
+
+[[card]]
+id = "t5b-voc-103"
+kind = "vocab"
+front = "находи́ть"
+back = "trouver"
+level = 103
+
+[[card]]
+id = "t5b-voc-104"
+kind = "vocab"
+front = "по́льзоваться"
+back = "utiliser"
+level = 104
+
+[[card]]
+id = "t5b-voc-105"
+kind = "vocab"
+front = "сове́товаться"
+back = "consulter, demander conseil"
+level = 105
+
+[[card]]
+id = "t5b-voc-106"
+kind = "vocab"
+front = "пока́зывать"
+back = "montrer"
+level = 106
+
+[[card]]
+id = "t5b-voc-107"
+kind = "vocab"
+front = "повторя́ть"
+back = "répéter"
+level = 107
+
+[[card]]
+id = "t5b-voc-108"
+kind = "vocab"
+front = "переводи́ть с ру́сского"
+back = "traduire du russe"
+level = 108
+
+[[card]]
+id = "t5b-voc-109"
+kind = "vocab"
+front = "запомина́ть"
+back = "retenir, mémoriser"
+level = 109
+
+[[card]]
+id = "t5b-voc-110"
+kind = "vocab"
+front = "забыва́ть"
+back = "oublier"
+level = 110
+
+[[card]]
+id = "t5b-voc-111"
+kind = "vocab"
+front = "вспомина́ть"
+back = "se rappeler"
+level = 111
+
+[[card]]
+id = "t5b-voc-112"
+kind = "vocab"
+front = "мечта́ть"
+back = "rêver (souhaiter)"
+level = 112
+
+[[card]]
+id = "t5b-voc-113"
+kind = "vocab"
+front = "боле́ть за"
+back = "supporter (une équipe)"
+note = "Я боле́ю за «Спарта́к» = Je supporte le Spartak."
+level = 113

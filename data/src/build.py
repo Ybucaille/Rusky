@@ -19,6 +19,17 @@ def q(s):
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
+def check_chars(text, where):
+    # Lettre latine collée à du cyrillique (а/a, о/o…) ou caractère invisible.
+    bad = [w for w in text.split()
+           if any("\u0400" <= ch <= "\u04ff" for ch in w) and any("a" <= ch.lower() <= "z" for ch in w)]
+    if "\u00ad" in text or "\u200b" in text:
+        bad.append("(caractère invisible)")
+    if bad:
+        print(f"lettres mélangées ({where}) : {' '.join(bad)}", file=sys.stderr)
+    return not bad
+
+
 def check_stress(text, where):
     # Chaque mot russe de 2 syllabes ou plus doit porter un accent (ou un ё).
     bad = []
@@ -55,6 +66,7 @@ def main(src, dst, prefix):
             section = line[1:].strip()
             continue
         f = [x.strip() for x in line.split("|")]
+        ok &= all(check_chars(x, f"ligne {n}") for x in f)
         counts[section] = counts.get(section, 0) + 1
         i = counts[section]
         kind = {"vocab": "vocab", "phrase": "phrase", "grammar": "grammar", "alphabet": "alphabet"}[section]

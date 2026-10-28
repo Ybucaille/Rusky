@@ -1,0 +1,1399 @@
+# Cartes du niveau 10 de rusky (généré, prononciation calculée).
+tier = 10
+
+[[card]]
+id = "t10-voc-001"
+kind = "vocab"
+front = "блин"
+back = "zut (mot à mot : crêpe)"
+note = "Juron poli, très courant. Remplace un mot bien plus grossier qui commence pareil."
+level = 1
+
+[[card]]
+id = "t10-voc-002"
+kind = "vocab"
+front = "ёлки-па́лки"
+back = "punaise !"
+note = "Mot à mot : « sapins-bâtons ». Exclamation familière de surprise ou d'agacement."
+level = 2
+
+[[card]]
+id = "t10-voc-003"
+kind = "vocab"
+front = "ё-моё"
+back = "oh là là"
+note = "Exclamation familière."
+level = 3
+
+[[card]]
+id = "t10-voc-004"
+kind = "vocab"
+front = "обалде́ть"
+back = "être sidéré"
+note = "Обалде́ть! = C'est dingue !"
+level = 4
+
+[[card]]
+id = "t10-voc-005"
+kind = "vocab"
+front = "кайф"
+back = "plaisir intense"
+note = "Како́й кайф! = Le pied !"
+level = 5
+
+[[card]]
+id = "t10-voc-006"
+kind = "vocab"
+front = "круто́"
+back = "cool, génial"
+level = 6
+
+[[card]]
+id = "t10-voc-007"
+kind = "vocab"
+front = "кла́ссно"
+back = "super"
+level = 7
+
+[[card]]
+id = "t10-voc-008"
+kind = "vocab"
+front = "прико́льно"
+back = "marrant, sympa"
+level = 8
+
+[[card]]
+id = "t10-voc-009"
+kind = "vocab"
+front = "прико́л"
+back = "blague, truc marrant"
+note = "Без прико́лов = Sans blague."
+level = 9
+
+[[card]]
+id = "t10-voc-010"
+kind = "vocab"
+front = "тусо́вка"
+back = "fête, soirée, milieu"
+level = 10
+
+[[card]]
+id = "t10-voc-011"
+kind = "vocab"
+front = "тусова́ться"
+back = "traîner ensemble, faire la fête"
+level = 11
+
+[[card]]
+id = "t10-voc-012"
+kind = "vocab"
+front = "чува́к"
+back = "mec"
+level = 12
+
+[[card]]
+id = "t10-voc-013"
+kind = "vocab"
+front = "тёлка"
+back = "meuf (vulgaire)"
+note = "À éviter : souvent perçu comme insultant."
+level = 13
+
+[[card]]
+id = "t10-voc-014"
+kind = "vocab"
+front = "бра́тан"
+back = "frérot"
+level = 14
+
+[[card]]
+id = "t10-voc-015"
+kind = "vocab"
+front = "ба́бки"
+back = "fric"
+level = 15
+
+[[card]]
+id = "t10-voc-016"
+kind = "vocab"
+front = "бабло́"
+back = "thune"
+level = 16
+
+[[card]]
+id = "t10-voc-017"
+kind = "vocab"
+front = "шту́ка"
+back = "mille (roubles) ; truc"
+note = "Э́то сто́ит две шту́ки = Ça coûte deux mille."
+level = 17
+
+[[card]]
+id = "t10-voc-018"
+kind = "vocab"
+front = "лимо́н (арго́)"
+back = "un million (argot)"
+note = "Mot à mot : « citron »."
+level = 18
+
+[[card]]
+id = "t10-voc-019"
+kind = "vocab"
+front = "та́чка"
+back = "bagnole"
+level = 19
+
+[[card]]
+id = "t10-voc-020"
+kind = "vocab"
+front = "ха́та"
+back = "baraque, appart (argot)"
+level = 20
+
+[[card]]
+id = "t10-voc-021"
+kind = "vocab"
+front = "шмо́тки"
+back = "fringues"
+level = 21
+
+[[card]]
+id = "t10-voc-022"
+kind = "vocab"
+front = "жра́ть"
+back = "bouffer (vulgaire)"
+level = 22
+
+[[card]]
+id = "t10-voc-023"
+kind = "vocab"
+front = "хава́ть"
+back = "bouffer (argot)"
+level = 23
+
+[[card]]
+id = "t10-voc-024"
+kind = "vocab"
+front = "буха́ть"
+back = "picoler"
+level = 24
+
+[[card]]
+id = "t10-voc-025"
+kind = "vocab"
+front = "зави́снуть"
+back = "rester bloqué, planter"
+note = "Компью́тер зави́с = L'ordinateur a planté."
+level = 25
+
+[[card]]
+id = "t10-voc-026"
+kind = "vocab"
+front = "тормози́ть"
+back = "être à la ramasse"
+note = "Mot à mot : « freiner »."
+level = 26
+
+[[card]]
+id = "t10-voc-027"
+kind = "vocab"
+front = "ржать"
+back = "se marrer"
+note = "Mot à mot : « hennir »."
+level = 27
+
+[[card]]
+id = "t10-voc-028"
+kind = "vocab"
+front = "ору́"
+back = "je suis mort de rire (internet)"
+note = "Mot à mot : « je hurle »."
+level = 28
+
+[[card]]
+id = "t10-voc-029"
+kind = "vocab"
+front = "кринж"
+back = "malaise, gênant (internet)"
+note = "De l'anglais cringe."
+level = 29
+
+[[card]]
+id = "t10-voc-030"
+kind = "vocab"
+front = "лол"
+back = "lol"
+level = 30
+
+[[card]]
+id = "t10-voc-031"
+kind = "vocab"
+front = "хайп"
+back = "buzz"
+level = 31
+
+[[card]]
+id = "t10-voc-032"
+kind = "vocab"
+front = "и́зи"
+back = "facile (jeune)"
+note = "De l'anglais easy."
+level = 32
+
+[[card]]
+id = "t10-voc-033"
+kind = "vocab"
+front = "краш"
+back = "le coup de cœur (jeune)"
+level = 33
+
+[[card]]
+id = "t10-voc-034"
+kind = "vocab"
+front = "забе́й"
+back = "laisse tomber"
+level = 34
+
+[[card]]
+id = "t10-voc-035"
+kind = "vocab"
+front = "отсто́й"
+back = "nul, naze"
+level = 35
+
+[[card]]
+id = "t10-voc-036"
+kind = "vocab"
+front = "ла́жа"
+back = "n'importe quoi, fausse note"
+level = 36
+
+[[card]]
+id = "t10-voc-037"
+kind = "vocab"
+front = "халя́ва"
+back = "aubaine, gratuité"
+note = "На халя́ву = À l'œil."
+level = 37
+
+[[card]]
+id = "t10-voc-038"
+kind = "vocab"
+front = "блат"
+back = "piston"
+note = "По бла́ту = Par piston. Mot clé de l'époque soviétique."
+level = 38
+
+[[card]]
+id = "t10-voc-039"
+kind = "vocab"
+front = "дефици́т"
+back = "pénurie"
+note = "À l'époque soviétique, un produit « en déficit » était introuvable."
+level = 39
+
+[[card]]
+id = "t10-voc-040"
+kind = "vocab"
+front = "о́чередь"
+back = "file d'attente"
+level = 40
+
+[[card]]
+id = "t10-voc-041"
+kind = "vocab"
+front = "да́ча"
+back = "maison de campagne"
+note = "Institution russe : le potager du week-end."
+level = 41
+
+[[card]]
+id = "t10-voc-042"
+kind = "vocab"
+front = "автору́чка"
+back = "stylo-plume"
+level = 42
+
+[[card]]
+id = "t10-voc-043"
+kind = "vocab"
+front = "аво́сь"
+back = "peut-être que ça passera"
+note = "Mot intraduisible : l'espoir que les choses s'arrangeront toutes seules. На аво́сь = au petit bonheur."
+level = 43
+
+[[card]]
+id = "t10-voc-044"
+kind = "vocab"
+front = "небо́сь"
+back = "sans doute (familier)"
+level = 44
+
+[[card]]
+id = "t10-voc-045"
+kind = "vocab"
+front = "мол"
+back = "soi-disant, qu'il dit"
+note = "Он, мол, за́нят = Il dit qu'il est occupé (j'en doute)."
+level = 45
+
+[[card]]
+id = "t10-voc-046"
+kind = "vocab"
+front = "де́скать"
+back = "paraît-il, dit-il"
+note = "Rapporte les paroles d'un autre avec distance."
+level = 46
+
+[[card]]
+id = "t10-voc-047"
+kind = "vocab"
+front = "аж"
+back = "jusqu'à, carrément"
+note = "Он аж покрасне́л = Il en a carrément rougi."
+level = 47
+
+[[card]]
+id = "t10-voc-048"
+kind = "vocab"
+front = "ишь"
+back = "tiens donc !"
+note = "Ишь како́й! = Regardez-moi ça !"
+level = 48
+
+[[card]]
+id = "t10-voc-049"
+kind = "vocab"
+front = "ну́-ка"
+back = "allez, voyons"
+note = "Ну-ка, покажи́! = Allez, montre !"
+level = 49
+
+[[card]]
+id = "t10-voc-050"
+kind = "vocab"
+front = "-ка"
+back = "adoucit un ordre"
+note = "Дай-ка = Donne voir. Посмотри́-ка = Regarde donc."
+level = 50
+
+[[card]]
+id = "t10-voc-051"
+kind = "vocab"
+front = "та́к-то"
+back = "à vrai dire"
+level = 51
+
+[[card]]
+id = "t10-voc-052"
+kind = "vocab"
+front = "вообще́-то"
+back = "en fait, normalement"
+level = 52
+
+[[card]]
+id = "t10-voc-053"
+kind = "vocab"
+front = "как бы"
+back = "genre (tic de langage)"
+note = "Я как бы не про́тив = Je suis genre pas contre."
+level = 53
+
+[[card]]
+id = "t10-voc-054"
+kind = "vocab"
+front = "ти́па"
+back = "genre, du style"
+level = 54
+
+[[card]]
+id = "t10-voc-055"
+kind = "vocab"
+front = "коро́че"
+back = "bref (tic de langage)"
+level = 55
+
+[[card]]
+id = "t10-voc-056"
+kind = "vocab"
+front = "зна́чит"
+back = "donc, alors (tic)"
+level = 56
+
+[[card]]
+id = "t10-voc-057"
+kind = "vocab"
+front = "в при́нципе"
+back = "en principe, en gros"
+level = 57
+
+[[card]]
+id = "t10-voc-058"
+kind = "vocab"
+front = "по ходу́"
+back = "apparemment (familier)"
+level = 58
+
+[[card]]
+id = "t10-voc-059"
+kind = "vocab"
+front = "ва́ще"
+back = "carrément (pour вообще́)"
+level = 59
+
+[[card]]
+id = "t10-voc-060"
+kind = "vocab"
+front = "щас"
+back = "tout de suite (pour сейча́с)"
+note = "Ironique : Щас! = Tu rêves !"
+level = 60
+
+[[card]]
+id = "t10-voc-061"
+kind = "vocab"
+front = "чё"
+back = "quoi (pour что)"
+note = "Très familier."
+level = 61
+
+[[card]]
+id = "t10-voc-062"
+kind = "vocab"
+front = "ничё"
+back = "rien, pas mal (pour ничего́)"
+level = 62
+
+[[card]]
+id = "t10-voc-063"
+kind = "vocab"
+front = "спаси́бки"
+back = "merci (mignon)"
+level = 63
+
+[[card]]
+id = "t10-voc-064"
+kind = "vocab"
+front = "пли́з"
+back = "s'il te plaît (jeune)"
+level = 64
+
+[[card]]
+id = "t10-voc-065"
+kind = "vocab"
+front = "приве́тик"
+back = "coucou"
+level = 65
+
+[[card]]
+id = "t10-voc-066"
+kind = "vocab"
+front = "пока́-пока́"
+back = "bye bye"
+level = 66
+
+[[card]]
+id = "t10-voc-067"
+kind = "vocab"
+front = "о́чень да́же"
+back = "plutôt pas mal"
+note = "Ironie douce : « très même » = mieux que prévu."
+level = 67
+
+[[card]]
+id = "t10-voc-068"
+kind = "vocab"
+front = "ещё бы"
+back = "et comment"
+level = 68
+
+[[card]]
+id = "t10-voc-069"
+kind = "vocab"
+front = "ну да"
+back = "ouais c'est ça (ironie)"
+note = "Selon l'intonation : « oui » ou « mon œil »."
+level = 69
+
+[[card]]
+id = "t10-voc-070"
+kind = "vocab"
+front = "да нет"
+back = "non (en fait non)"
+note = "« Oui non » = non. Да нет, всё норма́льно = Mais non, tout va bien."
+level = 70
+
+[[card]]
+id = "t10-voc-071"
+kind = "vocab"
+front = "нет, наве́рное"
+back = "sans doute que non"
+level = 71
+
+[[card]]
+id = "t10-voc-072"
+kind = "vocab"
+front = "ареста́нт"
+back = "détenu"
+level = 72
+
+[[card]]
+id = "t10-voc-073"
+kind = "vocab"
+front = "мент"
+back = "flic (argot)"
+level = 73
+
+[[card]]
+id = "t10-voc-074"
+kind = "vocab"
+front = "гаи́шник"
+back = "agent de la circulation"
+note = "De ГАИ, l'ancienne police routière."
+level = 74
+
+[[card]]
+id = "t10-voc-075"
+kind = "vocab"
+front = "ба́рин"
+back = "maître, monsieur (ironique)"
+level = 75
+
+[[card]]
+id = "t10-voc-076"
+kind = "vocab"
+front = "мажо́р"
+back = "fils à papa"
+level = 76
+
+[[card]]
+id = "t10-voc-077"
+kind = "vocab"
+front = "лох"
+back = "pigeon, naïf"
+level = 77
+
+[[card]]
+id = "t10-voc-078"
+kind = "vocab"
+front = "бота́н"
+back = "intello"
+level = 78
+
+[[card]]
+id = "t10-voc-079"
+kind = "vocab"
+front = "зану́да"
+back = "casse-pieds"
+level = 79
+
+[[card]]
+id = "t10-voc-080"
+kind = "vocab"
+front = "подли́за"
+back = "lèche-bottes"
+level = 80
+
+[[card]]
+id = "t10-voc-081"
+kind = "vocab"
+front = "трепло́"
+back = "moulin à paroles"
+level = 81
+
+[[card]]
+id = "t10-voc-082"
+kind = "vocab"
+front = "жа́дина"
+back = "radin (enfantin)"
+level = 82
+
+[[card]]
+id = "t10-voc-083"
+kind = "vocab"
+front = "вру́н"
+back = "menteur"
+level = 83
+
+[[card]]
+id = "t10-voc-084"
+kind = "vocab"
+front = "халту́ра"
+back = "travail bâclé, petit boulot"
+level = 84
+
+[[card]]
+id = "t10-voc-085"
+kind = "vocab"
+front = "ха́мство"
+back = "goujaterie"
+level = 85
+
+[[card]]
+id = "t10-voc-086"
+kind = "vocab"
+front = "пофиги́зм"
+back = "je-m'en-foutisme"
+level = 86
+
+[[card]]
+id = "t10-voc-087"
+kind = "vocab"
+front = "барда́к"
+back = "bordel, désordre"
+level = 87
+
+[[card]]
+id = "t10-voc-088"
+kind = "vocab"
+front = "сыр-бо́р"
+back = "toute une histoire"
+note = "Из-за чего́ весь сыр-бо́р? = Pourquoi tout ce raffut ?"
+level = 88
+
+[[card]]
+id = "t10-voc-089"
+kind = "vocab"
+front = "тоска́ зелёная"
+back = "ennui mortel"
+level = 89
+
+[[card]]
+id = "t10-voc-090"
+kind = "vocab"
+front = "кто́-кто, а…"
+back = "s'il y a bien quelqu'un qui…"
+level = 90
+
+[[card]]
+id = "t10-voc-091"
+kind = "vocab"
+front = "магази́н ≠ magazine"
+back = "magasin (et non magazine)"
+note = "Faux ami : un magazine se dit журна́л."
+level = 91
+
+[[card]]
+id = "t10-voc-092"
+kind = "vocab"
+front = "арти́ст"
+back = "acteur, artiste de scène"
+note = "Faux ami partiel : un peintre se dit худо́жник."
+level = 92
+
+[[card]]
+id = "t10-voc-093"
+kind = "vocab"
+front = "фами́лия"
+back = "nom de famille"
+note = "Faux ami : la famille se dit семья́."
+level = 93
+
+[[card]]
+id = "t10-voc-094"
+kind = "vocab"
+front = "анекдо́т"
+back = "blague"
+note = "Faux ami : pas une anecdote, une histoire drôle."
+level = 94
+
+[[card]]
+id = "t10-voc-095"
+kind = "vocab"
+front = "аккура́тный"
+back = "soigné, soigneux"
+note = "Faux ami : pas « exact »."
+level = 95
+
+[[card]]
+id = "t10-voc-096"
+kind = "vocab"
+front = "бана́льный"
+back = "banal"
+note = "Vrai ami pour une fois."
+level = 96
+
+[[card]]
+id = "t10-voc-097"
+kind = "vocab"
+front = "дива́н"
+back = "canapé"
+level = 97
+
+[[card]]
+id = "t10-voc-098"
+kind = "vocab"
+front = "кабине́т"
+back = "bureau (pièce)"
+note = "Faux ami : pas des toilettes."
+level = 98
+
+[[card]]
+id = "t10-voc-099"
+kind = "vocab"
+front = "кондиционе́р"
+back = "climatiseur ; après-shampoing"
+level = 99
+
+[[card]]
+id = "t10-voc-100"
+kind = "vocab"
+front = "профе́ссор"
+back = "professeur d'université"
+note = "Un prof d'école est учи́тель."
+level = 100
+
+[[card]]
+id = "t10-voc-101"
+kind = "vocab"
+front = "симпати́чный"
+back = "mignon, joli"
+note = "Faux ami : sens physique, pas « sympathique »."
+level = 101
+
+[[card]]
+id = "t10-voc-102"
+kind = "vocab"
+front = "шарм"
+back = "charme"
+level = 102
+
+[[card]]
+id = "t10-voc-103"
+kind = "vocab"
+front = "тра́ктор"
+back = "tracteur"
+level = 103
+
+[[card]]
+id = "t10-voc-104"
+kind = "vocab"
+front = "ке́ды"
+back = "baskets en toile"
+note = "Mot d'origine anglaise (Keds)."
+level = 104
+
+[[card]]
+id = "t10-voc-105"
+kind = "vocab"
+front = "ксе́рокс"
+back = "photocopieuse"
+note = "La marque est devenue le mot courant."
+level = 105
+
+[[card]]
+id = "t10-voc-106"
+kind = "vocab"
+front = "па́мперсы"
+back = "couches"
+note = "La marque est devenue le mot courant."
+level = 106
+
+[[card]]
+id = "t10-voc-107"
+kind = "vocab"
+front = "сто́льник"
+back = "billet de cent"
+note = "Argot."
+level = 107
+
+[[card]]
+id = "t10-voc-108"
+kind = "vocab"
+front = "полти́нник"
+back = "billet de cinquante"
+level = 108
+
+[[card]]
+id = "t10-voc-109"
+kind = "vocab"
+front = "тре́шка"
+back = "trois-pièces (appartement)"
+level = 109
+
+[[card]]
+id = "t10-voc-110"
+kind = "vocab"
+front = "дву́шка"
+back = "deux-pièces"
+level = 110
+
+[[card]]
+id = "t10-voc-111"
+kind = "vocab"
+front = "хрущёвка"
+back = "immeuble Khrouchtchev"
+note = "Petits immeubles préfabriqués des années 1960, partout en Russie."
+level = 111
+
+[[card]]
+id = "t10-voc-112"
+kind = "vocab"
+front = "коммуна́лка"
+back = "appartement communautaire"
+note = "Plusieurs familles, une cuisine partagée : la vie soviétique typique."
+level = 112
+
+[[card]]
+id = "t10-voc-113"
+kind = "vocab"
+front = "электри́чка"
+back = "train de banlieue"
+level = 113
+
+[[card]]
+id = "t10-voc-114"
+kind = "vocab"
+front = "маршру́тка"
+back = "minibus collectif"
+level = 114
+
+[[card]]
+id = "t10-voc-115"
+kind = "vocab"
+front = "ларёк"
+back = "kiosque"
+level = 115
+
+[[card]]
+id = "t10-voc-116"
+kind = "vocab"
+front = "продма́г"
+back = "épicerie (vieilli)"
+level = 116
+
+[[card]]
+id = "t10-voc-117"
+kind = "vocab"
+front = "ба́ня"
+back = "bain de vapeur russe"
+note = "С лёгким па́ром! = Bon bain ! (après la banya) — et titre d'un film culte."
+level = 117
+
+[[card]]
+id = "t10-voc-118"
+kind = "vocab"
+front = "ве́ник"
+back = "balai ; branchage pour la banya"
+level = 118
+
+[[card]]
+id = "t10-voc-119"
+kind = "vocab"
+front = "самова́р"
+back = "samovar"
+level = 119
+
+[[card]]
+id = "t10-voc-120"
+kind = "vocab"
+front = "пельме́ни"
+back = "raviolis russes"
+level = 120
+
+[[card]]
+id = "t10-voc-121"
+kind = "vocab"
+front = "окро́шка"
+back = "soupe froide au kvas"
+level = 121
+
+[[card]]
+id = "t10-voc-122"
+kind = "vocab"
+front = "квас"
+back = "boisson au pain fermenté"
+level = 122
+
+[[card]]
+id = "t10-voc-123"
+kind = "vocab"
+front = "холоде́ц"
+back = "aspic de viande"
+level = 123
+
+[[card]]
+id = "t10-voc-124"
+kind = "vocab"
+front = "селёдка под шу́бой"
+back = "hareng sous fourrure"
+note = "Salade de fête : hareng sous une « fourrure » de betterave."
+level = 124
+
+[[card]]
+id = "t10-voc-125"
+kind = "vocab"
+front = "оливье́"
+back = "salade russe (Olivier)"
+note = "Indispensable au Nouvel An."
+level = 125
+
+[[card]]
+id = "t10-voc-126"
+kind = "vocab"
+front = "ёлка"
+back = "sapin (de Nouvel An)"
+level = 126
+
+[[card]]
+id = "t10-voc-127"
+kind = "vocab"
+front = "Дед Моро́з"
+back = "Père Gel"
+note = "L'équivalent russe du Père Noël, avec sa petite-fille Снегу́рочка."
+level = 127
+
+[[card]]
+id = "t10-voc-128"
+kind = "vocab"
+front = "ста́рый Но́вый год"
+back = "Ancien Nouvel An"
+note = "Fêté le 14 janvier, selon l'ancien calendrier."
+level = 128
+
+[[card]]
+id = "t10-voc-129"
+kind = "vocab"
+front = "Ма́сленица"
+back = "semaine des crêpes"
+note = "Fête de fin d'hiver où l'on brûle un épouvantail."
+level = 129
+
+[[card]]
+id = "t10-voc-130"
+kind = "vocab"
+front = "и́мя-о́тчество"
+back = "prénom et patronyme"
+note = "Pour vouvoyer : Ива́н Петро́вич. Le patronyme vient du prénom du père."
+level = 130
+
+[[card]]
+id = "t10-voc-131"
+kind = "vocab"
+front = "Са́ша"
+back = "Sacha"
+note = "Diminutif de Алекса́ндр ou Алекса́ндра."
+level = 131
+
+[[card]]
+id = "t10-voc-132"
+kind = "vocab"
+front = "Шу́ра"
+back = "Choura"
+note = "Autre diminutif de Алекса́ндр, plus familier et ancien."
+level = 132
+
+[[card]]
+id = "t10-voc-133"
+kind = "vocab"
+front = "Же́ня"
+back = "Jénia"
+note = "Diminutif de Евге́ний ou Евге́ния."
+level = 133
+
+[[card]]
+id = "t10-voc-134"
+kind = "vocab"
+front = "Ди́ма"
+back = "Dima"
+note = "Diminutif de Дми́трий."
+level = 134
+
+[[card]]
+id = "t10-voc-135"
+kind = "vocab"
+front = "Ко́ля"
+back = "Kolia"
+note = "Diminutif de Никола́й."
+level = 135
+
+[[card]]
+id = "t10-voc-136"
+kind = "vocab"
+front = "Ми́ша"
+back = "Micha"
+note = "Diminutif de Михаи́л."
+level = 136
+
+[[card]]
+id = "t10-voc-137"
+kind = "vocab"
+front = "Та́ня"
+back = "Tania"
+note = "Diminutif de Татья́на."
+level = 137
+
+[[card]]
+id = "t10-voc-138"
+kind = "vocab"
+front = "Ма́ша"
+back = "Macha"
+note = "Diminutif de Мари́я."
+level = 138
+
+[[card]]
+id = "t10-phr-001"
+kind = "phrase"
+front = "Ирони́я судьбы́"
+back = "L'ironie du sort"
+note = "Titre du film culte que toute la Russie regarde chaque 31 décembre."
+level = 1
+
+[[card]]
+id = "t10-phr-002"
+kind = "phrase"
+front = "С лёгким па́ром!"
+back = "Bon bain !"
+note = "Formule après la banya ; c'est aussi le sous-titre du film « Ирония судьбы »."
+level = 2
+
+[[card]]
+id = "t10-phr-003"
+kind = "phrase"
+front = "Хоте́ли как лу́чше, а получи́лось как всегда́"
+back = "On voulait bien faire, ça a fini comme d'habitude"
+note = "Phrase célèbre de l'ancien Premier ministre Tchernomyrdine, devenue proverbe."
+level = 3
+
+[[card]]
+id = "t10-phr-004"
+kind = "phrase"
+front = "Карфаге́н до́лжен быть разру́шен"
+back = "Carthage doit être détruite"
+note = "Se dit pour une idée fixe qu'on répète."
+level = 4
+
+[[card]]
+id = "t10-phr-005"
+kind = "phrase"
+front = "Восто́к — де́ло то́нкое"
+back = "L'Orient est une affaire délicate"
+note = "Réplique culte du film « Le Soleil blanc du désert »."
+level = 5
+
+[[card]]
+id = "t10-phr-006"
+kind = "phrase"
+front = "Огласи́те весь спи́сок, пожа́луйста"
+back = "Annoncez toute la liste, s'il vous plaît"
+note = "Réplique culte d'une comédie de Gaïdaï, pour réclamer tous les détails."
+level = 6
+
+[[card]]
+id = "t10-phr-007"
+kind = "phrase"
+front = "Ты меня́ уважа́ешь?"
+back = "Tu me respectes ?"
+note = "Question rituelle (et comique) d'un buveur avant de trinquer."
+level = 7
+
+[[card]]
+id = "t10-phr-008"
+kind = "phrase"
+front = "Наш постре́л везде́ поспе́л"
+back = "Il a son nez partout"
+level = 8
+
+[[card]]
+id = "t10-phr-009"
+kind = "phrase"
+front = "Без ба́зара"
+back = "Pas de souci, promis (argot)"
+note = "Mot à mot : « sans bazar »."
+level = 9
+
+[[card]]
+id = "t10-phr-010"
+kind = "phrase"
+front = "Не па́рься"
+back = "Te prends pas la tête"
+level = 10
+
+[[card]]
+id = "t10-phr-011"
+kind = "phrase"
+front = "Да ла́дно!"
+back = "Sans blague ! / Arrête !"
+level = 11
+
+[[card]]
+id = "t10-phr-012"
+kind = "phrase"
+front = "Ага́, щас!"
+back = "C'est ça, compte là-dessus !"
+level = 12
+
+[[card]]
+id = "t10-phr-013"
+kind = "phrase"
+front = "Я в а́уте"
+back = "Je suis largué"
+level = 13
+
+[[card]]
+id = "t10-phr-014"
+kind = "phrase"
+front = "Э́то жесть"
+back = "C'est dur, c'est hardcore"
+level = 14
+
+[[card]]
+id = "t10-phr-015"
+kind = "phrase"
+front = "Ни фига́ себе́!"
+back = "Ben ça alors !"
+level = 15
+
+[[card]]
+id = "t10-phr-016"
+kind = "phrase"
+front = "Да ну тебя́!"
+back = "Arrête avec ça !"
+level = 16
+
+[[card]]
+id = "t10-phr-017"
+kind = "phrase"
+front = "Ни то ни сё"
+back = "Ni l'un ni l'autre, quelconque"
+level = 17
+
+[[card]]
+id = "t10-phr-018"
+kind = "phrase"
+front = "Ещё чего́!"
+back = "Et puis quoi encore !"
+level = 18
+
+[[card]]
+id = "t10-phr-019"
+kind = "phrase"
+front = "Вот тебе́ и на!"
+back = "Ça alors ! (mauvaise surprise)"
+level = 19
+
+[[card]]
+id = "t10-phr-020"
+kind = "phrase"
+front = "Мне по бараба́ну"
+back = "Je m'en fiche"
+note = "Mot à mot : « c'est du tambour pour moi »."
+level = 20
+
+[[card]]
+id = "t10-phr-021"
+kind = "phrase"
+front = "Мне фиоле́тово"
+back = "Je m'en fiche"
+note = "Mot à mot : « c'est violet pour moi »."
+level = 21
+
+[[card]]
+id = "t10-phr-022"
+kind = "phrase"
+front = "Сам дура́к!"
+back = "C'est celui qui dit qui l'est !"
+level = 22
+
+[[card]]
+id = "t10-phr-023"
+kind = "phrase"
+front = "Не учи́ учёного"
+back = "N'apprends pas au savant"
+level = 23
+
+[[card]]
+id = "t10-phr-024"
+kind = "phrase"
+front = "Хрен реди́ски не сла́ще"
+back = "C'est blanc bonnet et bonnet blanc"
+note = "Mot à mot : « le raifort n'est pas plus sucré que le radis »."
+level = 24
+
+[[card]]
+id = "t10-phr-025"
+kind = "phrase"
+front = "Голь на вы́думки хитра́"
+back = "Nécessité est mère d'invention"
+level = 25
+
+[[card]]
+id = "t10-phr-026"
+kind = "phrase"
+front = "Москва́ не сра́зу стро́илась"
+back = "Rome ne s'est pas faite en un jour"
+note = "Version russe : c'est Moscou."
+level = 26
+
+[[card]]
+id = "t10-phr-027"
+kind = "phrase"
+front = "Где роди́лся, там и пригоди́лся"
+back = "On est mieux là où on est né"
+level = 27
+
+[[card]]
+id = "t10-phr-028"
+kind = "phrase"
+front = "Посиди́м на доро́жку"
+back = "Asseyons-nous avant de partir"
+note = "Tradition : on s'assoit un instant en silence avant un voyage."
+level = 28
+
+[[card]]
+id = "t10-phr-029"
+kind = "phrase"
+front = "Не свисти́ в до́ме — де́нег не бу́дет"
+back = "Ne siffle pas à la maison, sinon pas d'argent"
+note = "Superstition très répandue."
+level = 29
+
+[[card]]
+id = "t10-gra-001"
+kind = "grammar"
+front = "Да нет, всё норма́льно."
+question = "Que veut dire да нет ?"
+back = "non (en fait)"
+wrong = ["oui et non", "je ne sais pas"]
+note = "« Да нет » est un non adouci. « Нет, да » n'existe pas. « Ну да » peut être un oui… ou un « mon œil » ironique."
+level = 1
+
+[[card]]
+id = "t10-gra-002"
+kind = "grammar"
+front = "Ну да, коне́чно."
+question = "Avec un ton ironique, que signifie cette phrase ?"
+back = "C'est ça, je te crois (pas)"
+wrong = ["Oui, évidemment", "Je suis d'accord"]
+note = "L'intonation renverse le sens : même phrase, sens opposé selon le ton."
+level = 2
+
+[[card]]
+id = "t10-gra-003"
+kind = "grammar"
+front = "Он, мол, бо́лен."
+question = "Que suggère мол ?"
+back = "Il le dit, mais j'en doute"
+wrong = ["Il est vraiment malade", "Je suis malade"]
+note = "мол et де́скать rapportent les paroles de quelqu'un avec une distance, souvent sceptique."
+level = 3
+
+[[card]]
+id = "t10-gra-004"
+kind = "grammar"
+front = "Да́й-ка посмотрю́."
+question = "Que fait -ка ?"
+back = "Il adoucit et rend familier : donne voir"
+wrong = ["Il rend la phrase négative", "Il marque le passé"]
+note = "-ка s'accroche aux impératifs : иди́-ка, скажи́-ка."
+level = 4
+
+[[card]]
+id = "t10-gra-005"
+kind = "grammar"
+front = "Щас!"
+question = "Dit sèchement en réponse à une demande, ça veut dire…"
+back = "Tu rêves !"
+wrong = ["J'arrive tout de suite", "Maintenant"]
+note = "щас (pour сейча́с) devient un refus ironique selon le ton."
+level = 5
+
+[[card]]
+id = "t10-gra-006"
+kind = "grammar"
+front = "Ещё бы!"
+question = "Que veut dire cette réponse ?"
+back = "Et comment ! (évidemment)"
+wrong = ["Encore un", "Pas encore"]
+note = "Ещё бы = bien sûr, ça va de soi."
+level = 6
+
+[[card]]
+id = "t10-gra-007"
+kind = "grammar"
+front = "Опя́ть два́дцать пять!"
+question = "Que veut dire cette expression ?"
+back = "Ça recommence !"
+wrong = ["Il a encore 25 ans", "Il est 25 h"]
+note = "Mot à mot : « encore vingt-cinq » — on rabâche la même chose."
+level = 7
+
+[[card]]
+id = "t10-gra-008"
+kind = "grammar"
+front = "Ива́н Петро́вич"
+question = "Que veut dire Петро́вич ?"
+back = "fils de Piotr (patronyme)"
+wrong = ["nom de famille", "surnom"]
+note = "Le patronyme (-ович, -евич / -овна, -евна) s'utilise avec le prénom pour le vouvoiement poli."
+level = 8
+
+[[card]]
+id = "t10-gra-009"
+kind = "grammar"
+front = "Петро́вич"
+question = "Quand on appelle quelqu'un juste « Петро́вич », c'est…"
+back = "familier et affectueux, entre collègues"
+wrong = ["très formel", "une insulte"]
+note = "Le patronyme seul est un usage populaire, chaleureux, surtout pour un homme d'âge mûr."
+level = 9
+
+[[card]]
+id = "t10-gra-010"
+kind = "grammar"
+front = "Ша́почку на́до наде́ть."
+question = "Pourquoi ша́почку et pas ша́пку ?"
+back = "Le diminutif adoucit, comme quand on parle à un enfant"
+wrong = ["Parce que c'est au pluriel", "Parce que c'est plus formel"]
+note = "Les Russes mettent des diminutifs partout pour adoucir : чайку́ попьём?, мину́точку!"
+level = 10
+
+[[card]]
+id = "t10-gra-011"
+kind = "grammar"
+front = "Мину́точку!"
+question = "Que veut dire мину́точку ?"
+back = "Une petite minute ! (patientez)"
+wrong = ["Une petite montre", "Dans une minute exactement"]
+note = "Diminutif de мину́та : demande poliment d'attendre."
+level = 11
+
+[[card]]
+id = "t10-gra-012"
+kind = "grammar"
+front = "Ты чё?"
+question = "Que veut dire cette question familière ?"
+back = "Qu'est-ce qui te prend ?"
+wrong = ["Qui es-tu ?", "Tu bois quoi ?"]
+note = "чё = что familier. Ты чё? exprime la surprise ou le reproche."
+level = 12
+
+[[card]]
+id = "t10-gra-013"
+kind = "grammar"
+front = "Ну ты и фрукт!"
+question = "Que veut dire cette expression ?"
+back = "T'es un sacré numéro !"
+wrong = ["Tu aimes les fruits ?", "Tu es en bonne santé"]
+note = "Mot à mot : « eh bien tu es un fruit » — quelqu'un de spécial, souvent rusé."
+level = 13
+
+[[card]]
+id = "t10-gra-014"
+kind = "grammar"
+front = "Аж в Москву́ пое́хал."
+question = "Quelle nuance apporte аж ?"
+back = "carrément jusqu'à Moscou (c'est loin, étonnant)"
+wrong = ["juste à Moscou", "pas encore à Moscou"]
+note = "аж souligne que c'est plus que prévu : аж три часа́ = trois heures entières."
+level = 14
+
+[[card]]
+id = "t10-gra-015"
+kind = "grammar"
+front = "Небо́сь уста́л?"
+question = "Que veut dire небо́сь ?"
+back = "sans doute (je suppose que)"
+wrong = ["jamais", "à peine"]
+note = "Familier, régional : небо́сь = je parie que, sûrement."
+level = 15

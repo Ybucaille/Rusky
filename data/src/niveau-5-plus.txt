@@ -1,0 +1,117 @@
+# niveau = 5
+# Vocabulaire fréquent complémentaire : métiers, corps, objets, verbes du quotidien.
+
+@vocab
+полице́йский | policier |
+пожа́рный | pompier |
+продаве́ц | vendeur |
+покупа́тель | client, acheteur |
+води́тель | conducteur |
+лётчик | pilote |
+по́вар | cuisinier |
+медсестра́ | infirmière |
+адвока́т | avocat |
+бухга́лтер | comptable |
+программи́ст | programmeur |
+строи́тель | ouvrier du bâtiment |
+фе́рмер | agriculteur |
+музыка́нт | musicien |
+спортсме́н | sportif |
+перево́дчик | traducteur |
+дире́ктор | directeur |
+секрета́рь | secrétaire |
+учёный | scientifique |
+пенсионе́р | retraité |
+плечо́ | épaule |
+ше́я | cou |
+грудь | poitrine |
+коле́но | genou |
+ло́коть | coude |
+кровь | sang |
+кость | os |
+ко́жа | peau |
+язы́к (во рту́) | langue (dans la bouche) |
+губа́ | lèvre |
+бровь | sourcil |
+борода́ | barbe |
+усы́ | moustache |
+зо́нтик | parapluie |
+очки́ | lunettes |
+часы́ | montre, horloge |
+кошелёк | porte-monnaie |
+рюкза́к | sac à dos |
+чемода́н | valise |
+пи́сьменный стол | bureau (meuble) |
+каранда́ш | crayon |
+тетра́дь | cahier |
+бума́га | papier |
+ру́чка (для письма́) | stylo |
+но́жницы | ciseaux |
+ве́щи | affaires |
+игру́шка | jouet |
+мяч | ballon |
+велосипе́д | vélo |
+фотоаппара́т | appareil photo |
+планше́т | tablette |
+нау́шники | écouteurs |
+заря́дка | chargeur ; gymnastique |
+батаре́йка | pile |
+пульт | télécommande |
+телеви́зор | télévision |
+пылесо́с | aspirateur |
+стира́льная маши́на | machine à laver |
+ча́йник | bouilloire |
+сковорода́ | poêle |
+кастрю́ля | casserole |
+бу́лочка | petit pain |
+пече́нье | biscuit |
+торт | gâteau |
+моро́женое | glace |
+шокола́д | chocolat |
+мёд | miel |
+варе́нье | confiture |
+ка́ша | bouillie, porridge |
+гре́чка | sarrasin | Base de la cuisine russe.
+рис | riz |
+макаро́ны | pâtes |
+колбаса́ | saucisson |
+лук | oignon |
+чесно́к | ail |
+морко́вь | carotte |
+капу́ста | chou |
+огуре́ц | concombre |
+гриб | champignon |
+я́года | baie |
+клубни́ка | fraise |
+виногра́д | raisin |
+апельси́н | orange |
+лимо́н | citron |
+гру́ша | poire |
+ви́шня | cerise |
+арбу́з | pastèque |
+оре́х | noix |
+пе́рец | poivre, poivron |
+у́ксус | vinaigre |
+просыпа́ться ра́но | se réveiller tôt |
+засыпа́ть | s'endormir |
+умыва́ться | se débarbouiller |
+причёсываться | se coiffer |
+бри́ться | se raser |
+за́втракать | prendre le petit-déjeuner |
+обе́дать | déjeuner |
+у́жинать | dîner |
+спеши́ть | se dépêcher |
+успева́ть | avoir le temps, réussir à temps |
+про́бовать | goûter, essayer |
+теря́ть | perdre |
+находи́ть | trouver |
+по́льзоваться | utiliser |
+сове́товаться | consulter, demander conseil |
+пока́зывать | montrer |
+повторя́ть | répéter |
+переводи́ть с ру́сского | traduire du russe |
+запомина́ть | retenir, mémoriser |
+забыва́ть | oublier |
+вспомина́ть | se rappeler |
+мечта́ть | rêver (souhaiter) |
+боле́ть за | supporter (une équipe) | Я боле́ю за «Спарта́к» = Je supporte le Spartak.

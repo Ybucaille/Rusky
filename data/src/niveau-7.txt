@@ -1,0 +1,235 @@
+# niveau = 7
+# Approfondir : vocabulaire courant élargi, paires de verbes, maison, nature, médias.
+
+@vocab
+холоди́льник | réfrigérateur |
+плита́ | cuisinière |
+посу́да | vaisselle |
+полоте́нце | serviette (de toilette) |
+мы́ло | savon |
+зе́ркало | miroir |
+поду́шка | oreiller |
+одея́ло | couverture |
+ковёр | tapis |
+по́лка | étagère |
+ла́мпочка | ampoule |
+розе́тка | prise électrique |
+балко́н | balcon |
+эта́ж | étage |
+лифт | ascenseur |
+ле́стница | escalier |
+двор | cour |
+забо́р | clôture |
+кры́ша | toit |
+сте́на | mur |
+пол | sol, plancher |
+потоло́к | plafond |
+ремо́нт | travaux, rénovation |
+убо́рка | ménage |
+стира́ть | laver (le linge) |
+гла́дить | repasser, caresser |
+убира́ть | ranger |
+выбра́сывать | jeter |
+чини́ть | réparer |
+слома́ть | casser |
+включа́ть | allumer |
+выключа́ть | éteindre |
+заряжа́ть | charger (un appareil) |
+пыль | poussière |
+му́сор | ordures |
+сосна́ | pin |
+берёза | bouleau |
+дуб | chêne |
+трава́ | herbe |
+лист | feuille |
+ка́мень | pierre |
+песо́к | sable |
+по́ле | champ |
+луг | prairie |
+боло́то | marais |
+пеще́ра | grotte |
+о́стров | île |
+бе́рег | rive, côte |
+волна́ | vague |
+звезда́ | étoile |
+луна́ | lune |
+гроза́ | orage |
+тума́н | brouillard |
+моро́з | gel, grand froid |
+ли́вень | averse |
+ра́дуга | arc-en-ciel |
+восхо́д | lever (du soleil) |
+зака́т | coucher (du soleil) |
+се́вер | nord |
+юг | sud |
+восто́к | est |
+за́пад | ouest |
+насеко́мое | insecte |
+кома́р | moustique |
+пчела́ | abeille |
+ба́бочка | papillon |
+лиса́ | renard |
+за́яц | lièvre |
+бе́лка | écureuil |
+ёж | hérisson |
+мышь | souris |
+змея́ | serpent |
+гусь | oie |
+у́тка | canard |
+пету́х | coq |
+свинья́ | cochon |
+коза́ | chèvre |
+овца́ | mouton |
+журна́л | magazine |
+переда́ча | émission |
+ре́клама | publicité |
+статья́ | article |
+заголо́вок | titre |
+журнали́ст | journaliste |
+веду́щий | présentateur |
+зри́тель | spectateur |
+слу́шатель | auditeur |
+эфи́р | antenne (à la radio, télé) |
+подпи́ска | abonnement |
+реда́ктор | rédacteur |
+дово́лен | content, satisfait |
+недово́лен | mécontent |
+оби́жен | vexé |
+взволно́ван | ému, agité |
+уве́рен | sûr |
+гото́в | prêt |
+до́лжен | devoir (obligé de) | Я до́лжен идти́ = Je dois y aller.
+спосо́бен | capable |
+похо́ж | ressemblant | Он похо́ж на отца́ = Il ressemble à son père.
+ну́жен | nécessaire |
+пра́в | qui a raison |
+жив | vivant |
+сыт | rassasié |
+пьян | ivre |
+писа́ть / написа́ть | écrire / avoir écrit | La paire « en cours / terminé ».
+де́лать / сде́лать | faire / avoir fait |
+говори́ть / сказа́ть | parler, dire / avoir dit |
+брать / взять | prendre / avoir pris |
+дава́ть / дать | donner / avoir donné |
+покупа́ть / купи́ть | acheter / avoir acheté |
+открыва́ть / откры́ть | ouvrir / avoir ouvert |
+начина́ть / нача́ть | commencer / avoir commencé |
+понима́ть / поня́ть | comprendre / avoir compris |
+учи́ть / вы́учить | apprendre / avoir appris (par cœur) |
+пить / вы́пить | boire / avoir bu |
+есть / съесть | manger / avoir mangé |
+ви́деть / уви́деть | voir / apercevoir |
+слы́шать / услы́шать | entendre / avoir entendu |
+звони́ть / позвони́ть | appeler / avoir appelé |
+ждать / подожда́ть | attendre / attendre un peu |
+реша́ть / реши́ть | décider / avoir décidé |
+приглаша́ть | inviter |
+благодари́ть | remercier |
+поздравля́ть | féliciter |
+проща́ться | dire au revoir |
+знако́миться | faire connaissance |
+целова́ть | embrasser |
+обнима́ть | serrer dans ses bras |
+шути́ть | plaisanter |
+крича́ть | crier |
+шепта́ть | chuchoter |
+свисте́ть | siffler |
+кива́ть | hocher la tête |
+моргну́ть | cligner des yeux |
+вздыха́ть | soupirer |
+ка́шлять | tousser |
+чиха́ть | éternuer |
+дрожа́ть | trembler |
+па́дать | tomber |
+пры́гать | sauter |
+бе́гать | courir (souvent) |
+бежа́ть | courir (maintenant) |
+лета́ть | voler (souvent) |
+лете́ть | voler (maintenant) |
+плыть | nager (maintenant) |
+носи́ть | porter (souvent) |
+нести́ | porter (maintenant) |
+вози́ть | transporter (souvent) |
+везти́ | transporter (maintenant) |
+води́ть | conduire, mener (souvent) |
+вести́ | conduire, mener (maintenant) |
+тяжёлый | lourd |
+мя́гкий | doux, mou |
+твёрдый | dur |
+гла́дкий | lisse |
+ти́хий | calme, silencieux |
+гро́мкий | fort (bruyant) |
+я́ркий | vif, éclatant |
+тёмный | sombre |
+све́тлый | clair |
+широ́кий | large |
+у́зкий | étroit |
+дли́нный | long |
+коро́ткий | court |
+высо́кий | haut, grand |
+ни́зкий | bas |
+то́лстый | gros, épais |
+то́нкий | fin, mince |
+бога́тый | riche |
+бе́дный | pauvre |
+чи́стый | propre |
+гря́зный | sale |
+сухо́й | sec |
+мо́крый | mouillé |
+сла́бый | faible |
+си́льный | fort |
+сме́лый | courageux |
+ле́нивый | paresseux |
+ве́жливый | poli |
+гру́бый | grossier |
+че́стный | honnête |
+стра́нный | étrange |
+
+@phrase
+Ничего́ не поде́лаешь | On n'y peut rien |
+Так ему́ и на́до | Bien fait pour lui |
+Ни в ко́ем слу́чае | En aucun cas |
+Что́ за вопро́с! | Quelle question ! |
+Мне не до сме́ха | Je n'ai pas le cœur à rire |
+Как дела́ на рабо́те? | Comment ça va au travail ? |
+Не за что благодари́ть | Il n'y a pas de quoi |
+Я тебе́ перезвоню́ | Je te rappelle |
+Переда́й приве́т | Passe le bonjour |
+Чу́вствуй себя́ как до́ма | Fais comme chez toi |
+Мне пора́ | Il est temps que j'y aille |
+С удово́льствием! | Avec plaisir ! |
+Как жаль! | Quel dommage ! |
+Ну и пого́да! | Quel temps ! |
+Где́-то здесь | Quelque part par ici |
+Когда́-нибудь | Un jour (n'importe quand) |
+Ка́к-нибудь пото́м | Une autre fois |
+Ты что, с ума́ сошёл? | T'es fou ou quoi ? |
+Не в э́том де́ло | Ce n'est pas la question |
+Де́ло в том, что… | Le fait est que… |
+Ме́жду на́ми | Entre nous |
+Без шу́ток | Sans blague |
+Вот так сюрпри́з! | Quelle surprise ! |
+Дай знать | Fais-moi signe |
+Береги́ себя́! | Prends soin de toi ! |
+Не теря́й вре́мени | Ne perds pas de temps |
+Поня́тия не име́ю | Aucune idée |
+Э́то не моё де́ло | Ça ne me regarde pas |
+Как ни стра́нно | Aussi étrange que cela paraisse |
+На вся́кий слу́чай | Au cas où |
+
+@grammar
+идти́ / ходи́ть | Каждый день я хожу́ на рабо́ту. Pourquoi ходи́ть ? | C'est une habitude, un trajet répété | C'est un trajet en cours ; C'est au futur | Les verbes de mouvement vont par paires : un pour « en ce moment, dans une direction » (идти́, е́хать, лете́ть…), un pour « souvent, aller-retour » (ходи́ть, е́здить, лета́ть…).
+Я написа́л письмо́. | Que veut dire cette phrase ? | J'ai écrit la lettre (elle est finie). | J'écrivais une lettre. ; J'écrirai une lettre. | написа́ть est la forme « terminée » de писа́ть : l'action est allée au bout.
+Я писа́л письмо́ два часа́. | Pourquoi писа́л et pas написа́л ? | On insiste sur la durée, pas sur le résultat | Parce que la lettre est finie ; Parce que c'est poli | Avec une durée (два часа́, весь день), on prend la forme « en cours ».
+мно́го книг | Pourquoi книг et pas кни́ги ? | Après мно́го, le mot prend la forme « de » au pluriel | C'est une faute ; C'est au singulier | Après мно́го (beaucoup), ма́ло (peu), ско́лько (combien), le nom se met au génitif pluriel : книг, домо́в, люде́й.
+Я до́лжен рабо́тать. | Que veut dire cette phrase ? | Je dois travailler. | Je veux travailler. ; Je peux travailler. | до́лжен (homme), должна́ (femme), должны́ (pluriel) + infinitif = devoir.
+Он похо́ж на ма́му. | Que veut dire cette phrase ? | Il ressemble à sa mère. | Il aime sa mère. ; Il va chez sa mère. | похо́ж на + personne (forme « complément ») = ressembler à.
+Я жду дру́га. | Pourquoi дру́га et pas друг ? | Parce que c'est la personne qu'on attend (complément vivant) | Parce que c'est au pluriel ; Parce que c'est une question | Pour les êtres vivants masculins, le complément prend -а : Я ви́жу бра́та, Я жду дру́га.
+Я дам тебе́ кни́гу. | Que veut dire тебе́ ? | à toi | toi ; ton | тебе́ = à toi, мне = à moi, ему́ = à lui, ей = à elle. C'est la forme de celui qui reçoit.
+кни́га бра́та | Que veut dire кни́га бра́та ? | le livre du frère | le frère du livre ; un livre pour le frère | Pour « de » (appartenance), le second nom prend la forme génitive : дом отца́ = la maison du père.
+Я е́ду к врачу́. | Que veut dire к врачу́ ? | chez le médecin | du médecin ; avec le médecin | к + personne = chez, vers quelqu'un : к ма́ме, к дру́гу.
+Я иду́ из магази́на. | Que veut dire из магази́на ? | du magasin (j'en sors) | au magasin ; dans le magasin | из + génitif = d'où l'on vient (с pour les lieux qui prennent на : с рабо́ты).
+Пойду́ погуля́ю. | Que veut dire cette phrase ? | Je vais aller me promener. | Je me suis promené. ; Promène-toi. | Tournure familière : пойду́ + verbe au futur = je vais aller faire…
+Е́сли бы у меня́ бы́ли де́ньги… | Que veut dire cette phrase ? | Si j'avais de l'argent… | Si j'aurai de l'argent… ; Quand j'aurai de l'argent… | е́сли бы + passé = si (hypothèse irréelle).
+сам / сама́ | Я сде́лал э́то сам. Que veut dire сам ? | moi-même, tout seul | ensemble ; déjà | сам (masc.), сама́ (fém.), са́ми (pluriel) = soi-même, sans aide.
+друг дру́га | Они́ лю́бят друг дру́га. Que veut dire друг дру́га ? | l'un l'autre | des amis ; un ami | друг дру́га = l'un l'autre (réciproque). Они́ говоря́т друг с дру́гом = Ils se parlent.

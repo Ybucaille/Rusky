@@ -1,0 +1,112 @@
+# niveau = 7
+# Vocabulaire complémentaire : voyage, santé, administration, numérique, verbes utiles.
+
+@vocab
+па́спорт | passeport |
+ви́за | visa |
+тамо́жня | douane |
+бага́ж | bagages |
+ре́йс | vol (avion) |
+поса́дка | embarquement, atterrissage |
+вы́лет | départ (d'un vol) |
+прилёт | arrivée (d'un vol) |
+расписа́ние | horaire |
+опозда́ние | retard |
+переса́дка | correspondance |
+бронь | réservation |
+но́мер в гости́нице | chambre d'hôtel |
+тури́ст | touriste |
+экску́рсия | visite guidée |
+достопримеча́тельность | curiosité touristique |
+сувени́р | souvenir (objet) |
+путеводи́тель | guide (livre) |
+пляж | plage |
+пала́тка | tente |
+костёр | feu de camp |
+поли́клиника | centre médical |
+реце́пт | ordonnance, recette |
+у́кол | piqûre |
+ана́лиз | analyse |
+давле́ние | pression, tension |
+боль | douleur |
+ра́на | blessure |
+перело́м | fracture |
+аллерги́я | allergie |
+ка́шель | toux |
+на́сморк | rhume (nez qui coule) |
+выздора́вливать | guérir |
+лечи́ть | soigner |
+страхо́вка | assurance |
+спра́вка | certificat, attestation |
+докуме́нт | document |
+бланк | formulaire |
+заявле́ние | demande écrite |
+по́дпись | signature |
+печа́ть | tampon |
+пропи́ска | enregistrement de résidence |
+квита́нция | reçu |
+счёт в ба́нке | compte bancaire |
+перево́д де́нег | virement |
+ка́рточка | carte (bancaire) |
+нали́чные | espèces |
+банкома́т | distributeur |
+ски́дка | réduction |
+распрода́жа | soldes |
+доста́вка | livraison |
+зака́з | commande |
+верну́ть | rendre, rembourser |
+обме́н | échange |
+гаранти́я | garantie |
+приложе́ние | application |
+уведомле́ние | notification |
+ссы́лка | lien |
+файл | fichier |
+па́пка | dossier |
+по́чта (электро́нная) | e-mail |
+логи́н | identifiant |
+акка́унт | compte (en ligne) |
+обновле́ние | mise à jour |
+подключе́ние | connexion |
+сеть | réseau |
+по́иск | recherche |
+кла́виша | touche |
+мы́шка | souris (d'ordinateur) |
+скриншо́т | capture d'écran |
+лайк | like |
+подпи́счик | abonné |
+блог | blog |
+ви́део | vidéo |
+стрим | stream |
+чат | chat (discussion) |
+сма́йлик | émoji |
+перепи́ска | correspondance, échange de messages |
+выкла́дывать | publier, poster |
+листа́ть | faire défiler |
+скро́ллить | scroller |
+гугли́ть | googler |
+пересла́ть | transférer (un message) |
+вздремну́ть | faire une sieste |
+опереди́ть | devancer |
+отложи́ть | reporter, mettre de côté |
+отмени́ть | annuler |
+перенести́ | déplacer, reporter |
+предупреди́ть | prévenir |
+напо́мнить | rappeler (à quelqu'un) |
+уговори́ть | persuader |
+отказа́ться | refuser |
+согласи́ться | accepter |
+пообеща́ть | promettre |
+обиде́ться | se vexer |
+удиви́ть | surprendre |
+испуга́ться | prendre peur |
+обра́доваться | se réjouir |
+разочарова́ться | être déçu |
+привы́кнуть | s'habituer |
+оста́ться | rester |
+исче́знуть | disparaître |
+появи́ться | apparaître |
+случи́ться | arriver, se produire |
+зави́сеть от | dépendre de |
+сто́ить того́ | valoir la peine |
+име́ть в виду́ | vouloir dire, sous-entendre |
+обраща́ться к | s'adresser à |

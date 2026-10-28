@@ -1,0 +1,1343 @@
+# Cartes du niveau 9 de rusky (généré, prononciation calculée).
+tier = 9
+
+[[card]]
+id = "t9-voc-001"
+kind = "vocab"
+front = "гляде́ть"
+back = "regarder (plus littéraire que смотре́ть)"
+level = 1
+
+[[card]]
+id = "t9-voc-002"
+kind = "vocab"
+front = "взира́ть"
+back = "contempler (soutenu)"
+level = 2
+
+[[card]]
+id = "t9-voc-003"
+kind = "vocab"
+front = "мелька́ть"
+back = "apparaître furtivement"
+level = 3
+
+[[card]]
+id = "t9-voc-004"
+kind = "vocab"
+front = "мерца́ть"
+back = "scintiller"
+level = 4
+
+[[card]]
+id = "t9-voc-005"
+kind = "vocab"
+front = "сверка́ть"
+back = "étinceler"
+level = 5
+
+[[card]]
+id = "t9-voc-006"
+kind = "vocab"
+front = "шелесте́ть"
+back = "bruisser"
+level = 6
+
+[[card]]
+id = "t9-voc-007"
+kind = "vocab"
+front = "журча́ть"
+back = "murmurer (un ruisseau)"
+level = 7
+
+[[card]]
+id = "t9-voc-008"
+kind = "vocab"
+front = "грохота́ть"
+back = "gronder, tonner"
+level = 8
+
+[[card]]
+id = "t9-voc-009"
+kind = "vocab"
+front = "скрипе́ть"
+back = "grincer"
+level = 9
+
+[[card]]
+id = "t9-voc-010"
+kind = "vocab"
+front = "шурша́ть"
+back = "froisser, crisser"
+level = 10
+
+[[card]]
+id = "t9-voc-011"
+kind = "vocab"
+front = "броди́ть"
+back = "errer"
+level = 11
+
+[[card]]
+id = "t9-voc-012"
+kind = "vocab"
+front = "слоня́ться"
+back = "traîner, flâner sans but"
+level = 12
+
+[[card]]
+id = "t9-voc-013"
+kind = "vocab"
+front = "спотыка́ться"
+back = "trébucher"
+level = 13
+
+[[card]]
+id = "t9-voc-014"
+kind = "vocab"
+front = "ползти́"
+back = "ramper"
+level = 14
+
+[[card]]
+id = "t9-voc-015"
+kind = "vocab"
+front = "кра́сться"
+back = "avancer à pas de loup"
+level = 15
+
+[[card]]
+id = "t9-voc-016"
+kind = "vocab"
+front = "ёрзать"
+back = "se tortiller sur sa chaise"
+level = 16
+
+[[card]]
+id = "t9-voc-017"
+kind = "vocab"
+front = "ворча́ть"
+back = "ronchonner"
+level = 17
+
+[[card]]
+id = "t9-voc-018"
+kind = "vocab"
+front = "бормота́ть"
+back = "marmonner"
+level = 18
+
+[[card]]
+id = "t9-voc-019"
+kind = "vocab"
+front = "огрыза́ться"
+back = "répondre sèchement"
+level = 19
+
+[[card]]
+id = "t9-voc-020"
+kind = "vocab"
+front = "хвали́ться"
+back = "se vanter"
+level = 20
+
+[[card]]
+id = "t9-voc-021"
+kind = "vocab"
+front = "льсти́ть"
+back = "flatter"
+level = 21
+
+[[card]]
+id = "t9-voc-022"
+kind = "vocab"
+front = "дразни́ть"
+back = "taquiner"
+level = 22
+
+[[card]]
+id = "t9-voc-023"
+kind = "vocab"
+front = "капри́зничать"
+back = "faire des caprices"
+level = 23
+
+[[card]]
+id = "t9-voc-024"
+kind = "vocab"
+front = "балова́ть"
+back = "gâter"
+level = 24
+
+[[card]]
+id = "t9-voc-025"
+kind = "vocab"
+front = "лени́ться"
+back = "avoir la flemme"
+level = 25
+
+[[card]]
+id = "t9-voc-026"
+kind = "vocab"
+front = "суети́ться"
+back = "s'agiter"
+level = 26
+
+[[card]]
+id = "t9-voc-027"
+kind = "vocab"
+front = "ме́шкать"
+back = "tarder, lambiner"
+level = 27
+
+[[card]]
+id = "t9-voc-028"
+kind = "vocab"
+front = "стесня́ться"
+back = "être gêné, timide"
+level = 28
+
+[[card]]
+id = "t9-voc-029"
+kind = "vocab"
+front = "смуща́ться"
+back = "se troubler"
+level = 29
+
+[[card]]
+id = "t9-voc-030"
+kind = "vocab"
+front = "теря́ться"
+back = "perdre ses moyens"
+level = 30
+
+[[card]]
+id = "t9-voc-031"
+kind = "vocab"
+front = "недоумева́ть"
+back = "être perplexe"
+level = 31
+
+[[card]]
+id = "t9-voc-032"
+kind = "vocab"
+front = "доса́довать"
+back = "être dépité"
+level = 32
+
+[[card]]
+id = "t9-voc-033"
+kind = "vocab"
+front = "тоскова́ть"
+back = "se languir"
+level = 33
+
+[[card]]
+id = "t9-voc-034"
+kind = "vocab"
+front = "скуча́ть по"
+back = "regretter (quelqu'un)"
+level = 34
+
+[[card]]
+id = "t9-voc-035"
+kind = "vocab"
+front = "томи́ться"
+back = "se morfondre"
+level = 35
+
+[[card]]
+id = "t9-voc-036"
+kind = "vocab"
+front = "восхища́ться"
+back = "admirer"
+level = 36
+
+[[card]]
+id = "t9-voc-037"
+kind = "vocab"
+front = "умиля́ться"
+back = "s'attendrir"
+level = 37
+
+[[card]]
+id = "t9-voc-038"
+kind = "vocab"
+front = "негодова́ть"
+back = "s'indigner"
+level = 38
+
+[[card]]
+id = "t9-voc-039"
+kind = "vocab"
+front = "презира́ть"
+back = "mépriser"
+level = 39
+
+[[card]]
+id = "t9-voc-040"
+kind = "vocab"
+front = "лицеме́рие"
+back = "hypocrisie"
+level = 40
+
+[[card]]
+id = "t9-voc-041"
+kind = "vocab"
+front = "высокоме́рие"
+back = "arrogance"
+level = 41
+
+[[card]]
+id = "t9-voc-042"
+kind = "vocab"
+front = "смека́лка"
+back = "débrouillardise"
+level = 42
+
+[[card]]
+id = "t9-voc-043"
+kind = "vocab"
+front = "сноро́вка"
+back = "habileté, savoir-faire"
+level = 43
+
+[[card]]
+id = "t9-voc-044"
+kind = "vocab"
+front = "сму́та"
+back = "trouble, désordre"
+level = 44
+
+[[card]]
+id = "t9-voc-045"
+kind = "vocab"
+front = "у́даль"
+back = "bravoure insouciante"
+level = 45
+
+[[card]]
+id = "t9-voc-046"
+kind = "vocab"
+front = "раздо́лье"
+back = "grand espace libre"
+level = 46
+
+[[card]]
+id = "t9-voc-047"
+kind = "vocab"
+front = "глушь"
+back = "coin perdu"
+level = 47
+
+[[card]]
+id = "t9-voc-048"
+kind = "vocab"
+front = "захолу́стье"
+back = "trou perdu"
+level = 48
+
+[[card]]
+id = "t9-voc-049"
+kind = "vocab"
+front = "окра́ина"
+back = "périphérie"
+level = 49
+
+[[card]]
+id = "t9-voc-050"
+kind = "vocab"
+front = "су́мерки"
+back = "crépuscule"
+level = 50
+
+[[card]]
+id = "t9-voc-051"
+kind = "vocab"
+front = "рассве́т"
+back = "aube"
+level = 51
+
+[[card]]
+id = "t9-voc-052"
+kind = "vocab"
+front = "о́ттепель"
+back = "dégel, redoux"
+note = "Aussi le « Dégel » politique des années 1950-60."
+level = 52
+
+[[card]]
+id = "t9-voc-053"
+kind = "vocab"
+front = "сля́коть"
+back = "gadoue"
+level = 53
+
+[[card]]
+id = "t9-voc-054"
+kind = "vocab"
+front = "гололёд"
+back = "verglas"
+level = 54
+
+[[card]]
+id = "t9-voc-055"
+kind = "vocab"
+front = "сугро́б"
+back = "congère"
+level = 55
+
+[[card]]
+id = "t9-voc-056"
+kind = "vocab"
+front = "мете́ль"
+back = "tempête de neige"
+level = 56
+
+[[card]]
+id = "t9-voc-057"
+kind = "vocab"
+front = "зной"
+back = "chaleur accablante"
+level = 57
+
+[[card]]
+id = "t9-voc-058"
+kind = "vocab"
+front = "ды́мка"
+back = "brume légère"
+level = 58
+
+[[card]]
+id = "t9-voc-059"
+kind = "vocab"
+front = "руче́й"
+back = "ruisseau"
+level = 59
+
+[[card]]
+id = "t9-voc-060"
+kind = "vocab"
+front = "о́мут"
+back = "eau profonde, gouffre"
+note = "В ти́хом о́муте че́рти во́дятся = Méfie-toi de l'eau qui dort."
+level = 60
+
+[[card]]
+id = "t9-voc-061"
+kind = "vocab"
+front = "до́мишко"
+back = "petite maison (péjoratif)"
+note = "Le suffixe -ишко rabaisse."
+level = 61
+
+[[card]]
+id = "t9-voc-062"
+kind = "vocab"
+front = "доми́к"
+back = "maisonnette"
+level = 62
+
+[[card]]
+id = "t9-voc-063"
+kind = "vocab"
+front = "ру́чка"
+back = "petite main, stylo, poignée"
+level = 63
+
+[[card]]
+id = "t9-voc-064"
+kind = "vocab"
+front = "ко́шечка"
+back = "petite chatte"
+level = 64
+
+[[card]]
+id = "t9-voc-065"
+kind = "vocab"
+front = "соба́чка"
+back = "petit chien"
+level = 65
+
+[[card]]
+id = "t9-voc-066"
+kind = "vocab"
+front = "пе́сенка"
+back = "petite chanson"
+level = 66
+
+[[card]]
+id = "t9-voc-067"
+kind = "vocab"
+front = "голу́бчик"
+back = "mon petit (affectueux)"
+level = 67
+
+[[card]]
+id = "t9-voc-068"
+kind = "vocab"
+front = "со́лнышко"
+back = "petit soleil, mon chéri"
+level = 68
+
+[[card]]
+id = "t9-voc-069"
+kind = "vocab"
+front = "ба́тюшка"
+back = "petit père (ancien), prêtre"
+level = 69
+
+[[card]]
+id = "t9-voc-070"
+kind = "vocab"
+front = "ма́тушка"
+back = "petite mère (ancien)"
+level = 70
+
+[[card]]
+id = "t9-voc-071"
+kind = "vocab"
+front = "сыно́к"
+back = "fiston"
+level = 71
+
+[[card]]
+id = "t9-voc-072"
+kind = "vocab"
+front = "до́ченька"
+back = "ma fillette"
+level = 72
+
+[[card]]
+id = "t9-voc-073"
+kind = "vocab"
+front = "мину́тка"
+back = "petite minute"
+level = 73
+
+[[card]]
+id = "t9-voc-074"
+kind = "vocab"
+front = "чуто́к"
+back = "un tout petit peu (familier)"
+level = 74
+
+[[card]]
+id = "t9-voc-075"
+kind = "vocab"
+front = "чуть-чу́ть"
+back = "un tout petit peu"
+level = 75
+
+[[card]]
+id = "t9-voc-076"
+kind = "vocab"
+front = "пустя́к"
+back = "bagatelle"
+level = 76
+
+[[card]]
+id = "t9-voc-077"
+kind = "vocab"
+front = "ерунда́"
+back = "bêtise, broutille"
+level = 77
+
+[[card]]
+id = "t9-voc-078"
+kind = "vocab"
+front = "чепуха́"
+back = "sottise"
+level = 78
+
+[[card]]
+id = "t9-voc-079"
+kind = "vocab"
+front = "вздор"
+back = "absurdités"
+level = 79
+
+[[card]]
+id = "t9-voc-080"
+kind = "vocab"
+front = "спле́тни"
+back = "ragots"
+level = 80
+
+[[card]]
+id = "t9-voc-081"
+kind = "vocab"
+front = "слух"
+back = "rumeur, ouïe"
+level = 81
+
+[[card]]
+id = "t9-voc-082"
+kind = "vocab"
+front = "намёк"
+back = "allusion"
+level = 82
+
+[[card]]
+id = "t9-voc-083"
+kind = "vocab"
+front = "подво́х"
+back = "piège, entourloupe"
+level = 83
+
+[[card]]
+id = "t9-voc-084"
+kind = "vocab"
+front = "хи́трость"
+back = "ruse"
+level = 84
+
+[[card]]
+id = "t9-voc-085"
+kind = "vocab"
+front = "у́мысел"
+back = "intention cachée"
+level = 85
+
+[[card]]
+id = "t9-voc-086"
+kind = "vocab"
+front = "вы́думка"
+back = "invention, fiction"
+level = 86
+
+[[card]]
+id = "t9-voc-087"
+kind = "vocab"
+front = "небыли́ца"
+back = "conte à dormir debout"
+level = 87
+
+[[card]]
+id = "t9-voc-088"
+kind = "vocab"
+front = "по́двиг"
+back = "exploit"
+level = 88
+
+[[card]]
+id = "t9-voc-089"
+kind = "vocab"
+front = "по́прище"
+back = "domaine d'activité (soutenu)"
+level = 89
+
+[[card]]
+id = "t9-voc-090"
+kind = "vocab"
+front = "стезя́"
+back = "voie, chemin (littéraire)"
+level = 90
+
+[[card]]
+id = "t9-voc-091"
+kind = "vocab"
+front = "у́дел"
+back = "sort, lot"
+level = 91
+
+[[card]]
+id = "t9-voc-092"
+kind = "vocab"
+front = "ро́к"
+back = "destin funeste"
+level = 92
+
+[[card]]
+id = "t9-voc-093"
+kind = "vocab"
+front = "не́га"
+back = "douce langueur"
+level = 93
+
+[[card]]
+id = "t9-voc-094"
+kind = "vocab"
+front = "бла́го"
+back = "bien, bienfait"
+level = 94
+
+[[card]]
+id = "t9-voc-095"
+kind = "vocab"
+front = "вда́ль"
+back = "au loin"
+level = 95
+
+[[card]]
+id = "t9-voc-096"
+kind = "vocab"
+front = "и́здали"
+back = "de loin"
+level = 96
+
+[[card]]
+id = "t9-voc-097"
+kind = "vocab"
+front = "наобу́м"
+back = "au hasard"
+level = 97
+
+[[card]]
+id = "t9-voc-098"
+kind = "vocab"
+front = "напрома́х"
+back = "à côté (de la cible)"
+level = 98
+
+[[card]]
+id = "t9-voc-099"
+kind = "vocab"
+front = "вслепу́ю"
+back = "à l'aveugle"
+level = 99
+
+[[card]]
+id = "t9-voc-100"
+kind = "vocab"
+front = "нау́тро"
+back = "le lendemain matin"
+level = 100
+
+[[card]]
+id = "t9-voc-101"
+kind = "vocab"
+front = "впопыха́х"
+back = "à la hâte"
+level = 101
+
+[[card]]
+id = "t9-voc-102"
+kind = "vocab"
+front = "исподтишка́"
+back = "en douce"
+level = 102
+
+[[card]]
+id = "t9-voc-103"
+kind = "vocab"
+front = "втихомо́лку"
+back = "en catimini"
+level = 103
+
+[[card]]
+id = "t9-voc-104"
+kind = "vocab"
+front = "восвоя́си"
+back = "chez soi (ironique)"
+level = 104
+
+[[card]]
+id = "t9-voc-105"
+kind = "vocab"
+front = "на́спех"
+back = "à la va-vite"
+level = 105
+
+[[card]]
+id = "t9-voc-106"
+kind = "vocab"
+front = "воо́чию"
+back = "de ses propres yeux"
+level = 106
+
+[[card]]
+id = "t9-voc-107"
+kind = "vocab"
+front = "поне́воле"
+back = "malgré soi"
+level = 107
+
+[[card]]
+id = "t9-voc-108"
+kind = "vocab"
+front = "сплошь и ря́дом"
+back = "très souvent, à tout bout de champ"
+level = 108
+
+[[card]]
+id = "t9-voc-109"
+kind = "vocab"
+front = "отню́дь"
+back = "nullement"
+level = 109
+
+[[card]]
+id = "t9-voc-110"
+kind = "vocab"
+front = "дабы́"
+back = "afin de (archaïque)"
+level = 110
+
+[[card]]
+id = "t9-voc-111"
+kind = "vocab"
+front = "и́бо"
+back = "car (soutenu)"
+level = 111
+
+[[card]]
+id = "t9-voc-112"
+kind = "vocab"
+front = "посему́"
+back = "c'est pourquoi (vieilli)"
+level = 112
+
+[[card]]
+id = "t9-voc-113"
+kind = "vocab"
+front = "сей"
+back = "ce (archaïque)"
+note = "до сих пор = jusqu'à présent garde cette vieille forme."
+level = 113
+
+[[card]]
+id = "t9-voc-114"
+kind = "vocab"
+front = "отны́не"
+back = "désormais"
+level = 114
+
+[[card]]
+id = "t9-voc-115"
+kind = "vocab"
+front = "досе́ле"
+back = "jusqu'ici (vieilli)"
+level = 115
+
+[[card]]
+id = "t9-voc-116"
+kind = "vocab"
+front = "пресло́вутый"
+back = "fameux (ironique)"
+level = 116
+
+[[card]]
+id = "t9-voc-117"
+kind = "vocab"
+front = "зауря́дный"
+back = "banal"
+level = 117
+
+[[card]]
+id = "t9-voc-118"
+kind = "vocab"
+front = "изощрённый"
+back = "raffiné, sophistiqué"
+level = 118
+
+[[card]]
+id = "t9-voc-119"
+kind = "vocab"
+front = "непринуждённый"
+back = "décontracté, naturel"
+level = 119
+
+[[card]]
+id = "t9-voc-120"
+kind = "vocab"
+front = "велича́вый"
+back = "majestueux"
+level = 120
+
+[[card]]
+id = "t9-voc-121"
+kind = "vocab"
+front = "неприми́римый"
+back = "irréconciliable"
+level = 121
+
+[[card]]
+id = "t9-voc-122"
+kind = "vocab"
+front = "неукроти́мый"
+back = "indomptable"
+level = 122
+
+[[card]]
+id = "t9-voc-123"
+kind = "vocab"
+front = "непоколеби́мый"
+back = "inébranlable"
+level = 123
+
+[[card]]
+id = "t9-voc-124"
+kind = "vocab"
+front = "мимолётный"
+back = "éphémère"
+level = 124
+
+[[card]]
+id = "t9-voc-125"
+kind = "vocab"
+front = "бескра́йний"
+back = "sans limites"
+level = 125
+
+[[card]]
+id = "t9-voc-126"
+kind = "vocab"
+front = "заду́мчивый"
+back = "pensif"
+level = 126
+
+[[card]]
+id = "t9-voc-127"
+kind = "vocab"
+front = "засте́нчивый"
+back = "timide"
+level = 127
+
+[[card]]
+id = "t9-voc-128"
+kind = "vocab"
+front = "угрю́мый"
+back = "maussade"
+level = 128
+
+[[card]]
+id = "t9-voc-129"
+kind = "vocab"
+front = "сварли́вый"
+back = "acariâtre"
+level = 129
+
+[[card]]
+id = "t9-voc-130"
+kind = "vocab"
+front = "прижи́мистый"
+back = "radin"
+level = 130
+
+[[card]]
+id = "t9-voc-131"
+kind = "vocab"
+front = "расточи́тельный"
+back = "dépensier"
+level = 131
+
+[[card]]
+id = "t9-voc-132"
+kind = "vocab"
+front = "хлебосо́льный"
+back = "hospitalier"
+note = "De хлеб и соль, le pain et le sel offerts à l'invité."
+level = 132
+
+[[card]]
+id = "t9-voc-133"
+kind = "vocab"
+front = "раду́шный"
+back = "accueillant"
+level = 133
+
+[[card]]
+id = "t9-voc-134"
+kind = "vocab"
+front = "задуше́вный"
+back = "intime, chaleureux"
+level = 134
+
+[[card]]
+id = "t9-voc-135"
+kind = "vocab"
+front = "у́ютный"
+back = "douillet"
+level = 135
+
+[[card]]
+id = "t9-voc-136"
+kind = "vocab"
+front = "промо́зглый"
+back = "froid et humide"
+level = 136
+
+[[card]]
+id = "t9-voc-137"
+kind = "vocab"
+front = "па́смурный"
+back = "couvert, gris"
+level = 137
+
+[[card]]
+id = "t9-voc-138"
+kind = "vocab"
+front = "зно́йный"
+back = "torride"
+level = 138
+
+[[card]]
+id = "t9-phr-001"
+kind = "phrase"
+front = "Ни ры́ба ни мя́со"
+back = "Ni chair ni poisson"
+level = 1
+
+[[card]]
+id = "t9-phr-002"
+kind = "phrase"
+front = "Бить ключо́м"
+back = "Battre son plein"
+note = "Mot à mot : « jaillir comme une source »."
+level = 2
+
+[[card]]
+id = "t9-phr-003"
+kind = "phrase"
+front = "Води́ть за нос"
+back = "Mener en bateau"
+note = "Mot à mot : « mener par le nez »."
+level = 3
+
+[[card]]
+id = "t9-phr-004"
+kind = "phrase"
+front = "Спустя́ рукава́"
+back = "Par-dessus la jambe"
+note = "Mot à mot : « les manches baissées »."
+level = 4
+
+[[card]]
+id = "t9-phr-005"
+kind = "phrase"
+front = "Засучи́в рукава́"
+back = "En retroussant ses manches"
+level = 5
+
+[[card]]
+id = "t9-phr-006"
+kind = "phrase"
+front = "Держа́ть язы́к за зуба́ми"
+back = "Tenir sa langue"
+level = 6
+
+[[card]]
+id = "t9-phr-007"
+kind = "phrase"
+front = "Кот напла́кал"
+back = "Trois fois rien"
+note = "Mot à mot : « ce que le chat a pleuré »."
+level = 7
+
+[[card]]
+id = "t9-phr-008"
+kind = "phrase"
+front = "Медве́жья услу́га"
+back = "Le pavé de l'ours"
+note = "Un service qui fait plus de mal que de bien."
+level = 8
+
+[[card]]
+id = "t9-phr-009"
+kind = "phrase"
+front = "Вы́йти сухи́м из воды́"
+back = "S'en tirer sans une égratignure"
+level = 9
+
+[[card]]
+id = "t9-phr-010"
+kind = "phrase"
+front = "Взять себя́ в ру́ки"
+back = "Se ressaisir"
+level = 10
+
+[[card]]
+id = "t9-phr-011"
+kind = "phrase"
+front = "Сиде́ть сложа́ ру́ки"
+back = "Rester les bras croisés"
+level = 11
+
+[[card]]
+id = "t9-phr-012"
+kind = "phrase"
+front = "Как с гу́ся вода́"
+back = "Comme l'eau sur les plumes d'un canard"
+level = 12
+
+[[card]]
+id = "t9-phr-013"
+kind = "phrase"
+front = "Паха́ть как ло́шадь"
+back = "Travailler comme un forçat"
+level = 13
+
+[[card]]
+id = "t9-phr-014"
+kind = "phrase"
+front = "Ку́ры не клюю́т"
+back = "Avoir de l'argent à ne savoir qu'en faire"
+level = 14
+
+[[card]]
+id = "t9-phr-015"
+kind = "phrase"
+front = "За три́девять земе́ль"
+back = "Au bout du monde"
+note = "Formule des contes : « au-delà de trois fois neuf terres »."
+level = 15
+
+[[card]]
+id = "t9-phr-016"
+kind = "phrase"
+front = "Лови́ть воро́н"
+back = "Bayer aux corneilles"
+note = "Mot à mot : « attraper les corbeaux »."
+level = 16
+
+[[card]]
+id = "t9-phr-017"
+kind = "phrase"
+front = "Заруби́ть на носу́"
+back = "Se le tenir pour dit"
+level = 17
+
+[[card]]
+id = "t9-phr-018"
+kind = "phrase"
+front = "Де́лать из му́хи слона́"
+back = "Faire d'une mouche un éléphant"
+level = 18
+
+[[card]]
+id = "t9-phr-019"
+kind = "phrase"
+front = "Не по́ дням, а по часа́м"
+back = "À vue d'œil"
+level = 19
+
+[[card]]
+id = "t9-phr-020"
+kind = "phrase"
+front = "Па́лка о двух конца́х"
+back = "Une arme à double tranchant"
+level = 20
+
+[[card]]
+id = "t9-phr-021"
+kind = "phrase"
+front = "Я́блоку не́где упа́сть"
+back = "Plein à craquer"
+level = 21
+
+[[card]]
+id = "t9-phr-022"
+kind = "phrase"
+front = "Бе́лая воро́на"
+back = "Le mouton noir"
+note = "Mot à mot : « une corneille blanche »."
+level = 22
+
+[[card]]
+id = "t9-phr-023"
+kind = "phrase"
+front = "Втира́ть очки́"
+back = "Jeter de la poudre aux yeux"
+level = 23
+
+[[card]]
+id = "t9-phr-024"
+kind = "phrase"
+front = "На седьмо́м не́бе"
+back = "Au septième ciel"
+level = 24
+
+[[card]]
+id = "t9-phr-025"
+kind = "phrase"
+front = "Ви́лами по воде́ пи́сано"
+back = "Rien n'est moins sûr"
+level = 25
+
+[[card]]
+id = "t9-phr-026"
+kind = "phrase"
+front = "Ко́нчить за упоко́й"
+back = "Mal finir (un discours)"
+note = "Начать за здра́вие, ко́нчить за упоко́й = commencer en fanfare, finir en eau de boudin."
+level = 26
+
+[[card]]
+id = "t9-phr-027"
+kind = "phrase"
+front = "Не бо́ги горшки́ обжига́ют"
+back = "Tout s'apprend"
+note = "Mot à mot : « ce ne sont pas les dieux qui cuisent les pots »."
+level = 27
+
+[[card]]
+id = "t9-phr-028"
+kind = "phrase"
+front = "Ру́ка ру́ку мо́ет"
+back = "Une main lave l'autre"
+level = 28
+
+[[card]]
+id = "t9-phr-029"
+kind = "phrase"
+front = "В ти́хом о́муте че́рти во́дятся"
+back = "Méfie-toi de l'eau qui dort"
+level = 29
+
+[[card]]
+id = "t9-phr-030"
+kind = "phrase"
+front = "Сла́вно потруди́лись!"
+back = "Beau travail !"
+level = 30
+
+[[card]]
+id = "t9-gra-001"
+kind = "grammar"
+front = "до́мишко"
+question = "Quelle nuance apporte -ишко ?"
+back = "Péjorative : une maison minable"
+wrong = ["Affectueuse : une jolie maison", "Une grande maison"]
+note = "Les suffixes changent le ton : -ик / -очка (petit, tendre), -ишко / -ёнка (minable), -ище (énorme) : доми́ще = une immense maison."
+level = 1
+
+[[card]]
+id = "t9-gra-002"
+kind = "grammar"
+front = "со́лнышко"
+question = "Quand dit-on со́лнышко à quelqu'un ?"
+back = "Pour l'appeler tendrement"
+wrong = ["Pour se moquer de lui", "Pour parler de la météo"]
+note = "Les diminutifs affectueux servent de petits noms : со́лнышко, ры́бка, за́йка."
+level = 2
+
+[[card]]
+id = "t9-gra-003"
+kind = "grammar"
+front = "Пришёл, уви́дел, победи́л."
+question = "Pourquoi tous les verbes sont-ils « terminés » ?"
+back = "Ce sont des actions successives, chacune achevée"
+wrong = ["C'est du présent", "C'est une habitude"]
+note = "Une succession d'actions accomplies se raconte avec des verbes perfectifs."
+level = 3
+
+[[card]]
+id = "t9-gra-004"
+kind = "grammar"
+front = "Он открыва́л окно́."
+question = "Que peut vouloir dire cette phrase ?"
+back = "Il a ouvert la fenêtre, mais elle est refermée maintenant"
+wrong = ["Il ouvrira la fenêtre", "La fenêtre est ouverte maintenant"]
+note = "L'imperfectif au passé peut décrire une action annulée depuis : ouverte puis refermée."
+level = 4
+
+[[card]]
+id = "t9-gra-005"
+kind = "grammar"
+front = "Не открыва́й окно́!"
+question = "Pourquoi l'imperfectif ici ?"
+back = "Avec une interdiction, on emploie l'imperfectif"
+wrong = ["C'est plus poli", "C'est une faute"]
+note = "Ne fais pas ça → не + imperfectif. Не забу́дь! (perfectif) est un avertissement : n'oublie pas !"
+level = 5
+
+[[card]]
+id = "t9-gra-006"
+kind = "grammar"
+front = "Кни́гу чита́ет Ива́н."
+question = "Que met en valeur cet ordre des mots ?"
+back = "C'est Ivan (et pas un autre) qui lit le livre"
+wrong = ["Le livre lit Ivan", "Ivan lit un livre quelconque"]
+note = "L'ordre des mots est libre : l'information nouvelle se place à la fin."
+level = 6
+
+[[card]]
+id = "t9-gra-007"
+kind = "grammar"
+front = "Чита́я, он улыба́лся."
+question = "Que veut dire чита́я ?"
+back = "en lisant"
+wrong = ["après avoir lu", "pour lire"]
+note = "Gérondif imperfectif (-я, -а) : action simultanée."
+level = 7
+
+[[card]]
+id = "t9-gra-008"
+kind = "grammar"
+front = "Сказа́в э́то, он ушёл."
+question = "Que veut dire сказа́в ?"
+back = "après avoir dit cela"
+wrong = ["en disant cela", "sans dire cela"]
+note = "Gérondif perfectif (-в, -вши) : action antérieure."
+level = 8
+
+[[card]]
+id = "t9-gra-009"
+kind = "grammar"
+front = "бы́ло бы"
+question = "Хорошо́ бы́ло бы отдохну́ть. Sens ?"
+back = "Ce serait bien de se reposer."
+wrong = ["C'était bien de se reposer.", "Il faut se reposer."]
+note = "бы + passé = conditionnel, aussi pour un souhait doux."
+level = 9
+
+[[card]]
+id = "t9-gra-010"
+kind = "grammar"
+front = "Ему́ не спало́сь."
+question = "Que veut dire cette phrase ?"
+back = "Il n'arrivait pas à dormir."
+wrong = ["Il ne voulait pas dormir.", "Il dormait mal exprès."]
+note = "Tournure impersonnelle : le sujet devient « à lui » et le verbe prend -ся."
+level = 10
+
+[[card]]
+id = "t9-gra-011"
+kind = "grammar"
+front = "Хоть убе́й, не по́мню."
+question = "Que veut dire cette phrase ?"
+back = "Je ne m'en souviens pas, même si on me tuait."
+wrong = ["Tue-le, je ne m'en souviens pas.", "Je me souviens vaguement."]
+note = "хоть + impératif = même si, quand bien même (très familier, emphatique)."
+level = 11
+
+[[card]]
+id = "t9-gra-012"
+kind = "grammar"
+front = "Знай себе́ рабо́тает."
+question = "Quel sens a знай себе́ ?"
+back = "Il continue tranquillement, sans s'en soucier"
+wrong = ["Il sait travailler", "Il travaille pour lui-même"]
+note = "Particule familière : continuer imperturbablement."
+level = 12
+
+[[card]]
+id = "t9-gra-013"
+kind = "grammar"
+front = "Ты бы позвони́л ма́ме."
+question = "Que veut dire cette phrase ?"
+back = "Tu devrais appeler ta mère."
+wrong = ["Tu as appelé ta mère.", "Tu appelleras ta mère."]
+note = "бы + passé = conseil adouci."
+level = 13
+
+[[card]]
+id = "t9-gra-014"
+kind = "grammar"
+front = "Я бы́ло поду́мал, но переду́мал."
+question = "Que veut dire бы́ло ici ?"
+back = "J'ai failli (mais non)"
+wrong = ["C'était hier", "Il y avait"]
+note = "бы́ло + verbe au passé = une action commencée puis abandonnée."
+level = 14
+
+[[card]]
+id = "t9-gra-015"
+kind = "grammar"
+front = "Я вот-во́т уйду́."
+question = "Que veut dire вот-во́т ?"
+back = "d'un instant à l'autre"
+wrong = ["jamais", "tout de suite après toi"]
+note = "вот-вот = sur le point de, d'une seconde à l'autre."
+level = 15

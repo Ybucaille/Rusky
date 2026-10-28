@@ -1,0 +1,190 @@
+# niveau = 10
+# Comme un natif : argot, particules, références culturelles, faux amis, sous-entendus.
+
+@vocab
+блин | zut (mot à mot : crêpe) | Juron poli, très courant. Remplace un mot bien plus grossier qui commence pareil.
+ёлки-па́лки | punaise ! | Mot à mot : « sapins-bâtons ». Exclamation familière de surprise ou d'agacement.
+ё-моё | oh là là | Exclamation familière.
+обалде́ть | être sidéré | Обалде́ть! = C'est dingue !
+кайф | plaisir intense | Како́й кайф! = Le pied !
+круто́ | cool, génial |
+кла́ссно | super |
+прико́льно | marrant, sympa |
+прико́л | blague, truc marrant | Без прико́лов = Sans blague.
+тусо́вка | fête, soirée, milieu |
+тусова́ться | traîner ensemble, faire la fête |
+чува́к | mec |
+тёлка | meuf (vulgaire) | À éviter : souvent perçu comme insultant.
+бра́тан | frérot |
+ба́бки | fric |
+бабло́ | thune |
+шту́ка | mille (roubles) ; truc | Э́то сто́ит две шту́ки = Ça coûte deux mille.
+лимо́н (арго́) | un million (argot) | Mot à mot : « citron ».
+та́чка | bagnole |
+ха́та | baraque, appart (argot) |
+шмо́тки | fringues |
+жра́ть | bouffer (vulgaire) |
+хава́ть | bouffer (argot) |
+буха́ть | picoler |
+зави́снуть | rester bloqué, planter | Компью́тер зави́с = L'ordinateur a planté.
+тормози́ть | être à la ramasse | Mot à mot : « freiner ».
+ржать | se marrer | Mot à mot : « hennir ».
+ору́ | je suis mort de rire (internet) | Mot à mot : « je hurle ».
+кринж | malaise, gênant (internet) | De l'anglais cringe.
+лол | lol |
+хайп | buzz |
+и́зи | facile (jeune) | De l'anglais easy.
+краш | le coup de cœur (jeune) |
+забе́й | laisse tomber |
+отсто́й | nul, naze |
+ла́жа | n'importe quoi, fausse note |
+халя́ва | aubaine, gratuité | На халя́ву = À l'œil.
+блат | piston | По бла́ту = Par piston. Mot clé de l'époque soviétique.
+дефици́т | pénurie | À l'époque soviétique, un produit « en déficit » était introuvable.
+о́чередь | file d'attente |
+да́ча | maison de campagne | Institution russe : le potager du week-end.
+автору́чка | stylo-plume |
+аво́сь | peut-être que ça passera | Mot intraduisible : l'espoir que les choses s'arrangeront toutes seules. На аво́сь = au petit bonheur.
+небо́сь | sans doute (familier) |
+мол | soi-disant, qu'il dit | Он, мол, за́нят = Il dit qu'il est occupé (j'en doute).
+де́скать | paraît-il, dit-il | Rapporte les paroles d'un autre avec distance.
+аж | jusqu'à, carrément | Он аж покрасне́л = Il en a carrément rougi.
+ишь | tiens donc ! | Ишь како́й! = Regardez-moi ça !
+ну́-ка | allez, voyons | Ну-ка, покажи́! = Allez, montre !
+-ка | adoucit un ordre | Дай-ка = Donne voir. Посмотри́-ка = Regarde donc.
+та́к-то | à vrai dire |
+вообще́-то | en fait, normalement |
+как бы | genre (tic de langage) | Я как бы не про́тив = Je suis genre pas contre.
+ти́па | genre, du style |
+коро́че | bref (tic de langage) |
+зна́чит | donc, alors (tic) |
+в при́нципе | en principe, en gros |
+по ходу́ | apparemment (familier) |
+ва́ще | carrément (pour вообще́) |
+щас | tout de suite (pour сейча́с) | Ironique : Щас! = Tu rêves !
+чё | quoi (pour что) | Très familier.
+ничё | rien, pas mal (pour ничего́) |
+спаси́бки | merci (mignon) |
+пли́з | s'il te plaît (jeune) |
+приве́тик | coucou |
+пока́-пока́ | bye bye |
+о́чень да́же | plutôt pas mal | Ironie douce : « très même » = mieux que prévu.
+ещё бы | et comment |
+ну да | ouais c'est ça (ironie) | Selon l'intonation : « oui » ou « mon œil ».
+да нет | non (en fait non) | « Oui non » = non. Да нет, всё норма́льно = Mais non, tout va bien.
+нет, наве́рное | sans doute que non |
+ареста́нт | détenu |
+мент | flic (argot) |
+гаи́шник | agent de la circulation | De ГАИ, l'ancienne police routière.
+ба́рин | maître, monsieur (ironique) |
+мажо́р | fils à papa |
+лох | pigeon, naïf |
+бота́н | intello |
+зану́да | casse-pieds |
+подли́за | lèche-bottes |
+трепло́ | moulin à paroles |
+жа́дина | radin (enfantin) |
+вру́н | menteur |
+халту́ра | travail bâclé, petit boulot |
+ха́мство | goujaterie |
+пофиги́зм | je-m'en-foutisme |
+барда́к | bordel, désordre |
+сыр-бо́р | toute une histoire | Из-за чего́ весь сыр-бо́р? = Pourquoi tout ce raffut ?
+тоска́ зелёная | ennui mortel |
+кто́-кто, а… | s'il y a bien quelqu'un qui… |
+магази́н ≠ magazine | magasin (et non magazine) | Faux ami : un magazine se dit журна́л.
+арти́ст | acteur, artiste de scène | Faux ami partiel : un peintre se dit худо́жник.
+фами́лия | nom de famille | Faux ami : la famille se dit семья́.
+анекдо́т | blague | Faux ami : pas une anecdote, une histoire drôle.
+аккура́тный | soigné, soigneux | Faux ami : pas « exact ».
+бана́льный | banal | Vrai ami pour une fois.
+дива́н | canapé |
+кабине́т | bureau (pièce) | Faux ami : pas des toilettes.
+кондиционе́р | climatiseur ; après-shampoing |
+профе́ссор | professeur d'université | Un prof d'école est учи́тель.
+симпати́чный | mignon, joli | Faux ami : sens physique, pas « sympathique ».
+шарм | charme |
+тра́ктор | tracteur |
+ке́ды | baskets en toile | Mot d'origine anglaise (Keds).
+ксе́рокс | photocopieuse | La marque est devenue le mot courant.
+па́мперсы | couches | La marque est devenue le mot courant.
+сто́льник | billet de cent | Argot.
+полти́нник | billet de cinquante |
+тре́шка | trois-pièces (appartement) |
+дву́шка | deux-pièces |
+хрущёвка | immeuble Khrouchtchev | Petits immeubles préfabriqués des années 1960, partout en Russie.
+коммуна́лка | appartement communautaire | Plusieurs familles, une cuisine partagée : la vie soviétique typique.
+электри́чка | train de banlieue |
+маршру́тка | minibus collectif |
+ларёк | kiosque |
+продма́г | épicerie (vieilli) |
+ба́ня | bain de vapeur russe | С лёгким па́ром! = Bon bain ! (après la banya) — et titre d'un film culte.
+ве́ник | balai ; branchage pour la banya |
+самова́р | samovar |
+пельме́ни | raviolis russes |
+окро́шка | soupe froide au kvas |
+квас | boisson au pain fermenté |
+холоде́ц | aspic de viande |
+селёдка под шу́бой | hareng sous fourrure | Salade de fête : hareng sous une « fourrure » de betterave.
+оливье́ | salade russe (Olivier) | Indispensable au Nouvel An.
+ёлка | sapin (de Nouvel An) |
+Дед Моро́з | Père Gel | L'équivalent russe du Père Noël, avec sa petite-fille Снегу́рочка.
+ста́рый Но́вый год | Ancien Nouvel An | Fêté le 14 janvier, selon l'ancien calendrier.
+Ма́сленица | semaine des crêpes | Fête de fin d'hiver où l'on brûle un épouvantail.
+и́мя-о́тчество | prénom et patronyme | Pour vouvoyer : Ива́н Петро́вич. Le patronyme vient du prénom du père.
+Са́ша | Sacha | Diminutif de Алекса́ндр ou Алекса́ндра.
+Шу́ра | Choura | Autre diminutif de Алекса́ндр, plus familier et ancien.
+Же́ня | Jénia | Diminutif de Евге́ний ou Евге́ния.
+Ди́ма | Dima | Diminutif de Дми́трий.
+Ко́ля | Kolia | Diminutif de Никола́й.
+Ми́ша | Micha | Diminutif de Михаи́л.
+Та́ня | Tania | Diminutif de Татья́на.
+Ма́ша | Macha | Diminutif de Мари́я.
+
+@phrase
+Ирони́я судьбы́ | L'ironie du sort | Titre du film culte que toute la Russie regarde chaque 31 décembre.
+С лёгким па́ром! | Bon bain ! | Formule après la banya ; c'est aussi le sous-titre du film « Ирония судьбы ».
+Хоте́ли как лу́чше, а получи́лось как всегда́ | On voulait bien faire, ça a fini comme d'habitude | Phrase célèbre de l'ancien Premier ministre Tchernomyrdine, devenue proverbe.
+Карфаге́н до́лжен быть разру́шен | Carthage doit être détruite | Se dit pour une idée fixe qu'on répète.
+Восто́к — де́ло то́нкое | L'Orient est une affaire délicate | Réplique culte du film « Le Soleil blanc du désert ».
+Огласи́те весь спи́сок, пожа́луйста | Annoncez toute la liste, s'il vous plaît | Réplique culte d'une comédie de Gaïdaï, pour réclamer tous les détails.
+Ты меня́ уважа́ешь? | Tu me respectes ? | Question rituelle (et comique) d'un buveur avant de trinquer.
+Наш постре́л везде́ поспе́л | Il a son nez partout |
+Без ба́зара | Pas de souci, promis (argot) | Mot à mot : « sans bazar ».
+Не па́рься | Te prends pas la tête |
+Да ла́дно! | Sans blague ! / Arrête ! |
+Ага́, щас! | C'est ça, compte là-dessus ! |
+Я в а́уте | Je suis largué |
+Э́то жесть | C'est dur, c'est hardcore |
+Ни фига́ себе́! | Ben ça alors ! |
+Да ну тебя́! | Arrête avec ça ! |
+Ни то ни сё | Ni l'un ni l'autre, quelconque |
+Ещё чего́! | Et puis quoi encore ! |
+Вот тебе́ и на! | Ça alors ! (mauvaise surprise) |
+Мне по бараба́ну | Je m'en fiche | Mot à mot : « c'est du tambour pour moi ».
+Мне фиоле́тово | Je m'en fiche | Mot à mot : « c'est violet pour moi ».
+Сам дура́к! | C'est celui qui dit qui l'est ! |
+Не учи́ учёного | N'apprends pas au savant |
+Хрен реди́ски не сла́ще | C'est blanc bonnet et bonnet blanc | Mot à mot : « le raifort n'est pas plus sucré que le radis ».
+Голь на вы́думки хитра́ | Nécessité est mère d'invention |
+Москва́ не сра́зу стро́илась | Rome ne s'est pas faite en un jour | Version russe : c'est Moscou.
+Где роди́лся, там и пригоди́лся | On est mieux là où on est né |
+Посиди́м на доро́жку | Asseyons-nous avant de partir | Tradition : on s'assoit un instant en silence avant un voyage.
+Не свисти́ в до́ме — де́нег не бу́дет | Ne siffle pas à la maison, sinon pas d'argent | Superstition très répandue.
+
+@grammar
+Да нет, всё норма́льно. | Que veut dire да нет ? | non (en fait) | oui et non ; je ne sais pas | « Да нет » est un non adouci. « Нет, да » n'existe pas. « Ну да » peut être un oui… ou un « mon œil » ironique.
+Ну да, коне́чно. | Avec un ton ironique, que signifie cette phrase ? | C'est ça, je te crois (pas) | Oui, évidemment ; Je suis d'accord | L'intonation renverse le sens : même phrase, sens opposé selon le ton.
+Он, мол, бо́лен. | Que suggère мол ? | Il le dit, mais j'en doute | Il est vraiment malade ; Je suis malade | мол et де́скать rapportent les paroles de quelqu'un avec une distance, souvent sceptique.
+Да́й-ка посмотрю́. | Que fait -ка ? | Il adoucit et rend familier : donne voir | Il rend la phrase négative ; Il marque le passé | -ка s'accroche aux impératifs : иди́-ка, скажи́-ка.
+Щас! | Dit sèchement en réponse à une demande, ça veut dire… | Tu rêves ! | J'arrive tout de suite ; Maintenant | щас (pour сейча́с) devient un refus ironique selon le ton.
+Ещё бы! | Que veut dire cette réponse ? | Et comment ! (évidemment) | Encore un ; Pas encore | Ещё бы = bien sûr, ça va de soi.
+Опя́ть два́дцать пять! | Que veut dire cette expression ? | Ça recommence ! | Il a encore 25 ans ; Il est 25 h | Mot à mot : « encore vingt-cinq » — on rabâche la même chose.
+Ива́н Петро́вич | Que veut dire Петро́вич ? | fils de Piotr (patronyme) | nom de famille ; surnom | Le patronyme (-ович, -евич / -овна, -евна) s'utilise avec le prénom pour le vouvoiement poli.
+Петро́вич | Quand on appelle quelqu'un juste « Петро́вич », c'est… | familier et affectueux, entre collègues | très formel ; une insulte | Le patronyme seul est un usage populaire, chaleureux, surtout pour un homme d'âge mûr.
+Ша́почку на́до наде́ть. | Pourquoi ша́почку et pas ша́пку ? | Le diminutif adoucit, comme quand on parle à un enfant | Parce que c'est au pluriel ; Parce que c'est plus formel | Les Russes mettent des diminutifs partout pour adoucir : чайку́ попьём?, мину́точку!
+Мину́точку! | Que veut dire мину́точку ? | Une petite minute ! (patientez) | Une petite montre ; Dans une minute exactement | Diminutif de мину́та : demande poliment d'attendre.
+Ты чё? | Que veut dire cette question familière ? | Qu'est-ce qui te prend ? | Qui es-tu ? ; Tu bois quoi ? | чё = что familier. Ты чё? exprime la surprise ou le reproche.
+Ну ты и фрукт! | Que veut dire cette expression ? | T'es un sacré numéro ! | Tu aimes les fruits ? ; Tu es en bonne santé | Mot à mot : « eh bien tu es un fruit » — quelqu'un de spécial, souvent rusé.
+Аж в Москву́ пое́хал. | Quelle nuance apporte аж ? | carrément jusqu'à Moscou (c'est loin, étonnant) | juste à Moscou ; pas encore à Moscou | аж souligne que c'est plus que prévu : аж три часа́ = trois heures entières.
+Небо́сь уста́л? | Que veut dire небо́сь ? | sans doute (je suppose que) | jamais ; à peine | Familier, régional : небо́сь = je parie que, sûrement.

@@ -12,13 +12,17 @@ pub const UNLOCK_SHARE: f64 = 0.7;
 /// Une carte est acquise après ce nombre de bonnes réponses d'affilée.
 pub const ACQUIRED_REPS: i64 = 2;
 
-const NAMES: [&str; 6] = [
+const NAMES: [&str; 10] = [
     "Premiers pas",
     "Le quotidien",
     "En ville",
     "Raconter",
     "Discuter",
     "Nuances",
+    "Approfondir",
+    "Aisance",
+    "Maîtrise",
+    "Comme un natif",
 ];
 
 pub fn name(tier: i64) -> &'static str {

@@ -1,0 +1,1639 @@
+# Cartes du niveau 7 de rusky (généré, prononciation calculée).
+tier = 7
+
+[[card]]
+id = "t7-voc-001"
+kind = "vocab"
+front = "холоди́льник"
+back = "réfrigérateur"
+level = 1
+
+[[card]]
+id = "t7-voc-002"
+kind = "vocab"
+front = "плита́"
+back = "cuisinière"
+level = 2
+
+[[card]]
+id = "t7-voc-003"
+kind = "vocab"
+front = "посу́да"
+back = "vaisselle"
+level = 3
+
+[[card]]
+id = "t7-voc-004"
+kind = "vocab"
+front = "полоте́нце"
+back = "serviette (de toilette)"
+level = 4
+
+[[card]]
+id = "t7-voc-005"
+kind = "vocab"
+front = "мы́ло"
+back = "savon"
+level = 5
+
+[[card]]
+id = "t7-voc-006"
+kind = "vocab"
+front = "зе́ркало"
+back = "miroir"
+level = 6
+
+[[card]]
+id = "t7-voc-007"
+kind = "vocab"
+front = "поду́шка"
+back = "oreiller"
+level = 7
+
+[[card]]
+id = "t7-voc-008"
+kind = "vocab"
+front = "одея́ло"
+back = "couverture"
+level = 8
+
+[[card]]
+id = "t7-voc-009"
+kind = "vocab"
+front = "ковёр"
+back = "tapis"
+level = 9
+
+[[card]]
+id = "t7-voc-010"
+kind = "vocab"
+front = "по́лка"
+back = "étagère"
+level = 10
+
+[[card]]
+id = "t7-voc-011"
+kind = "vocab"
+front = "ла́мпочка"
+back = "ampoule"
+level = 11
+
+[[card]]
+id = "t7-voc-012"
+kind = "vocab"
+front = "розе́тка"
+back = "prise électrique"
+level = 12
+
+[[card]]
+id = "t7-voc-013"
+kind = "vocab"
+front = "балко́н"
+back = "balcon"
+level = 13
+
+[[card]]
+id = "t7-voc-014"
+kind = "vocab"
+front = "эта́ж"
+back = "étage"
+level = 14
+
+[[card]]
+id = "t7-voc-015"
+kind = "vocab"
+front = "лифт"
+back = "ascenseur"
+level = 15
+
+[[card]]
+id = "t7-voc-016"
+kind = "vocab"
+front = "ле́стница"
+back = "escalier"
+level = 16
+
+[[card]]
+id = "t7-voc-017"
+kind = "vocab"
+front = "двор"
+back = "cour"
+level = 17
+
+[[card]]
+id = "t7-voc-018"
+kind = "vocab"
+front = "забо́р"
+back = "clôture"
+level = 18
+
+[[card]]
+id = "t7-voc-019"
+kind = "vocab"
+front = "кры́ша"
+back = "toit"
+level = 19
+
+[[card]]
+id = "t7-voc-020"
+kind = "vocab"
+front = "сте́на"
+back = "mur"
+level = 20
+
+[[card]]
+id = "t7-voc-021"
+kind = "vocab"
+front = "пол"
+back = "sol, plancher"
+level = 21
+
+[[card]]
+id = "t7-voc-022"
+kind = "vocab"
+front = "потоло́к"
+back = "plafond"
+level = 22
+
+[[card]]
+id = "t7-voc-023"
+kind = "vocab"
+front = "ремо́нт"
+back = "travaux, rénovation"
+level = 23
+
+[[card]]
+id = "t7-voc-024"
+kind = "vocab"
+front = "убо́рка"
+back = "ménage"
+level = 24
+
+[[card]]
+id = "t7-voc-025"
+kind = "vocab"
+front = "стира́ть"
+back = "laver (le linge)"
+level = 25
+
+[[card]]
+id = "t7-voc-026"
+kind = "vocab"
+front = "гла́дить"
+back = "repasser, caresser"
+level = 26
+
+[[card]]
+id = "t7-voc-027"
+kind = "vocab"
+front = "убира́ть"
+back = "ranger"
+level = 27
+
+[[card]]
+id = "t7-voc-028"
+kind = "vocab"
+front = "выбра́сывать"
+back = "jeter"
+level = 28
+
+[[card]]
+id = "t7-voc-029"
+kind = "vocab"
+front = "чини́ть"
+back = "réparer"
+level = 29
+
+[[card]]
+id = "t7-voc-030"
+kind = "vocab"
+front = "слома́ть"
+back = "casser"
+level = 30
+
+[[card]]
+id = "t7-voc-031"
+kind = "vocab"
+front = "включа́ть"
+back = "allumer"
+level = 31
+
+[[card]]
+id = "t7-voc-032"
+kind = "vocab"
+front = "выключа́ть"
+back = "éteindre"
+level = 32
+
+[[card]]
+id = "t7-voc-033"
+kind = "vocab"
+front = "заряжа́ть"
+back = "charger (un appareil)"
+level = 33
+
+[[card]]
+id = "t7-voc-034"
+kind = "vocab"
+front = "пыль"
+back = "poussière"
+level = 34
+
+[[card]]
+id = "t7-voc-035"
+kind = "vocab"
+front = "му́сор"
+back = "ordures"
+level = 35
+
+[[card]]
+id = "t7-voc-036"
+kind = "vocab"
+front = "сосна́"
+back = "pin"
+level = 36
+
+[[card]]
+id = "t7-voc-037"
+kind = "vocab"
+front = "берёза"
+back = "bouleau"
+level = 37
+
+[[card]]
+id = "t7-voc-038"
+kind = "vocab"
+front = "дуб"
+back = "chêne"
+level = 38
+
+[[card]]
+id = "t7-voc-039"
+kind = "vocab"
+front = "трава́"
+back = "herbe"
+level = 39
+
+[[card]]
+id = "t7-voc-040"
+kind = "vocab"
+front = "лист"
+back = "feuille"
+level = 40
+
+[[card]]
+id = "t7-voc-041"
+kind = "vocab"
+front = "ка́мень"
+back = "pierre"
+level = 41
+
+[[card]]
+id = "t7-voc-042"
+kind = "vocab"
+front = "песо́к"
+back = "sable"
+level = 42
+
+[[card]]
+id = "t7-voc-043"
+kind = "vocab"
+front = "по́ле"
+back = "champ"
+level = 43
+
+[[card]]
+id = "t7-voc-044"
+kind = "vocab"
+front = "луг"
+back = "prairie"
+level = 44
+
+[[card]]
+id = "t7-voc-045"
+kind = "vocab"
+front = "боло́то"
+back = "marais"
+level = 45
+
+[[card]]
+id = "t7-voc-046"
+kind = "vocab"
+front = "пеще́ра"
+back = "grotte"
+level = 46
+
+[[card]]
+id = "t7-voc-047"
+kind = "vocab"
+front = "о́стров"
+back = "île"
+level = 47
+
+[[card]]
+id = "t7-voc-048"
+kind = "vocab"
+front = "бе́рег"
+back = "rive, côte"
+level = 48
+
+[[card]]
+id = "t7-voc-049"
+kind = "vocab"
+front = "волна́"
+back = "vague"
+level = 49
+
+[[card]]
+id = "t7-voc-050"
+kind = "vocab"
+front = "звезда́"
+back = "étoile"
+level = 50
+
+[[card]]
+id = "t7-voc-051"
+kind = "vocab"
+front = "луна́"
+back = "lune"
+level = 51
+
+[[card]]
+id = "t7-voc-052"
+kind = "vocab"
+front = "гроза́"
+back = "orage"
+level = 52
+
+[[card]]
+id = "t7-voc-053"
+kind = "vocab"
+front = "тума́н"
+back = "brouillard"
+level = 53
+
+[[card]]
+id = "t7-voc-054"
+kind = "vocab"
+front = "моро́з"
+back = "gel, grand froid"
+level = 54
+
+[[card]]
+id = "t7-voc-055"
+kind = "vocab"
+front = "ли́вень"
+back = "averse"
+level = 55
+
+[[card]]
+id = "t7-voc-056"
+kind = "vocab"
+front = "ра́дуга"
+back = "arc-en-ciel"
+level = 56
+
+[[card]]
+id = "t7-voc-057"
+kind = "vocab"
+front = "восхо́д"
+back = "lever (du soleil)"
+level = 57
+
+[[card]]
+id = "t7-voc-058"
+kind = "vocab"
+front = "зака́т"
+back = "coucher (du soleil)"
+level = 58
+
+[[card]]
+id = "t7-voc-059"
+kind = "vocab"
+front = "се́вер"
+back = "nord"
+level = 59
+
+[[card]]
+id = "t7-voc-060"
+kind = "vocab"
+front = "юг"
+back = "sud"
+level = 60
+
+[[card]]
+id = "t7-voc-061"
+kind = "vocab"
+front = "восто́к"
+back = "est"
+level = 61
+
+[[card]]
+id = "t7-voc-062"
+kind = "vocab"
+front = "за́пад"
+back = "ouest"
+level = 62
+
+[[card]]
+id = "t7-voc-063"
+kind = "vocab"
+front = "насеко́мое"
+back = "insecte"
+level = 63
+
+[[card]]
+id = "t7-voc-064"
+kind = "vocab"
+front = "кома́р"
+back = "moustique"
+level = 64
+
+[[card]]
+id = "t7-voc-065"
+kind = "vocab"
+front = "пчела́"
+back = "abeille"
+level = 65
+
+[[card]]
+id = "t7-voc-066"
+kind = "vocab"
+front = "ба́бочка"
+back = "papillon"
+level = 66
+
+[[card]]
+id = "t7-voc-067"
+kind = "vocab"
+front = "лиса́"
+back = "renard"
+level = 67
+
+[[card]]
+id = "t7-voc-068"
+kind = "vocab"
+front = "за́яц"
+back = "lièvre"
+level = 68
+
+[[card]]
+id = "t7-voc-069"
+kind = "vocab"
+front = "бе́лка"
+back = "écureuil"
+level = 69
+
+[[card]]
+id = "t7-voc-070"
+kind = "vocab"
+front = "ёж"
+back = "hérisson"
+level = 70
+
+[[card]]
+id = "t7-voc-071"
+kind = "vocab"
+front = "мышь"
+back = "souris"
+level = 71
+
+[[card]]
+id = "t7-voc-072"
+kind = "vocab"
+front = "змея́"
+back = "serpent"
+level = 72
+
+[[card]]
+id = "t7-voc-073"
+kind = "vocab"
+front = "гусь"
+back = "oie"
+level = 73
+
+[[card]]
+id = "t7-voc-074"
+kind = "vocab"
+front = "у́тка"
+back = "canard"
+level = 74
+
+[[card]]
+id = "t7-voc-075"
+kind = "vocab"
+front = "пету́х"
+back = "coq"
+level = 75
+
+[[card]]
+id = "t7-voc-076"
+kind = "vocab"
+front = "свинья́"
+back = "cochon"
+level = 76
+
+[[card]]
+id = "t7-voc-077"
+kind = "vocab"
+front = "коза́"
+back = "chèvre"
+level = 77
+
+[[card]]
+id = "t7-voc-078"
+kind = "vocab"
+front = "овца́"
+back = "mouton"
+level = 78
+
+[[card]]
+id = "t7-voc-079"
+kind = "vocab"
+front = "журна́л"
+back = "magazine"
+level = 79
+
+[[card]]
+id = "t7-voc-080"
+kind = "vocab"
+front = "переда́ча"
+back = "émission"
+level = 80
+
+[[card]]
+id = "t7-voc-081"
+kind = "vocab"
+front = "ре́клама"
+back = "publicité"
+level = 81
+
+[[card]]
+id = "t7-voc-082"
+kind = "vocab"
+front = "статья́"
+back = "article"
+level = 82
+
+[[card]]
+id = "t7-voc-083"
+kind = "vocab"
+front = "заголо́вок"
+back = "titre"
+level = 83
+
+[[card]]
+id = "t7-voc-084"
+kind = "vocab"
+front = "журнали́ст"
+back = "journaliste"
+level = 84
+
+[[card]]
+id = "t7-voc-085"
+kind = "vocab"
+front = "веду́щий"
+back = "présentateur"
+level = 85
+
+[[card]]
+id = "t7-voc-086"
+kind = "vocab"
+front = "зри́тель"
+back = "spectateur"
+level = 86
+
+[[card]]
+id = "t7-voc-087"
+kind = "vocab"
+front = "слу́шатель"
+back = "auditeur"
+level = 87
+
+[[card]]
+id = "t7-voc-088"
+kind = "vocab"
+front = "эфи́р"
+back = "antenne (à la radio, télé)"
+level = 88
+
+[[card]]
+id = "t7-voc-089"
+kind = "vocab"
+front = "подпи́ска"
+back = "abonnement"
+level = 89
+
+[[card]]
+id = "t7-voc-090"
+kind = "vocab"
+front = "реда́ктор"
+back = "rédacteur"
+level = 90
+
+[[card]]
+id = "t7-voc-091"
+kind = "vocab"
+front = "дово́лен"
+back = "content, satisfait"
+level = 91
+
+[[card]]
+id = "t7-voc-092"
+kind = "vocab"
+front = "недово́лен"
+back = "mécontent"
+level = 92
+
+[[card]]
+id = "t7-voc-093"
+kind = "vocab"
+front = "оби́жен"
+back = "vexé"
+level = 93
+
+[[card]]
+id = "t7-voc-094"
+kind = "vocab"
+front = "взволно́ван"
+back = "ému, agité"
+level = 94
+
+[[card]]
+id = "t7-voc-095"
+kind = "vocab"
+front = "уве́рен"
+back = "sûr"
+level = 95
+
+[[card]]
+id = "t7-voc-096"
+kind = "vocab"
+front = "гото́в"
+back = "prêt"
+level = 96
+
+[[card]]
+id = "t7-voc-097"
+kind = "vocab"
+front = "до́лжен"
+back = "devoir (obligé de)"
+note = "Я до́лжен идти́ = Je dois y aller."
+level = 97
+
+[[card]]
+id = "t7-voc-098"
+kind = "vocab"
+front = "спосо́бен"
+back = "capable"
+level = 98
+
+[[card]]
+id = "t7-voc-099"
+kind = "vocab"
+front = "похо́ж"
+back = "ressemblant"
+note = "Он похо́ж на отца́ = Il ressemble à son père."
+level = 99
+
+[[card]]
+id = "t7-voc-100"
+kind = "vocab"
+front = "ну́жен"
+back = "nécessaire"
+level = 100
+
+[[card]]
+id = "t7-voc-101"
+kind = "vocab"
+front = "пра́в"
+back = "qui a raison"
+level = 101
+
+[[card]]
+id = "t7-voc-102"
+kind = "vocab"
+front = "жив"
+back = "vivant"
+level = 102
+
+[[card]]
+id = "t7-voc-103"
+kind = "vocab"
+front = "сыт"
+back = "rassasié"
+level = 103
+
+[[card]]
+id = "t7-voc-104"
+kind = "vocab"
+front = "пьян"
+back = "ivre"
+level = 104
+
+[[card]]
+id = "t7-voc-105"
+kind = "vocab"
+front = "писа́ть / написа́ть"
+back = "écrire / avoir écrit"
+note = "La paire « en cours / terminé »."
+level = 105
+
+[[card]]
+id = "t7-voc-106"
+kind = "vocab"
+front = "де́лать / сде́лать"
+back = "faire / avoir fait"
+level = 106
+
+[[card]]
+id = "t7-voc-107"
+kind = "vocab"
+front = "говори́ть / сказа́ть"
+back = "parler, dire / avoir dit"
+level = 107
+
+[[card]]
+id = "t7-voc-108"
+kind = "vocab"
+front = "брать / взять"
+back = "prendre / avoir pris"
+level = 108
+
+[[card]]
+id = "t7-voc-109"
+kind = "vocab"
+front = "дава́ть / дать"
+back = "donner / avoir donné"
+level = 109
+
+[[card]]
+id = "t7-voc-110"
+kind = "vocab"
+front = "покупа́ть / купи́ть"
+back = "acheter / avoir acheté"
+level = 110
+
+[[card]]
+id = "t7-voc-111"
+kind = "vocab"
+front = "открыва́ть / откры́ть"
+back = "ouvrir / avoir ouvert"
+level = 111
+
+[[card]]
+id = "t7-voc-112"
+kind = "vocab"
+front = "начина́ть / нача́ть"
+back = "commencer / avoir commencé"
+level = 112
+
+[[card]]
+id = "t7-voc-113"
+kind = "vocab"
+front = "понима́ть / поня́ть"
+back = "comprendre / avoir compris"
+level = 113
+
+[[card]]
+id = "t7-voc-114"
+kind = "vocab"
+front = "учи́ть / вы́учить"
+back = "apprendre / avoir appris (par cœur)"
+level = 114
+
+[[card]]
+id = "t7-voc-115"
+kind = "vocab"
+front = "пить / вы́пить"
+back = "boire / avoir bu"
+level = 115
+
+[[card]]
+id = "t7-voc-116"
+kind = "vocab"
+front = "есть / съесть"
+back = "manger / avoir mangé"
+level = 116
+
+[[card]]
+id = "t7-voc-117"
+kind = "vocab"
+front = "ви́деть / уви́деть"
+back = "voir / apercevoir"
+level = 117
+
+[[card]]
+id = "t7-voc-118"
+kind = "vocab"
+front = "слы́шать / услы́шать"
+back = "entendre / avoir entendu"
+level = 118
+
+[[card]]
+id = "t7-voc-119"
+kind = "vocab"
+front = "звони́ть / позвони́ть"
+back = "appeler / avoir appelé"
+level = 119
+
+[[card]]
+id = "t7-voc-120"
+kind = "vocab"
+front = "ждать / подожда́ть"
+back = "attendre / attendre un peu"
+level = 120
+
+[[card]]
+id = "t7-voc-121"
+kind = "vocab"
+front = "реша́ть / реши́ть"
+back = "décider / avoir décidé"
+level = 121
+
+[[card]]
+id = "t7-voc-122"
+kind = "vocab"
+front = "приглаша́ть"
+back = "inviter"
+level = 122
+
+[[card]]
+id = "t7-voc-123"
+kind = "vocab"
+front = "благодари́ть"
+back = "remercier"
+level = 123
+
+[[card]]
+id = "t7-voc-124"
+kind = "vocab"
+front = "поздравля́ть"
+back = "féliciter"
+level = 124
+
+[[card]]
+id = "t7-voc-125"
+kind = "vocab"
+front = "проща́ться"
+back = "dire au revoir"
+level = 125
+
+[[card]]
+id = "t7-voc-126"
+kind = "vocab"
+front = "знако́миться"
+back = "faire connaissance"
+level = 126
+
+[[card]]
+id = "t7-voc-127"
+kind = "vocab"
+front = "целова́ть"
+back = "embrasser"
+level = 127
+
+[[card]]
+id = "t7-voc-128"
+kind = "vocab"
+front = "обнима́ть"
+back = "serrer dans ses bras"
+level = 128
+
+[[card]]
+id = "t7-voc-129"
+kind = "vocab"
+front = "шути́ть"
+back = "plaisanter"
+level = 129
+
+[[card]]
+id = "t7-voc-130"
+kind = "vocab"
+front = "крича́ть"
+back = "crier"
+level = 130
+
+[[card]]
+id = "t7-voc-131"
+kind = "vocab"
+front = "шепта́ть"
+back = "chuchoter"
+level = 131
+
+[[card]]
+id = "t7-voc-132"
+kind = "vocab"
+front = "свисте́ть"
+back = "siffler"
+level = 132
+
+[[card]]
+id = "t7-voc-133"
+kind = "vocab"
+front = "кива́ть"
+back = "hocher la tête"
+level = 133
+
+[[card]]
+id = "t7-voc-134"
+kind = "vocab"
+front = "моргну́ть"
+back = "cligner des yeux"
+level = 134
+
+[[card]]
+id = "t7-voc-135"
+kind = "vocab"
+front = "вздыха́ть"
+back = "soupirer"
+level = 135
+
+[[card]]
+id = "t7-voc-136"
+kind = "vocab"
+front = "ка́шлять"
+back = "tousser"
+level = 136
+
+[[card]]
+id = "t7-voc-137"
+kind = "vocab"
+front = "чиха́ть"
+back = "éternuer"
+level = 137
+
+[[card]]
+id = "t7-voc-138"
+kind = "vocab"
+front = "дрожа́ть"
+back = "trembler"
+level = 138
+
+[[card]]
+id = "t7-voc-139"
+kind = "vocab"
+front = "па́дать"
+back = "tomber"
+level = 139
+
+[[card]]
+id = "t7-voc-140"
+kind = "vocab"
+front = "пры́гать"
+back = "sauter"
+level = 140
+
+[[card]]
+id = "t7-voc-141"
+kind = "vocab"
+front = "бе́гать"
+back = "courir (souvent)"
+level = 141
+
+[[card]]
+id = "t7-voc-142"
+kind = "vocab"
+front = "бежа́ть"
+back = "courir (maintenant)"
+level = 142
+
+[[card]]
+id = "t7-voc-143"
+kind = "vocab"
+front = "лета́ть"
+back = "voler (souvent)"
+level = 143
+
+[[card]]
+id = "t7-voc-144"
+kind = "vocab"
+front = "лете́ть"
+back = "voler (maintenant)"
+level = 144
+
+[[card]]
+id = "t7-voc-145"
+kind = "vocab"
+front = "плыть"
+back = "nager (maintenant)"
+level = 145
+
+[[card]]
+id = "t7-voc-146"
+kind = "vocab"
+front = "носи́ть"
+back = "porter (souvent)"
+level = 146
+
+[[card]]
+id = "t7-voc-147"
+kind = "vocab"
+front = "нести́"
+back = "porter (maintenant)"
+level = 147
+
+[[card]]
+id = "t7-voc-148"
+kind = "vocab"
+front = "вози́ть"
+back = "transporter (souvent)"
+level = 148
+
+[[card]]
+id = "t7-voc-149"
+kind = "vocab"
+front = "везти́"
+back = "transporter (maintenant)"
+level = 149
+
+[[card]]
+id = "t7-voc-150"
+kind = "vocab"
+front = "води́ть"
+back = "conduire, mener (souvent)"
+level = 150
+
+[[card]]
+id = "t7-voc-151"
+kind = "vocab"
+front = "вести́"
+back = "conduire, mener (maintenant)"
+level = 151
+
+[[card]]
+id = "t7-voc-152"
+kind = "vocab"
+front = "тяжёлый"
+back = "lourd"
+level = 152
+
+[[card]]
+id = "t7-voc-153"
+kind = "vocab"
+front = "мя́гкий"
+back = "doux, mou"
+level = 153
+
+[[card]]
+id = "t7-voc-154"
+kind = "vocab"
+front = "твёрдый"
+back = "dur"
+level = 154
+
+[[card]]
+id = "t7-voc-155"
+kind = "vocab"
+front = "гла́дкий"
+back = "lisse"
+level = 155
+
+[[card]]
+id = "t7-voc-156"
+kind = "vocab"
+front = "ти́хий"
+back = "calme, silencieux"
+level = 156
+
+[[card]]
+id = "t7-voc-157"
+kind = "vocab"
+front = "гро́мкий"
+back = "fort (bruyant)"
+level = 157
+
+[[card]]
+id = "t7-voc-158"
+kind = "vocab"
+front = "я́ркий"
+back = "vif, éclatant"
+level = 158
+
+[[card]]
+id = "t7-voc-159"
+kind = "vocab"
+front = "тёмный"
+back = "sombre"
+level = 159
+
+[[card]]
+id = "t7-voc-160"
+kind = "vocab"
+front = "све́тлый"
+back = "clair"
+level = 160
+
+[[card]]
+id = "t7-voc-161"
+kind = "vocab"
+front = "широ́кий"
+back = "large"
+level = 161
+
+[[card]]
+id = "t7-voc-162"
+kind = "vocab"
+front = "у́зкий"
+back = "étroit"
+level = 162
+
+[[card]]
+id = "t7-voc-163"
+kind = "vocab"
+front = "дли́нный"
+back = "long"
+level = 163
+
+[[card]]
+id = "t7-voc-164"
+kind = "vocab"
+front = "коро́ткий"
+back = "court"
+level = 164
+
+[[card]]
+id = "t7-voc-165"
+kind = "vocab"
+front = "высо́кий"
+back = "haut, grand"
+level = 165
+
+[[card]]
+id = "t7-voc-166"
+kind = "vocab"
+front = "ни́зкий"
+back = "bas"
+level = 166
+
+[[card]]
+id = "t7-voc-167"
+kind = "vocab"
+front = "то́лстый"
+back = "gros, épais"
+level = 167
+
+[[card]]
+id = "t7-voc-168"
+kind = "vocab"
+front = "то́нкий"
+back = "fin, mince"
+level = 168
+
+[[card]]
+id = "t7-voc-169"
+kind = "vocab"
+front = "бога́тый"
+back = "riche"
+level = 169
+
+[[card]]
+id = "t7-voc-170"
+kind = "vocab"
+front = "бе́дный"
+back = "pauvre"
+level = 170
+
+[[card]]
+id = "t7-voc-171"
+kind = "vocab"
+front = "чи́стый"
+back = "propre"
+level = 171
+
+[[card]]
+id = "t7-voc-172"
+kind = "vocab"
+front = "гря́зный"
+back = "sale"
+level = 172
+
+[[card]]
+id = "t7-voc-173"
+kind = "vocab"
+front = "сухо́й"
+back = "sec"
+level = 173
+
+[[card]]
+id = "t7-voc-174"
+kind = "vocab"
+front = "мо́крый"
+back = "mouillé"
+level = 174
+
+[[card]]
+id = "t7-voc-175"
+kind = "vocab"
+front = "сла́бый"
+back = "faible"
+level = 175
+
+[[card]]
+id = "t7-voc-176"
+kind = "vocab"
+front = "си́льный"
+back = "fort"
+level = 176
+
+[[card]]
+id = "t7-voc-177"
+kind = "vocab"
+front = "сме́лый"
+back = "courageux"
+level = 177
+
+[[card]]
+id = "t7-voc-178"
+kind = "vocab"
+front = "ле́нивый"
+back = "paresseux"
+level = 178
+
+[[card]]
+id = "t7-voc-179"
+kind = "vocab"
+front = "ве́жливый"
+back = "poli"
+level = 179
+
+[[card]]
+id = "t7-voc-180"
+kind = "vocab"
+front = "гру́бый"
+back = "grossier"
+level = 180
+
+[[card]]
+id = "t7-voc-181"
+kind = "vocab"
+front = "че́стный"
+back = "honnête"
+level = 181
+
+[[card]]
+id = "t7-voc-182"
+kind = "vocab"
+front = "стра́нный"
+back = "étrange"
+level = 182
+
+[[card]]
+id = "t7-phr-001"
+kind = "phrase"
+front = "Ничего́ не поде́лаешь"
+back = "On n'y peut rien"
+level = 1
+
+[[card]]
+id = "t7-phr-002"
+kind = "phrase"
+front = "Так ему́ и на́до"
+back = "Bien fait pour lui"
+level = 2
+
+[[card]]
+id = "t7-phr-003"
+kind = "phrase"
+front = "Ни в ко́ем слу́чае"
+back = "En aucun cas"
+level = 3
+
+[[card]]
+id = "t7-phr-004"
+kind = "phrase"
+front = "Что́ за вопро́с!"
+back = "Quelle question !"
+level = 4
+
+[[card]]
+id = "t7-phr-005"
+kind = "phrase"
+front = "Мне не до сме́ха"
+back = "Je n'ai pas le cœur à rire"
+level = 5
+
+[[card]]
+id = "t7-phr-006"
+kind = "phrase"
+front = "Как дела́ на рабо́те?"
+back = "Comment ça va au travail ?"
+level = 6
+
+[[card]]
+id = "t7-phr-007"
+kind = "phrase"
+front = "Не за что благодари́ть"
+back = "Il n'y a pas de quoi"
+level = 7
+
+[[card]]
+id = "t7-phr-008"
+kind = "phrase"
+front = "Я тебе́ перезвоню́"
+back = "Je te rappelle"
+level = 8
+
+[[card]]
+id = "t7-phr-009"
+kind = "phrase"
+front = "Переда́й приве́т"
+back = "Passe le bonjour"
+level = 9
+
+[[card]]
+id = "t7-phr-010"
+kind = "phrase"
+front = "Чу́вствуй себя́ как до́ма"
+back = "Fais comme chez toi"
+level = 10
+
+[[card]]
+id = "t7-phr-011"
+kind = "phrase"
+front = "Мне пора́"
+back = "Il est temps que j'y aille"
+level = 11
+
+[[card]]
+id = "t7-phr-012"
+kind = "phrase"
+front = "С удово́льствием!"
+back = "Avec plaisir !"
+level = 12
+
+[[card]]
+id = "t7-phr-013"
+kind = "phrase"
+front = "Как жаль!"
+back = "Quel dommage !"
+level = 13
+
+[[card]]
+id = "t7-phr-014"
+kind = "phrase"
+front = "Ну и пого́да!"
+back = "Quel temps !"
+level = 14
+
+[[card]]
+id = "t7-phr-015"
+kind = "phrase"
+front = "Где́-то здесь"
+back = "Quelque part par ici"
+level = 15
+
+[[card]]
+id = "t7-phr-016"
+kind = "phrase"
+front = "Когда́-нибудь"
+back = "Un jour (n'importe quand)"
+level = 16
+
+[[card]]
+id = "t7-phr-017"
+kind = "phrase"
+front = "Ка́к-нибудь пото́м"
+back = "Une autre fois"
+level = 17
+
+[[card]]
+id = "t7-phr-018"
+kind = "phrase"
+front = "Ты что, с ума́ сошёл?"
+back = "T'es fou ou quoi ?"
+level = 18
+
+[[card]]
+id = "t7-phr-019"
+kind = "phrase"
+front = "Не в э́том де́ло"
+back = "Ce n'est pas la question"
+level = 19
+
+[[card]]
+id = "t7-phr-020"
+kind = "phrase"
+front = "Де́ло в том, что…"
+back = "Le fait est que…"
+level = 20
+
+[[card]]
+id = "t7-phr-021"
+kind = "phrase"
+front = "Ме́жду на́ми"
+back = "Entre nous"
+level = 21
+
+[[card]]
+id = "t7-phr-022"
+kind = "phrase"
+front = "Без шу́ток"
+back = "Sans blague"
+level = 22
+
+[[card]]
+id = "t7-phr-023"
+kind = "phrase"
+front = "Вот так сюрпри́з!"
+back = "Quelle surprise !"
+level = 23
+
+[[card]]
+id = "t7-phr-024"
+kind = "phrase"
+front = "Дай знать"
+back = "Fais-moi signe"
+level = 24
+
+[[card]]
+id = "t7-phr-025"
+kind = "phrase"
+front = "Береги́ себя́!"
+back = "Prends soin de toi !"
+level = 25
+
+[[card]]
+id = "t7-phr-026"
+kind = "phrase"
+front = "Не теря́й вре́мени"
+back = "Ne perds pas de temps"
+level = 26
+
+[[card]]
+id = "t7-phr-027"
+kind = "phrase"
+front = "Поня́тия не име́ю"
+back = "Aucune idée"
+level = 27
+
+[[card]]
+id = "t7-phr-028"
+kind = "phrase"
+front = "Э́то не моё де́ло"
+back = "Ça ne me regarde pas"
+level = 28
+
+[[card]]
+id = "t7-phr-029"
+kind = "phrase"
+front = "Как ни стра́нно"
+back = "Aussi étrange que cela paraisse"
+level = 29
+
+[[card]]
+id = "t7-phr-030"
+kind = "phrase"
+front = "На вся́кий слу́чай"
+back = "Au cas où"
+level = 30
+
+[[card]]
+id = "t7-gra-001"
+kind = "grammar"
+front = "идти́ / ходи́ть"
+question = "Каждый день я хожу́ на рабо́ту. Pourquoi ходи́ть ?"
+back = "C'est une habitude, un trajet répété"
+wrong = ["C'est un trajet en cours", "C'est au futur"]
+note = "Les verbes de mouvement vont par paires : un pour « en ce moment, dans une direction » (идти́, е́хать, лете́ть…), un pour « souvent, aller-retour » (ходи́ть, е́здить, лета́ть…)."
+level = 1
+
+[[card]]
+id = "t7-gra-002"
+kind = "grammar"
+front = "Я написа́л письмо́."
+question = "Que veut dire cette phrase ?"
+back = "J'ai écrit la lettre (elle est finie)."
+wrong = ["J'écrivais une lettre.", "J'écrirai une lettre."]
+note = "написа́ть est la forme « terminée » de писа́ть : l'action est allée au bout."
+level = 2
+
+[[card]]
+id = "t7-gra-003"
+kind = "grammar"
+front = "Я писа́л письмо́ два часа́."
+question = "Pourquoi писа́л et pas написа́л ?"
+back = "On insiste sur la durée, pas sur le résultat"
+wrong = ["Parce que la lettre est finie", "Parce que c'est poli"]
+note = "Avec une durée (два часа́, весь день), on prend la forme « en cours »."
+level = 3
+
+[[card]]
+id = "t7-gra-004"
+kind = "grammar"
+front = "мно́го книг"
+question = "Pourquoi книг et pas кни́ги ?"
+back = "Après мно́го, le mot prend la forme « de » au pluriel"
+wrong = ["C'est une faute", "C'est au singulier"]
+note = "Après мно́го (beaucoup), ма́ло (peu), ско́лько (combien), le nom se met au génitif pluriel : книг, домо́в, люде́й."
+level = 4
+
+[[card]]
+id = "t7-gra-005"
+kind = "grammar"
+front = "Я до́лжен рабо́тать."
+question = "Que veut dire cette phrase ?"
+back = "Je dois travailler."
+wrong = ["Je veux travailler.", "Je peux travailler."]
+note = "до́лжен (homme), должна́ (femme), должны́ (pluriel) + infinitif = devoir."
+level = 5
+
+[[card]]
+id = "t7-gra-006"
+kind = "grammar"
+front = "Он похо́ж на ма́му."
+question = "Que veut dire cette phrase ?"
+back = "Il ressemble à sa mère."
+wrong = ["Il aime sa mère.", "Il va chez sa mère."]
+note = "похо́ж на + personne (forme « complément ») = ressembler à."
+level = 6
+
+[[card]]
+id = "t7-gra-007"
+kind = "grammar"
+front = "Я жду дру́га."
+question = "Pourquoi дру́га et pas друг ?"
+back = "Parce que c'est la personne qu'on attend (complément vivant)"
+wrong = ["Parce que c'est au pluriel", "Parce que c'est une question"]
+note = "Pour les êtres vivants masculins, le complément prend -а : Я ви́жу бра́та, Я жду дру́га."
+level = 7
+
+[[card]]
+id = "t7-gra-008"
+kind = "grammar"
+front = "Я дам тебе́ кни́гу."
+question = "Que veut dire тебе́ ?"
+back = "à toi"
+wrong = ["toi", "ton"]
+note = "тебе́ = à toi, мне = à moi, ему́ = à lui, ей = à elle. C'est la forme de celui qui reçoit."
+level = 8
+
+[[card]]
+id = "t7-gra-009"
+kind = "grammar"
+front = "кни́га бра́та"
+question = "Que veut dire кни́га бра́та ?"
+back = "le livre du frère"
+wrong = ["le frère du livre", "un livre pour le frère"]
+note = "Pour « de » (appartenance), le second nom prend la forme génitive : дом отца́ = la maison du père."
+level = 9
+
+[[card]]
+id = "t7-gra-010"
+kind = "grammar"
+front = "Я е́ду к врачу́."
+question = "Que veut dire к врачу́ ?"
+back = "chez le médecin"
+wrong = ["du médecin", "avec le médecin"]
+note = "к + personne = chez, vers quelqu'un : к ма́ме, к дру́гу."
+level = 10
+
+[[card]]
+id = "t7-gra-011"
+kind = "grammar"
+front = "Я иду́ из магази́на."
+question = "Que veut dire из магази́на ?"
+back = "du magasin (j'en sors)"
+wrong = ["au magasin", "dans le magasin"]
+note = "из + génitif = d'où l'on vient (с pour les lieux qui prennent на : с рабо́ты)."
+level = 11
+
+[[card]]
+id = "t7-gra-012"
+kind = "grammar"
+front = "Пойду́ погуля́ю."
+question = "Que veut dire cette phrase ?"
+back = "Je vais aller me promener."
+wrong = ["Je me suis promené.", "Promène-toi."]
+note = "Tournure familière : пойду́ + verbe au futur = je vais aller faire…"
+level = 12
+
+[[card]]
+id = "t7-gra-013"
+kind = "grammar"
+front = "Е́сли бы у меня́ бы́ли де́ньги…"
+question = "Que veut dire cette phrase ?"
+back = "Si j'avais de l'argent…"
+wrong = ["Si j'aurai de l'argent…", "Quand j'aurai de l'argent…"]
+note = "е́сли бы + passé = si (hypothèse irréelle)."
+level = 13
+
+[[card]]
+id = "t7-gra-014"
+kind = "grammar"
+front = "сам / сама́"
+question = "Я сде́лал э́то сам. Que veut dire сам ?"
+back = "moi-même, tout seul"
+wrong = ["ensemble", "déjà"]
+note = "сам (masc.), сама́ (fém.), са́ми (pluriel) = soi-même, sans aide."
+level = 14
+
+[[card]]
+id = "t7-gra-015"
+kind = "grammar"
+front = "друг дру́га"
+question = "Они́ лю́бят друг дру́га. Que veut dire друг дру́га ?"
+back = "l'un l'autre"
+wrong = ["des amis", "un ami"]
+note = "друг дру́га = l'un l'autre (réciproque). Они́ говоря́т друг с дру́гом = Ils se parlent."
+level = 15
