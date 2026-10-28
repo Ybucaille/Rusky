@@ -2,3 +2,4 @@
 /pkg
 /src/rusky
 *.pkg.tar.zst
+/src/target
