@@ -4,10 +4,12 @@
 use crate::db::Card;
 use crate::srs::Grade;
 use anyhow::{Result, bail};
+use gtk::glib;
 use gtk::prelude::*;
 use gtk4_layer_shell::{Edge, KeyboardMode, Layer, LayerShell};
 use std::cell::RefCell;
 use std::rc::Rc;
+use std::time::Duration;
 
 pub enum Outcome {
     Graded(Grade),
@@ -20,41 +22,38 @@ pub enum Outcome {
 /// Présente une carte. Bloque jusqu'à ce que l'utilisateur réponde ou ferme.
 pub fn present(card: &Card, now: i64) -> Result<Outcome> {
     let p = Prompt::for_card(card, now);
+    let popup = Popup::new(&p.title)?;
 
-    if card.kind == "grammar" {
+    let outcome = if card.kind == "grammar" {
         let note = card
             .note
             .as_deref()
             .map(|n| format!("\n\n<i>{}</i>", esc(n)))
             .unwrap_or_default();
-        let action = ask(
-            &p.title,
+        let action = popup.ask(
             &card.front,
             &format!("{}{}", esc(&card.back), note),
-            &[("good", "Compris ✓"), ("again", "À revoir ✗"), ("later", "Plus tard")],
-        )?;
-        return Ok(to_outcome(&action));
-    }
-
-    let first = ask(
-        &p.title,
-        &p.question,
-        &format!("<i>{}</i>", p.hint),
-        &[("reveal", "Révéler"), ("later", "Plus tard")],
-    )?;
-    match first.as_str() {
-        "reveal" => {}
-        "later" => return Ok(Outcome::Later),
-        _ => return Ok(Outcome::Dismissed),
-    }
-
-    let second = ask(
-        &p.title,
-        &p.question,
-        &p.answer,
-        &[("good", "Je savais ✓"), ("again", "Pas su ✗")],
-    )?;
-    Ok(to_outcome(&second))
+            &[("good", "Compris"), ("again", "À revoir"), ("later", "Plus tard")],
+        );
+        to_outcome(&action)
+    } else {
+        let first = popup.ask(
+            &p.question,
+            &format!("<i>{}</i>", p.hint),
+            &[("reveal", "Révéler"), ("later", "Plus tard")],
+        );
+        match first.as_str() {
+            "reveal" => to_outcome(&popup.ask(
+                &p.question,
+                &p.answer,
+                &[("good", "Je savais"), ("again", "Pas su")],
+            )),
+            "later" => Outcome::Later,
+            _ => Outcome::Dismissed,
+        }
+    };
+    popup.close();
+    Ok(outcome)
 }
 
 struct Prompt {
@@ -113,24 +112,37 @@ impl Prompt {
 const CSS: &str = r#"
 window.rusky { background: transparent; }
 .card {
-  background: alpha(#1e1e2e, 0.96);
-  color: #e6e6f0;
-  border-radius: 18px;
-  border: 1px solid alpha(#ffffff, 0.08);
-  padding: 14px 18px 16px 18px;
-  box-shadow: 0 6px 24px alpha(black, 0.45);
+  background: #18191c;
+  color: #ececef;
+  border-radius: 16px;
+  border: 1px solid alpha(#ffffff, 0.07);
+  padding: 14px 18px 18px 18px;
+  margin: 28px 28px 44px 44px;  /* place pour l'ombre */
+  box-shadow: 0 2px 6px alpha(black, 0.25), 0 12px 32px alpha(black, 0.35);
+  opacity: 1;
+  transform: none;
+  transition: opacity 220ms ease-out, transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-.header { font-size: 0.9em; opacity: 0.7; }
-.close { min-width: 24px; min-height: 24px; padding: 0; border-radius: 12px;
-         background: none; box-shadow: none; border: none; color: inherit; }
-.close:hover { background: alpha(#ffffff, 0.1); }
-.question { font-size: 30px; font-weight: 700; margin: 10px 0 4px 0; }
-.body { font-size: 1.05em; opacity: 0.9; }
-.actions button { border-radius: 10px; padding: 6px 14px; border: none;
-                  background: alpha(#ffffff, 0.08); color: inherit; box-shadow: none; }
-.actions button:hover { background: alpha(#ffffff, 0.16); }
-.actions button.primary { background: #cba6f7; color: #1e1e2e; font-weight: 600; }
-.actions button.primary:hover { background: #d9bdfa; }
+.card.hidden {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 160ms ease-in, transform 160ms ease-in;
+}
+.header { font-size: 11px; font-weight: 600; letter-spacing: 1px; color: #8b8d94; }
+.close { min-width: 24px; min-height: 24px; padding: 0; border-radius: 8px;
+         background: none; box-shadow: none; border: none; color: #8b8d94; }
+.close:hover { background: alpha(#ffffff, 0.06); color: #ececef; }
+.content { transition: opacity 150ms ease-in-out; }
+.content.fading { opacity: 0; }
+.question { font-size: 30px; font-weight: 700; margin: 12px 0 4px 0; }
+.body { font-size: 14px; color: #b4b6bd; }
+.actions { margin-top: 16px; }
+.actions button { border-radius: 9px; padding: 7px 16px; border: 1px solid alpha(#ffffff, 0.06);
+                  background: #26282d; color: #ececef; box-shadow: none; font-weight: 500;
+                  transition: background 120ms; }
+.actions button:hover { background: #2e3036; }
+.actions button.primary { background: #7aa2f7; border-color: transparent; color: #0f1115; font-weight: 600; }
+.actions button.primary:hover { background: #8fb2fa; }
 "#;
 
 fn init() -> Result<()> {
@@ -150,91 +162,165 @@ fn init() -> Result<()> {
     Ok(())
 }
 
-/// Construit la popup (en haut à droite) et renvoie la fenêtre et sa zone de boutons.
-fn popup(header: &str, question: &str, body: &str) -> (gtk::Window, gtk::Box, gtk::Button) {
-    let win = gtk::Window::builder().css_classes(["rusky"]).resizable(false).build();
-    win.init_layer_shell();
-    win.set_namespace(Some("rusky"));
-    win.set_layer(Layer::Overlay);
-    win.set_keyboard_mode(KeyboardMode::OnDemand);
-    win.set_anchor(Edge::Top, true);
-    win.set_anchor(Edge::Right, true);
-    win.set_margin(Edge::Top, 16);
-    win.set_margin(Edge::Right, 16);
-
-    let card = gtk::Box::builder()
-        .orientation(gtk::Orientation::Vertical)
-        .css_classes(["card"])
-        .width_request(340)
-        .build();
-
-    let top = gtk::Box::new(gtk::Orientation::Horizontal, 8);
-    let head = gtk::Label::builder().label(header).xalign(0.0).hexpand(true).css_classes(["header"]).build();
-    let close = gtk::Button::builder().label("✕").css_classes(["close"]).build();
-    top.append(&head);
-    top.append(&close);
-    card.append(&top);
-
-    card.append(&gtk::Label::builder().label(question).wrap(true).justify(gtk::Justification::Center).css_classes(["question"]).build());
-    if !body.is_empty() {
-        let b = gtk::Label::builder().wrap(true).max_width_chars(36).justify(gtk::Justification::Center).css_classes(["body"]).build();
-        b.set_markup(body);
-        card.append(&b);
-    }
-
-    let actions = gtk::Box::builder()
-        .spacing(8)
-        .halign(gtk::Align::Center)
-        .margin_top(14)
-        .css_classes(["actions"])
-        .build();
-    card.append(&actions);
-    win.set_child(Some(&card));
-    (win, actions, close)
+/// Fait tourner la boucle GTK pendant `ms` (le temps d'une transition CSS).
+fn pump(ms: u64) {
+    let main = glib::MainLoop::new(None, false);
+    let m = main.clone();
+    glib::timeout_add_local_once(Duration::from_millis(ms), move || m.quit());
+    main.run();
 }
 
-fn ask(header: &str, question: &str, body: &str, actions: &[(&str, &str)]) -> Result<String> {
-    init()?;
-    let (win, row, close) = popup(header, question, body);
-    let chosen = Rc::new(RefCell::new(String::from("__closed")));
-    let main = gtk::glib::MainLoop::new(None, false);
+/// Une carte à l'écran (en haut à droite), réutilisée entre question et réponse.
+struct Popup {
+    win: gtk::Window,
+    card: gtk::Box,
+    content: gtk::Box,
+    question: gtk::Label,
+    body: gtk::Label,
+    actions: gtk::Box,
+    main: glib::MainLoop,
+    chosen: Rc<RefCell<String>>,
+}
 
-    for (i, (id, label)) in actions.iter().enumerate() {
-        let b = gtk::Button::with_label(label);
-        if i == 0 {
-            b.add_css_class("primary");
-        }
-        let (id, chosen, main) = (id.to_string(), chosen.clone(), main.clone());
-        b.connect_clicked(move |_| {
-            *chosen.borrow_mut() = id.clone();
-            main.quit();
-        });
-        row.append(&b);
-    }
-    let m = main.clone();
-    close.connect_clicked(move |_| m.quit());
-    let m = main.clone();
-    win.connect_close_request(move |_| {
-        m.quit();
-        gtk::glib::Propagation::Proceed
-    });
-    // Échap ferme la popup quand elle a le focus.
-    let keys = gtk::EventControllerKey::new();
-    let m = main.clone();
-    keys.connect_key_pressed(move |_, k, _, _| {
-        if k == gtk::gdk::Key::Escape {
+impl Popup {
+    fn new(header: &str) -> Result<Self> {
+        init()?;
+        let win = gtk::Window::builder().css_classes(["rusky"]).resizable(false).build();
+        win.init_layer_shell();
+        win.set_namespace(Some("rusky"));
+        win.set_layer(Layer::Overlay);
+        win.set_keyboard_mode(KeyboardMode::OnDemand);
+        win.set_anchor(Edge::Top, true);
+        win.set_anchor(Edge::Right, true);
+        // La marge de la carte (ombre) complète ce décalage.
+        win.set_margin(Edge::Top, 0);
+        win.set_margin(Edge::Right, 0);
+
+        let card = gtk::Box::builder()
+            .orientation(gtk::Orientation::Vertical)
+            .css_classes(["card", "hidden"])
+            .width_request(412)  // 340 px de carte + marges de l'ombre
+            .build();
+
+        let top = gtk::Box::new(gtk::Orientation::Horizontal, 8);
+        let head = gtk::Label::builder()
+            .label(header.to_uppercase())
+            .xalign(0.0)
+            .hexpand(true)
+            .css_classes(["header"])
+            .build();
+        let close = gtk::Button::builder().icon_name("window-close-symbolic").css_classes(["close"]).build();
+        top.append(&head);
+        top.append(&close);
+        card.append(&top);
+
+        let content = gtk::Box::builder().orientation(gtk::Orientation::Vertical).css_classes(["content"]).build();
+        let question = gtk::Label::builder().wrap(true).justify(gtk::Justification::Center).css_classes(["question"]).build();
+        let body = gtk::Label::builder()
+            .wrap(true)
+            .max_width_chars(36)
+            .justify(gtk::Justification::Center)
+            .css_classes(["body"])
+            .build();
+        let actions = gtk::Box::builder().spacing(8).halign(gtk::Align::Center).css_classes(["actions"]).build();
+        content.append(&question);
+        content.append(&body);
+        content.append(&actions);
+        card.append(&content);
+        win.set_child(Some(&card));
+
+        let main = glib::MainLoop::new(None, false);
+        let chosen = Rc::new(RefCell::new(String::new()));
+        let (m, c) = (main.clone(), chosen.clone());
+        close.connect_clicked(move |_| {
+            c.replace("__closed".into());
             m.quit();
-        }
-        gtk::glib::Propagation::Proceed
-    });
-    win.add_controller(keys);
+        });
+        let (m, c) = (main.clone(), chosen.clone());
+        win.connect_close_request(move |_| {
+            c.replace("__closed".into());
+            m.quit();
+            glib::Propagation::Stop
+        });
+        let keys = gtk::EventControllerKey::new();
+        let (m, c) = (main.clone(), chosen.clone());
+        keys.connect_key_pressed(move |_, k, _, _| {
+            if k == gtk::gdk::Key::Escape {
+                c.replace("__closed".into());
+                m.quit();
+            }
+            glib::Propagation::Proceed
+        });
+        win.add_controller(keys);
 
-    win.present();
-    main.run();
-    win.destroy();
-    // Laisse GTK traiter la fermeture avant la popup suivante.
-    while gtk::glib::MainContext::default().iteration(false) {}
-    Ok(chosen.take())
+        // Seule la carte capte les clics : la marge transparente laisse passer.
+        let c = card.clone();
+        win.connect_map(move |w| {
+            let c = c.clone();
+            let w = w.clone();
+            glib::idle_add_local_once(move || {
+                if let (Some(b), Some(s)) = (c.compute_bounds(&w), w.surface()) {
+                    let r = gtk::cairo::RectangleInt::new(
+                        b.x() as i32, b.y() as i32, b.width() as i32, b.height() as i32,
+                    );
+                    s.set_input_region(Some(&gtk::cairo::Region::create_rectangle(&r)));
+                }
+                c.remove_css_class("hidden");
+            });
+        });
+
+        Ok(Self { win, card, content, question, body, actions, main, chosen })
+    }
+
+    /// Affiche une question (fondu si la carte est déjà visible) et attend un bouton.
+    fn ask(&self, question: &str, body: &str, actions: &[(&str, &str)]) -> String {
+        let shown = self.win.is_visible();
+        if shown {
+            self.content.add_css_class("fading");
+            pump(150);
+        }
+        self.question.set_label(question);
+        self.body.set_markup(body);
+        self.body.set_visible(!body.is_empty());
+        while let Some(child) = self.actions.first_child() {
+            self.actions.remove(&child);
+        }
+        for (i, (id, label)) in actions.iter().enumerate() {
+            let b = gtk::Button::with_label(label);
+            if i == 0 {
+                b.add_css_class("primary");
+            }
+            let (id, c, m) = (id.to_string(), self.chosen.clone(), self.main.clone());
+            b.connect_clicked(move |_| {
+                c.replace(id.clone());
+                m.quit();
+            });
+            self.actions.append(&b);
+        }
+        if shown {
+            self.content.remove_css_class("fading");
+        } else {
+            self.win.present();
+        }
+        self.main.run();
+        self.chosen.take()
+    }
+
+    /// Fait glisser la carte vers la droite puis détruit la fenêtre.
+    fn close(self) {
+        self.card.add_css_class("hidden");
+        pump(170);
+        self.win.destroy();
+        while glib::MainContext::default().iteration(false) {}
+    }
+
+    /// Ferme toute seule au bout de `secs` secondes.
+    fn wait(&self, secs: u32) {
+        let m = self.main.clone();
+        glib::timeout_add_seconds_local_once(secs, move || m.quit());
+        self.win.present();
+        self.main.run();
+    }
 }
 
 fn to_outcome(action: &str) -> Outcome {
@@ -248,23 +334,17 @@ fn to_outcome(action: &str) -> Outcome {
 
 /// Échappe le texte pour le balisage Pango.
 fn esc(s: &str) -> String {
-    gtk::glib::markup_escape_text(s).to_string()
+    glib::markup_escape_text(s).to_string()
 }
 
 /// Petite popup d'info (pause, erreurs…), refermée au bout de 5 s.
 pub fn info(summary: &str, body: &str) {
-    if init().is_err() {
+    let Ok(popup) = Popup::new("Rusky") else {
         eprintln!("{summary} : {body}");
         return;
-    }
-    let (win, _, close) = popup("Rusky", summary, &esc(body));
-    let main = gtk::glib::MainLoop::new(None, false);
-    let m = main.clone();
-    close.connect_clicked(move |_| m.quit());
-    let m = main.clone();
-    gtk::glib::timeout_add_seconds_local_once(5, move || m.quit());
-    win.present();
-    main.run();
-    win.destroy();
-    while gtk::glib::MainContext::default().iteration(false) {}
+    };
+    popup.question.set_label(summary);
+    popup.body.set_markup(&esc(body));
+    popup.wait(5);
+    popup.close();
 }
