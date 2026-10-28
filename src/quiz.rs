@@ -37,6 +37,7 @@ pub fn build(db: &Db, card: &Card, now: i64) -> Result<Quiz> {
         _ => "🇷🇺 Vocabulaire",
     };
     let new_tag = if card.due.is_none() { " · nouveau" } else { "" };
+    let label = format!("Niv. {} · {label}", card.tier);
 
     let (big, pron, prompt, answer) = if reverse {
         (

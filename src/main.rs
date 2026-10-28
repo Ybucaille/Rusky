@@ -2,6 +2,7 @@ mod config;
 mod content;
 mod db;
 mod popup;
+mod progress;
 mod pron;
 mod quiz;
 mod srs;
@@ -105,7 +106,8 @@ fn main() -> Result<()> {
             let db = open_db()?;
             let id = format!("perso-{}", Local::now().timestamp_millis());
             db.upsert(&content::CardDef {
-                id, kind, front, pron, question: None, back, wrong: vec![], note, level: 0,
+                pron: pron.or_else(|| Some(pron::pron(&front))),
+                id, kind, front, question: None, back, wrong: vec![], note, tier: Some(1), level: 0,
             })?;
             println!("Carte ajoutée ✓ Elle sortira parmi les prochaines nouvelles cartes.");
             Ok(())
@@ -141,11 +143,15 @@ fn main() -> Result<()> {
 /// Montre une carte en popup et enregistre la réponse. Renvoie false s'il n'y avait rien.
 fn show_one(db: &Db, cfg: &config::Config) -> Result<bool> {
     let t = now();
-    let Some(mut card) = db.next_card(t, day_start(), &cfg.kinds, cfg.max_new_per_day)? else {
+    let Some(mut card) = db.next_card(t, day_start(), &cfg.kinds, cfg.max_new_per_day, db.unlocked_tier()?)? else {
         return Ok(false);
     };
     match popup::present(&quiz::build(db, &card, t)?)? {
-        Outcome::Graded(g) => grade(db, &mut card, g)?,
+        Outcome::Graded(g) => {
+            if let Some(tier) = grade(db, &mut card, g)? {
+                popup::info("🎉 Niveau débloqué !", &unlocked_message(db, tier)?);
+            }
+        }
         // Une carte déjà vue repoussée revient au tour suivant ; une nouvelle reste nouvelle.
         Outcome::Later => db.snooze(&card, now() + (cfg.interval_minutes as i64) * 60)?,
         Outcome::Dismissed => {}
@@ -153,10 +159,17 @@ fn show_one(db: &Db, cfg: &config::Config) -> Result<bool> {
     Ok(true)
 }
 
-fn grade(db: &Db, card: &mut Card, g: Grade) -> Result<()> {
+/// Note la carte et compte l'XP. Renvoie le niveau qui vient de s'ouvrir, s'il y en a un.
+fn grade(db: &Db, card: &mut Card, g: Grade) -> Result<Option<i64>> {
     let t = now();
     srs::schedule(card, g, t);
-    db.save_review(card, g, t)
+    db.save_review(card, g, t)?;
+    progress::record(db, g == Grade::Good)
+}
+
+fn unlocked_message(db: &Db, tier: i64) -> Result<String> {
+    let (_, total) = db.tier_counts(tier, 0)?;
+    Ok(format!("Niveau {tier} : {}, {total} nouvelles cartes à découvrir.", progress::name(tier)))
 }
 
 fn run() -> Result<()> {
@@ -198,7 +211,7 @@ fn review(count: usize) -> Result<()> {
     let mut done = 0;
     while done < count {
         let t = now();
-        let Some(mut card) = db.next_card(t, day_start(), &cfg.kinds, cfg.max_new_per_day)? else {
+        let Some(mut card) = db.next_card(t, day_start(), &cfg.kinds, cfg.max_new_per_day, db.unlocked_tier()?)? else {
             println!("\nPlus rien à réviser pour l'instant 🎉");
             break;
         };
@@ -228,7 +241,9 @@ fn review(count: usize) -> Result<()> {
         if let Some(n) = &q.note {
             println!("    {n}");
         }
-        grade(&db, &mut card, if ok { Grade::Good } else { Grade::Again })?;
+        if let Some(tier) = grade(&db, &mut card, if ok { Grade::Good } else { Grade::Again })? {
+            println!("\n  🎉 Niveau débloqué ! {}", unlocked_message(&db, tier)?);
+        }
         done += 1;
     }
     println!("{done} carte(s) révisée(s).");
@@ -243,6 +258,21 @@ fn stats() -> Result<()> {
     } else {
         String::new()
     };
+    let l = progress::level(&db)?;
+    println!("⭐ XP            : {}", l.xp);
+    println!("🎓 Niveau        : {} — {} (sur {})", l.tier, progress::name(l.tier), l.max_tier);
+    if l.tier < l.max_tier {
+        let need = (l.total as f64 * progress::UNLOCK_SHARE).ceil() as i64;
+        let filled = (l.progress() * 20.0).round() as usize;
+        println!(
+            "   Vers le niveau {} : [{}{}] {}/{} cartes acquises",
+            l.tier + 1,
+            "█".repeat(filled),
+            "░".repeat(20 - filled),
+            l.acquired.min(need),
+            need
+        );
+    }
     println!("📚 Cartes        : {}", s.total);
     println!("🆕 Jamais vues   : {}", s.unseen);
     println!("🌱 En cours      : {}", s.learning);

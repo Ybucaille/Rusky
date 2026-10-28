@@ -45,6 +45,7 @@ mod tests {
         Card {
             id: "t".into(),
             kind: "vocab".into(),
+            tier: 1,
             front: "кот".into(),
             pron: Some("kot".into()),
             question: None,

@@ -1,6 +1,7 @@
 //! Popups GTK4 en layer-shell : une carte dans un coin de l'écran, par-dessus
 //! les fenêtres, sans dépendre du démon de notifications.
 
+use crate::progress;
 use crate::quiz::Quiz;
 use crate::srs::Grade;
 use anyhow::{Result, bail};
@@ -54,7 +55,11 @@ pub fn present(quiz: &Quiz) -> Result<Outcome> {
                 }
             }
             later.set_visible(false);
-            popup.prompt.set_label(if ok { "✓ Bonne réponse !" } else { "✗ Pas tout à fait" });
+            popup.prompt.set_label(&if ok {
+                format!("✓ Bonne réponse !  +{} XP", progress::XP_GOOD)
+            } else {
+                format!("✗ Pas tout à fait  +{} XP", progress::XP_MISS)
+            });
             popup.prompt.add_css_class(if ok { "ok" } else { "ko" });
             if let Some(n) = &quiz.note {
                 popup.body.set_label(n);

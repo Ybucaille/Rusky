@@ -8,6 +8,7 @@ use std::path::Path;
 pub struct Card {
     pub id: String,
     pub kind: String,
+    pub tier: i64,
     pub front: String,
     pub pron: Option<String>,
     pub question: Option<String>,
@@ -70,8 +71,8 @@ impl Db {
             ",
         )?;
         // Colonnes ajoutées après coup : on les crée sur les anciennes bases.
-        for col in ["pron", "question", "wrong"] {
-            let _ = conn.execute(&format!("ALTER TABLE cards ADD COLUMN {col} TEXT"), []);
+        for col in ["pron TEXT", "question TEXT", "wrong TEXT", "tier INTEGER NOT NULL DEFAULT 1"] {
+            let _ = conn.execute(&format!("ALTER TABLE cards ADD COLUMN {col}"), []);
         }
         Ok(Self { conn })
     }
@@ -93,7 +94,7 @@ impl Db {
     #[cfg(test)]
     pub fn card(&self, id: &str) -> Result<Card> {
         Ok(self.conn.query_row(
-            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong
+            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong, tier
              FROM cards WHERE id = ?1",
             [id],
             row_to_card,
@@ -122,11 +123,12 @@ impl Db {
         day_start: i64,
         kinds: &[String],
         max_new_per_day: u32,
+        max_tier: i64,
     ) -> Result<Option<Card>> {
         let allowed = |k: &str| kinds.is_empty() || kinds.iter().any(|x| x == k);
 
         let mut stmt = self.conn.prepare(
-            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong
+            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong, tier
              FROM cards WHERE due IS NOT NULL AND due <= ?1 ORDER BY due",
         )?;
         let due: Vec<Card> = stmt
@@ -146,11 +148,11 @@ impl Db {
         }
 
         let mut stmt = self.conn.prepare(
-            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong
-             FROM cards WHERE due IS NULL ORDER BY level, rowid",
+            "SELECT id, kind, front, back, note, ease, interval, reps, lapses, due, pron, question, wrong, tier
+             FROM cards WHERE due IS NULL AND tier <= ?1 ORDER BY tier, level, rowid",
         )?;
         let fresh: Vec<Card> = stmt
-            .query_map([], row_to_card)?
+            .query_map([max_tier], row_to_card)?
             .collect::<Result<_, _>>()?;
         Ok(fresh.into_iter().find(|c| allowed(&c.kind)))
     }
@@ -192,6 +194,35 @@ impl Db {
             params![key, value],
         )?;
         Ok(())
+    }
+
+    pub fn xp(&self) -> Result<i64> {
+        Ok(self.get_meta("xp")?.and_then(|v| v.parse().ok()).unwrap_or(0))
+    }
+
+    pub fn add_xp(&self, n: i64) -> Result<()> {
+        self.set_meta("xp", &(self.xp()? + n).to_string())
+    }
+
+    pub fn unlocked_tier(&self) -> Result<i64> {
+        Ok(self.get_meta("tier")?.and_then(|v| v.parse().ok()).unwrap_or(1))
+    }
+
+    pub fn set_unlocked_tier(&self, tier: i64) -> Result<()> {
+        self.set_meta("tier", &tier.to_string())
+    }
+
+    pub fn max_tier(&self) -> Result<i64> {
+        Ok(self.conn.query_row("SELECT COALESCE(MAX(tier), 1) FROM cards", [], |r| r.get(0))?)
+    }
+
+    /// (cartes acquises, cartes au total) d'un niveau.
+    pub fn tier_counts(&self, tier: i64, acquired_reps: i64) -> Result<(i64, i64)> {
+        Ok(self.conn.query_row(
+            "SELECT COUNT(CASE WHEN reps >= ?2 THEN 1 END), COUNT(*) FROM cards WHERE tier = ?1",
+            params![tier, acquired_reps],
+            |r| Ok((r.get(0)?, r.get(1)?)),
+        )?)
     }
 
     pub fn paused_until(&self) -> Result<Option<i64>> {
@@ -259,13 +290,16 @@ impl Db {
 
 fn upsert(conn: &Connection, c: &CardDef) -> Result<()> {
     conn.execute(
-        "INSERT INTO cards (id, kind, front, back, note, level, pron, question, wrong)
-         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)
+        "INSERT INTO cards (id, kind, front, back, note, level, pron, question, wrong, tier)
+         VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)
          ON CONFLICT(id) DO UPDATE SET
             kind = excluded.kind, front = excluded.front, back = excluded.back,
             note = excluded.note, level = excluded.level, pron = excluded.pron,
-            question = excluded.question, wrong = excluded.wrong",
-        params![c.id, c.kind, c.front, c.back, c.note, c.level, c.pron, c.question, c.wrong.join("\n")],
+            question = excluded.question, wrong = excluded.wrong, tier = excluded.tier",
+        params![
+            c.id, c.kind, c.front, c.back, c.note, c.level, c.pron, c.question,
+            c.wrong.join("\n"), c.tier.unwrap_or(1)
+        ],
     )?;
     Ok(())
 }
@@ -288,6 +322,7 @@ fn row_to_card(r: &rusqlite::Row) -> rusqlite::Result<Card> {
         reps: r.get(7)?,
         lapses: r.get(8)?,
         due: r.get(9)?,
+        tier: r.get(13)?,
     })
 }
 
@@ -306,6 +341,7 @@ mod tests {
             back: "b".into(),
             wrong: vec![],
             note: None,
+            tier: None,
             level,
         }
     }
@@ -317,18 +353,18 @@ mod tests {
             .unwrap();
         let kinds = vec!["vocab".to_string()];
 
-        let mut c = db.next_card(1000, 0, &kinds, 1).unwrap().unwrap();
+        let mut c = db.next_card(1000, 0, &kinds, 1, 1).unwrap().unwrap();
         assert_eq!(c.id, "b"); // plus petit niveau, type autorisé
         srs::schedule(&mut c, Grade::Again, 1000);
         db.save_review(&c, Grade::Again, 1000).unwrap();
 
         // Limite de 1 nouvelle carte atteinte, rien n'est encore dû.
-        assert!(db.next_card(1001, 0, &kinds, 1).unwrap().is_none());
+        assert!(db.next_card(1001, 0, &kinds, 1, 1).unwrap().is_none());
         // Dix minutes plus tard, « b » revient.
-        assert_eq!(db.next_card(1000 + 600, 0, &kinds, 1).unwrap().unwrap().id, "b");
+        assert_eq!(db.next_card(1000 + 600, 0, &kinds, 1, 1).unwrap().unwrap().id, "b");
         // Le texte peut être mis à jour sans perdre la progression.
         db.upsert(&def("b", "vocab", 1)).unwrap();
-        assert_eq!(db.next_card(1000 + 600, 0, &kinds, 1).unwrap().unwrap().lapses, 0);
+        assert_eq!(db.next_card(1000 + 600, 0, &kinds, 1, 1).unwrap().unwrap().lapses, 0);
         let s = db.stats(2000, 0).unwrap();
         assert_eq!((s.total, s.unseen, s.reviewed_today), (3, 2, 1));
     }
