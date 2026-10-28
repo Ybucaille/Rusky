@@ -177,7 +177,8 @@ fn run() -> Result<()> {
         });
         let interval = Duration::from_secs(cfg.interval_minutes.max(1) * 60);
 
-        let paused = db.paused_until()?.is_some_and(|u| u > now());
+        // En pause, ou fenêtre de révision ouverte : on saute ce tour.
+        let paused = db.paused_until()?.is_some_and(|u| u > now()) || db.busy(now())?;
         let active = cfg.in_active_hours(Local::now().hour());
 
         if !paused && active
@@ -278,4 +279,15 @@ fn stats() -> Result<()> {
         println!("⏸  En pause jusqu'à {}", Local.timestamp_opt(u, 0).unwrap().format("%H:%M"));
     }
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::Cli;
+    use clap::CommandFactory;
+
+    #[test]
+    fn cli_is_well_formed() {
+        Cli::command().debug_assert();
+    }
 }

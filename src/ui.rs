@@ -290,6 +290,17 @@ impl QuizView {
         }
     }
 
+    /// Choisit la réponse n° `index` (raccourcis clavier), si la question attend encore.
+    pub fn press(&self, index: usize) {
+        let mut child = self.choices.first_child();
+        for _ in 0..index {
+            child = child.and_then(|c| c.next_sibling());
+        }
+        if let Some(b) = child.and_downcast::<gtk::Button>().filter(|b| b.is_sensitive()) {
+            b.emit_clicked();
+        }
+    }
+
     /// Un simple message (déblocage de niveau, pause…), sans réponses.
     pub fn message(&self, title: &str, body: &str) {
         self.dot.set_css_classes(&["dot", "k-vocab"]);

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Rusky
+GenericName=Apprendre le russe
+Comment=Progression, statistiques et révisions de russe
+Exec=rusky revision
+Icon=accessories-dictionary
+Terminal=false
+Categories=Education;Languages;
+Keywords=russe;russian;langue;vocabulaire;
+StartupWMClass=rusky

@@ -109,18 +109,35 @@ pub fn open(db: Db) -> Result<()> {
     let keys = gtk::EventControllerKey::new();
     let a = app.clone();
     keys.connect_key_pressed(move |_, k, _, _| {
-        if k == gtk::gdk::Key::Escape {
-            if a.stack.visible_child_name().as_deref() == Some("dashboard") {
-                a.win.close();
-            } else {
-                a.show_dashboard();
+        let page = a.stack.visible_child_name();
+        match (page.as_deref(), k) {
+            (Some("dashboard"), gtk::gdk::Key::Escape) => a.win.close(),
+            (Some("session"), gtk::gdk::Key::Escape) => a.finish_session(),
+            (Some(_), gtk::gdk::Key::Escape) => a.show_dashboard(),
+            // 1, 2, 3 : choisir une réponse au clavier.
+            (Some("session"), k) => {
+                if let Some(d) = k.to_unicode().and_then(|c| c.to_digit(10)).filter(|&d| d >= 1) {
+                    a.view.press(d as usize - 1);
+                    return glib::Propagation::Stop;
+                }
             }
+            _ => {}
         }
         glib::Propagation::Proceed
     });
     win.add_controller(keys);
 
     app.show_dashboard();
+    // Tant que la fenêtre est ouverte, le démon ne lance pas de popup par-dessus.
+    let a = app.clone();
+    let heartbeat = move || {
+        if let Err(e) = a.db.set_busy_until(now() + 90) {
+            eprintln!("rusky : {e:#}");
+        }
+        glib::ControlFlow::Continue
+    };
+    heartbeat();
+    glib::timeout_add_seconds_local(60, heartbeat);
     let main = glib::MainLoop::new(None, false);
     let m = main.clone();
     win.connect_close_request(move |_| {
@@ -129,6 +146,7 @@ pub fn open(db: Db) -> Result<()> {
     });
     win.present();
     main.run();
+    app.db.set_busy_until(0)?;
     Ok(())
 }
 
@@ -142,102 +160,81 @@ impl App {
     }
 
     fn build_dashboard(self: &Rc<Self>) -> Result<gtk::Box> {
-        let db = &self.db;
-        let t = now();
-        let level = progress::level(db)?;
-        let stats = db.stats(t, day_start())?;
-        let (week_total, week_good) = db.accuracy_since(t - 7 * 86_400)?;
-        let (all_total, _) = db.accuracy_since(0)?;
-        let (due, mistakes, fresh) = db.session_counts(t, level.tier)?;
-
+        let level = progress::level(&self.db)?;
         let page = vbox(22);
         page.add_css_class("page");
+        page.append(&self.header()?);
+        page.append(&hero(&level));
+        page.append(&self.actions(&level)?);
+        page.append(&self.tiles()?);
 
-        // En-tête : logo, niveau, pause.
+        let activity = panel();
+        activity.append(&caption("ACTIVITÉ · 30 DERNIERS JOURS"));
+        activity.append(&activity_chart(self.db.daily(now(), ACTIVITY_DAYS)?));
+        page.append(&activity);
+
+        let cols = gtk::Box::builder().spacing(12).homogeneous(true).build();
+        cols.append(&self.tiers_panel(&level)?);
+        let right = vbox(12);
+        right.append(&self.kinds_panel()?);
+        right.append(&self.hardest_panel()?);
+        cols.append(&right);
+        page.append(&cols);
+        Ok(page)
+    }
+
+    /// Logo et bouton de pause.
+    fn header(self: &Rc<Self>) -> Result<gtk::Box> {
         let header = gtk::Box::new(gtk::Orientation::Horizontal, 0);
         header.append(&gtk::Label::builder().label("rusky").css_classes(["wordmark"]).build());
         header.append(&gtk::Label::builder().label("ру́сский").valign(gtk::Align::Baseline).css_classes(["wordmark-ru"]).build());
-        let spacer = gtk::Box::builder().hexpand(true).build();
-        header.append(&spacer);
+        header.append(&gtk::Box::builder().hexpand(true).build());
         header.append(&self.pause_button()?);
-        page.append(&header);
+        Ok(header)
+    }
 
-        // Niveau et progression vers le suivant.
-        let hero = panel();
-        let row = gtk::Box::new(gtk::Orientation::Horizontal, 24);
-        let left = vbox(4);
-        left.set_hexpand(true);
-        left.append(&caption(&format!("NIVEAU {} SUR {}", level.tier, level.max_tier)));
-        left.append(&text(progress::name(level.tier), "level-name"));
-        let need = (level.total as f64 * progress::UNLOCK_SHARE).ceil() as i64;
-        let sub = if level.tier < level.max_tier {
-            format!(
-                "{} / {} cartes acquises pour ouvrir « {} »",
-                level.acquired.min(need),
-                need,
-                progress::name(level.tier + 1)
-            )
-        } else {
-            format!("{} / {} cartes acquises : dernier niveau", level.acquired, level.total)
-        };
-        left.append(&text(&sub, "level-sub"));
-        let meter = gtk::ProgressBar::builder().fraction(level.progress()).css_classes(["meter"]).margin_top(10).build();
-        left.append(&meter);
-        row.append(&left);
-        let xp = vbox(0);
-        xp.set_valign(gtk::Align::Center);
-        xp.append(&text(&format!("{}", level.xp), "big-number"));
-        xp.append(&text("XP", "tile-label"));
-        row.append(&xp);
-        hero.append(&row);
-        page.append(&hero);
-
-        // Lancer une révision.
-        let actions = gtk::Box::builder().spacing(12).homogeneous(true).build();
+    /// Les trois façons de lancer une session.
+    fn actions(self: &Rc<Self>, level: &progress::Level) -> Result<gtk::Box> {
+        let (due, seen, mistakes, fresh) = self.db.session_counts(now(), level.tier)?;
         let review_sub = if due > 0 {
             plural(due, "carte à revoir", "cartes à revoir")
+        } else if seen > 0 {
+            "Rien de dû : réviser d'avance".to_string()
         } else {
-            "Rien de dû : nouvelles cartes".to_string()
+            "Commencer par les premières cartes".to_string()
         };
-        actions.append(&self.action(Session::Review, "Réviser", &review_sub, true, due + fresh > 0));
-        actions.append(&self.action(Session::Mistakes, "Mes erreurs", &plural(mistakes, "carte ratée", "cartes ratées"), false, mistakes > 0));
+        let actions = gtk::Box::builder().spacing(12).homogeneous(true).build();
+        actions.append(&self.action(Session::Review, "Réviser", &review_sub, true, seen + fresh > 0));
+        actions.append(&self.action(Session::Mistakes, "Mes erreurs", &plural(mistakes, "carte à reprendre", "cartes à reprendre"), false, mistakes > 0));
         actions.append(&self.action(Session::New, "Découvrir", &plural(fresh, "carte nouvelle", "cartes nouvelles"), false, fresh > 0));
-        page.append(&actions);
+        Ok(actions)
+    }
 
-        // Chiffres clés.
-        let tiles = gtk::Box::builder().spacing(12).homogeneous(true).build();
-        let best = db.best_streak()?;
-        tiles.append(&tile(&format!("{}", stats.streak_days), "jours d'affilée", &format!("record : {best}")));
-        tiles.append(&tile(
-            &percent(week_good, week_total),
-            "réussite sur 7 jours",
-            &plural(week_total, "réponse", "réponses"),
-        ));
-        tiles.append(&tile(
-            &format!("{}", stats.reviewed_today),
-            "révisions aujourd'hui",
-            &format!("{} au total", all_total),
-        ));
+    /// Chiffres clés : série, réussite, révisions, cartes acquises.
+    fn tiles(&self) -> Result<gtk::Box> {
+        let db = &self.db;
+        let t = now();
+        let stats = db.stats(t, day_start())?;
+        let (week_total, week_good) = db.accuracy_since(t - 7 * 86_400)?;
+        let (all_total, _) = db.accuracy_since(0)?;
         let acquired: i64 = db.tier_overview(progress::ACQUIRED_REPS)?.iter().map(|r| r.2).sum();
-        tiles.append(&tile(&format!("{acquired}"), "cartes acquises", &format!("sur {}", stats.total)));
-        page.append(&tiles);
+        let tiles = gtk::Box::builder().spacing(12).homogeneous(true).build();
+        tiles.append(&tile(&stats.streak_days.to_string(), "jours d'affilée", &format!("record : {}", db.best_streak()?)));
+        tiles.append(&tile(&percent(week_good, week_total), "réussite sur 7 jours", &plural(week_total, "réponse", "réponses")));
+        tiles.append(&tile(&stats.reviewed_today.to_string(), "révisions aujourd'hui", &format!("{all_total} au total")));
+        tiles.append(&tile(&acquired.to_string(), "cartes acquises", &format!("sur {}", stats.total)));
+        Ok(tiles)
+    }
 
-        // Activité des 30 derniers jours.
-        let activity = panel();
-        activity.append(&caption("ACTIVITÉ · 30 DERNIERS JOURS"));
-        activity.append(&activity_chart(db.daily(t, ACTIVITY_DAYS)?));
-        page.append(&activity);
-
-        // Niveaux, types, cartes difficiles.
-        let cols = gtk::Box::builder().spacing(12).homogeneous(true).build();
+    fn tiers_panel(&self, level: &progress::Level) -> Result<gtk::Box> {
         let tiers = panel();
         tiers.append(&caption("NIVEAUX"));
-        for (tier, seen, acq, total) in db.tier_overview(progress::ACQUIRED_REPS)? {
-            let r = gtk::Box::builder().spacing(10).css_classes(["tier-row"]).build();
+        for (tier, seen, acq, total) in self.db.tier_overview(progress::ACQUIRED_REPS)? {
+            let row = gtk::Box::builder().spacing(10).css_classes(["tier-row"]).build();
             if tier > level.tier {
-                r.add_css_class("locked");
+                row.add_css_class("locked");
             }
-            r.append(&gtk::Label::builder().label(tier.to_string()).css_classes(["tier-num"]).build());
+            row.append(&gtk::Label::builder().label(tier.to_string()).css_classes(["tier-num"]).build());
             let names = vbox(4);
             names.set_hexpand(true);
             let line = gtk::Box::new(gtk::Orientation::Horizontal, 6);
@@ -246,20 +243,21 @@ impl App {
             line.append(&text(&info, "muted"));
             names.append(&line);
             let f = if total > 0 { acq as f64 / total as f64 } else { 0.0 };
-            let m = gtk::ProgressBar::builder().fraction(f).css_classes(["meter", "thin", "ok"]).build();
-            m.set_tooltip_text(Some(&format!("{seen} vues, {acq} acquises sur {total}")));
-            names.append(&m);
-            r.append(&names);
-            tiers.append(&r);
+            let meter = gtk::ProgressBar::builder().fraction(f).css_classes(["meter", "thin", "ok"]).build();
+            meter.set_tooltip_text(Some(&format!("{seen} vues, {acq} acquises sur {total}")));
+            names.append(&meter);
+            row.append(&names);
+            tiers.append(&row);
         }
-        cols.append(&tiers);
+        Ok(tiers)
+    }
 
-        let right = vbox(12);
+    fn kinds_panel(&self) -> Result<gtk::Box> {
         let kinds = panel();
         kinds.append(&caption("RÉUSSITE PAR TYPE"));
-        let acc = db.kind_accuracy()?;
+        let acc = self.db.kind_accuracy()?;
         if acc.is_empty() {
-            kinds.append(&text("Réponds à quelques cartes pour voir tes points forts.", "muted"));
+            kinds.append(&paragraph("Réponds à quelques cartes pour voir tes points forts.", "muted"));
         }
         for kind in ["alphabet", "vocab", "phrase", "grammar"] {
             if let Some((_, total, good)) = acc.iter().find(|(k, _, _)| k == kind) {
@@ -271,11 +269,13 @@ impl App {
                 kinds.append(&line);
             }
         }
-        right.append(&kinds);
+        Ok(kinds)
+    }
 
+    fn hardest_panel(&self) -> Result<gtk::Box> {
         let hard = panel();
         hard.append(&caption("À RETRAVAILLER"));
-        let hardest = db.hardest(5)?;
+        let hardest = self.db.hardest(5)?;
         if hardest.is_empty() {
             hard.append(&text("Aucune carte ratée pour l'instant.", "muted"));
         }
@@ -283,14 +283,19 @@ impl App {
             let line = gtk::Box::new(gtk::Orientation::Horizontal, 10);
             line.set_margin_top(4);
             line.append(&gtk::Label::builder().label(&c.front).xalign(0.0).css_classes(["hard-front"]).build());
-            line.append(&gtk::Label::builder().label(&c.back).xalign(0.0).hexpand(true).ellipsize(gtk::pango::EllipsizeMode::End).css_classes(["muted"]).build());
+            line.append(
+                &gtk::Label::builder()
+                    .label(&c.back)
+                    .xalign(0.0)
+                    .hexpand(true)
+                    .ellipsize(gtk::pango::EllipsizeMode::End)
+                    .css_classes(["muted"])
+                    .build(),
+            );
             line.append(&text(&format!("{}×", c.lapses), "muted"));
             hard.append(&line);
         }
-        right.append(&hard);
-        cols.append(&right);
-        page.append(&cols);
-        Ok(page)
+        Ok(hard)
     }
 
     fn pause_button(self: &Rc<Self>) -> Result<gtk::Button> {
@@ -415,7 +420,7 @@ impl App {
             40..=69 => "Ça rentre. Les cartes ratées reviendront vite.",
             _ => "Normal au début : elles reviendront dans 10 minutes.",
         };
-        centered(text(verdict, "level-sub"));
+        centered(paragraph(verdict, "level-sub"));
         centered(text(&format!("+{} XP", s.xp), "big-number"));
         if let Some(tier) = s.unlocked {
             centered(text(&format!("Niveau {tier} débloqué : {}", progress::name(tier)), "prompt"));
@@ -427,6 +432,36 @@ impl App {
         self.stack.set_visible_child_name("summary");
         back.grab_focus();
     }
+}
+
+/// Niveau en cours, progression vers le suivant et XP.
+fn hero(level: &progress::Level) -> gtk::Box {
+    let hero = panel();
+    let row = gtk::Box::new(gtk::Orientation::Horizontal, 24);
+    let left = vbox(4);
+    left.set_hexpand(true);
+    left.append(&caption(&format!("NIVEAU {} SUR {}", level.tier, level.max_tier)));
+    left.append(&text(progress::name(level.tier), "level-name"));
+    let need = (level.total as f64 * progress::UNLOCK_SHARE).ceil() as i64;
+    let sub = if level.tier < level.max_tier {
+        format!(
+            "{} / {need} cartes acquises pour ouvrir « {} »",
+            level.acquired.min(need),
+            progress::name(level.tier + 1)
+        )
+    } else {
+        format!("{} / {} cartes acquises : dernier niveau", level.acquired, level.total)
+    };
+    left.append(&paragraph(&sub, "level-sub"));
+    left.append(&gtk::ProgressBar::builder().fraction(level.progress()).css_classes(["meter"]).margin_top(10).build());
+    row.append(&left);
+    let xp = vbox(0);
+    xp.set_valign(gtk::Align::Center);
+    xp.append(&text(&level.xp.to_string(), "big-number"));
+    xp.append(&text("XP", "tile-label"));
+    row.append(&xp);
+    hero.append(&row);
+    hero
 }
 
 /// Barres d'activité : hauteur = révisions du jour, partie claire = réussies.
@@ -492,7 +527,13 @@ fn caption(s: &str) -> gtk::Label {
     gtk::Label::builder().label(s).xalign(0.0).css_classes(["panel-title"]).build()
 }
 
+/// Libellé sur une ligne (le retour à la ligne GTK rogne les libellés courts).
 fn text(s: &str, class: &str) -> gtk::Label {
+    gtk::Label::builder().label(s).xalign(0.0).css_classes([class]).build()
+}
+
+/// Texte long, qui peut passer à la ligne.
+fn paragraph(s: &str, class: &str) -> gtk::Label {
     gtk::Label::builder().label(s).xalign(0.0).wrap(true).css_classes([class]).build()
 }
 

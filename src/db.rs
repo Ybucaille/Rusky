@@ -118,10 +118,12 @@ impl Db {
     pub fn distractors(&self, card: &Card, reverse: bool, n: usize) -> Result<Vec<String>> {
         let mut stmt = self.conn.prepare(
             "SELECT front, pron, back FROM cards
-             WHERE kind = ?1 AND id <> ?2 AND back <> ?3 AND front <> ?4
+             WHERE kind = ?1 AND id <> ?2 AND back <> ?3 AND front <> ?4 AND tier BETWEEN ?6 - 1 AND ?6 + 1
              ORDER BY random() LIMIT ?5",
         )?;
-        let rows = stmt.query_map(params![card.kind, card.id, card.back, card.front, n as i64], |r| {
+        // Mauvaises réponses prises aux niveaux voisins : ni trop faciles, ni des mots jamais vus.
+        let p = params![card.kind, card.id, card.back, card.front, n as i64, card.tier];
+        let rows = stmt.query_map(p, |r| {
             let (front, pron, back): (String, Option<String>, String) = (r.get(0)?, r.get(1)?, r.get(2)?);
             Ok(if reverse { crate::quiz::with_pron(&front, pron.as_deref()) } else { back })
         })?;
@@ -375,8 +377,9 @@ impl Db {
                 "due IS NOT NULL ORDER BY (due > ?1), due LIMIT ?2",
                 params![now, n],
             ),
+            // Dernière réponse fausse (« Pas su » remet reps à 0).
             Session::Mistakes => self.cards_where(
-                "id IN (SELECT card_id FROM log WHERE good = 0) ORDER BY lapses DESC, due LIMIT ?1",
+                "due IS NOT NULL AND reps = 0 ORDER BY lapses DESC, due LIMIT ?1",
                 params![n],
             ),
             Session::New => self.cards_where(
@@ -386,16 +389,26 @@ impl Db {
         }
     }
 
-    /// Nombre de cartes disponibles pour chaque session : (dues, ratées, nouvelles).
-    pub fn session_counts(&self, now: i64, max_tier: i64) -> Result<(i64, i64, i64)> {
+    /// Nombre de cartes pour chaque session : (dues, déjà vues, ratées, nouvelles).
+    pub fn session_counts(&self, now: i64, max_tier: i64) -> Result<(i64, i64, i64, i64)> {
         Ok(self.conn.query_row(
             "SELECT
                 (SELECT COUNT(*) FROM cards WHERE due IS NOT NULL AND due <= ?1),
-                (SELECT COUNT(DISTINCT card_id) FROM log WHERE good = 0),
+                (SELECT COUNT(*) FROM cards WHERE due IS NOT NULL),
+                (SELECT COUNT(*) FROM cards WHERE due IS NOT NULL AND reps = 0),
                 (SELECT COUNT(*) FROM cards WHERE due IS NULL AND tier <= ?2)",
             params![now, max_tier],
-            |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+            |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?)),
         )?)
+    }
+
+    /// La fenêtre de révision est ouverte : le démon saute son tour.
+    pub fn set_busy_until(&self, until: i64) -> Result<()> {
+        self.set_meta("busy_until", &until.to_string())
+    }
+
+    pub fn busy(&self, now: i64) -> Result<bool> {
+        Ok(self.get_meta("busy_until")?.and_then(|v| v.parse::<i64>().ok()).is_some_and(|u| u > now))
     }
 
     fn cards_where(&self, clause: &str, p: &[&dyn rusqlite::ToSql]) -> Result<Vec<Card>> {
@@ -494,4 +507,36 @@ mod tests {
         let s = db.stats(2000, 0).unwrap();
         assert_eq!((s.total, s.unseen, s.reviewed_today), (3, 2, 1));
     }
+
+    #[test]
+    fn mistakes_are_cards_last_answered_wrong() {
+        let mut db = Db::open(Path::new(":memory:")).unwrap();
+        db.upsert_all(&[def("a", "vocab", 1), def("b", "vocab", 1), def("c", "vocab", 1)]).unwrap();
+        let (mut a, mut b) = (db.card("a").unwrap(), db.card("b").unwrap());
+        srs::schedule(&mut a, Grade::Again, 0);
+        db.save_review(&a, Grade::Again, 0).unwrap();
+        // b ratée puis réussie : ce n'est plus une erreur.
+        srs::schedule(&mut b, Grade::Again, 0);
+        srs::schedule(&mut b, Grade::Good, 1);
+        db.save_review(&b, Grade::Good, 1).unwrap();
+        let ids: Vec<String> = db.session_cards(Session::Mistakes, 10, 2, 1).unwrap().into_iter().map(|c| c.id).collect();
+        assert_eq!(ids, ["a"]);
+        assert_eq!(db.session_counts(2, 1).unwrap(), (0, 2, 1, 1));
+    }
+
+    #[test]
+    fn distractors_stay_near_the_card_level() {
+        let mut db = Db::open(Path::new(":memory:")).unwrap();
+        let mut cards: Vec<CardDef> = (0..6).map(|i| def(&format!("x{i}"), "vocab", 1)).collect();
+        for (i, c) in cards.iter_mut().enumerate() {
+            c.back = format!("sens {i}");
+            c.front = format!("mot {i}");
+            c.tier = Some(if i < 3 { 1 } else { 9 });
+        }
+        db.upsert_all(&cards).unwrap();
+        let card = db.card("x0").unwrap();
+        let wrong = db.distractors(&card, false, 5).unwrap();
+        assert_eq!(wrong.len(), 2, "seules les cartes du niveau 1 ou 2 : {wrong:?}");
+    }
 }
+

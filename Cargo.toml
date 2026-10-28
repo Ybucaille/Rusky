@@ -1,6 +1,6 @@
 [package]
 name = "rusky"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 description = "Popups pour apprendre le russe : vocabulaire, grammaire, alphabet, expressions"
 license = "MIT"
