@@ -52,7 +52,7 @@ pub fn open(db: Db) -> Result<()> {
     glib::set_application_name("Rusky");
     let win = gtk::Window::builder()
         .title("Rusky")
-        .default_width(1040)
+        .default_width(1064)
         .default_height(780)
         .css_classes(["rusky-app"])
         .build();
@@ -161,8 +161,11 @@ impl App {
 
     fn build_dashboard(self: &Rc<Self>) -> Result<gtk::Box> {
         let level = progress::level(&self.db)?;
+        // Colonne centrée : lisible même en plein écran.
         let page = vbox(22);
         page.add_css_class("page");
+        page.set_halign(gtk::Align::Center);
+        page.set_width_request(1000);
         page.append(&self.header()?);
         page.append(&hero(&level));
         page.append(&self.actions(&level)?);
