@@ -5,6 +5,9 @@ use std::path::Path;
 /// Cartes livrées avec l'app (compilées dans le binaire), un fichier par niveau.
 const BUILTIN: &[&str] = &[
     include_str!("../data/niveau-1.toml"),
+    include_str!("../data/niveau-1-alphabet.toml"),
+    include_str!("../data/niveau-2.toml"),
+    include_str!("../data/niveau-3.toml"),
 ];
 
 #[derive(Debug, Deserialize)]
@@ -48,7 +51,7 @@ fn default_level() -> i64 {
 pub fn builtin() -> Result<Deck> {
     let mut all = Vec::new();
     for (i, text) in BUILTIN.iter().enumerate() {
-        let deck = parse(text).with_context(|| format!("cartes intégrées invalides (niveau {})", i + 1))?;
+        let deck = parse(text).with_context(|| format!("cartes intégrées invalides (fichier n° {})", i + 1))?;
         all.extend(deck.card);
     }
     Ok(Deck { tier: None, card: all })

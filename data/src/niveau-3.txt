@@ -1,0 +1,173 @@
+# niveau = 3
+# En ville : se déplacer, faire ses courses, au restaurant, demander son chemin.
+
+@vocab
+метро́ | métro |
+авто́бус | bus |
+трамва́й | tramway |
+такси́ | taxi |
+по́езд | train |
+самолёт | avion |
+вокза́л | gare |
+аэропо́рт | aéroport |
+остано́вка | arrêt (de bus) |
+биле́т | billet, ticket |
+доро́га | route, chemin |
+у́гол | coin (de rue) |
+пло́щадь | place (dans une ville) |
+центр | centre |
+мост | pont |
+река́ | rivière, fleuve |
+парк | parc |
+музе́й | musée |
+теа́тр | théâtre |
+кино́ | cinéma |
+це́рковь | église |
+банк | banque |
+по́чта | poste |
+больни́ца | hôpital |
+апте́ка | pharmacie |
+магази́н | magasin |
+ры́нок | marché |
+рестора́н | restaurant |
+кафе́ | café (l'endroit) |
+гости́ница | hôtel |
+шко́ла | école |
+университе́т | université |
+библиоте́ка | bibliothèque |
+ка́сса | caisse, guichet |
+вход | entrée |
+вы́ход | sortie |
+туале́т | toilettes |
+ме́сто | place, endroit |
+а́дрес | adresse |
+ка́рта | carte, plan |
+недалеко́ | pas loin |
+далеко́ | loin |
+бли́зко | près |
+ря́дом | à côté |
+напро́тив | en face |
+туда́ | là-bas (pour y aller) |
+сюда́ | ici (pour venir) |
+отсю́да | d'ici |
+куда́ | où (vers où) | Куда́ ты идёшь? = Où vas-tu ?
+отку́да | d'où |
+сто́ить | coûter |
+плати́ть | payer |
+дёшево | pas cher |
+до́рого | cher |
+рубль | rouble |
+сда́ча | monnaie (qu'on rend) |
+чек | ticket de caisse |
+раз | fois |
+паке́т | sac (plastique) |
+буты́лка | bouteille |
+ча́шка | tasse |
+стака́н | verre |
+таре́лка | assiette |
+ло́жка | cuillère |
+ви́лка | fourchette |
+нож | couteau |
+меню́ | menu |
+счёт | addition |
+официа́нт | serveur |
+за́нят | occupé |
+свобо́ден | libre |
+откры́то | ouvert |
+закры́то | fermé |
+е́хать | aller (en véhicule, maintenant) | Я е́ду на рабо́ту = Je vais au travail (en voiture, en bus…).
+е́здить | aller (en véhicule, souvent) |
+ходи́ть | aller à pied (souvent) |
+приходи́ть | arriver (à pied) |
+уходи́ть | partir (à pied) |
+иска́ть | chercher |
+найти́ | trouver |
+показа́ть | montrer |
+сказа́ть | dire |
+взять | prendre |
+дать | donner |
+заказа́ть | commander |
+сади́ться | s'asseoir, monter (dans un bus) |
+выходи́ть | sortir, descendre (du bus) |
+пересе́сть | changer (de ligne) |
+опа́здывать | être en retard |
+ско́ро | bientôt |
+бы́стро | vite |
+ме́дленно | lentement |
+оде́жда | vêtements |
+руба́шка | chemise |
+пла́тье | robe |
+брю́ки | pantalon |
+ку́ртка | veste, blouson |
+пальто́ | manteau |
+о́бувь | chaussures |
+ша́пка | bonnet |
+разме́р | taille |
+цена́ | prix |
+пода́рок | cadeau |
+пятьдеся́т | cinquante |
+два́дцать | vingt |
+три́дцать | trente |
+со́рок | quarante |
+пятьсо́т | cinq cents |
+миллио́н | million |
+полови́на | moitié |
+килогра́мм | kilogramme |
+литр | litre |
+Москва́ | Moscou |
+Петербу́рг | Saint-Pétersbourg |
+Росси́я | Russie |
+Фра́нция | France |
+страна́ | pays |
+столи́ца | capitale |
+туристи́ческий | touristique |
+интере́сный | intéressant |
+изве́стный | célèbre |
+пусто́й | vide |
+по́лный | plein |
+
+@phrase
+Где нахо́дится метро́? | Où se trouve le métro ? |
+Как дойти́ до це́нтра? | Comment aller au centre (à pied) ? |
+Э́то далеко́? | C'est loin ? |
+Иди́те пря́мо | Allez tout droit |
+Поверни́те нале́во | Tournez à gauche |
+Поверни́те напра́во | Tournez à droite |
+Оди́н биле́т, пожа́луйста | Un billet, s'il vous plaît |
+Ско́лько э́то сто́ит? | Combien ça coûte ? |
+Э́то сли́шком до́рого | C'est trop cher |
+Мо́жно карто́й? | Je peux payer par carte ? |
+Я возьму́ э́то | Je prends ça |
+Счёт, пожа́луйста | L'addition, s'il vous plaît |
+Сто́лик на двои́х | Une table pour deux |
+Что вы посове́туете? | Que me conseillez-vous ? |
+Я не ем мя́со | Je ne mange pas de viande |
+Бы́ло о́чень вку́сно | C'était très bon |
+Где остано́вка авто́буса? | Où est l'arrêt de bus ? |
+Когда́ сле́дующий по́езд? | Quand part le prochain train ? |
+Мне на́до вы́йти здесь | Je dois descendre ici |
+Вы выхо́дите? | Vous descendez ? | Question typique dans un bus bondé, pour se frayer un passage.
+У вас есть…? | Vous avez… ? |
+Я ищу́ апте́ку | Je cherche une pharmacie |
+Я заблуди́лся | Je suis perdu | Une femme dit : Я заблуди́лась.
+Помоги́те, пожа́луйста | Aidez-moi, s'il vous plaît |
+Во ско́лько открыва́ется? | À quelle heure ça ouvre ? |
+Там откры́то? | C'est ouvert là-bas ? |
+Мо́жно посмотре́ть? | Je peux regarder ? |
+Мне э́то не подхо́дит | Ça ne me va pas |
+Я про́сто смотрю́ | Je regarde seulement |
+Вот, пожа́луйста | Voilà, tenez |
+
+@grammar
+Я иду́ в парк. | Que veut dire cette phrase ? | Je vais au parc. | Je suis au parc. ; Je viens du parc. | Pour dire où l'on va : в + mot qui ne change pas (masculin) ou -а → -у (féminin) : в шко́лу (f CHKO-lou).
+Я в па́рке. | Que veut dire cette phrase ? | Je suis au parc. | Je vais au parc. ; J'aime le parc. | Pour dire où l'on est : в + mot en -е. Comparer : в парк (on y va), в па́рке (on y est).
+на метро́ | Que veut dire е́хать на метро́ ? | prendre le métro | sortir du métro ; habiter près du métro | Pour un moyen de transport : на + véhicule. на авто́бусе (na af-TOU-bou-sié) = en bus.
+Я е́ду в Москву́. | Que veut dire cette phrase ? | Je vais à Moscou (en véhicule). | Je vais à Moscou à pied. ; J'habite à Moscou. | е́хать = aller en véhicule ; идти́ = aller à pied. Москва́ devient Москву́ quand on y va.
+Где? / Куда́? | Quelle question pose-t-on pour « où vas-tu ? » | Куда́ ты идёшь? | Где ты идёшь? ; Отку́да ты идёшь? | Где (gdié) = où l'on est ; куда́ (kou-DA) = où l'on va ; отку́да (at-KOU-da) = d'où l'on vient.
+два биле́та | Que veut dire два биле́та ? | deux billets | un billet ; cinq billets | Après 2, 3, 4 : -а (masculin). Après 5 et plus : -ов : пять биле́тов (piat bi-LIÉ-taf).
+Мне ну́жен биле́т. | Que veut dire cette phrase ? | J'ai besoin d'un billet. | J'ai un billet. ; Je n'ai pas de billet. | ну́жен (masc.), нужна́ (fém.), ну́жно (neutre) = nécessaire. Мне нужна́ ка́рта = J'ai besoin d'un plan.
+У меня́ нет биле́та. | Que veut dire cette phrase ? | Je n'ai pas de billet. | J'ai un billet. ; Je veux un billet. | Pour « je n'ai pas de… », on dit у меня́ нет + le mot avec une fin changée : биле́т → биле́та.
+Да́йте, пожа́луйста, во́ду. | Pourquoi вода́ devient во́ду ? | Parce que c'est ce qu'on demande (le complément) | Parce que c'est au pluriel ; Parce qu'on parle poliment | Un mot féminin en -а devient -у quand il est l'objet de l'action : Я пью во́ду = Je bois de l'eau.
+Я хочу́ ко́фе с молоко́м. | Que veut dire с молоко́м ? | avec du lait | sans lait ; du lait | с (s) = avec ; le mot change de fin : молоко́ → с молоко́м. без (biés) = sans.
+сто́ит / сто́ят | Ско́лько сто́ят я́блоки? Pourquoi сто́ят ? | Parce que я́блоки est au pluriel | Parce que c'est cher ; Parce que c'est une question | Un objet : сто́ит ; plusieurs : сто́ят.
+Э́то мой биле́т, а э́то твой. | Que veut dire твой ? | ton, le tien | mon, le mien ; son, le sien | мой = mon, твой = ton, наш = notre, ваш = votre. Ils s'accordent comme мой : твоя́ ка́рта.

@@ -1,0 +1,90 @@
+# Cartes du niveau 1 de rusky (généré, prononciation calculée).
+tier = 1
+
+[[card]]
+id = "t1-alp-001"
+kind = "alphabet"
+front = "А а"
+back = "« a » comme dans « papa »"
+note = "Sans accent, le о se prononce aussi « a ». ма́ма (MA-ma) = maman."
+level = 1
+
+[[card]]
+id = "t1-alp-002"
+kind = "alphabet"
+front = "Е е"
+back = "« ié » comme dans « pied »"
+note = "En début de mot, « yé ». нет (niet) = non, е́сли (YÉ-sli) = si."
+level = 2
+
+[[card]]
+id = "t1-alp-003"
+kind = "alphabet"
+front = "И и"
+back = "« i » comme dans « lit »"
+note = "и (i) = et. мир (mir) = paix, monde."
+level = 3
+
+[[card]]
+id = "t1-alp-004"
+kind = "alphabet"
+front = "О о"
+back = "« o » quand il est accentué, « a » sinon"
+note = "молоко́ (ma-la-KO) = lait : seul le dernier о est accentué."
+level = 4
+
+[[card]]
+id = "t1-alp-005"
+kind = "alphabet"
+front = "К к"
+back = "« k » comme dans « kilo »"
+note = "Comme notre K. кот (kot) = chat."
+level = 5
+
+[[card]]
+id = "t1-alp-006"
+kind = "alphabet"
+front = "М м"
+back = "« m » comme dans « maman »"
+note = "Comme notre M. ма́ма (MA-ma) = maman."
+level = 6
+
+[[card]]
+id = "t1-alp-007"
+kind = "alphabet"
+front = "Т т"
+back = "« t » comme dans « table »"
+note = "Comme notre T. там (tam) = là-bas."
+level = 7
+
+[[card]]
+id = "t1-alp-008"
+kind = "alphabet"
+front = "Д д"
+back = "« d » comme dans « dame »"
+note = "Ressemble à un petit d grec. да (da) = oui, дом (dom) = maison."
+level = 8
+
+[[card]]
+id = "t1-alp-009"
+kind = "alphabet"
+front = "З з"
+back = "« z » comme dans « zéro »"
+note = "Piège : il ressemble à un 3. зу́бы (ZOU-by) = dents."
+level = 9
+
+[[card]]
+id = "t1-alp-010"
+kind = "alphabet"
+front = "П п"
+back = "« p » comme dans « papa »"
+note = "Ressemble au π des maths. па́па (PA-pa) = papa."
+level = 10
+
+[[card]]
+id = "t1-alp-011"
+kind = "alphabet"
+front = "Ф ф"
+back = "« f » comme dans « fête »"
+note = "фи́льм (film) = film, фо́то (FO-ta) = photo."
+level = 11

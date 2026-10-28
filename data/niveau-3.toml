@@ -1,0 +1,1197 @@
+# Cartes du niveau 3 de rusky (généré, prononciation calculée).
+tier = 3
+
+[[card]]
+id = "t3-voc-001"
+kind = "vocab"
+front = "метро́"
+back = "métro"
+level = 1
+
+[[card]]
+id = "t3-voc-002"
+kind = "vocab"
+front = "авто́бус"
+back = "bus"
+level = 2
+
+[[card]]
+id = "t3-voc-003"
+kind = "vocab"
+front = "трамва́й"
+back = "tramway"
+level = 3
+
+[[card]]
+id = "t3-voc-004"
+kind = "vocab"
+front = "такси́"
+back = "taxi"
+level = 4
+
+[[card]]
+id = "t3-voc-005"
+kind = "vocab"
+front = "по́езд"
+back = "train"
+level = 5
+
+[[card]]
+id = "t3-voc-006"
+kind = "vocab"
+front = "самолёт"
+back = "avion"
+level = 6
+
+[[card]]
+id = "t3-voc-007"
+kind = "vocab"
+front = "вокза́л"
+back = "gare"
+level = 7
+
+[[card]]
+id = "t3-voc-008"
+kind = "vocab"
+front = "аэропо́рт"
+back = "aéroport"
+level = 8
+
+[[card]]
+id = "t3-voc-009"
+kind = "vocab"
+front = "остано́вка"
+back = "arrêt (de bus)"
+level = 9
+
+[[card]]
+id = "t3-voc-010"
+kind = "vocab"
+front = "биле́т"
+back = "billet, ticket"
+level = 10
+
+[[card]]
+id = "t3-voc-011"
+kind = "vocab"
+front = "доро́га"
+back = "route, chemin"
+level = 11
+
+[[card]]
+id = "t3-voc-012"
+kind = "vocab"
+front = "у́гол"
+back = "coin (de rue)"
+level = 12
+
+[[card]]
+id = "t3-voc-013"
+kind = "vocab"
+front = "пло́щадь"
+back = "place (dans une ville)"
+level = 13
+
+[[card]]
+id = "t3-voc-014"
+kind = "vocab"
+front = "центр"
+back = "centre"
+level = 14
+
+[[card]]
+id = "t3-voc-015"
+kind = "vocab"
+front = "мост"
+back = "pont"
+level = 15
+
+[[card]]
+id = "t3-voc-016"
+kind = "vocab"
+front = "река́"
+back = "rivière, fleuve"
+level = 16
+
+[[card]]
+id = "t3-voc-017"
+kind = "vocab"
+front = "парк"
+back = "parc"
+level = 17
+
+[[card]]
+id = "t3-voc-018"
+kind = "vocab"
+front = "музе́й"
+back = "musée"
+level = 18
+
+[[card]]
+id = "t3-voc-019"
+kind = "vocab"
+front = "теа́тр"
+back = "théâtre"
+level = 19
+
+[[card]]
+id = "t3-voc-020"
+kind = "vocab"
+front = "кино́"
+back = "cinéma"
+level = 20
+
+[[card]]
+id = "t3-voc-021"
+kind = "vocab"
+front = "це́рковь"
+back = "église"
+level = 21
+
+[[card]]
+id = "t3-voc-022"
+kind = "vocab"
+front = "банк"
+back = "banque"
+level = 22
+
+[[card]]
+id = "t3-voc-023"
+kind = "vocab"
+front = "по́чта"
+back = "poste"
+level = 23
+
+[[card]]
+id = "t3-voc-024"
+kind = "vocab"
+front = "больни́ца"
+back = "hôpital"
+level = 24
+
+[[card]]
+id = "t3-voc-025"
+kind = "vocab"
+front = "апте́ка"
+back = "pharmacie"
+level = 25
+
+[[card]]
+id = "t3-voc-026"
+kind = "vocab"
+front = "магази́н"
+back = "magasin"
+level = 26
+
+[[card]]
+id = "t3-voc-027"
+kind = "vocab"
+front = "ры́нок"
+back = "marché"
+level = 27
+
+[[card]]
+id = "t3-voc-028"
+kind = "vocab"
+front = "рестора́н"
+back = "restaurant"
+level = 28
+
+[[card]]
+id = "t3-voc-029"
+kind = "vocab"
+front = "кафе́"
+back = "café (l'endroit)"
+level = 29
+
+[[card]]
+id = "t3-voc-030"
+kind = "vocab"
+front = "гости́ница"
+back = "hôtel"
+level = 30
+
+[[card]]
+id = "t3-voc-031"
+kind = "vocab"
+front = "шко́ла"
+back = "école"
+level = 31
+
+[[card]]
+id = "t3-voc-032"
+kind = "vocab"
+front = "университе́т"
+back = "université"
+level = 32
+
+[[card]]
+id = "t3-voc-033"
+kind = "vocab"
+front = "библиоте́ка"
+back = "bibliothèque"
+level = 33
+
+[[card]]
+id = "t3-voc-034"
+kind = "vocab"
+front = "ка́сса"
+back = "caisse, guichet"
+level = 34
+
+[[card]]
+id = "t3-voc-035"
+kind = "vocab"
+front = "вход"
+back = "entrée"
+level = 35
+
+[[card]]
+id = "t3-voc-036"
+kind = "vocab"
+front = "вы́ход"
+back = "sortie"
+level = 36
+
+[[card]]
+id = "t3-voc-037"
+kind = "vocab"
+front = "туале́т"
+back = "toilettes"
+level = 37
+
+[[card]]
+id = "t3-voc-038"
+kind = "vocab"
+front = "ме́сто"
+back = "place, endroit"
+level = 38
+
+[[card]]
+id = "t3-voc-039"
+kind = "vocab"
+front = "а́дрес"
+back = "adresse"
+level = 39
+
+[[card]]
+id = "t3-voc-040"
+kind = "vocab"
+front = "ка́рта"
+back = "carte, plan"
+level = 40
+
+[[card]]
+id = "t3-voc-041"
+kind = "vocab"
+front = "недалеко́"
+back = "pas loin"
+level = 41
+
+[[card]]
+id = "t3-voc-042"
+kind = "vocab"
+front = "далеко́"
+back = "loin"
+level = 42
+
+[[card]]
+id = "t3-voc-043"
+kind = "vocab"
+front = "бли́зко"
+back = "près"
+level = 43
+
+[[card]]
+id = "t3-voc-044"
+kind = "vocab"
+front = "ря́дом"
+back = "à côté"
+level = 44
+
+[[card]]
+id = "t3-voc-045"
+kind = "vocab"
+front = "напро́тив"
+back = "en face"
+level = 45
+
+[[card]]
+id = "t3-voc-046"
+kind = "vocab"
+front = "туда́"
+back = "là-bas (pour y aller)"
+level = 46
+
+[[card]]
+id = "t3-voc-047"
+kind = "vocab"
+front = "сюда́"
+back = "ici (pour venir)"
+level = 47
+
+[[card]]
+id = "t3-voc-048"
+kind = "vocab"
+front = "отсю́да"
+back = "d'ici"
+level = 48
+
+[[card]]
+id = "t3-voc-049"
+kind = "vocab"
+front = "куда́"
+back = "où (vers où)"
+note = "Куда́ ты идёшь? = Où vas-tu ?"
+level = 49
+
+[[card]]
+id = "t3-voc-050"
+kind = "vocab"
+front = "отку́да"
+back = "d'où"
+level = 50
+
+[[card]]
+id = "t3-voc-051"
+kind = "vocab"
+front = "сто́ить"
+back = "coûter"
+level = 51
+
+[[card]]
+id = "t3-voc-052"
+kind = "vocab"
+front = "плати́ть"
+back = "payer"
+level = 52
+
+[[card]]
+id = "t3-voc-053"
+kind = "vocab"
+front = "дёшево"
+back = "pas cher"
+level = 53
+
+[[card]]
+id = "t3-voc-054"
+kind = "vocab"
+front = "до́рого"
+back = "cher"
+level = 54
+
+[[card]]
+id = "t3-voc-055"
+kind = "vocab"
+front = "рубль"
+back = "rouble"
+level = 55
+
+[[card]]
+id = "t3-voc-056"
+kind = "vocab"
+front = "сда́ча"
+back = "monnaie (qu'on rend)"
+level = 56
+
+[[card]]
+id = "t3-voc-057"
+kind = "vocab"
+front = "чек"
+back = "ticket de caisse"
+level = 57
+
+[[card]]
+id = "t3-voc-058"
+kind = "vocab"
+front = "раз"
+back = "fois"
+level = 58
+
+[[card]]
+id = "t3-voc-059"
+kind = "vocab"
+front = "паке́т"
+back = "sac (plastique)"
+level = 59
+
+[[card]]
+id = "t3-voc-060"
+kind = "vocab"
+front = "буты́лка"
+back = "bouteille"
+level = 60
+
+[[card]]
+id = "t3-voc-061"
+kind = "vocab"
+front = "ча́шка"
+back = "tasse"
+level = 61
+
+[[card]]
+id = "t3-voc-062"
+kind = "vocab"
+front = "стака́н"
+back = "verre"
+level = 62
+
+[[card]]
+id = "t3-voc-063"
+kind = "vocab"
+front = "таре́лка"
+back = "assiette"
+level = 63
+
+[[card]]
+id = "t3-voc-064"
+kind = "vocab"
+front = "ло́жка"
+back = "cuillère"
+level = 64
+
+[[card]]
+id = "t3-voc-065"
+kind = "vocab"
+front = "ви́лка"
+back = "fourchette"
+level = 65
+
+[[card]]
+id = "t3-voc-066"
+kind = "vocab"
+front = "нож"
+back = "couteau"
+level = 66
+
+[[card]]
+id = "t3-voc-067"
+kind = "vocab"
+front = "меню́"
+back = "menu"
+level = 67
+
+[[card]]
+id = "t3-voc-068"
+kind = "vocab"
+front = "счёт"
+back = "addition"
+level = 68
+
+[[card]]
+id = "t3-voc-069"
+kind = "vocab"
+front = "официа́нт"
+back = "serveur"
+level = 69
+
+[[card]]
+id = "t3-voc-070"
+kind = "vocab"
+front = "за́нят"
+back = "occupé"
+level = 70
+
+[[card]]
+id = "t3-voc-071"
+kind = "vocab"
+front = "свобо́ден"
+back = "libre"
+level = 71
+
+[[card]]
+id = "t3-voc-072"
+kind = "vocab"
+front = "откры́то"
+back = "ouvert"
+level = 72
+
+[[card]]
+id = "t3-voc-073"
+kind = "vocab"
+front = "закры́то"
+back = "fermé"
+level = 73
+
+[[card]]
+id = "t3-voc-074"
+kind = "vocab"
+front = "е́хать"
+back = "aller (en véhicule, maintenant)"
+note = "Я е́ду на рабо́ту = Je vais au travail (en voiture, en bus…)."
+level = 74
+
+[[card]]
+id = "t3-voc-075"
+kind = "vocab"
+front = "е́здить"
+back = "aller (en véhicule, souvent)"
+level = 75
+
+[[card]]
+id = "t3-voc-076"
+kind = "vocab"
+front = "ходи́ть"
+back = "aller à pied (souvent)"
+level = 76
+
+[[card]]
+id = "t3-voc-077"
+kind = "vocab"
+front = "приходи́ть"
+back = "arriver (à pied)"
+level = 77
+
+[[card]]
+id = "t3-voc-078"
+kind = "vocab"
+front = "уходи́ть"
+back = "partir (à pied)"
+level = 78
+
+[[card]]
+id = "t3-voc-079"
+kind = "vocab"
+front = "иска́ть"
+back = "chercher"
+level = 79
+
+[[card]]
+id = "t3-voc-080"
+kind = "vocab"
+front = "найти́"
+back = "trouver"
+level = 80
+
+[[card]]
+id = "t3-voc-081"
+kind = "vocab"
+front = "показа́ть"
+back = "montrer"
+level = 81
+
+[[card]]
+id = "t3-voc-082"
+kind = "vocab"
+front = "сказа́ть"
+back = "dire"
+level = 82
+
+[[card]]
+id = "t3-voc-083"
+kind = "vocab"
+front = "взять"
+back = "prendre"
+level = 83
+
+[[card]]
+id = "t3-voc-084"
+kind = "vocab"
+front = "дать"
+back = "donner"
+level = 84
+
+[[card]]
+id = "t3-voc-085"
+kind = "vocab"
+front = "заказа́ть"
+back = "commander"
+level = 85
+
+[[card]]
+id = "t3-voc-086"
+kind = "vocab"
+front = "сади́ться"
+back = "s'asseoir, monter (dans un bus)"
+level = 86
+
+[[card]]
+id = "t3-voc-087"
+kind = "vocab"
+front = "выходи́ть"
+back = "sortir, descendre (du bus)"
+level = 87
+
+[[card]]
+id = "t3-voc-088"
+kind = "vocab"
+front = "пересе́сть"
+back = "changer (de ligne)"
+level = 88
+
+[[card]]
+id = "t3-voc-089"
+kind = "vocab"
+front = "опа́здывать"
+back = "être en retard"
+level = 89
+
+[[card]]
+id = "t3-voc-090"
+kind = "vocab"
+front = "ско́ро"
+back = "bientôt"
+level = 90
+
+[[card]]
+id = "t3-voc-091"
+kind = "vocab"
+front = "бы́стро"
+back = "vite"
+level = 91
+
+[[card]]
+id = "t3-voc-092"
+kind = "vocab"
+front = "ме́дленно"
+back = "lentement"
+level = 92
+
+[[card]]
+id = "t3-voc-093"
+kind = "vocab"
+front = "оде́жда"
+back = "vêtements"
+level = 93
+
+[[card]]
+id = "t3-voc-094"
+kind = "vocab"
+front = "руба́шка"
+back = "chemise"
+level = 94
+
+[[card]]
+id = "t3-voc-095"
+kind = "vocab"
+front = "пла́тье"
+back = "robe"
+level = 95
+
+[[card]]
+id = "t3-voc-096"
+kind = "vocab"
+front = "брю́ки"
+back = "pantalon"
+level = 96
+
+[[card]]
+id = "t3-voc-097"
+kind = "vocab"
+front = "ку́ртка"
+back = "veste, blouson"
+level = 97
+
+[[card]]
+id = "t3-voc-098"
+kind = "vocab"
+front = "пальто́"
+back = "manteau"
+level = 98
+
+[[card]]
+id = "t3-voc-099"
+kind = "vocab"
+front = "о́бувь"
+back = "chaussures"
+level = 99
+
+[[card]]
+id = "t3-voc-100"
+kind = "vocab"
+front = "ша́пка"
+back = "bonnet"
+level = 100
+
+[[card]]
+id = "t3-voc-101"
+kind = "vocab"
+front = "разме́р"
+back = "taille"
+level = 101
+
+[[card]]
+id = "t3-voc-102"
+kind = "vocab"
+front = "цена́"
+back = "prix"
+level = 102
+
+[[card]]
+id = "t3-voc-103"
+kind = "vocab"
+front = "пода́рок"
+back = "cadeau"
+level = 103
+
+[[card]]
+id = "t3-voc-104"
+kind = "vocab"
+front = "пятьдеся́т"
+back = "cinquante"
+level = 104
+
+[[card]]
+id = "t3-voc-105"
+kind = "vocab"
+front = "два́дцать"
+back = "vingt"
+level = 105
+
+[[card]]
+id = "t3-voc-106"
+kind = "vocab"
+front = "три́дцать"
+back = "trente"
+level = 106
+
+[[card]]
+id = "t3-voc-107"
+kind = "vocab"
+front = "со́рок"
+back = "quarante"
+level = 107
+
+[[card]]
+id = "t3-voc-108"
+kind = "vocab"
+front = "пятьсо́т"
+back = "cinq cents"
+level = 108
+
+[[card]]
+id = "t3-voc-109"
+kind = "vocab"
+front = "миллио́н"
+back = "million"
+level = 109
+
+[[card]]
+id = "t3-voc-110"
+kind = "vocab"
+front = "полови́на"
+back = "moitié"
+level = 110
+
+[[card]]
+id = "t3-voc-111"
+kind = "vocab"
+front = "килогра́мм"
+back = "kilogramme"
+level = 111
+
+[[card]]
+id = "t3-voc-112"
+kind = "vocab"
+front = "литр"
+back = "litre"
+level = 112
+
+[[card]]
+id = "t3-voc-113"
+kind = "vocab"
+front = "Москва́"
+back = "Moscou"
+level = 113
+
+[[card]]
+id = "t3-voc-114"
+kind = "vocab"
+front = "Петербу́рг"
+back = "Saint-Pétersbourg"
+level = 114
+
+[[card]]
+id = "t3-voc-115"
+kind = "vocab"
+front = "Росси́я"
+back = "Russie"
+level = 115
+
+[[card]]
+id = "t3-voc-116"
+kind = "vocab"
+front = "Фра́нция"
+back = "France"
+level = 116
+
+[[card]]
+id = "t3-voc-117"
+kind = "vocab"
+front = "страна́"
+back = "pays"
+level = 117
+
+[[card]]
+id = "t3-voc-118"
+kind = "vocab"
+front = "столи́ца"
+back = "capitale"
+level = 118
+
+[[card]]
+id = "t3-voc-119"
+kind = "vocab"
+front = "туристи́ческий"
+back = "touristique"
+level = 119
+
+[[card]]
+id = "t3-voc-120"
+kind = "vocab"
+front = "интере́сный"
+back = "intéressant"
+level = 120
+
+[[card]]
+id = "t3-voc-121"
+kind = "vocab"
+front = "изве́стный"
+back = "célèbre"
+level = 121
+
+[[card]]
+id = "t3-voc-122"
+kind = "vocab"
+front = "пусто́й"
+back = "vide"
+level = 122
+
+[[card]]
+id = "t3-voc-123"
+kind = "vocab"
+front = "по́лный"
+back = "plein"
+level = 123
+
+[[card]]
+id = "t3-phr-001"
+kind = "phrase"
+front = "Где нахо́дится метро́?"
+back = "Où se trouve le métro ?"
+level = 1
+
+[[card]]
+id = "t3-phr-002"
+kind = "phrase"
+front = "Как дойти́ до це́нтра?"
+back = "Comment aller au centre (à pied) ?"
+level = 2
+
+[[card]]
+id = "t3-phr-003"
+kind = "phrase"
+front = "Э́то далеко́?"
+back = "C'est loin ?"
+level = 3
+
+[[card]]
+id = "t3-phr-004"
+kind = "phrase"
+front = "Иди́те пря́мо"
+back = "Allez tout droit"
+level = 4
+
+[[card]]
+id = "t3-phr-005"
+kind = "phrase"
+front = "Поверни́те нале́во"
+back = "Tournez à gauche"
+level = 5
+
+[[card]]
+id = "t3-phr-006"
+kind = "phrase"
+front = "Поверни́те напра́во"
+back = "Tournez à droite"
+level = 6
+
+[[card]]
+id = "t3-phr-007"
+kind = "phrase"
+front = "Оди́н биле́т, пожа́луйста"
+back = "Un billet, s'il vous plaît"
+level = 7
+
+[[card]]
+id = "t3-phr-008"
+kind = "phrase"
+front = "Ско́лько э́то сто́ит?"
+back = "Combien ça coûte ?"
+level = 8
+
+[[card]]
+id = "t3-phr-009"
+kind = "phrase"
+front = "Э́то сли́шком до́рого"
+back = "C'est trop cher"
+level = 9
+
+[[card]]
+id = "t3-phr-010"
+kind = "phrase"
+front = "Мо́жно карто́й?"
+back = "Je peux payer par carte ?"
+level = 10
+
+[[card]]
+id = "t3-phr-011"
+kind = "phrase"
+front = "Я возьму́ э́то"
+back = "Je prends ça"
+level = 11
+
+[[card]]
+id = "t3-phr-012"
+kind = "phrase"
+front = "Счёт, пожа́луйста"
+back = "L'addition, s'il vous plaît"
+level = 12
+
+[[card]]
+id = "t3-phr-013"
+kind = "phrase"
+front = "Сто́лик на двои́х"
+back = "Une table pour deux"
+level = 13
+
+[[card]]
+id = "t3-phr-014"
+kind = "phrase"
+front = "Что вы посове́туете?"
+back = "Que me conseillez-vous ?"
+level = 14
+
+[[card]]
+id = "t3-phr-015"
+kind = "phrase"
+front = "Я не ем мя́со"
+back = "Je ne mange pas de viande"
+level = 15
+
+[[card]]
+id = "t3-phr-016"
+kind = "phrase"
+front = "Бы́ло о́чень вку́сно"
+back = "C'était très bon"
+level = 16
+
+[[card]]
+id = "t3-phr-017"
+kind = "phrase"
+front = "Где остано́вка авто́буса?"
+back = "Où est l'arrêt de bus ?"
+level = 17
+
+[[card]]
+id = "t3-phr-018"
+kind = "phrase"
+front = "Когда́ сле́дующий по́езд?"
+back = "Quand part le prochain train ?"
+level = 18
+
+[[card]]
+id = "t3-phr-019"
+kind = "phrase"
+front = "Мне на́до вы́йти здесь"
+back = "Je dois descendre ici"
+level = 19
+
+[[card]]
+id = "t3-phr-020"
+kind = "phrase"
+front = "Вы выхо́дите?"
+back = "Vous descendez ?"
+note = "Question typique dans un bus bondé, pour se frayer un passage."
+level = 20
+
+[[card]]
+id = "t3-phr-021"
+kind = "phrase"
+front = "У вас есть…?"
+back = "Vous avez… ?"
+level = 21
+
+[[card]]
+id = "t3-phr-022"
+kind = "phrase"
+front = "Я ищу́ апте́ку"
+back = "Je cherche une pharmacie"
+level = 22
+
+[[card]]
+id = "t3-phr-023"
+kind = "phrase"
+front = "Я заблуди́лся"
+back = "Je suis perdu"
+note = "Une femme dit : Я заблуди́лась."
+level = 23
+
+[[card]]
+id = "t3-phr-024"
+kind = "phrase"
+front = "Помоги́те, пожа́луйста"
+back = "Aidez-moi, s'il vous plaît"
+level = 24
+
+[[card]]
+id = "t3-phr-025"
+kind = "phrase"
+front = "Во ско́лько открыва́ется?"
+back = "À quelle heure ça ouvre ?"
+level = 25
+
+[[card]]
+id = "t3-phr-026"
+kind = "phrase"
+front = "Там откры́то?"
+back = "C'est ouvert là-bas ?"
+level = 26
+
+[[card]]
+id = "t3-phr-027"
+kind = "phrase"
+front = "Мо́жно посмотре́ть?"
+back = "Je peux regarder ?"
+level = 27
+
+[[card]]
+id = "t3-phr-028"
+kind = "phrase"
+front = "Мне э́то не подхо́дит"
+back = "Ça ne me va pas"
+level = 28
+
+[[card]]
+id = "t3-phr-029"
+kind = "phrase"
+front = "Я про́сто смотрю́"
+back = "Je regarde seulement"
+level = 29
+
+[[card]]
+id = "t3-phr-030"
+kind = "phrase"
+front = "Вот, пожа́луйста"
+back = "Voilà, tenez"
+level = 30
+
+[[card]]
+id = "t3-gra-001"
+kind = "grammar"
+front = "Я иду́ в парк."
+question = "Que veut dire cette phrase ?"
+back = "Je vais au parc."
+wrong = ["Je suis au parc.", "Je viens du parc."]
+note = "Pour dire où l'on va : в + mot qui ne change pas (masculin) ou -а → -у (féminin) : в шко́лу (f CHKO-lou)."
+level = 1
+
+[[card]]
+id = "t3-gra-002"
+kind = "grammar"
+front = "Я в па́рке."
+question = "Que veut dire cette phrase ?"
+back = "Je suis au parc."
+wrong = ["Je vais au parc.", "J'aime le parc."]
+note = "Pour dire où l'on est : в + mot en -е. Comparer : в парк (on y va), в па́рке (on y est)."
+level = 2
+
+[[card]]
+id = "t3-gra-003"
+kind = "grammar"
+front = "на метро́"
+question = "Que veut dire е́хать на метро́ ?"
+back = "prendre le métro"
+wrong = ["sortir du métro", "habiter près du métro"]
+note = "Pour un moyen de transport : на + véhicule. на авто́бусе (na af-TOU-bou-sié) = en bus."
+level = 3
+
+[[card]]
+id = "t3-gra-004"
+kind = "grammar"
+front = "Я е́ду в Москву́."
+question = "Que veut dire cette phrase ?"
+back = "Je vais à Moscou (en véhicule)."
+wrong = ["Je vais à Moscou à pied.", "J'habite à Moscou."]
+note = "е́хать = aller en véhicule ; идти́ = aller à pied. Москва́ devient Москву́ quand on y va."
+level = 4
+
+[[card]]
+id = "t3-gra-005"
+kind = "grammar"
+front = "Где? / Куда́?"
+question = "Quelle question pose-t-on pour « où vas-tu ? »"
+back = "Куда́ ты идёшь?"
+wrong = ["Где ты идёшь?", "Отку́да ты идёшь?"]
+note = "Где (gdié) = où l'on est ; куда́ (kou-DA) = où l'on va ; отку́да (at-KOU-da) = d'où l'on vient."
+level = 5
+
+[[card]]
+id = "t3-gra-006"
+kind = "grammar"
+front = "два биле́та"
+question = "Que veut dire два биле́та ?"
+back = "deux billets"
+wrong = ["un billet", "cinq billets"]
+note = "Après 2, 3, 4 : -а (masculin). Après 5 et plus : -ов : пять биле́тов (piat bi-LIÉ-taf)."
+level = 6
+
+[[card]]
+id = "t3-gra-007"
+kind = "grammar"
+front = "Мне ну́жен биле́т."
+question = "Que veut dire cette phrase ?"
+back = "J'ai besoin d'un billet."
+wrong = ["J'ai un billet.", "Je n'ai pas de billet."]
+note = "ну́жен (masc.), нужна́ (fém.), ну́жно (neutre) = nécessaire. Мне нужна́ ка́рта = J'ai besoin d'un plan."
+level = 7
+
+[[card]]
+id = "t3-gra-008"
+kind = "grammar"
+front = "У меня́ нет биле́та."
+question = "Que veut dire cette phrase ?"
+back = "Je n'ai pas de billet."
+wrong = ["J'ai un billet.", "Je veux un billet."]
+note = "Pour « je n'ai pas de… », on dit у меня́ нет + le mot avec une fin changée : биле́т → биле́та."
+level = 8
+
+[[card]]
+id = "t3-gra-009"
+kind = "grammar"
+front = "Да́йте, пожа́луйста, во́ду."
+question = "Pourquoi вода́ devient во́ду ?"
+back = "Parce que c'est ce qu'on demande (le complément)"
+wrong = ["Parce que c'est au pluriel", "Parce qu'on parle poliment"]
+note = "Un mot féminin en -а devient -у quand il est l'objet de l'action : Я пью во́ду = Je bois de l'eau."
+level = 9
+
+[[card]]
+id = "t3-gra-010"
+kind = "grammar"
+front = "Я хочу́ ко́фе с молоко́м."
+question = "Que veut dire с молоко́м ?"
+back = "avec du lait"
+wrong = ["sans lait", "du lait"]
+note = "с (s) = avec ; le mot change de fin : молоко́ → с молоко́м. без (biés) = sans."
+level = 10
+
+[[card]]
+id = "t3-gra-011"
+kind = "grammar"
+front = "сто́ит / сто́ят"
+question = "Ско́лько сто́ят я́блоки? Pourquoi сто́ят ?"
+back = "Parce que я́блоки est au pluriel"
+wrong = ["Parce que c'est cher", "Parce que c'est une question"]
+note = "Un objet : сто́ит ; plusieurs : сто́ят."
+level = 11
+
+[[card]]
+id = "t3-gra-012"
+kind = "grammar"
+front = "Э́то мой биле́т, а э́то твой."
+question = "Que veut dire твой ?"
+back = "ton, le tien"
+wrong = ["mon, le mien", "son, le sien"]
+note = "мой = mon, твой = ton, наш = notre, ваш = votre. Ils s'accordent comme мой : твоя́ ка́рта."
+level = 12

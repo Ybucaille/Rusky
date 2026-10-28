@@ -1,0 +1,1336 @@
+# Cartes du niveau 2 de rusky (généré, prononciation calculée).
+tier = 2
+
+[[card]]
+id = "t2-voc-001"
+kind = "vocab"
+front = "оди́н"
+back = "un"
+level = 1
+
+[[card]]
+id = "t2-voc-002"
+kind = "vocab"
+front = "два"
+back = "deux"
+level = 2
+
+[[card]]
+id = "t2-voc-003"
+kind = "vocab"
+front = "три"
+back = "trois"
+level = 3
+
+[[card]]
+id = "t2-voc-004"
+kind = "vocab"
+front = "четы́ре"
+back = "quatre"
+level = 4
+
+[[card]]
+id = "t2-voc-005"
+kind = "vocab"
+front = "пять"
+back = "cinq"
+level = 5
+
+[[card]]
+id = "t2-voc-006"
+kind = "vocab"
+front = "шесть"
+back = "six"
+level = 6
+
+[[card]]
+id = "t2-voc-007"
+kind = "vocab"
+front = "семь"
+back = "sept"
+level = 7
+
+[[card]]
+id = "t2-voc-008"
+kind = "vocab"
+front = "во́семь"
+back = "huit"
+level = 8
+
+[[card]]
+id = "t2-voc-009"
+kind = "vocab"
+front = "де́вять"
+back = "neuf"
+level = 9
+
+[[card]]
+id = "t2-voc-010"
+kind = "vocab"
+front = "де́сять"
+back = "dix"
+level = 10
+
+[[card]]
+id = "t2-voc-011"
+kind = "vocab"
+front = "сто"
+back = "cent"
+level = 11
+
+[[card]]
+id = "t2-voc-012"
+kind = "vocab"
+front = "ты́сяча"
+back = "mille"
+level = 12
+
+[[card]]
+id = "t2-voc-013"
+kind = "vocab"
+front = "пе́рвый"
+back = "premier"
+level = 13
+
+[[card]]
+id = "t2-voc-014"
+kind = "vocab"
+front = "второ́й"
+back = "deuxième"
+level = 14
+
+[[card]]
+id = "t2-voc-015"
+kind = "vocab"
+front = "понеде́льник"
+back = "lundi"
+level = 15
+
+[[card]]
+id = "t2-voc-016"
+kind = "vocab"
+front = "вто́рник"
+back = "mardi"
+level = 16
+
+[[card]]
+id = "t2-voc-017"
+kind = "vocab"
+front = "среда́"
+back = "mercredi"
+level = 17
+
+[[card]]
+id = "t2-voc-018"
+kind = "vocab"
+front = "четве́рг"
+back = "jeudi"
+level = 18
+
+[[card]]
+id = "t2-voc-019"
+kind = "vocab"
+front = "пя́тница"
+back = "vendredi"
+level = 19
+
+[[card]]
+id = "t2-voc-020"
+kind = "vocab"
+front = "суббо́та"
+back = "samedi"
+level = 20
+
+[[card]]
+id = "t2-voc-021"
+kind = "vocab"
+front = "воскресе́нье"
+back = "dimanche"
+level = 21
+
+[[card]]
+id = "t2-voc-022"
+kind = "vocab"
+front = "неде́ля"
+back = "semaine"
+level = 22
+
+[[card]]
+id = "t2-voc-023"
+kind = "vocab"
+front = "ме́сяц"
+back = "mois"
+level = 23
+
+[[card]]
+id = "t2-voc-024"
+kind = "vocab"
+front = "год"
+back = "année"
+level = 24
+
+[[card]]
+id = "t2-voc-025"
+kind = "vocab"
+front = "час"
+back = "heure"
+level = 25
+
+[[card]]
+id = "t2-voc-026"
+kind = "vocab"
+front = "мину́та"
+back = "minute"
+level = 26
+
+[[card]]
+id = "t2-voc-027"
+kind = "vocab"
+front = "по́здно"
+back = "tard"
+level = 27
+
+[[card]]
+id = "t2-voc-028"
+kind = "vocab"
+front = "ра́но"
+back = "tôt"
+level = 28
+
+[[card]]
+id = "t2-voc-029"
+kind = "vocab"
+front = "пото́м"
+back = "ensuite, après"
+level = 29
+
+[[card]]
+id = "t2-voc-030"
+kind = "vocab"
+front = "ещё"
+back = "encore"
+level = 30
+
+[[card]]
+id = "t2-voc-031"
+kind = "vocab"
+front = "уже́"
+back = "déjà"
+level = 31
+
+[[card]]
+id = "t2-voc-032"
+kind = "vocab"
+front = "о́чень"
+back = "très"
+level = 32
+
+[[card]]
+id = "t2-voc-033"
+kind = "vocab"
+front = "то́же"
+back = "aussi"
+level = 33
+
+[[card]]
+id = "t2-voc-034"
+kind = "vocab"
+front = "то́лько"
+back = "seulement"
+level = 34
+
+[[card]]
+id = "t2-voc-035"
+kind = "vocab"
+front = "здесь"
+back = "ici"
+level = 35
+
+[[card]]
+id = "t2-voc-036"
+kind = "vocab"
+front = "там"
+back = "là-bas"
+level = 36
+
+[[card]]
+id = "t2-voc-037"
+kind = "vocab"
+front = "сле́ва"
+back = "à gauche"
+level = 37
+
+[[card]]
+id = "t2-voc-038"
+kind = "vocab"
+front = "спра́ва"
+back = "à droite"
+level = 38
+
+[[card]]
+id = "t2-voc-039"
+kind = "vocab"
+front = "пря́мо"
+back = "tout droit"
+level = 39
+
+[[card]]
+id = "t2-voc-040"
+kind = "vocab"
+front = "ко́мната"
+back = "pièce, chambre"
+level = 40
+
+[[card]]
+id = "t2-voc-041"
+kind = "vocab"
+front = "ку́хня"
+back = "cuisine"
+level = 41
+
+[[card]]
+id = "t2-voc-042"
+kind = "vocab"
+front = "ва́нная"
+back = "salle de bain"
+level = 42
+
+[[card]]
+id = "t2-voc-043"
+kind = "vocab"
+front = "спа́льня"
+back = "chambre à coucher"
+level = 43
+
+[[card]]
+id = "t2-voc-044"
+kind = "vocab"
+front = "дверь"
+back = "porte"
+level = 44
+
+[[card]]
+id = "t2-voc-045"
+kind = "vocab"
+front = "стул"
+back = "chaise"
+level = 45
+
+[[card]]
+id = "t2-voc-046"
+kind = "vocab"
+front = "крова́ть"
+back = "lit"
+level = 46
+
+[[card]]
+id = "t2-voc-047"
+kind = "vocab"
+front = "шкаф"
+back = "armoire"
+level = 47
+
+[[card]]
+id = "t2-voc-048"
+kind = "vocab"
+front = "телефо́н"
+back = "téléphone"
+level = 48
+
+[[card]]
+id = "t2-voc-049"
+kind = "vocab"
+front = "компью́тер"
+back = "ordinateur"
+level = 49
+
+[[card]]
+id = "t2-voc-050"
+kind = "vocab"
+front = "ключ"
+back = "clé"
+level = 50
+
+[[card]]
+id = "t2-voc-051"
+kind = "vocab"
+front = "су́мка"
+back = "sac"
+level = 51
+
+[[card]]
+id = "t2-voc-052"
+kind = "vocab"
+front = "де́ньги"
+back = "argent"
+note = "Toujours au pluriel."
+level = 52
+
+[[card]]
+id = "t2-voc-053"
+kind = "vocab"
+front = "еда́"
+back = "nourriture"
+level = 53
+
+[[card]]
+id = "t2-voc-054"
+kind = "vocab"
+front = "за́втрак"
+back = "petit-déjeuner"
+level = 54
+
+[[card]]
+id = "t2-voc-055"
+kind = "vocab"
+front = "обе́д"
+back = "déjeuner"
+level = 55
+
+[[card]]
+id = "t2-voc-056"
+kind = "vocab"
+front = "у́жин"
+back = "dîner"
+level = 56
+
+[[card]]
+id = "t2-voc-057"
+kind = "vocab"
+front = "суп"
+back = "soupe"
+level = 57
+
+[[card]]
+id = "t2-voc-058"
+kind = "vocab"
+front = "мя́со"
+back = "viande"
+level = 58
+
+[[card]]
+id = "t2-voc-059"
+kind = "vocab"
+front = "ры́ба"
+back = "poisson"
+level = 59
+
+[[card]]
+id = "t2-voc-060"
+kind = "vocab"
+front = "ку́рица"
+back = "poulet"
+level = 60
+
+[[card]]
+id = "t2-voc-061"
+kind = "vocab"
+front = "сыр"
+back = "fromage"
+level = 61
+
+[[card]]
+id = "t2-voc-062"
+kind = "vocab"
+front = "яйцо́"
+back = "œuf"
+level = 62
+
+[[card]]
+id = "t2-voc-063"
+kind = "vocab"
+front = "ма́сло"
+back = "beurre, huile"
+level = 63
+
+[[card]]
+id = "t2-voc-064"
+kind = "vocab"
+front = "сок"
+back = "jus"
+level = 64
+
+[[card]]
+id = "t2-voc-065"
+kind = "vocab"
+front = "пи́во"
+back = "bière"
+level = 65
+
+[[card]]
+id = "t2-voc-066"
+kind = "vocab"
+front = "вино́"
+back = "vin"
+level = 66
+
+[[card]]
+id = "t2-voc-067"
+kind = "vocab"
+front = "са́хар"
+back = "sucre"
+level = 67
+
+[[card]]
+id = "t2-voc-068"
+kind = "vocab"
+front = "соль"
+back = "sel"
+level = 68
+
+[[card]]
+id = "t2-voc-069"
+kind = "vocab"
+front = "фру́кты"
+back = "fruits"
+level = 69
+
+[[card]]
+id = "t2-voc-070"
+kind = "vocab"
+front = "о́вощи"
+back = "légumes"
+level = 70
+
+[[card]]
+id = "t2-voc-071"
+kind = "vocab"
+front = "карто́шка"
+back = "pommes de terre"
+level = 71
+
+[[card]]
+id = "t2-voc-072"
+kind = "vocab"
+front = "помидо́р"
+back = "tomate"
+level = 72
+
+[[card]]
+id = "t2-voc-073"
+kind = "vocab"
+front = "сла́дкий"
+back = "sucré"
+level = 73
+
+[[card]]
+id = "t2-voc-074"
+kind = "vocab"
+front = "вку́сный"
+back = "bon (au goût), délicieux"
+level = 74
+
+[[card]]
+id = "t2-voc-075"
+kind = "vocab"
+front = "горя́чий"
+back = "chaud (pour un plat)"
+level = 75
+
+[[card]]
+id = "t2-voc-076"
+kind = "vocab"
+front = "холо́дный"
+back = "froid"
+level = 76
+
+[[card]]
+id = "t2-voc-077"
+kind = "vocab"
+front = "ма́льчик"
+back = "garçon"
+level = 77
+
+[[card]]
+id = "t2-voc-078"
+kind = "vocab"
+front = "де́вочка"
+back = "petite fille"
+level = 78
+
+[[card]]
+id = "t2-voc-079"
+kind = "vocab"
+front = "ребёнок"
+back = "enfant"
+note = "Pluriel : де́ти (des enfants)."
+level = 79
+
+[[card]]
+id = "t2-voc-080"
+kind = "vocab"
+front = "де́ти"
+back = "enfants"
+level = 80
+
+[[card]]
+id = "t2-voc-081"
+kind = "vocab"
+front = "муж"
+back = "mari"
+level = 81
+
+[[card]]
+id = "t2-voc-082"
+kind = "vocab"
+front = "жена́"
+back = "épouse"
+level = 82
+
+[[card]]
+id = "t2-voc-083"
+kind = "vocab"
+front = "сын"
+back = "fils"
+level = 83
+
+[[card]]
+id = "t2-voc-084"
+kind = "vocab"
+front = "дочь"
+back = "fille (de quelqu'un)"
+level = 84
+
+[[card]]
+id = "t2-voc-085"
+kind = "vocab"
+front = "ба́бушка"
+back = "grand-mère"
+level = 85
+
+[[card]]
+id = "t2-voc-086"
+kind = "vocab"
+front = "де́душка"
+back = "grand-père"
+level = 86
+
+[[card]]
+id = "t2-voc-087"
+kind = "vocab"
+front = "челове́к"
+back = "personne, être humain"
+note = "Pluriel : лю́ди (des gens)."
+level = 87
+
+[[card]]
+id = "t2-voc-088"
+kind = "vocab"
+front = "лю́ди"
+back = "gens"
+level = 88
+
+[[card]]
+id = "t2-voc-089"
+kind = "vocab"
+front = "мужчи́на"
+back = "homme"
+level = 89
+
+[[card]]
+id = "t2-voc-090"
+kind = "vocab"
+front = "же́нщина"
+back = "femme"
+level = 90
+
+[[card]]
+id = "t2-voc-091"
+kind = "vocab"
+front = "сосе́д"
+back = "voisin"
+level = 91
+
+[[card]]
+id = "t2-voc-092"
+kind = "vocab"
+front = "бе́лый"
+back = "blanc"
+level = 92
+
+[[card]]
+id = "t2-voc-093"
+kind = "vocab"
+front = "чёрный"
+back = "noir"
+level = 93
+
+[[card]]
+id = "t2-voc-094"
+kind = "vocab"
+front = "кра́сный"
+back = "rouge"
+level = 94
+
+[[card]]
+id = "t2-voc-095"
+kind = "vocab"
+front = "си́ний"
+back = "bleu (foncé)"
+level = 95
+
+[[card]]
+id = "t2-voc-096"
+kind = "vocab"
+front = "голубо́й"
+back = "bleu clair"
+level = 96
+
+[[card]]
+id = "t2-voc-097"
+kind = "vocab"
+front = "зелёный"
+back = "vert"
+level = 97
+
+[[card]]
+id = "t2-voc-098"
+kind = "vocab"
+front = "жёлтый"
+back = "jaune"
+level = 98
+
+[[card]]
+id = "t2-voc-099"
+kind = "vocab"
+front = "се́рый"
+back = "gris"
+level = 99
+
+[[card]]
+id = "t2-voc-100"
+kind = "vocab"
+front = "ста́рый"
+back = "vieux"
+level = 100
+
+[[card]]
+id = "t2-voc-101"
+kind = "vocab"
+front = "молодо́й"
+back = "jeune"
+level = 101
+
+[[card]]
+id = "t2-voc-102"
+kind = "vocab"
+front = "хоро́ший"
+back = "bon, bien"
+level = 102
+
+[[card]]
+id = "t2-voc-103"
+kind = "vocab"
+front = "плохо́й"
+back = "mauvais"
+level = 103
+
+[[card]]
+id = "t2-voc-104"
+kind = "vocab"
+front = "люби́мый"
+back = "préféré"
+level = 104
+
+[[card]]
+id = "t2-voc-105"
+kind = "vocab"
+front = "весёлый"
+back = "joyeux"
+level = 105
+
+[[card]]
+id = "t2-voc-106"
+kind = "vocab"
+front = "гру́стный"
+back = "triste"
+level = 106
+
+[[card]]
+id = "t2-voc-107"
+kind = "vocab"
+front = "у́мный"
+back = "intelligent"
+level = 107
+
+[[card]]
+id = "t2-voc-108"
+kind = "vocab"
+front = "до́брый"
+back = "gentil"
+level = 108
+
+[[card]]
+id = "t2-voc-109"
+kind = "vocab"
+front = "лёгкий"
+back = "facile, léger"
+level = 109
+
+[[card]]
+id = "t2-voc-110"
+kind = "vocab"
+front = "тру́дный"
+back = "difficile"
+level = 110
+
+[[card]]
+id = "t2-voc-111"
+kind = "vocab"
+front = "де́лать"
+back = "faire"
+note = "Что ты де́лаешь? = Qu'est-ce que tu fais ?"
+level = 111
+
+[[card]]
+id = "t2-voc-112"
+kind = "vocab"
+front = "чита́ть"
+back = "lire"
+level = 112
+
+[[card]]
+id = "t2-voc-113"
+kind = "vocab"
+front = "писа́ть"
+back = "écrire"
+level = 113
+
+[[card]]
+id = "t2-voc-114"
+kind = "vocab"
+front = "слу́шать"
+back = "écouter"
+level = 114
+
+[[card]]
+id = "t2-voc-115"
+kind = "vocab"
+front = "смотре́ть"
+back = "regarder"
+level = 115
+
+[[card]]
+id = "t2-voc-116"
+kind = "vocab"
+front = "ви́деть"
+back = "voir"
+level = 116
+
+[[card]]
+id = "t2-voc-117"
+kind = "vocab"
+front = "спать"
+back = "dormir"
+level = 117
+
+[[card]]
+id = "t2-voc-118"
+kind = "vocab"
+front = "рабо́тать"
+back = "travailler"
+level = 118
+
+[[card]]
+id = "t2-voc-119"
+kind = "vocab"
+front = "учи́ться"
+back = "étudier, apprendre"
+level = 119
+
+[[card]]
+id = "t2-voc-120"
+kind = "vocab"
+front = "игра́ть"
+back = "jouer"
+level = 120
+
+[[card]]
+id = "t2-voc-121"
+kind = "vocab"
+front = "гуля́ть"
+back = "se promener"
+level = 121
+
+[[card]]
+id = "t2-voc-122"
+kind = "vocab"
+front = "гото́вить"
+back = "cuisiner"
+level = 122
+
+[[card]]
+id = "t2-voc-123"
+kind = "vocab"
+front = "покупа́ть"
+back = "acheter"
+level = 123
+
+[[card]]
+id = "t2-voc-124"
+kind = "vocab"
+front = "отдыха́ть"
+back = "se reposer"
+level = 124
+
+[[card]]
+id = "t2-voc-125"
+kind = "vocab"
+front = "ду́мать"
+back = "penser"
+level = 125
+
+[[card]]
+id = "t2-voc-126"
+kind = "vocab"
+front = "звони́ть"
+back = "téléphoner"
+level = 126
+
+[[card]]
+id = "t2-voc-127"
+kind = "vocab"
+front = "отвеча́ть"
+back = "répondre"
+level = 127
+
+[[card]]
+id = "t2-voc-128"
+kind = "vocab"
+front = "спра́шивать"
+back = "demander, poser une question"
+level = 128
+
+[[card]]
+id = "t2-voc-129"
+kind = "vocab"
+front = "мочь"
+back = "pouvoir"
+note = "я могу́, ты мо́жешь."
+level = 129
+
+[[card]]
+id = "t2-voc-130"
+kind = "vocab"
+front = "сиде́ть"
+back = "être assis"
+level = 130
+
+[[card]]
+id = "t2-voc-131"
+kind = "vocab"
+front = "стоя́ть"
+back = "être debout"
+level = 131
+
+[[card]]
+id = "t2-voc-132"
+kind = "vocab"
+front = "лежа́ть"
+back = "être allongé"
+level = 132
+
+[[card]]
+id = "t2-voc-133"
+kind = "vocab"
+front = "открыва́ть"
+back = "ouvrir"
+level = 133
+
+[[card]]
+id = "t2-voc-134"
+kind = "vocab"
+front = "закрыва́ть"
+back = "fermer"
+level = 134
+
+[[card]]
+id = "t2-voc-135"
+kind = "vocab"
+front = "начина́ть"
+back = "commencer"
+level = 135
+
+[[card]]
+id = "t2-voc-136"
+kind = "vocab"
+front = "конча́ть"
+back = "finir"
+level = 136
+
+[[card]]
+id = "t2-voc-137"
+kind = "vocab"
+front = "помога́ть"
+back = "aider"
+level = 137
+
+[[card]]
+id = "t2-voc-138"
+kind = "vocab"
+front = "ждать"
+back = "attendre"
+level = 138
+
+[[card]]
+id = "t2-voc-139"
+kind = "vocab"
+front = "встава́ть"
+back = "se lever"
+level = 139
+
+[[card]]
+id = "t2-voc-140"
+kind = "vocab"
+front = "мыть"
+back = "laver"
+level = 140
+
+[[card]]
+id = "t2-voc-141"
+kind = "vocab"
+front = "одева́ться"
+back = "s'habiller"
+level = 141
+
+[[card]]
+id = "t2-voc-142"
+kind = "vocab"
+front = "просыпа́ться"
+back = "se réveiller"
+level = 142
+
+[[card]]
+id = "t2-phr-001"
+kind = "phrase"
+front = "Ско́лько вре́мени?"
+back = "Quelle heure est-il ?"
+level = 1
+
+[[card]]
+id = "t2-phr-002"
+kind = "phrase"
+front = "Мне два́дцать лет"
+back = "J'ai vingt ans"
+note = "Pour l'âge, on dit « à moi vingt ans »."
+level = 2
+
+[[card]]
+id = "t2-phr-003"
+kind = "phrase"
+front = "Как тебя́ зову́т?"
+back = "Comment tu t'appelles ?"
+level = 3
+
+[[card]]
+id = "t2-phr-004"
+kind = "phrase"
+front = "Отку́да ты?"
+back = "D'où viens-tu ?"
+level = 4
+
+[[card]]
+id = "t2-phr-005"
+kind = "phrase"
+front = "Где ты живёшь?"
+back = "Où habites-tu ?"
+level = 5
+
+[[card]]
+id = "t2-phr-006"
+kind = "phrase"
+front = "Я рабо́таю"
+back = "Je travaille"
+level = 6
+
+[[card]]
+id = "t2-phr-007"
+kind = "phrase"
+front = "Я учу́сь"
+back = "Je fais des études"
+level = 7
+
+[[card]]
+id = "t2-phr-008"
+kind = "phrase"
+front = "Я голо́дный"
+back = "J'ai faim"
+note = "Une femme dit : Я голо́дная."
+level = 8
+
+[[card]]
+id = "t2-phr-009"
+kind = "phrase"
+front = "Я уста́л"
+back = "Je suis fatigué"
+note = "Une femme dit : Я уста́ла."
+level = 9
+
+[[card]]
+id = "t2-phr-010"
+kind = "phrase"
+front = "Прия́тного аппети́та!"
+back = "Bon appétit !"
+level = 10
+
+[[card]]
+id = "t2-phr-011"
+kind = "phrase"
+front = "За ва́ше здоро́вье!"
+back = "À votre santé !"
+level = 11
+
+[[card]]
+id = "t2-phr-012"
+kind = "phrase"
+front = "Пое́хали!"
+back = "C'est parti !"
+level = 12
+
+[[card]]
+id = "t2-phr-013"
+kind = "phrase"
+front = "Как ты?"
+back = "Comment tu vas ?"
+level = 13
+
+[[card]]
+id = "t2-phr-014"
+kind = "phrase"
+front = "Норма́льно"
+back = "Ça va, normal"
+level = 14
+
+[[card]]
+id = "t2-phr-015"
+kind = "phrase"
+front = "Так себе́"
+back = "Comme ci, comme ça"
+level = 15
+
+[[card]]
+id = "t2-phr-016"
+kind = "phrase"
+front = "Отли́чно!"
+back = "Excellent !"
+level = 16
+
+[[card]]
+id = "t2-phr-017"
+kind = "phrase"
+front = "Я согла́сен"
+back = "Je suis d'accord"
+note = "Une femme dit : Я согла́сна."
+level = 17
+
+[[card]]
+id = "t2-phr-018"
+kind = "phrase"
+front = "Мо́жно?"
+back = "Je peux ? / C'est permis ?"
+level = 18
+
+[[card]]
+id = "t2-phr-019"
+kind = "phrase"
+front = "Коне́чно, мо́жно"
+back = "Bien sûr, vas-y"
+level = 19
+
+[[card]]
+id = "t2-phr-020"
+kind = "phrase"
+front = "Я не зна́ю"
+back = "Je ne sais pas"
+level = 20
+
+[[card]]
+id = "t2-phr-021"
+kind = "phrase"
+front = "Мне ну́жно идти́"
+back = "Je dois y aller"
+level = 21
+
+[[card]]
+id = "t2-phr-022"
+kind = "phrase"
+front = "До за́втра!"
+back = "À demain !"
+level = 22
+
+[[card]]
+id = "t2-phr-023"
+kind = "phrase"
+front = "Уви́димся!"
+back = "On se voit !"
+level = 23
+
+[[card]]
+id = "t2-phr-024"
+kind = "phrase"
+front = "Уда́чи!"
+back = "Bonne chance !"
+level = 24
+
+[[card]]
+id = "t2-phr-025"
+kind = "phrase"
+front = "С днём рожде́ния!"
+back = "Joyeux anniversaire !"
+level = 25
+
+[[card]]
+id = "t2-phr-026"
+kind = "phrase"
+front = "С Но́вым го́дом!"
+back = "Bonne année !"
+level = 26
+
+[[card]]
+id = "t2-phr-027"
+kind = "phrase"
+front = "Ничего́"
+back = "Ça va, ce n'est rien"
+note = "Réponse polie à « Как дела́? » ou à une excuse."
+level = 27
+
+[[card]]
+id = "t2-phr-028"
+kind = "phrase"
+front = "Подожди́!"
+back = "Attends !"
+level = 28
+
+[[card]]
+id = "t2-phr-029"
+kind = "phrase"
+front = "Иди́ сюда́!"
+back = "Viens ici !"
+level = 29
+
+[[card]]
+id = "t2-phr-030"
+kind = "phrase"
+front = "Пра́вда?"
+back = "C'est vrai ?"
+level = 30
+
+[[card]]
+id = "t2-gra-001"
+kind = "grammar"
+front = "два дня"
+question = "Que veut dire два дня ?"
+back = "deux jours"
+wrong = ["deux semaines", "un jour"]
+note = "Après 2, 3, 4 le mot prend souvent -а ou -я : день → два дня (dva dnia)."
+level = 1
+
+[[card]]
+id = "t2-gra-002"
+kind = "grammar"
+front = "пять лет"
+question = "Que veut dire пять лет ?"
+back = "cinq ans"
+wrong = ["cinq mois", "cinq jours"]
+note = "Pour les années, 1 год, 2 го́да, 5 лет. Мне пять лет = J'ai cinq ans."
+level = 2
+
+[[card]]
+id = "t2-gra-003"
+kind = "grammar"
+front = "Мне два́дцать лет."
+question = "Que veut dire cette phrase ?"
+back = "J'ai vingt ans."
+wrong = ["Il a vingt ans.", "Dans vingt ans."]
+note = "Pour dire son âge, on dit « à moi … ans » : мне (à moi), тебе́ (à toi), ему́ (à lui), ей (à elle)."
+level = 3
+
+[[card]]
+id = "t2-gra-004"
+kind = "grammar"
+front = "Я могу́ чита́ть."
+question = "Que veut dire cette phrase ?"
+back = "Je peux lire."
+wrong = ["Je veux lire.", "Je dois lire."]
+note = "мочь (pouvoir) + verbe à l'infinitif, comme en français."
+level = 4
+
+[[card]]
+id = "t2-gra-005"
+kind = "grammar"
+front = "Мне ну́жно рабо́тать."
+question = "Que veut dire cette phrase ?"
+back = "Je dois travailler."
+wrong = ["J'aime travailler.", "Je vais travailler."]
+note = "Мне ну́жно + verbe = il me faut, je dois."
+level = 5
+
+[[card]]
+id = "t2-gra-006"
+kind = "grammar"
+front = "Я люблю́ чита́ть."
+question = "Que veut dire cette phrase ?"
+back = "J'aime lire."
+wrong = ["Je lis beaucoup.", "Je sais lire."]
+note = "люби́ть + verbe = aimer faire quelque chose."
+level = 6
+
+[[card]]
+id = "t2-gra-007"
+kind = "grammar"
+front = "в понеде́льник"
+question = "Que veut dire в понеде́льник ?"
+back = "lundi (ce lundi-là)"
+wrong = ["avant lundi", "tous les lundis"]
+note = "Pour un jour de la semaine, on dit в + jour : в сре́ду (f SRIÉ-dou), в пя́тницу."
+level = 7
+
+[[card]]
+id = "t2-gra-008"
+kind = "grammar"
+front = "Э́то моя́ ма́ма."
+question = "Que veut dire cette phrase ?"
+back = "C'est ma mère."
+wrong = ["Où est ma mère ?", "J'aime ma mère."]
+note = "Э́то (È-ta) = c'est, voici. Il ne change jamais."
+level = 8
+
+[[card]]
+id = "t2-gra-009"
+kind = "grammar"
+front = "Я встаю́ в семь часо́в."
+question = "Que veut dire cette phrase ?"
+back = "Je me lève à sept heures."
+wrong = ["Je me lève dans sept heures.", "Il est sept heures."]
+note = "в + heure : в два часа́ = à deux heures, в пять часо́в = à cinq heures."
+level = 9
+
+[[card]]
+id = "t2-gra-010"
+kind = "grammar"
+front = "Ты говори́шь по-ру́сски?"
+question = "Que veut dire cette phrase ?"
+back = "Tu parles russe ?"
+wrong = ["Tu es russe ?", "Tu apprends le russe ?"]
+note = "по-ру́сски = en russe, по-францу́зски (pa-fran-TSOUS-ki) = en français."
+level = 10
+
+[[card]]
+id = "t2-gra-011"
+kind = "grammar"
+front = "Он чита́ет, а она́ спит."
+question = "Que veut dire а ici ?"
+back = "et (en opposant), alors que"
+wrong = ["mais pas", "ou bien"]
+note = "а sert à opposer deux choses ; и (i) veut dire « et » tout court ; но (no) veut dire « mais »."
+level = 11
+
+[[card]]
+id = "t2-gra-012"
+kind = "grammar"
+front = "краси́вая де́вочка"
+question = "Pourquoi краси́вая et pas краси́вый ?"
+back = "Parce que де́вочка est féminin"
+wrong = ["Parce que c'est au pluriel", "Parce que c'est une question"]
+note = "L'adjectif s'accorde : -ый pour masculin, -ая pour féminin, -ое pour neutre."
+level = 12

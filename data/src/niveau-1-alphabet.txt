@@ -1,0 +1,15 @@
+# niveau = 1
+# Les lettres qui manquaient au niveau 1 : l'alphabet est maintenant complet (33 lettres).
+
+@alphabet
+А а | « a » comme dans « papa » | Sans accent, le о se prononce aussi « a ». ма́ма (MA-ma) = maman.
+Е е | « ié » comme dans « pied » | En début de mot, « yé ». нет (niet) = non, е́сли (YÉ-sli) = si.
+И и | « i » comme dans « lit » | и (i) = et. мир (mir) = paix, monde.
+О о | « o » quand il est accentué, « a » sinon | молоко́ (ma-la-KO) = lait : seul le dernier о est accentué.
+К к | « k » comme dans « kilo » | Comme notre K. кот (kot) = chat.
+М м | « m » comme dans « maman » | Comme notre M. ма́ма (MA-ma) = maman.
+Т т | « t » comme dans « table » | Comme notre T. там (tam) = là-bas.
+Д д | « d » comme dans « dame » | Ressemble à un petit d grec. да (da) = oui, дом (dom) = maison.
+З з | « z » comme dans « zéro » | Piège : il ressemble à un 3. зу́бы (ZOU-by) = dents.
+П п | « p » comme dans « papa » | Ressemble au π des maths. па́па (PA-pa) = papa.
+Ф ф | « f » comme dans « fête » | фи́льм (film) = film, фо́то (FO-ta) = photo.

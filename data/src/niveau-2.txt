@@ -1,0 +1,192 @@
+# niveau = 2
+# Le quotidien : la maison, la journée, manger, les gens, les nombres.
+
+@vocab
+оди́н | un |
+два | deux |
+три | trois |
+четы́ре | quatre |
+пять | cinq |
+шесть | six |
+семь | sept |
+во́семь | huit |
+де́вять | neuf |
+де́сять | dix |
+сто | cent |
+ты́сяча | mille |
+пе́рвый | premier |
+второ́й | deuxième |
+понеде́льник | lundi |
+вто́рник | mardi |
+среда́ | mercredi |
+четве́рг | jeudi |
+пя́тница | vendredi |
+суббо́та | samedi |
+воскресе́нье | dimanche |
+неде́ля | semaine |
+ме́сяц | mois |
+год | année |
+час | heure |
+мину́та | minute |
+по́здно | tard |
+ра́но | tôt |
+пото́м | ensuite, après |
+ещё | encore |
+уже́ | déjà |
+о́чень | très |
+то́же | aussi |
+то́лько | seulement |
+здесь | ici |
+там | là-bas |
+сле́ва | à gauche |
+спра́ва | à droite |
+пря́мо | tout droit |
+ко́мната | pièce, chambre |
+ку́хня | cuisine |
+ва́нная | salle de bain |
+спа́льня | chambre à coucher |
+дверь | porte |
+стул | chaise |
+крова́ть | lit |
+шкаф | armoire |
+телефо́н | téléphone |
+компью́тер | ordinateur |
+ключ | clé |
+су́мка | sac |
+де́ньги | argent | Toujours au pluriel.
+еда́ | nourriture |
+за́втрак | petit-déjeuner |
+обе́д | déjeuner |
+у́жин | dîner |
+суп | soupe |
+мя́со | viande |
+ры́ба | poisson |
+ку́рица | poulet |
+сыр | fromage |
+яйцо́ | œuf |
+ма́сло | beurre, huile |
+сок | jus |
+пи́во | bière |
+вино́ | vin |
+са́хар | sucre |
+соль | sel |
+фру́кты | fruits |
+о́вощи | légumes |
+карто́шка | pommes de terre |
+помидо́р | tomate |
+сла́дкий | sucré |
+вку́сный | bon (au goût), délicieux |
+горя́чий | chaud (pour un plat) |
+холо́дный | froid |
+ма́льчик | garçon |
+де́вочка | petite fille |
+ребёнок | enfant | Pluriel : де́ти (des enfants).
+де́ти | enfants |
+муж | mari |
+жена́ | épouse |
+сын | fils |
+дочь | fille (de quelqu'un) |
+ба́бушка | grand-mère |
+де́душка | grand-père |
+челове́к | personne, être humain | Pluriel : лю́ди (des gens).
+лю́ди | gens |
+мужчи́на | homme |
+же́нщина | femme |
+сосе́д | voisin |
+бе́лый | blanc |
+чёрный | noir |
+кра́сный | rouge |
+си́ний | bleu (foncé) |
+голубо́й | bleu clair |
+зелёный | vert |
+жёлтый | jaune |
+се́рый | gris |
+ста́рый | vieux |
+молодо́й | jeune |
+хоро́ший | bon, bien |
+плохо́й | mauvais |
+люби́мый | préféré |
+весёлый | joyeux |
+гру́стный | triste |
+у́мный | intelligent |
+до́брый | gentil |
+лёгкий | facile, léger |
+тру́дный | difficile |
+де́лать | faire | Что ты де́лаешь? = Qu'est-ce que tu fais ?
+чита́ть | lire |
+писа́ть | écrire |
+слу́шать | écouter |
+смотре́ть | regarder |
+ви́деть | voir |
+спать | dormir |
+рабо́тать | travailler |
+учи́ться | étudier, apprendre |
+игра́ть | jouer |
+гуля́ть | se promener |
+гото́вить | cuisiner |
+покупа́ть | acheter |
+отдыха́ть | se reposer |
+ду́мать | penser |
+звони́ть | téléphoner |
+отвеча́ть | répondre |
+спра́шивать | demander, poser une question |
+мочь | pouvoir | я могу́, ты мо́жешь.
+сиде́ть | être assis |
+стоя́ть | être debout |
+лежа́ть | être allongé |
+открыва́ть | ouvrir |
+закрыва́ть | fermer |
+начина́ть | commencer |
+конча́ть | finir |
+помога́ть | aider |
+ждать | attendre |
+встава́ть | se lever |
+мыть | laver |
+одева́ться | s'habiller |
+просыпа́ться | se réveiller |
+
+@phrase
+Ско́лько вре́мени? | Quelle heure est-il ? |
+Мне два́дцать лет | J'ai vingt ans | Pour l'âge, on dit « à moi vingt ans ».
+Как тебя́ зову́т? | Comment tu t'appelles ? |
+Отку́да ты? | D'où viens-tu ? |
+Где ты живёшь? | Où habites-tu ? |
+Я рабо́таю | Je travaille |
+Я учу́сь | Je fais des études |
+Я голо́дный | J'ai faim | Une femme dit : Я голо́дная.
+Я уста́л | Je suis fatigué | Une femme dit : Я уста́ла.
+Прия́тного аппети́та! | Bon appétit ! |
+За ва́ше здоро́вье! | À votre santé ! |
+Пое́хали! | C'est parti ! |
+Как ты? | Comment tu vas ? |
+Норма́льно | Ça va, normal |
+Так себе́ | Comme ci, comme ça |
+Отли́чно! | Excellent ! |
+Я согла́сен | Je suis d'accord | Une femme dit : Я согла́сна.
+Мо́жно? | Je peux ? / C'est permis ? |
+Коне́чно, мо́жно | Bien sûr, vas-y |
+Я не зна́ю | Je ne sais pas |
+Мне ну́жно идти́ | Je dois y aller |
+До за́втра! | À demain ! |
+Уви́димся! | On se voit ! |
+Уда́чи! | Bonne chance ! |
+С днём рожде́ния! | Joyeux anniversaire ! |
+С Но́вым го́дом! | Bonne année ! |
+Ничего́ | Ça va, ce n'est rien | Réponse polie à « Как дела́? » ou à une excuse.
+Подожди́! | Attends ! |
+Иди́ сюда́! | Viens ici ! |
+Пра́вда? | C'est vrai ? |
+
+@grammar
+два дня | Que veut dire два дня ? | deux jours | deux semaines ; un jour | Après 2, 3, 4 le mot prend souvent -а ou -я : день → два дня (dva dnia).
+пять лет | Que veut dire пять лет ? | cinq ans | cinq mois ; cinq jours | Pour les années, 1 год, 2 го́да, 5 лет. Мне пять лет = J'ai cinq ans.
+Мне два́дцать лет. | Que veut dire cette phrase ? | J'ai vingt ans. | Il a vingt ans. ; Dans vingt ans. | Pour dire son âge, on dit « à moi … ans » : мне (à moi), тебе́ (à toi), ему́ (à lui), ей (à elle).
+Я могу́ чита́ть. | Que veut dire cette phrase ? | Je peux lire. | Je veux lire. ; Je dois lire. | мочь (pouvoir) + verbe à l'infinitif, comme en français.
+Мне ну́жно рабо́тать. | Que veut dire cette phrase ? | Je dois travailler. | J'aime travailler. ; Je vais travailler. | Мне ну́жно + verbe = il me faut, je dois.
+Я люблю́ чита́ть. | Que veut dire cette phrase ? | J'aime lire. | Je lis beaucoup. ; Je sais lire. | люби́ть + verbe = aimer faire quelque chose.
+в понеде́льник | Que veut dire в понеде́льник ? | lundi (ce lundi-là) | avant lundi ; tous les lundis | Pour un jour de la semaine, on dit в + jour : в сре́ду (f SRIÉ-dou), в пя́тницу.
+Э́то моя́ ма́ма. | Que veut dire cette phrase ? | C'est ma mère. | Où est ma mère ? ; J'aime ma mère. | Э́то (È-ta) = c'est, voici. Il ne change jamais.
+Я встаю́ в семь часо́в. | Que veut dire cette phrase ? | Je me lève à sept heures. | Je me lève dans sept heures. ; Il est sept heures. | в + heure : в два часа́ = à deux heures, в пять часо́в = à cinq heures.
+Ты говори́шь по-ру́сски? | Que veut dire cette phrase ? | Tu parles russe ? | Tu es russe ? ; Tu apprends le russe ? | по-ру́сски = en russe, по-францу́зски (pa-fran-TSOUS-ki) = en français.
+Он чита́ет, а она́ спит. | Que veut dire а ici ? | et (en opposant), alors que | mais pas ; ou bien | а sert à opposer deux choses ; и (i) veut dire « et » tout court ; но (no) veut dire « mais ».
+краси́вая де́вочка | Pourquoi краси́вая et pas краси́вый ? | Parce que де́вочка est féminin | Parce que c'est au pluriel ; Parce que c'est une question | L'adjectif s'accorde : -ый pour masculin, -ая pour féminin, -ое pour neutre.
