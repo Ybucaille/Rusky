@@ -27,7 +27,7 @@ if [[ "${1:-}" == "--cargo" ]] || ! command -v makepkg &>/dev/null; then
   sed "s|/usr/bin/rusky|$bin|" systemd/rusky.service > ~/.config/systemd/user/rusky.service
 else
   say "Construction du paquet Arch…"
-  makepkg -si --noconfirm --needed
+  makepkg -sif --noconfirm  # -f : reconstruit même à version égale
   rm -rf pkg src/target ./*.pkg.tar.zst  # srcdir de makepkg = ./src
 fi
 
