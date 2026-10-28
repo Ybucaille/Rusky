@@ -113,6 +113,10 @@ pub fn open(db: Db) -> Result<()> {
         match (page.as_deref(), k) {
             (Some("dashboard"), gtk::gdk::Key::Escape) => a.win.close(),
             (Some("session"), gtk::gdk::Key::Escape) => a.finish_session(),
+            (Some("session"), gtk::gdk::Key::Return | gtk::gdk::Key::KP_Enter) => {
+                a.view.next();
+                return glib::Propagation::Stop;
+            }
             (Some(_), gtk::gdk::Key::Escape) => a.show_dashboard(),
             // 1, 2, 3 : choisir une réponse au clavier.
             (Some("session"), k) => {

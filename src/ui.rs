@@ -192,7 +192,6 @@ pub struct QuizView {
     prompt: gtk::Label,
     note: gtk::Label,
     choices: gtk::Box,
-    correct: std::cell::Cell<usize>,
 }
 
 impl QuizView {
@@ -223,14 +222,13 @@ impl QuizView {
         root.append(&choices);
         root.append(&note);
         root.append(&extra);
-        Rc::new(Self { root, top, extra, dot, head, question, pron, prompt, note, choices, correct: Default::default() })
+        Rc::new(Self { root, top, extra, dot, head, question, pron, prompt, note, choices })
     }
 
     /// Pose la question. `on_answer(juste)` est appelé au clic sur une réponse,
     /// `on_next()` au clic sur « Continuer ».
     pub fn show(&self, quiz: &Quiz, on_answer: Rc<dyn Fn(bool)>, on_next: Rc<dyn Fn()>) {
         self.dot.set_css_classes(&["dot", &format!("k-{}", quiz.kind)]);
-        self.correct.set(quiz.correct);
         self.head.set_label(&quiz.header());
         self.set_question(&quiz.big);
         match &quiz.pron {
@@ -308,11 +306,6 @@ impl QuizView {
         if let Some(b) = self.root.last_child().filter(|w| w.has_css_class("next")).and_downcast::<gtk::Button>() {
             b.emit_clicked();
         }
-    }
-
-    /// Index de la bonne réponse de la question affichée.
-    pub fn correct(&self) -> usize {
-        self.correct.get()
     }
 
     /// Un simple message (déblocage de niveau, pause…), sans réponses.
