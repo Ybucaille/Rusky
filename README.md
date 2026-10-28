@@ -35,7 +35,7 @@ systemctl --user enable --now rusky.service
 
 Rusky affiche sa propre popup (GTK4 + layer-shell) en haut à droite de l'écran, par-dessus les fenêtres, sans passer par le démon de notifications. Il faut un compositeur qui gère `wlr-layer-shell` (Hyprland, Sway, niri…).
 
-« Révéler » montre la réponse, puis tu réponds « Je savais » ou « Pas su ». Le ✕ ou Échap ferme sans noter. Tant que tu n'as pas répondu, aucune autre popup n'arrive : rien ne s'accumule.
+« Révéler » montre la réponse, puis tu réponds « Je savais » ou « Pas su ». Le ✕ ou Échap ferme sans noter. Sans réponse, elle se referme seule au bout de 45 s (la fine barre en bas montre le temps restant, et se met en pause quand ta souris est sur la carte) : la carte est alors reportée comme avec « Plus tard ». Tant que tu n'as pas répondu, aucune autre popup n'arrive : rien ne s'accumule.
 
 ## Commandes
 

@@ -7,9 +7,13 @@ use anyhow::{Result, bail};
 use gtk::glib;
 use gtk::prelude::*;
 use gtk4_layer_shell::{Edge, KeyboardMode, Layer, LayerShell};
-use std::cell::RefCell;
+use std::cell::{Cell, RefCell};
 use std::rc::Rc;
 use std::time::Duration;
+
+/// Sans réponse, la popup se referme seule au bout de ce délai.
+const TIMEOUT_SECS: f64 = 45.0;
+const TIMEOUT: &str = "__timeout";
 
 pub enum Outcome {
     Graded(Grade),
@@ -48,7 +52,7 @@ pub fn present(card: &Card, now: i64) -> Result<Outcome> {
                 &p.answer,
                 &[("good", "Je savais"), ("again", "Pas su")],
             )),
-            "later" => Outcome::Later,
+            "later" | TIMEOUT => Outcome::Later,
             _ => Outcome::Dismissed,
         }
     };
@@ -137,6 +141,9 @@ window.rusky { background: transparent; }
 .question { font-size: 30px; font-weight: 700; margin: 12px 0 4px 0; }
 .body { font-size: 14px; color: #b4b6bd; }
 .actions { margin-top: 16px; }
+progressbar.timer { margin: 16px 0 -6px 0; }
+progressbar.timer trough { min-height: 2px; background: alpha(#ffffff, 0.06); border-radius: 1px; }
+progressbar.timer progress { min-height: 2px; background: alpha(#7aa2f7, 0.7); border-radius: 1px; }
 .actions button { border-radius: 9px; padding: 7px 16px; border: 1px solid alpha(#ffffff, 0.06);
                   background: #26282d; color: #ececef; box-shadow: none; font-weight: 500;
                   transition: background 120ms; }
@@ -180,6 +187,8 @@ struct Popup {
     actions: gtk::Box,
     main: glib::MainLoop,
     chosen: Rc<RefCell<String>>,
+    timer: gtk::ProgressBar,
+    hover: Rc<Cell<bool>>,
 }
 
 impl Popup {
@@ -227,6 +236,17 @@ impl Popup {
         content.append(&body);
         content.append(&actions);
         card.append(&content);
+        let timer = gtk::ProgressBar::builder().fraction(1.0).css_classes(["timer"]).build();
+        card.append(&timer);
+
+        // Souris sur la carte : le décompte s'arrête.
+        let hover = Rc::new(Cell::new(false));
+        let motion = gtk::EventControllerMotion::new();
+        let h = hover.clone();
+        motion.connect_enter(move |_, _, _| h.set(true));
+        let h = hover.clone();
+        motion.connect_leave(move |_| h.set(false));
+        card.add_controller(motion);
         win.set_child(Some(&card));
 
         let main = glib::MainLoop::new(None, false);
@@ -269,7 +289,7 @@ impl Popup {
             });
         });
 
-        Ok(Self { win, card, content, question, body, actions, main, chosen })
+        Ok(Self { win, card, content, question, body, actions, main, chosen, timer, hover })
     }
 
     /// Affiche une question (fondu si la carte est déjà visible) et attend un bouton.
@@ -302,7 +322,31 @@ impl Popup {
         } else {
             self.win.present();
         }
+        // Décompte (repart à zéro à chaque étape), en pause au survol.
+        let left = Rc::new(Cell::new(TIMEOUT_SECS));
+        let done = Rc::new(Cell::new(false));
+        self.timer.set_fraction(1.0);
+        let (l, d, h, bar, c, m) = (
+            left.clone(), done.clone(), self.hover.clone(), self.timer.clone(),
+            self.chosen.clone(), self.main.clone(),
+        );
+        glib::timeout_add_local(Duration::from_millis(50), move || {
+            if d.get() {
+                return glib::ControlFlow::Break;
+            }
+            if !h.get() {
+                l.set(l.get() - 0.05);
+                bar.set_fraction((l.get() / TIMEOUT_SECS).max(0.0));
+            }
+            if l.get() <= 0.0 {
+                c.replace(TIMEOUT.into());
+                m.quit();
+                return glib::ControlFlow::Break;
+            }
+            glib::ControlFlow::Continue
+        });
         self.main.run();
+        done.set(true);
         self.chosen.take()
     }
 
@@ -327,7 +371,8 @@ fn to_outcome(action: &str) -> Outcome {
     match action {
         "good" => Outcome::Graded(Grade::Good),
         "again" => Outcome::Graded(Grade::Again),
-        "later" => Outcome::Later,
+        // Partie toute seule : reportée sans pénalité, comme « Plus tard ».
+        "later" | TIMEOUT => Outcome::Later,
         _ => Outcome::Dismissed,
     }
 }
@@ -345,6 +390,7 @@ pub fn info(summary: &str, body: &str) {
     };
     popup.question.set_label(summary);
     popup.body.set_markup(&esc(body));
+    popup.timer.set_visible(false);
     popup.wait(5);
     popup.close();
 }
