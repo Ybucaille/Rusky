@@ -1,0 +1,1189 @@
+# Cartes du niveau 4 de rusky (généré, prononciation calculée).
+tier = 4
+
+[[card]]
+id = "t4-voc-001"
+kind = "vocab"
+front = "вчера́ ве́чером"
+back = "hier soir"
+level = 1
+
+[[card]]
+id = "t4-voc-002"
+kind = "vocab"
+front = "на про́шлой неде́ле"
+back = "la semaine dernière"
+level = 2
+
+[[card]]
+id = "t4-voc-003"
+kind = "vocab"
+front = "в про́шлом году́"
+back = "l'année dernière"
+level = 3
+
+[[card]]
+id = "t4-voc-004"
+kind = "vocab"
+front = "давно́"
+back = "il y a longtemps"
+level = 4
+
+[[card]]
+id = "t4-voc-005"
+kind = "vocab"
+front = "неда́вно"
+back = "récemment"
+level = 5
+
+[[card]]
+id = "t4-voc-006"
+kind = "vocab"
+front = "одна́жды"
+back = "un jour, une fois"
+level = 6
+
+[[card]]
+id = "t4-voc-007"
+kind = "vocab"
+front = "снача́ла"
+back = "d'abord"
+level = 7
+
+[[card]]
+id = "t4-voc-008"
+kind = "vocab"
+front = "наконе́ц"
+back = "enfin"
+level = 8
+
+[[card]]
+id = "t4-voc-009"
+kind = "vocab"
+front = "вдруг"
+back = "soudain"
+level = 9
+
+[[card]]
+id = "t4-voc-010"
+kind = "vocab"
+front = "никогда́"
+back = "jamais"
+note = "Я никогда́ не был в Москве́ = Je ne suis jamais allé à Moscou."
+level = 10
+
+[[card]]
+id = "t4-voc-011"
+kind = "vocab"
+front = "иногда́"
+back = "parfois"
+level = 11
+
+[[card]]
+id = "t4-voc-012"
+kind = "vocab"
+front = "ча́сто"
+back = "souvent"
+level = 12
+
+[[card]]
+id = "t4-voc-013"
+kind = "vocab"
+front = "ре́дко"
+back = "rarement"
+level = 13
+
+[[card]]
+id = "t4-voc-014"
+kind = "vocab"
+front = "обы́чно"
+back = "d'habitude"
+level = 14
+
+[[card]]
+id = "t4-voc-015"
+kind = "vocab"
+front = "голова́"
+back = "tête"
+level = 15
+
+[[card]]
+id = "t4-voc-016"
+kind = "vocab"
+front = "лицо́"
+back = "visage"
+level = 16
+
+[[card]]
+id = "t4-voc-017"
+kind = "vocab"
+front = "глаз"
+back = "œil"
+note = "Pluriel : глаза́ (gla-ZA)."
+level = 17
+
+[[card]]
+id = "t4-voc-018"
+kind = "vocab"
+front = "нос"
+back = "nez"
+level = 18
+
+[[card]]
+id = "t4-voc-019"
+kind = "vocab"
+front = "рот"
+back = "bouche"
+level = 19
+
+[[card]]
+id = "t4-voc-020"
+kind = "vocab"
+front = "у́хо"
+back = "oreille"
+level = 20
+
+[[card]]
+id = "t4-voc-021"
+kind = "vocab"
+front = "зуб"
+back = "dent"
+level = 21
+
+[[card]]
+id = "t4-voc-022"
+kind = "vocab"
+front = "во́лосы"
+back = "cheveux"
+level = 22
+
+[[card]]
+id = "t4-voc-023"
+kind = "vocab"
+front = "рука́"
+back = "main, bras"
+level = 23
+
+[[card]]
+id = "t4-voc-024"
+kind = "vocab"
+front = "нога́"
+back = "jambe, pied"
+level = 24
+
+[[card]]
+id = "t4-voc-025"
+kind = "vocab"
+front = "па́лец"
+back = "doigt"
+level = 25
+
+[[card]]
+id = "t4-voc-026"
+kind = "vocab"
+front = "спина́"
+back = "dos"
+level = 26
+
+[[card]]
+id = "t4-voc-027"
+kind = "vocab"
+front = "живо́т"
+back = "ventre"
+level = 27
+
+[[card]]
+id = "t4-voc-028"
+kind = "vocab"
+front = "се́рдце"
+back = "cœur"
+level = 28
+
+[[card]]
+id = "t4-voc-029"
+kind = "vocab"
+front = "боле́ть"
+back = "avoir mal, être malade"
+note = "У меня́ боли́т голова́ = J'ai mal à la tête."
+level = 29
+
+[[card]]
+id = "t4-voc-030"
+kind = "vocab"
+front = "врач"
+back = "médecin"
+level = 30
+
+[[card]]
+id = "t4-voc-031"
+kind = "vocab"
+front = "лека́рство"
+back = "médicament"
+level = 31
+
+[[card]]
+id = "t4-voc-032"
+kind = "vocab"
+front = "температу́ра"
+back = "fièvre, température"
+level = 32
+
+[[card]]
+id = "t4-voc-033"
+kind = "vocab"
+front = "просту́да"
+back = "rhume"
+level = 33
+
+[[card]]
+id = "t4-voc-034"
+kind = "vocab"
+front = "здоро́вый"
+back = "en bonne santé"
+level = 34
+
+[[card]]
+id = "t4-voc-035"
+kind = "vocab"
+front = "больно́й"
+back = "malade"
+level = 35
+
+[[card]]
+id = "t4-voc-036"
+kind = "vocab"
+front = "пого́да"
+back = "temps (qu'il fait)"
+level = 36
+
+[[card]]
+id = "t4-voc-037"
+kind = "vocab"
+front = "со́лнце"
+back = "soleil"
+level = 37
+
+[[card]]
+id = "t4-voc-038"
+kind = "vocab"
+front = "дождь"
+back = "pluie"
+level = 38
+
+[[card]]
+id = "t4-voc-039"
+kind = "vocab"
+front = "снег"
+back = "neige"
+level = 39
+
+[[card]]
+id = "t4-voc-040"
+kind = "vocab"
+front = "ве́тер"
+back = "vent"
+level = 40
+
+[[card]]
+id = "t4-voc-041"
+kind = "vocab"
+front = "не́бо"
+back = "ciel"
+level = 41
+
+[[card]]
+id = "t4-voc-042"
+kind = "vocab"
+front = "о́блако"
+back = "nuage"
+level = 42
+
+[[card]]
+id = "t4-voc-043"
+kind = "vocab"
+front = "тепло́"
+back = "il fait doux"
+level = 43
+
+[[card]]
+id = "t4-voc-044"
+kind = "vocab"
+front = "жа́рко"
+back = "il fait chaud"
+level = 44
+
+[[card]]
+id = "t4-voc-045"
+kind = "vocab"
+front = "хо́лодно"
+back = "il fait froid"
+level = 45
+
+[[card]]
+id = "t4-voc-046"
+kind = "vocab"
+front = "мо́кро"
+back = "c'est mouillé"
+level = 46
+
+[[card]]
+id = "t4-voc-047"
+kind = "vocab"
+front = "зима́"
+back = "hiver"
+level = 47
+
+[[card]]
+id = "t4-voc-048"
+kind = "vocab"
+front = "весна́"
+back = "printemps"
+level = 48
+
+[[card]]
+id = "t4-voc-049"
+kind = "vocab"
+front = "ле́то"
+back = "été"
+level = 49
+
+[[card]]
+id = "t4-voc-050"
+kind = "vocab"
+front = "о́сень"
+back = "automne"
+level = 50
+
+[[card]]
+id = "t4-voc-051"
+kind = "vocab"
+front = "зимо́й"
+back = "en hiver"
+level = 51
+
+[[card]]
+id = "t4-voc-052"
+kind = "vocab"
+front = "ле́том"
+back = "en été"
+level = 52
+
+[[card]]
+id = "t4-voc-053"
+kind = "vocab"
+front = "мо́ре"
+back = "mer"
+level = 53
+
+[[card]]
+id = "t4-voc-054"
+kind = "vocab"
+front = "гора́"
+back = "montagne"
+level = 54
+
+[[card]]
+id = "t4-voc-055"
+kind = "vocab"
+front = "лес"
+back = "forêt"
+level = 55
+
+[[card]]
+id = "t4-voc-056"
+kind = "vocab"
+front = "о́зеро"
+back = "lac"
+level = 56
+
+[[card]]
+id = "t4-voc-057"
+kind = "vocab"
+front = "де́рево"
+back = "arbre"
+level = 57
+
+[[card]]
+id = "t4-voc-058"
+kind = "vocab"
+front = "цвето́к"
+back = "fleur"
+level = 58
+
+[[card]]
+id = "t4-voc-059"
+kind = "vocab"
+front = "пти́ца"
+back = "oiseau"
+level = 59
+
+[[card]]
+id = "t4-voc-060"
+kind = "vocab"
+front = "живо́тное"
+back = "animal"
+level = 60
+
+[[card]]
+id = "t4-voc-061"
+kind = "vocab"
+front = "ло́шадь"
+back = "cheval"
+level = 61
+
+[[card]]
+id = "t4-voc-062"
+kind = "vocab"
+front = "коро́ва"
+back = "vache"
+level = 62
+
+[[card]]
+id = "t4-voc-063"
+kind = "vocab"
+front = "медве́дь"
+back = "ours"
+level = 63
+
+[[card]]
+id = "t4-voc-064"
+kind = "vocab"
+front = "волк"
+back = "loup"
+level = 64
+
+[[card]]
+id = "t4-voc-065"
+kind = "vocab"
+front = "ра́дость"
+back = "joie"
+level = 65
+
+[[card]]
+id = "t4-voc-066"
+kind = "vocab"
+front = "страх"
+back = "peur"
+level = 66
+
+[[card]]
+id = "t4-voc-067"
+kind = "vocab"
+front = "любо́вь"
+back = "amour"
+level = 67
+
+[[card]]
+id = "t4-voc-068"
+kind = "vocab"
+front = "сча́стье"
+back = "bonheur"
+level = 68
+
+[[card]]
+id = "t4-voc-069"
+kind = "vocab"
+front = "счастли́вый"
+back = "heureux"
+level = 69
+
+[[card]]
+id = "t4-voc-070"
+kind = "vocab"
+front = "серди́тый"
+back = "fâché"
+level = 70
+
+[[card]]
+id = "t4-voc-071"
+kind = "vocab"
+front = "споко́йный"
+back = "calme"
+level = 71
+
+[[card]]
+id = "t4-voc-072"
+kind = "vocab"
+front = "удивлён"
+back = "surpris"
+level = 72
+
+[[card]]
+id = "t4-voc-073"
+kind = "vocab"
+front = "боя́ться"
+back = "avoir peur"
+level = 73
+
+[[card]]
+id = "t4-voc-074"
+kind = "vocab"
+front = "смея́ться"
+back = "rire"
+level = 74
+
+[[card]]
+id = "t4-voc-075"
+kind = "vocab"
+front = "пла́кать"
+back = "pleurer"
+level = 75
+
+[[card]]
+id = "t4-voc-076"
+kind = "vocab"
+front = "улыба́ться"
+back = "sourire"
+level = 76
+
+[[card]]
+id = "t4-voc-077"
+kind = "vocab"
+front = "чу́вствовать"
+back = "ressentir"
+level = 77
+
+[[card]]
+id = "t4-voc-078"
+kind = "vocab"
+front = "по́мнить"
+back = "se souvenir"
+level = 78
+
+[[card]]
+id = "t4-voc-079"
+kind = "vocab"
+front = "забы́ть"
+back = "oublier"
+level = 79
+
+[[card]]
+id = "t4-voc-080"
+kind = "vocab"
+front = "узна́ть"
+back = "apprendre (une nouvelle), reconnaître"
+level = 80
+
+[[card]]
+id = "t4-voc-081"
+kind = "vocab"
+front = "быть"
+back = "être"
+note = "Au passé : был, была́, бы́ло, бы́ли."
+level = 81
+
+[[card]]
+id = "t4-voc-082"
+kind = "vocab"
+front = "стать"
+back = "devenir"
+level = 82
+
+[[card]]
+id = "t4-voc-083"
+kind = "vocab"
+front = "жени́ться"
+back = "se marier (pour un homme)"
+level = 83
+
+[[card]]
+id = "t4-voc-084"
+kind = "vocab"
+front = "роди́ться"
+back = "naître"
+note = "Я роди́лся в Пари́же = Je suis né à Paris."
+level = 84
+
+[[card]]
+id = "t4-voc-085"
+kind = "vocab"
+front = "умере́ть"
+back = "mourir"
+level = 85
+
+[[card]]
+id = "t4-voc-086"
+kind = "vocab"
+front = "расти́"
+back = "grandir"
+level = 86
+
+[[card]]
+id = "t4-voc-087"
+kind = "vocab"
+front = "встре́тить"
+back = "rencontrer"
+level = 87
+
+[[card]]
+id = "t4-voc-088"
+kind = "vocab"
+front = "верну́ться"
+back = "revenir"
+level = 88
+
+[[card]]
+id = "t4-voc-089"
+kind = "vocab"
+front = "уе́хать"
+back = "partir (en véhicule)"
+level = 89
+
+[[card]]
+id = "t4-voc-090"
+kind = "vocab"
+front = "прие́хать"
+back = "arriver (en véhicule)"
+level = 90
+
+[[card]]
+id = "t4-voc-091"
+kind = "vocab"
+front = "пое́здка"
+back = "voyage, trajet"
+level = 91
+
+[[card]]
+id = "t4-voc-092"
+kind = "vocab"
+front = "путеше́ствие"
+back = "voyage"
+level = 92
+
+[[card]]
+id = "t4-voc-093"
+kind = "vocab"
+front = "о́тпуск"
+back = "vacances (du travail)"
+level = 93
+
+[[card]]
+id = "t4-voc-094"
+kind = "vocab"
+front = "кани́кулы"
+back = "vacances (scolaires)"
+level = 94
+
+[[card]]
+id = "t4-voc-095"
+kind = "vocab"
+front = "фотогра́фия"
+back = "photo"
+level = 95
+
+[[card]]
+id = "t4-voc-096"
+kind = "vocab"
+front = "исто́рия"
+back = "histoire"
+level = 96
+
+[[card]]
+id = "t4-voc-097"
+kind = "vocab"
+front = "ска́зка"
+back = "conte"
+level = 97
+
+[[card]]
+id = "t4-voc-098"
+kind = "vocab"
+front = "сон"
+back = "rêve, sommeil"
+level = 98
+
+[[card]]
+id = "t4-voc-099"
+kind = "vocab"
+front = "пра́здник"
+back = "fête"
+level = 99
+
+[[card]]
+id = "t4-voc-100"
+kind = "vocab"
+front = "сва́дьба"
+back = "mariage"
+level = 100
+
+[[card]]
+id = "t4-voc-101"
+kind = "vocab"
+front = "день рожде́ния"
+back = "anniversaire"
+level = 101
+
+[[card]]
+id = "t4-voc-102"
+kind = "vocab"
+front = "дере́вня"
+back = "village"
+level = 102
+
+[[card]]
+id = "t4-voc-103"
+kind = "vocab"
+front = "де́тство"
+back = "enfance"
+level = 103
+
+[[card]]
+id = "t4-voc-104"
+kind = "vocab"
+front = "мо́лодость"
+back = "jeunesse"
+level = 104
+
+[[card]]
+id = "t4-voc-105"
+kind = "vocab"
+front = "ста́рость"
+back = "vieillesse"
+level = 105
+
+[[card]]
+id = "t4-voc-106"
+kind = "vocab"
+front = "жизнь"
+back = "vie"
+level = 106
+
+[[card]]
+id = "t4-voc-107"
+kind = "vocab"
+front = "смерть"
+back = "mort"
+level = 107
+
+[[card]]
+id = "t4-voc-108"
+kind = "vocab"
+front = "война́"
+back = "guerre"
+level = 108
+
+[[card]]
+id = "t4-voc-109"
+kind = "vocab"
+front = "мир"
+back = "paix, monde"
+level = 109
+
+[[card]]
+id = "t4-voc-110"
+kind = "vocab"
+front = "пе́сня"
+back = "chanson"
+level = 110
+
+[[card]]
+id = "t4-voc-111"
+kind = "vocab"
+front = "му́зыка"
+back = "musique"
+level = 111
+
+[[card]]
+id = "t4-voc-112"
+kind = "vocab"
+front = "танцева́ть"
+back = "danser"
+level = 112
+
+[[card]]
+id = "t4-voc-113"
+kind = "vocab"
+front = "петь"
+back = "chanter"
+level = 113
+
+[[card]]
+id = "t4-voc-114"
+kind = "vocab"
+front = "рисова́ть"
+back = "dessiner"
+level = 114
+
+[[card]]
+id = "t4-voc-115"
+kind = "vocab"
+front = "фильм"
+back = "film"
+level = 115
+
+[[card]]
+id = "t4-voc-116"
+kind = "vocab"
+front = "кни́жка"
+back = "petit livre"
+level = 116
+
+[[card]]
+id = "t4-voc-117"
+kind = "vocab"
+front = "газе́та"
+back = "journal"
+level = 117
+
+[[card]]
+id = "t4-voc-118"
+kind = "vocab"
+front = "письмо́"
+back = "lettre (courrier)"
+level = 118
+
+[[card]]
+id = "t4-voc-119"
+kind = "vocab"
+front = "сосе́дка"
+back = "voisine"
+level = 119
+
+[[card]]
+id = "t4-voc-120"
+kind = "vocab"
+front = "подру́га"
+back = "amie"
+level = 120
+
+[[card]]
+id = "t4-voc-121"
+kind = "vocab"
+front = "пусть"
+back = "que… (souhait), laisse"
+note = "Пусть он придёт = Qu'il vienne."
+level = 121
+
+[[card]]
+id = "t4-phr-001"
+kind = "phrase"
+front = "Что случи́лось?"
+back = "Qu'est-ce qui s'est passé ?"
+level = 1
+
+[[card]]
+id = "t4-phr-002"
+kind = "phrase"
+front = "У меня́ боли́т голова́"
+back = "J'ai mal à la tête"
+level = 2
+
+[[card]]
+id = "t4-phr-003"
+kind = "phrase"
+front = "Мне пло́хо"
+back = "Je ne me sens pas bien"
+level = 3
+
+[[card]]
+id = "t4-phr-004"
+kind = "phrase"
+front = "Вы́зовите врача́!"
+back = "Appelez un médecin !"
+level = 4
+
+[[card]]
+id = "t4-phr-005"
+kind = "phrase"
+front = "Сего́дня хо́лодно"
+back = "Il fait froid aujourd'hui"
+level = 5
+
+[[card]]
+id = "t4-phr-006"
+kind = "phrase"
+front = "Идёт дождь"
+back = "Il pleut"
+note = "Mot à mot : « la pluie marche »."
+level = 6
+
+[[card]]
+id = "t4-phr-007"
+kind = "phrase"
+front = "Идёт снег"
+back = "Il neige"
+level = 7
+
+[[card]]
+id = "t4-phr-008"
+kind = "phrase"
+front = "Кака́я сего́дня пого́да?"
+back = "Quel temps fait-il aujourd'hui ?"
+level = 8
+
+[[card]]
+id = "t4-phr-009"
+kind = "phrase"
+front = "Я был в Росси́и"
+back = "J'ai été en Russie"
+note = "Une femme dit : Я была́ в Росси́и."
+level = 9
+
+[[card]]
+id = "t4-phr-010"
+kind = "phrase"
+front = "Мы познако́мились в шко́ле"
+back = "Nous nous sommes rencontrés à l'école"
+level = 10
+
+[[card]]
+id = "t4-phr-011"
+kind = "phrase"
+front = "Я по тебе́ скуча́ю"
+back = "Tu me manques"
+level = 11
+
+[[card]]
+id = "t4-phr-012"
+kind = "phrase"
+front = "Я тебя́ люблю́"
+back = "Je t'aime"
+level = 12
+
+[[card]]
+id = "t4-phr-013"
+kind = "phrase"
+front = "Мне стра́шно"
+back = "J'ai peur"
+level = 13
+
+[[card]]
+id = "t4-phr-014"
+kind = "phrase"
+front = "Мне ве́село"
+back = "Je m'amuse"
+level = 14
+
+[[card]]
+id = "t4-phr-015"
+kind = "phrase"
+front = "Мне ску́чно"
+back = "Je m'ennuie"
+level = 15
+
+[[card]]
+id = "t4-phr-016"
+kind = "phrase"
+front = "Как прошли́ выходны́е?"
+back = "Comment s'est passé le week-end ?"
+level = 16
+
+[[card]]
+id = "t4-phr-017"
+kind = "phrase"
+front = "Бы́ло здо́рово!"
+back = "C'était génial !"
+level = 17
+
+[[card]]
+id = "t4-phr-018"
+kind = "phrase"
+front = "Я по́мню"
+back = "Je me souviens"
+level = 18
+
+[[card]]
+id = "t4-phr-019"
+kind = "phrase"
+front = "Я забы́л"
+back = "J'ai oublié"
+note = "Une femme dit : Я забы́ла."
+level = 19
+
+[[card]]
+id = "t4-phr-020"
+kind = "phrase"
+front = "Расскажи́ мне!"
+back = "Raconte-moi !"
+level = 20
+
+[[card]]
+id = "t4-phr-021"
+kind = "phrase"
+front = "Не волну́йся"
+back = "Ne t'inquiète pas"
+level = 21
+
+[[card]]
+id = "t4-phr-022"
+kind = "phrase"
+front = "Всё бу́дет хорошо́"
+back = "Tout ira bien"
+level = 22
+
+[[card]]
+id = "t4-phr-023"
+kind = "phrase"
+front = "Береги́ себя́"
+back = "Prends soin de toi"
+level = 23
+
+[[card]]
+id = "t4-phr-024"
+kind = "phrase"
+front = "Выздора́вливай!"
+back = "Guéris vite !"
+level = 24
+
+[[card]]
+id = "t4-phr-025"
+kind = "phrase"
+front = "Как ра́ньше"
+back = "Comme avant"
+level = 25
+
+[[card]]
+id = "t4-phr-026"
+kind = "phrase"
+front = "Я так рад!"
+back = "Je suis si content !"
+note = "Une femme dit : Я так ра́да!"
+level = 26
+
+[[card]]
+id = "t4-phr-027"
+kind = "phrase"
+front = "Жаль!"
+back = "Dommage !"
+level = 27
+
+[[card]]
+id = "t4-phr-028"
+kind = "phrase"
+front = "Ну и что?"
+back = "Et alors ?"
+level = 28
+
+[[card]]
+id = "t4-phr-029"
+kind = "phrase"
+front = "Так быва́ет"
+back = "Ça arrive"
+level = 29
+
+[[card]]
+id = "t4-phr-030"
+kind = "phrase"
+front = "Счастли́вого пути́!"
+back = "Bon voyage !"
+level = 30
+
+[[card]]
+id = "t4-gra-001"
+kind = "grammar"
+front = "Я чита́л. / Я прочита́л."
+question = "Laquelle veut dire « J'ai fini de lire » ?"
+back = "Я прочита́л."
+wrong = ["Я чита́л.", "Les deux veulent dire la même chose."]
+note = "Au passé, le verbe « terminé » (avec про-, с-, на-…) dit qu'on est allé au bout ; l'autre raconte l'action en cours ou habituelle."
+level = 1
+
+[[card]]
+id = "t4-gra-002"
+kind = "grammar"
+front = "Он был до́ма."
+question = "Que veut dire cette phrase ?"
+back = "Il était à la maison."
+wrong = ["Il est à la maison.", "Il sera à la maison."]
+note = "Le verbe « être » réapparaît au passé : был (il), была́ (elle), бы́ло (neutre), бы́ли (ils)."
+level = 2
+
+[[card]]
+id = "t4-gra-003"
+kind = "grammar"
+front = "Я бу́ду рабо́тать."
+question = "Que veut dire cette phrase ?"
+back = "Je travaillerai."
+wrong = ["Je travaillais.", "Je travaille."]
+note = "Futur simple : бу́ду + verbe. я бу́ду, ты бу́дешь, он бу́дет…"
+level = 3
+
+[[card]]
+id = "t4-gra-004"
+kind = "grammar"
+front = "Я прочита́ю кни́гу."
+question = "Que veut dire cette phrase ?"
+back = "Je lirai le livre (jusqu'au bout)."
+wrong = ["Je lis le livre.", "J'ai lu le livre."]
+note = "Un verbe « terminé » conjugué comme au présent donne un futur : прочита́ю = je lirai entièrement."
+level = 4
+
+[[card]]
+id = "t4-gra-005"
+kind = "grammar"
+front = "У меня́ боли́т голова́."
+question = "Que veut dire cette phrase ?"
+back = "J'ai mal à la tête."
+wrong = ["J'ai une grosse tête.", "Ma tête va bien."]
+note = "У меня́ боли́т + partie du corps = j'ai mal à… Au pluriel : боля́т (ba-LIAT)."
+level = 5
+
+[[card]]
+id = "t4-gra-006"
+kind = "grammar"
+front = "Мне хо́лодно."
+question = "Que veut dire cette phrase ?"
+back = "J'ai froid."
+wrong = ["Il est froid.", "Je suis froid."]
+note = "Pour les sensations, le russe dit « à moi froid » : мне (à moi) + mot en -о. Ему́ жа́рко = Il a chaud."
+level = 6
+
+[[card]]
+id = "t4-gra-007"
+kind = "grammar"
+front = "зимо́й"
+question = "Que veut dire зимо́й ?"
+back = "en hiver"
+wrong = ["l'hiver dernier", "vers l'hiver"]
+note = "Les saisons en -ой / -ом veulent dire « en … » : зимо́й, весно́й, ле́том, о́сенью."
+level = 7
+
+[[card]]
+id = "t4-gra-008"
+kind = "grammar"
+front = "Он роди́лся в 1990 году́."
+question = "Que veut dire cette phrase ?"
+back = "Il est né en 1990."
+wrong = ["Il a 1990 ans.", "Il vit depuis 1990."]
+note = "в + année + году́ (ga-DOU) : в 2020 году́ = en 2020."
+level = 8
+
+[[card]]
+id = "t4-gra-009"
+kind = "grammar"
+front = "Я никогда́ не был там."
+question = "Pourquoi y a-t-il à la fois никогда́ et не ?"
+back = "En russe, « jamais » s'emploie avec не"
+wrong = ["C'est une faute", "Pour dire « toujours »"]
+note = "Double négation obligatoire : никто́ не (personne ne), ничего́ не (rien ne), никогда́ не (jamais)."
+level = 9
+
+[[card]]
+id = "t4-gra-010"
+kind = "grammar"
+front = "Я ду́маю о тебе́."
+question = "Que veut dire cette phrase ?"
+back = "Je pense à toi."
+wrong = ["Je pense comme toi.", "Je pense sans toi."]
+note = "ду́мать о + personne = penser à. о ма́ме = à maman, обо мне́ = à moi."
+level = 10
+
+[[card]]
+id = "t4-gra-011"
+kind = "grammar"
+front = "Пойдём в кино́!"
+question = "Que veut dire cette phrase ?"
+back = "Allons au cinéma !"
+wrong = ["Je suis allé au cinéma.", "Le cinéma est fermé."]
+note = "Пойдём / пое́дем = allons-y (à pied / en véhicule)."
+level = 11
+
+[[card]]
+id = "t4-gra-012"
+kind = "grammar"
+front = "Е́сли бу́дет дождь, я оста́нусь до́ма."
+question = "Que veut dire е́сли ?"
+back = "si"
+wrong = ["quand", "parce que"]
+note = "е́сли (YÉ-sli) = si. Après е́сли, on met le futur : е́сли бу́дет = s'il y a."
+level = 12

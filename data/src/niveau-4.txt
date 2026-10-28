@@ -1,0 +1,171 @@
+# niveau = 4
+# Raconter : le passé, le corps, la santé, le temps qu'il fait, les saisons, les sentiments.
+
+@vocab
+вчера́ ве́чером | hier soir |
+на про́шлой неде́ле | la semaine dernière |
+в про́шлом году́ | l'année dernière |
+давно́ | il y a longtemps |
+неда́вно | récemment |
+одна́жды | un jour, une fois |
+снача́ла | d'abord |
+наконе́ц | enfin |
+вдруг | soudain |
+никогда́ | jamais | Я никогда́ не был в Москве́ = Je ne suis jamais allé à Moscou.
+иногда́ | parfois |
+ча́сто | souvent |
+ре́дко | rarement |
+обы́чно | d'habitude |
+голова́ | tête |
+лицо́ | visage |
+глаз | œil | Pluriel : глаза́ (gla-ZA).
+нос | nez |
+рот | bouche |
+у́хо | oreille |
+зуб | dent |
+во́лосы | cheveux |
+рука́ | main, bras |
+нога́ | jambe, pied |
+па́лец | doigt |
+спина́ | dos |
+живо́т | ventre |
+се́рдце | cœur |
+боле́ть | avoir mal, être malade | У меня́ боли́т голова́ = J'ai mal à la tête.
+врач | médecin |
+лека́рство | médicament |
+температу́ра | fièvre, température |
+просту́да | rhume |
+здоро́вый | en bonne santé |
+больно́й | malade |
+пого́да | temps (qu'il fait) |
+со́лнце | soleil |
+дождь | pluie |
+снег | neige |
+ве́тер | vent |
+не́бо | ciel |
+о́блако | nuage |
+тепло́ | il fait doux |
+жа́рко | il fait chaud |
+хо́лодно | il fait froid |
+мо́кро | c'est mouillé |
+зима́ | hiver |
+весна́ | printemps |
+ле́то | été |
+о́сень | automne |
+зимо́й | en hiver |
+ле́том | en été |
+мо́ре | mer |
+гора́ | montagne |
+лес | forêt |
+о́зеро | lac |
+де́рево | arbre |
+цвето́к | fleur |
+пти́ца | oiseau |
+живо́тное | animal |
+ло́шадь | cheval |
+коро́ва | vache |
+медве́дь | ours |
+волк | loup |
+ра́дость | joie |
+страх | peur |
+любо́вь | amour |
+сча́стье | bonheur |
+счастли́вый | heureux |
+серди́тый | fâché |
+споко́йный | calme |
+удивлён | surpris |
+боя́ться | avoir peur |
+смея́ться | rire |
+пла́кать | pleurer |
+улыба́ться | sourire |
+чу́вствовать | ressentir |
+по́мнить | se souvenir |
+забы́ть | oublier |
+узна́ть | apprendre (une nouvelle), reconnaître |
+быть | être | Au passé : был, была́, бы́ло, бы́ли.
+стать | devenir |
+жени́ться | se marier (pour un homme) |
+роди́ться | naître | Я роди́лся в Пари́же = Je suis né à Paris.
+умере́ть | mourir |
+расти́ | grandir |
+встре́тить | rencontrer |
+верну́ться | revenir |
+уе́хать | partir (en véhicule) |
+прие́хать | arriver (en véhicule) |
+пое́здка | voyage, trajet |
+путеше́ствие | voyage |
+о́тпуск | vacances (du travail) |
+кани́кулы | vacances (scolaires) |
+фотогра́фия | photo |
+исто́рия | histoire |
+ска́зка | conte |
+сон | rêve, sommeil |
+пра́здник | fête |
+сва́дьба | mariage |
+день рожде́ния | anniversaire |
+дере́вня | village |
+де́тство | enfance |
+мо́лодость | jeunesse |
+ста́рость | vieillesse |
+жизнь | vie |
+смерть | mort |
+война́ | guerre |
+мир | paix, monde |
+пе́сня | chanson |
+му́зыка | musique |
+танцева́ть | danser |
+петь | chanter |
+рисова́ть | dessiner |
+фильм | film |
+кни́жка | petit livre |
+газе́та | journal |
+письмо́ | lettre (courrier) |
+сосе́дка | voisine |
+подру́га | amie |
+пусть | que… (souhait), laisse | Пусть он придёт = Qu'il vienne.
+
+@phrase
+Что случи́лось? | Qu'est-ce qui s'est passé ? |
+У меня́ боли́т голова́ | J'ai mal à la tête |
+Мне пло́хо | Je ne me sens pas bien |
+Вы́зовите врача́! | Appelez un médecin ! |
+Сего́дня хо́лодно | Il fait froid aujourd'hui |
+Идёт дождь | Il pleut | Mot à mot : « la pluie marche ».
+Идёт снег | Il neige |
+Кака́я сего́дня пого́да? | Quel temps fait-il aujourd'hui ? |
+Я был в Росси́и | J'ai été en Russie | Une femme dit : Я была́ в Росси́и.
+Мы познако́мились в шко́ле | Nous nous sommes rencontrés à l'école |
+Я по тебе́ скуча́ю | Tu me manques |
+Я тебя́ люблю́ | Je t'aime |
+Мне стра́шно | J'ai peur |
+Мне ве́село | Je m'amuse |
+Мне ску́чно | Je m'ennuie |
+Как прошли́ выходны́е? | Comment s'est passé le week-end ? |
+Бы́ло здо́рово! | C'était génial ! |
+Я по́мню | Je me souviens |
+Я забы́л | J'ai oublié | Une femme dit : Я забы́ла.
+Расскажи́ мне! | Raconte-moi ! |
+Не волну́йся | Ne t'inquiète pas |
+Всё бу́дет хорошо́ | Tout ira bien |
+Береги́ себя́ | Prends soin de toi |
+Выздора́вливай! | Guéris vite ! |
+Как ра́ньше | Comme avant |
+Я так рад! | Je suis si content ! | Une femme dit : Я так ра́да!
+Жаль! | Dommage ! |
+Ну и что? | Et alors ? |
+Так быва́ет | Ça arrive |
+Счастли́вого пути́! | Bon voyage ! |
+
+@grammar
+Я чита́л. / Я прочита́л. | Laquelle veut dire « J'ai fini de lire » ? | Я прочита́л. | Я чита́л. ; Les deux veulent dire la même chose. | Au passé, le verbe « terminé » (avec про-, с-, на-…) dit qu'on est allé au bout ; l'autre raconte l'action en cours ou habituelle.
+Он был до́ма. | Que veut dire cette phrase ? | Il était à la maison. | Il est à la maison. ; Il sera à la maison. | Le verbe « être » réapparaît au passé : был (il), была́ (elle), бы́ло (neutre), бы́ли (ils).
+Я бу́ду рабо́тать. | Que veut dire cette phrase ? | Je travaillerai. | Je travaillais. ; Je travaille. | Futur simple : бу́ду + verbe. я бу́ду, ты бу́дешь, он бу́дет…
+Я прочита́ю кни́гу. | Que veut dire cette phrase ? | Je lirai le livre (jusqu'au bout). | Je lis le livre. ; J'ai lu le livre. | Un verbe « terminé » conjugué comme au présent donne un futur : прочита́ю = je lirai entièrement.
+У меня́ боли́т голова́. | Que veut dire cette phrase ? | J'ai mal à la tête. | J'ai une grosse tête. ; Ma tête va bien. | У меня́ боли́т + partie du corps = j'ai mal à… Au pluriel : боля́т (ba-LIAT).
+Мне хо́лодно. | Que veut dire cette phrase ? | J'ai froid. | Il est froid. ; Je suis froid. | Pour les sensations, le russe dit « à moi froid » : мне (à moi) + mot en -о. Ему́ жа́рко = Il a chaud.
+зимо́й | Que veut dire зимо́й ? | en hiver | l'hiver dernier ; vers l'hiver | Les saisons en -ой / -ом veulent dire « en … » : зимо́й, весно́й, ле́том, о́сенью.
+Он роди́лся в 1990 году́. | Que veut dire cette phrase ? | Il est né en 1990. | Il a 1990 ans. ; Il vit depuis 1990. | в + année + году́ (ga-DOU) : в 2020 году́ = en 2020.
+Я никогда́ не был там. | Pourquoi y a-t-il à la fois никогда́ et не ? | En russe, « jamais » s'emploie avec не | C'est une faute ; Pour dire « toujours » | Double négation obligatoire : никто́ не (personne ne), ничего́ не (rien ne), никогда́ не (jamais).
+Я ду́маю о тебе́. | Que veut dire cette phrase ? | Je pense à toi. | Je pense comme toi. ; Je pense sans toi. | ду́мать о + personne = penser à. о ма́ме = à maman, обо мне́ = à moi.
+Пойдём в кино́! | Que veut dire cette phrase ? | Allons au cinéma ! | Je suis allé au cinéma. ; Le cinéma est fermé. | Пойдём / пое́дем = allons-y (à pied / en véhicule).
+Е́сли бу́дет дождь, я оста́нусь до́ма. | Que veut dire е́сли ? | si | quand ; parce que | е́сли (YÉ-sli) = si. Après е́сли, on met le futur : е́сли бу́дет = s'il y a.

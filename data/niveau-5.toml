@@ -1,0 +1,1161 @@
+# Cartes du niveau 5 de rusky (généré, prononciation calculée).
+tier = 5
+
+[[card]]
+id = "t5-voc-001"
+kind = "vocab"
+front = "мне́ние"
+back = "avis, opinion"
+level = 1
+
+[[card]]
+id = "t5-voc-002"
+kind = "vocab"
+front = "счита́ть"
+back = "considérer, estimer"
+level = 2
+
+[[card]]
+id = "t5-voc-003"
+kind = "vocab"
+front = "ве́рить"
+back = "croire"
+level = 3
+
+[[card]]
+id = "t5-voc-004"
+kind = "vocab"
+front = "наде́яться"
+back = "espérer"
+level = 4
+
+[[card]]
+id = "t5-voc-005"
+kind = "vocab"
+front = "сомнева́ться"
+back = "douter"
+level = 5
+
+[[card]]
+id = "t5-voc-006"
+kind = "vocab"
+front = "сове́товать"
+back = "conseiller"
+level = 6
+
+[[card]]
+id = "t5-voc-007"
+kind = "vocab"
+front = "объясня́ть"
+back = "expliquer"
+level = 7
+
+[[card]]
+id = "t5-voc-008"
+kind = "vocab"
+front = "обсужда́ть"
+back = "discuter (de)"
+level = 8
+
+[[card]]
+id = "t5-voc-009"
+kind = "vocab"
+front = "спо́рить"
+back = "se disputer, débattre"
+level = 9
+
+[[card]]
+id = "t5-voc-010"
+kind = "vocab"
+front = "предлага́ть"
+back = "proposer"
+level = 10
+
+[[card]]
+id = "t5-voc-011"
+kind = "vocab"
+front = "реша́ть"
+back = "décider, résoudre"
+level = 11
+
+[[card]]
+id = "t5-voc-012"
+kind = "vocab"
+front = "выбира́ть"
+back = "choisir"
+level = 12
+
+[[card]]
+id = "t5-voc-013"
+kind = "vocab"
+front = "сра́внивать"
+back = "comparer"
+level = 13
+
+[[card]]
+id = "t5-voc-014"
+kind = "vocab"
+front = "согла́сен"
+back = "d'accord"
+level = 14
+
+[[card]]
+id = "t5-voc-015"
+kind = "vocab"
+front = "пра́вильно"
+back = "correct, juste"
+level = 15
+
+[[card]]
+id = "t5-voc-016"
+kind = "vocab"
+front = "непра́вильно"
+back = "faux, incorrect"
+level = 16
+
+[[card]]
+id = "t5-voc-017"
+kind = "vocab"
+front = "наве́рное"
+back = "probablement"
+level = 17
+
+[[card]]
+id = "t5-voc-018"
+kind = "vocab"
+front = "мо́жет быть"
+back = "peut-être"
+level = 18
+
+[[card]]
+id = "t5-voc-019"
+kind = "vocab"
+front = "к сожале́нию"
+back = "malheureusement"
+level = 19
+
+[[card]]
+id = "t5-voc-020"
+kind = "vocab"
+front = "наприме́р"
+back = "par exemple"
+level = 20
+
+[[card]]
+id = "t5-voc-021"
+kind = "vocab"
+front = "поэ́тому"
+back = "c'est pourquoi"
+level = 21
+
+[[card]]
+id = "t5-voc-022"
+kind = "vocab"
+front = "потому́ что"
+back = "parce que"
+level = 22
+
+[[card]]
+id = "t5-voc-023"
+kind = "vocab"
+front = "хотя́"
+back = "bien que"
+level = 23
+
+[[card]]
+id = "t5-voc-024"
+kind = "vocab"
+front = "е́сли"
+back = "si"
+level = 24
+
+[[card]]
+id = "t5-voc-025"
+kind = "vocab"
+front = "и́ли"
+back = "ou"
+level = 25
+
+[[card]]
+id = "t5-voc-026"
+kind = "vocab"
+front = "но"
+back = "mais"
+level = 26
+
+[[card]]
+id = "t5-voc-027"
+kind = "vocab"
+front = "зато́"
+back = "en revanche"
+level = 27
+
+[[card]]
+id = "t5-voc-028"
+kind = "vocab"
+front = "кро́ме того́"
+back = "de plus"
+level = 28
+
+[[card]]
+id = "t5-voc-029"
+kind = "vocab"
+front = "во-пе́рвых"
+back = "premièrement"
+level = 29
+
+[[card]]
+id = "t5-voc-030"
+kind = "vocab"
+front = "в о́бщем"
+back = "en somme"
+level = 30
+
+[[card]]
+id = "t5-voc-031"
+kind = "vocab"
+front = "вообще́"
+back = "en général, du tout"
+level = 31
+
+[[card]]
+id = "t5-voc-032"
+kind = "vocab"
+front = "на са́мом де́ле"
+back = "en fait"
+level = 32
+
+[[card]]
+id = "t5-voc-033"
+kind = "vocab"
+front = "по-мо́ему"
+back = "à mon avis"
+level = 33
+
+[[card]]
+id = "t5-voc-034"
+kind = "vocab"
+front = "профе́ссия"
+back = "métier"
+level = 34
+
+[[card]]
+id = "t5-voc-035"
+kind = "vocab"
+front = "рабо́чий"
+back = "ouvrier"
+level = 35
+
+[[card]]
+id = "t5-voc-036"
+kind = "vocab"
+front = "инжене́р"
+back = "ingénieur"
+level = 36
+
+[[card]]
+id = "t5-voc-037"
+kind = "vocab"
+front = "учи́тель"
+back = "professeur (école)"
+level = 37
+
+[[card]]
+id = "t5-voc-038"
+kind = "vocab"
+front = "студе́нт"
+back = "étudiant"
+level = 38
+
+[[card]]
+id = "t5-voc-039"
+kind = "vocab"
+front = "нача́льник"
+back = "chef"
+level = 39
+
+[[card]]
+id = "t5-voc-040"
+kind = "vocab"
+front = "колле́га"
+back = "collègue"
+level = 40
+
+[[card]]
+id = "t5-voc-041"
+kind = "vocab"
+front = "компа́ния"
+back = "entreprise"
+level = 41
+
+[[card]]
+id = "t5-voc-042"
+kind = "vocab"
+front = "о́фис"
+back = "bureau"
+level = 42
+
+[[card]]
+id = "t5-voc-043"
+kind = "vocab"
+front = "зарпла́та"
+back = "salaire"
+level = 43
+
+[[card]]
+id = "t5-voc-044"
+kind = "vocab"
+front = "зада́ча"
+back = "tâche, problème"
+level = 44
+
+[[card]]
+id = "t5-voc-045"
+kind = "vocab"
+front = "прое́кт"
+back = "projet"
+level = 45
+
+[[card]]
+id = "t5-voc-046"
+kind = "vocab"
+front = "собра́ние"
+back = "réunion"
+level = 46
+
+[[card]]
+id = "t5-voc-047"
+kind = "vocab"
+front = "о́пыт"
+back = "expérience"
+level = 47
+
+[[card]]
+id = "t5-voc-048"
+kind = "vocab"
+front = "успе́х"
+back = "succès"
+level = 48
+
+[[card]]
+id = "t5-voc-049"
+kind = "vocab"
+front = "оши́бка"
+back = "erreur"
+level = 49
+
+[[card]]
+id = "t5-voc-050"
+kind = "vocab"
+front = "пра́вило"
+back = "règle"
+level = 50
+
+[[card]]
+id = "t5-voc-051"
+kind = "vocab"
+front = "уро́к"
+back = "leçon, cours"
+level = 51
+
+[[card]]
+id = "t5-voc-052"
+kind = "vocab"
+front = "экза́мен"
+back = "examen"
+level = 52
+
+[[card]]
+id = "t5-voc-053"
+kind = "vocab"
+front = "оце́нка"
+back = "note"
+level = 53
+
+[[card]]
+id = "t5-voc-054"
+kind = "vocab"
+front = "зна́ние"
+back = "connaissance"
+level = 54
+
+[[card]]
+id = "t5-voc-055"
+kind = "vocab"
+front = "нау́ка"
+back = "science"
+level = 55
+
+[[card]]
+id = "t5-voc-056"
+kind = "vocab"
+front = "перево́д"
+back = "traduction"
+level = 56
+
+[[card]]
+id = "t5-voc-057"
+kind = "vocab"
+front = "слова́рь"
+back = "dictionnaire"
+level = 57
+
+[[card]]
+id = "t5-voc-058"
+kind = "vocab"
+front = "вопро́с"
+back = "question"
+level = 58
+
+[[card]]
+id = "t5-voc-059"
+kind = "vocab"
+front = "отве́т"
+back = "réponse"
+level = 59
+
+[[card]]
+id = "t5-voc-060"
+kind = "vocab"
+front = "приме́р"
+back = "exemple"
+level = 60
+
+[[card]]
+id = "t5-voc-061"
+kind = "vocab"
+front = "причи́на"
+back = "cause, raison"
+level = 61
+
+[[card]]
+id = "t5-voc-062"
+kind = "vocab"
+front = "результа́т"
+back = "résultat"
+level = 62
+
+[[card]]
+id = "t5-voc-063"
+kind = "vocab"
+front = "цель"
+back = "but"
+level = 63
+
+[[card]]
+id = "t5-voc-064"
+kind = "vocab"
+front = "пробле́ма"
+back = "problème"
+level = 64
+
+[[card]]
+id = "t5-voc-065"
+kind = "vocab"
+front = "реше́ние"
+back = "décision, solution"
+level = 65
+
+[[card]]
+id = "t5-voc-066"
+kind = "vocab"
+front = "возмо́жность"
+back = "possibilité"
+level = 66
+
+[[card]]
+id = "t5-voc-067"
+kind = "vocab"
+front = "интерне́т"
+back = "internet"
+level = 67
+
+[[card]]
+id = "t5-voc-068"
+kind = "vocab"
+front = "сайт"
+back = "site"
+level = 68
+
+[[card]]
+id = "t5-voc-069"
+kind = "vocab"
+front = "сообще́ние"
+back = "message"
+level = 69
+
+[[card]]
+id = "t5-voc-070"
+kind = "vocab"
+front = "паро́ль"
+back = "mot de passe"
+level = 70
+
+[[card]]
+id = "t5-voc-071"
+kind = "vocab"
+front = "экра́н"
+back = "écran"
+level = 71
+
+[[card]]
+id = "t5-voc-072"
+kind = "vocab"
+front = "програ́мма"
+back = "programme"
+level = 72
+
+[[card]]
+id = "t5-voc-073"
+kind = "vocab"
+front = "скача́ть"
+back = "télécharger"
+level = 73
+
+[[card]]
+id = "t5-voc-074"
+kind = "vocab"
+front = "отпра́вить"
+back = "envoyer"
+level = 74
+
+[[card]]
+id = "t5-voc-075"
+kind = "vocab"
+front = "получи́ть"
+back = "recevoir"
+level = 75
+
+[[card]]
+id = "t5-voc-076"
+kind = "vocab"
+front = "сохрани́ть"
+back = "enregistrer"
+level = 76
+
+[[card]]
+id = "t5-voc-077"
+kind = "vocab"
+front = "удали́ть"
+back = "supprimer"
+level = 77
+
+[[card]]
+id = "t5-voc-078"
+kind = "vocab"
+front = "спорт"
+back = "sport"
+level = 78
+
+[[card]]
+id = "t5-voc-079"
+kind = "vocab"
+front = "футбо́л"
+back = "football"
+level = 79
+
+[[card]]
+id = "t5-voc-080"
+kind = "vocab"
+front = "бег"
+back = "course à pied"
+level = 80
+
+[[card]]
+id = "t5-voc-081"
+kind = "vocab"
+front = "пла́вать"
+back = "nager"
+level = 81
+
+[[card]]
+id = "t5-voc-082"
+kind = "vocab"
+front = "трениро́вка"
+back = "entraînement"
+level = 82
+
+[[card]]
+id = "t5-voc-083"
+kind = "vocab"
+front = "игра́"
+back = "jeu, match"
+level = 83
+
+[[card]]
+id = "t5-voc-084"
+kind = "vocab"
+front = "кома́нда"
+back = "équipe"
+level = 84
+
+[[card]]
+id = "t5-voc-085"
+kind = "vocab"
+front = "выи́грать"
+back = "gagner"
+level = 85
+
+[[card]]
+id = "t5-voc-086"
+kind = "vocab"
+front = "проигра́ть"
+back = "perdre (un match)"
+level = 86
+
+[[card]]
+id = "t5-voc-087"
+kind = "vocab"
+front = "хо́бби"
+back = "loisir"
+level = 87
+
+[[card]]
+id = "t5-voc-088"
+kind = "vocab"
+front = "чита́тель"
+back = "lecteur"
+level = 88
+
+[[card]]
+id = "t5-voc-089"
+kind = "vocab"
+front = "писа́тель"
+back = "écrivain"
+level = 89
+
+[[card]]
+id = "t5-voc-090"
+kind = "vocab"
+front = "худо́жник"
+back = "peintre, artiste"
+level = 90
+
+[[card]]
+id = "t5-voc-091"
+kind = "vocab"
+front = "вы́ставка"
+back = "exposition"
+level = 91
+
+[[card]]
+id = "t5-voc-092"
+kind = "vocab"
+front = "конце́рт"
+back = "concert"
+level = 92
+
+[[card]]
+id = "t5-voc-093"
+kind = "vocab"
+front = "спекта́кль"
+back = "pièce de théâtre"
+level = 93
+
+[[card]]
+id = "t5-voc-094"
+kind = "vocab"
+front = "сериа́л"
+back = "série"
+level = 94
+
+[[card]]
+id = "t5-voc-095"
+kind = "vocab"
+front = "но́вости"
+back = "informations, actualités"
+level = 95
+
+[[card]]
+id = "t5-voc-096"
+kind = "vocab"
+front = "полити́ка"
+back = "politique"
+level = 96
+
+[[card]]
+id = "t5-voc-097"
+kind = "vocab"
+front = "эконо́мика"
+back = "économie"
+level = 97
+
+[[card]]
+id = "t5-voc-098"
+kind = "vocab"
+front = "о́бщество"
+back = "société"
+level = 98
+
+[[card]]
+id = "t5-voc-099"
+kind = "vocab"
+front = "культу́ра"
+back = "culture"
+level = 99
+
+[[card]]
+id = "t5-voc-100"
+kind = "vocab"
+front = "приро́да"
+back = "nature"
+level = 100
+
+[[card]]
+id = "t5-voc-101"
+kind = "vocab"
+front = "бу́дущее"
+back = "avenir"
+level = 101
+
+[[card]]
+id = "t5-voc-102"
+kind = "vocab"
+front = "про́шлое"
+back = "passé"
+level = 102
+
+[[card]]
+id = "t5-voc-103"
+kind = "vocab"
+front = "ва́жный"
+back = "important"
+level = 103
+
+[[card]]
+id = "t5-voc-104"
+kind = "vocab"
+front = "гла́вный"
+back = "principal"
+level = 104
+
+[[card]]
+id = "t5-voc-105"
+kind = "vocab"
+front = "пра́вый"
+back = "qui a raison"
+level = 105
+
+[[card]]
+id = "t5-voc-106"
+kind = "vocab"
+front = "необходи́мый"
+back = "indispensable"
+level = 106
+
+[[card]]
+id = "t5-voc-107"
+kind = "vocab"
+front = "возмо́жный"
+back = "possible"
+level = 107
+
+[[card]]
+id = "t5-voc-108"
+kind = "vocab"
+front = "просто́й"
+back = "simple"
+level = 108
+
+[[card]]
+id = "t5-voc-109"
+kind = "vocab"
+front = "сло́жный"
+back = "compliqué"
+level = 109
+
+[[card]]
+id = "t5-voc-110"
+kind = "vocab"
+front = "поле́зный"
+back = "utile"
+level = 110
+
+[[card]]
+id = "t5-voc-111"
+kind = "vocab"
+front = "опа́сный"
+back = "dangereux"
+level = 111
+
+[[card]]
+id = "t5-voc-112"
+kind = "vocab"
+front = "серьёзный"
+back = "sérieux"
+level = 112
+
+[[card]]
+id = "t5-voc-113"
+kind = "vocab"
+front = "сме́шной"
+back = "drôle"
+level = 113
+
+[[card]]
+id = "t5-voc-114"
+kind = "vocab"
+front = "ску́чный"
+back = "ennuyeux"
+level = 114
+
+[[card]]
+id = "t5-voc-115"
+kind = "vocab"
+front = "занима́ться"
+back = "s'occuper de, pratiquer"
+note = "Я занима́юсь спо́ртом = Je fais du sport."
+level = 115
+
+[[card]]
+id = "t5-voc-116"
+kind = "vocab"
+front = "интересова́ться"
+back = "s'intéresser à"
+level = 116
+
+[[card]]
+id = "t5-voc-117"
+kind = "vocab"
+front = "нра́виться"
+back = "plaire"
+level = 117
+
+[[card]]
+id = "t5-voc-118"
+kind = "vocab"
+front = "зави́сеть"
+back = "dépendre"
+level = 118
+
+[[card]]
+id = "t5-phr-001"
+kind = "phrase"
+front = "По-мо́ему, ты прав"
+back = "À mon avis, tu as raison"
+note = "À une femme : ты права́."
+level = 1
+
+[[card]]
+id = "t5-phr-002"
+kind = "phrase"
+front = "Я так не ду́маю"
+back = "Je ne pense pas"
+level = 2
+
+[[card]]
+id = "t5-phr-003"
+kind = "phrase"
+front = "Я с тобо́й согла́сен"
+back = "Je suis d'accord avec toi"
+level = 3
+
+[[card]]
+id = "t5-phr-004"
+kind = "phrase"
+front = "Ты шу́тишь?"
+back = "Tu plaisantes ?"
+level = 4
+
+[[card]]
+id = "t5-phr-005"
+kind = "phrase"
+front = "Э́то зави́сит от…"
+back = "Ça dépend de…"
+level = 5
+
+[[card]]
+id = "t5-phr-006"
+kind = "phrase"
+front = "Не мо́жет быть!"
+back = "Pas possible !"
+level = 6
+
+[[card]]
+id = "t5-phr-007"
+kind = "phrase"
+front = "Ты уве́рен?"
+back = "Tu es sûr ?"
+level = 7
+
+[[card]]
+id = "t5-phr-008"
+kind = "phrase"
+front = "Я не уве́рен"
+back = "Je ne suis pas sûr"
+level = 8
+
+[[card]]
+id = "t5-phr-009"
+kind = "phrase"
+front = "Что ты об э́том ду́маешь?"
+back = "Qu'en penses-tu ?"
+level = 9
+
+[[card]]
+id = "t5-phr-010"
+kind = "phrase"
+front = "Как сказа́ть по-ру́сски…?"
+back = "Comment dit-on en russe… ?"
+level = 10
+
+[[card]]
+id = "t5-phr-011"
+kind = "phrase"
+front = "Что зна́чит э́то сло́во?"
+back = "Que veut dire ce mot ?"
+level = 11
+
+[[card]]
+id = "t5-phr-012"
+kind = "phrase"
+front = "Говори́те ме́дленнее, пожа́луйста"
+back = "Parlez plus lentement, s'il vous plaît"
+level = 12
+
+[[card]]
+id = "t5-phr-013"
+kind = "phrase"
+front = "Я ничего́ не по́нял"
+back = "Je n'ai rien compris"
+level = 13
+
+[[card]]
+id = "t5-phr-014"
+kind = "phrase"
+front = "Кем ты рабо́таешь?"
+back = "Quel est ton métier ?"
+level = 14
+
+[[card]]
+id = "t5-phr-015"
+kind = "phrase"
+front = "Я рабо́таю инжене́ром"
+back = "Je suis ingénieur"
+level = 15
+
+[[card]]
+id = "t5-phr-016"
+kind = "phrase"
+front = "У меня́ мно́го рабо́ты"
+back = "J'ai beaucoup de travail"
+level = 16
+
+[[card]]
+id = "t5-phr-017"
+kind = "phrase"
+front = "Я за́нят"
+back = "Je suis occupé"
+note = "Une femme dit : Я занята́."
+level = 17
+
+[[card]]
+id = "t5-phr-018"
+kind = "phrase"
+front = "Дава́й на ты?"
+back = "On se tutoie ?"
+level = 18
+
+[[card]]
+id = "t5-phr-019"
+kind = "phrase"
+front = "Без пробле́м"
+back = "Pas de problème"
+level = 19
+
+[[card]]
+id = "t5-phr-020"
+kind = "phrase"
+front = "Отли́чная иде́я!"
+back = "Excellente idée !"
+level = 20
+
+[[card]]
+id = "t5-phr-021"
+kind = "phrase"
+front = "Э́то не ва́жно"
+back = "Ce n'est pas important"
+level = 21
+
+[[card]]
+id = "t5-phr-022"
+kind = "phrase"
+front = "Ла́дно"
+back = "D'accord, bon"
+level = 22
+
+[[card]]
+id = "t5-phr-023"
+kind = "phrase"
+front = "Я не про́тив"
+back = "Je n'ai rien contre"
+level = 23
+
+[[card]]
+id = "t5-phr-024"
+kind = "phrase"
+front = "Как хо́чешь"
+back = "Comme tu veux"
+level = 24
+
+[[card]]
+id = "t5-phr-025"
+kind = "phrase"
+front = "Мне всё равно́"
+back = "Ça m'est égal"
+level = 25
+
+[[card]]
+id = "t5-phr-026"
+kind = "phrase"
+front = "Посмо́трим"
+back = "On verra"
+level = 26
+
+[[card]]
+id = "t5-phr-027"
+kind = "phrase"
+front = "Вот и́менно!"
+back = "Exactement !"
+level = 27
+
+[[card]]
+id = "t5-phr-028"
+kind = "phrase"
+front = "Ты прав"
+back = "Tu as raison"
+level = 28
+
+[[card]]
+id = "t5-phr-029"
+kind = "phrase"
+front = "Ты не прав"
+back = "Tu as tort"
+level = 29
+
+[[card]]
+id = "t5-phr-030"
+kind = "phrase"
+front = "Наско́лько я зна́ю…"
+back = "Pour autant que je sache…"
+level = 30
+
+[[card]]
+id = "t5-gra-001"
+kind = "grammar"
+front = "Я рабо́таю врачо́м."
+question = "Que veut dire cette phrase ?"
+back = "Je travaille comme médecin."
+wrong = ["Je travaille avec un médecin.", "Je vais chez le médecin."]
+note = "Pour un métier : рабо́тать + mot en -ом / -ем (masc.) ou -ой (fém.) : учи́тельницей."
+level = 1
+
+[[card]]
+id = "t5-gra-002"
+kind = "grammar"
+front = "Я занима́юсь му́зыкой."
+question = "Que veut dire cette phrase ?"
+back = "Je fais de la musique."
+wrong = ["J'écoute de la musique.", "J'aime la musique."]
+note = "занима́ться + mot en -ом / -ой = pratiquer : спо́ртом, футбо́лом."
+level = 2
+
+[[card]]
+id = "t5-gra-003"
+kind = "grammar"
+front = "Мне нра́вится э́тот фильм."
+question = "Qui aime le film ?"
+back = "moi"
+wrong = ["le film", "quelqu'un d'autre"]
+note = "Mot à mot : « à moi plaît ce film ». Celui qui aime est au « мне », la chose aimée est le sujet."
+level = 3
+
+[[card]]
+id = "t5-gra-004"
+kind = "grammar"
+front = "Мне нра́вятся цветы́."
+question = "Pourquoi нра́вятся et pas нра́вится ?"
+back = "Parce que цветы́ (fleurs) est au pluriel"
+wrong = ["Parce que c'est au passé", "Parce que c'est poli"]
+note = "Le verbe s'accorde avec la chose qui plaît : une chose → нра́вится, plusieurs → нра́вятся."
+level = 4
+
+[[card]]
+id = "t5-gra-005"
+kind = "grammar"
+front = "Я ду́маю, что он прав."
+question = "Que veut dire что ici ?"
+back = "que"
+wrong = ["quoi", "qui"]
+note = "Après « je pense », « je sais », « il dit », что (chto) veut dire « que »."
+level = 5
+
+[[card]]
+id = "t5-gra-006"
+kind = "grammar"
+front = "кото́рый"
+question = "Челове́к, кото́рый живёт здесь. Que veut dire кото́рый ?"
+back = "qui (lequel)"
+wrong = ["quand", "pourquoi"]
+note = "кото́рый relie deux phrases comme « qui » en français et s'accorde : кото́рая (fém.), кото́рое (neutre)."
+level = 6
+
+[[card]]
+id = "t5-gra-007"
+kind = "grammar"
+front = "бо́льше / ме́ньше"
+question = "Москва́ бо́льше Пари́жа. Que veut dire la phrase ?"
+back = "Moscou est plus grande que Paris."
+wrong = ["Moscou est plus petite que Paris.", "Moscou est aussi grande que Paris."]
+note = "бо́льше = plus, ме́ньше = moins. Ce qui suit change de fin : Пари́ж → Пари́жа."
+level = 7
+
+[[card]]
+id = "t5-gra-008"
+kind = "grammar"
+front = "са́мый"
+question = "са́мый краси́вый го́род. Que veut dire са́мый ?"
+back = "le plus"
+wrong = ["très", "assez"]
+note = "са́мый + adjectif = le plus… : са́мая интере́сная кни́га = le livre le plus intéressant."
+level = 8
+
+[[card]]
+id = "t5-gra-009"
+kind = "grammar"
+front = "Я хочу́, что́бы ты пришёл."
+question = "Que veut dire что́бы ici ?"
+back = "que (pour un souhait)"
+wrong = ["parce que", "si"]
+note = "Après « je veux que », on met что́бы + verbe au passé."
+level = 9
+
+[[card]]
+id = "t5-gra-010"
+kind = "grammar"
+front = "Е́сли бы я знал…"
+question = "Que veut dire cette phrase ?"
+back = "Si j'avais su…"
+wrong = ["Si je sais…", "Quand je saurai…"]
+note = "бы + passé = conditionnel : я бы хоте́л = je voudrais."
+level = 10
+
+[[card]]
+id = "t5-gra-011"
+kind = "grammar"
+front = "Я хоте́л бы ко́фе."
+question = "Que veut dire cette phrase ?"
+back = "Je voudrais un café."
+wrong = ["Je voulais un café.", "Je veux un café."]
+note = "хоте́л бы (kha-TIEL by) est la façon polie de demander."
+level = 11
+
+[[card]]
+id = "t5-gra-012"
+kind = "grammar"
+front = "себя́"
+question = "Он ду́мает то́лько о себе́. Que veut dire о себе́ ?"
+back = "à lui-même"
+wrong = ["à elle", "à toi"]
+note = "себя́ (si-BIA) renvoie au sujet de la phrase : soi-même, lui-même, moi-même…"
+level = 12

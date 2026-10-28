@@ -170,7 +170,8 @@ fn pron_word(word: &str) -> String {
             stressed |= acc;
             let prev = if k > 0 { Some(flat[k - 1].0) } else { None };
             let next = flat.get(k + 1).map(|x| x.0);
-            let last = k + 1 == flat.len() || flat[k + 1..].iter().all(|x| is_sign(x.0));
+            // Plus de voyelle ensuite : la consonne s'assourdit (по́езд → PO-yist).
+            let last = !flat[k + 1..].iter().any(|x| is_vowel(x.0));
             let stress = acc || !has_stress;
             // Syllabe fermée (consonne puis consonne ou fin) : « ie » plutôt que « ié ».
             let closed = next.is_some_and(|n| !is_vowel(n))
@@ -189,7 +190,7 @@ fn pron_word(word: &str) -> String {
         .iter()
         .map(|s| if s.stressed && n_vowels > 1 { s.text.to_uppercase() } else { s.text.clone() })
         .collect();
-    let mut res = joined.join("-");
+    let mut res = joined.join("-").replace("stch", "chtch").replace("STCH", "CHTCH");
     // Consonne doublée de part et d'autre d'un tiret : it-TI → i-TI, ROUS-ski → ROUS-ki.
     for c in ["t", "s", "k", "n", "m", "l", "r", "p", "f"] {
         let (l, u) = (c.to_string(), c.to_uppercase());
@@ -211,6 +212,7 @@ fn letter(c: char, prev: Option<char>, next: Option<char>, word_end: bool, stres
         'в' => if word_end { "f" } else { "v" },
         'г' => if word_end { "k" } else if front_vowel_next { "gu" } else { "g" },
         'д' => if word_end { "t" } else { "d" },
+        'е' if prev.is_some_and(|p| "жшц".contains(p)) => if stressed || very_last { "é" } else { "i" },
         'е' => match (after_cons, stressed) {
             (true, true) => "ié",
             (true, false) => if very_last { "ié" } else { "i" },
@@ -289,9 +291,14 @@ mod tests {
             ("учи́ться", "ou-TCHI-tsa"),
             ("по-ру́сски", "pa-ROU-ski"),
             ("идти́", "i-TI"),
+            ("по́езд", "PO-yist"),
+            ("жена́", "ji-NA"),
+            ("же", "jé"),
+            ("счита́ть", "chtchi-TAT"),
         ] {
             assert_eq!(pron(ru), fr, "{ru}");
         }
     }
 }
+
 

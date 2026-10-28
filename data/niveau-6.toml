@@ -1,0 +1,1146 @@
+# Cartes du niveau 6 de rusky (généré, prononciation calculée).
+tier = 6
+
+[[card]]
+id = "t6-voc-001"
+kind = "vocab"
+front = "поня́тие"
+back = "notion, idée"
+level = 1
+
+[[card]]
+id = "t6-voc-002"
+kind = "vocab"
+front = "смысл"
+back = "sens"
+level = 2
+
+[[card]]
+id = "t6-voc-003"
+kind = "vocab"
+front = "значе́ние"
+back = "signification, importance"
+level = 3
+
+[[card]]
+id = "t6-voc-004"
+kind = "vocab"
+front = "свобо́да"
+back = "liberté"
+level = 4
+
+[[card]]
+id = "t6-voc-005"
+kind = "vocab"
+front = "пра́вда"
+back = "vérité"
+level = 5
+
+[[card]]
+id = "t6-voc-006"
+kind = "vocab"
+front = "ложь"
+back = "mensonge"
+level = 6
+
+[[card]]
+id = "t6-voc-007"
+kind = "vocab"
+front = "справедли́вость"
+back = "justice"
+level = 7
+
+[[card]]
+id = "t6-voc-008"
+kind = "vocab"
+front = "отве́тственность"
+back = "responsabilité"
+level = 8
+
+[[card]]
+id = "t6-voc-009"
+kind = "vocab"
+front = "уваже́ние"
+back = "respect"
+level = 9
+
+[[card]]
+id = "t6-voc-010"
+kind = "vocab"
+front = "дове́рие"
+back = "confiance"
+level = 10
+
+[[card]]
+id = "t6-voc-011"
+kind = "vocab"
+front = "сме́лость"
+back = "courage"
+level = 11
+
+[[card]]
+id = "t6-voc-012"
+kind = "vocab"
+front = "терпе́ние"
+back = "patience"
+level = 12
+
+[[card]]
+id = "t6-voc-013"
+kind = "vocab"
+front = "сове́сть"
+back = "conscience"
+level = 13
+
+[[card]]
+id = "t6-voc-014"
+kind = "vocab"
+front = "наде́жда"
+back = "espoir"
+level = 14
+
+[[card]]
+id = "t6-voc-015"
+kind = "vocab"
+front = "судьба́"
+back = "destin"
+level = 15
+
+[[card]]
+id = "t6-voc-016"
+kind = "vocab"
+front = "душа́"
+back = "âme"
+level = 16
+
+[[card]]
+id = "t6-voc-017"
+kind = "vocab"
+front = "тоска́"
+back = "mélancolie, nostalgie"
+note = "Un mot très russe : un manque profond, souvent sans objet précis."
+level = 17
+
+[[card]]
+id = "t6-voc-018"
+kind = "vocab"
+front = "быт"
+back = "vie quotidienne"
+level = 18
+
+[[card]]
+id = "t6-voc-019"
+kind = "vocab"
+front = "обще́ние"
+back = "communication, échanges"
+level = 19
+
+[[card]]
+id = "t6-voc-020"
+kind = "vocab"
+front = "отноше́ния"
+back = "relations"
+level = 20
+
+[[card]]
+id = "t6-voc-021"
+kind = "vocab"
+front = "дру́жба"
+back = "amitié"
+level = 21
+
+[[card]]
+id = "t6-voc-022"
+kind = "vocab"
+front = "ссо́ра"
+back = "dispute"
+level = 22
+
+[[card]]
+id = "t6-voc-023"
+kind = "vocab"
+front = "разгово́р"
+back = "conversation"
+level = 23
+
+[[card]]
+id = "t6-voc-024"
+kind = "vocab"
+front = "по́мощь"
+back = "aide"
+level = 24
+
+[[card]]
+id = "t6-voc-025"
+kind = "vocab"
+front = "забо́та"
+back = "souci, attention"
+level = 25
+
+[[card]]
+id = "t6-voc-026"
+kind = "vocab"
+front = "благода́рность"
+back = "gratitude"
+level = 26
+
+[[card]]
+id = "t6-voc-027"
+kind = "vocab"
+front = "изви́нение"
+back = "excuse"
+level = 27
+
+[[card]]
+id = "t6-voc-028"
+kind = "vocab"
+front = "обеща́ние"
+back = "promesse"
+level = 28
+
+[[card]]
+id = "t6-voc-029"
+kind = "vocab"
+front = "сле́дствие"
+back = "conséquence"
+level = 29
+
+[[card]]
+id = "t6-voc-030"
+kind = "vocab"
+front = "усло́вие"
+back = "condition"
+level = 30
+
+[[card]]
+id = "t6-voc-031"
+kind = "vocab"
+front = "спо́соб"
+back = "moyen, façon"
+level = 31
+
+[[card]]
+id = "t6-voc-032"
+kind = "vocab"
+front = "вариа́нт"
+back = "option"
+level = 32
+
+[[card]]
+id = "t6-voc-033"
+kind = "vocab"
+front = "разви́тие"
+back = "développement"
+level = 33
+
+[[card]]
+id = "t6-voc-034"
+kind = "vocab"
+front = "измене́ние"
+back = "changement"
+level = 34
+
+[[card]]
+id = "t6-voc-035"
+kind = "vocab"
+front = "сравне́ние"
+back = "comparaison"
+level = 35
+
+[[card]]
+id = "t6-voc-036"
+kind = "vocab"
+front = "связь"
+back = "lien"
+level = 36
+
+[[card]]
+id = "t6-voc-037"
+kind = "vocab"
+front = "вли́яние"
+back = "influence"
+level = 37
+
+[[card]]
+id = "t6-voc-038"
+kind = "vocab"
+front = "предме́т"
+back = "objet, matière"
+level = 38
+
+[[card]]
+id = "t6-voc-039"
+kind = "vocab"
+front = "вещь"
+back = "chose"
+level = 39
+
+[[card]]
+id = "t6-voc-040"
+kind = "vocab"
+front = "собы́тие"
+back = "événement"
+level = 40
+
+[[card]]
+id = "t6-voc-041"
+kind = "vocab"
+front = "слу́чай"
+back = "cas, occasion"
+level = 41
+
+[[card]]
+id = "t6-voc-042"
+kind = "vocab"
+front = "состоя́ние"
+back = "état"
+level = 42
+
+[[card]]
+id = "t6-voc-043"
+kind = "vocab"
+front = "у́ровень"
+back = "niveau"
+level = 43
+
+[[card]]
+id = "t6-voc-044"
+kind = "vocab"
+front = "вид"
+back = "aspect, sorte"
+level = 44
+
+[[card]]
+id = "t6-voc-045"
+kind = "vocab"
+front = "ра́зница"
+back = "différence"
+level = 45
+
+[[card]]
+id = "t6-voc-046"
+kind = "vocab"
+front = "доказа́тельство"
+back = "preuve"
+level = 46
+
+[[card]]
+id = "t6-voc-047"
+kind = "vocab"
+front = "досто́инство"
+back = "qualité, dignité"
+level = 47
+
+[[card]]
+id = "t6-voc-048"
+kind = "vocab"
+front = "недоста́ток"
+back = "défaut"
+level = 48
+
+[[card]]
+id = "t6-voc-049"
+kind = "vocab"
+front = "привы́чка"
+back = "habitude"
+level = 49
+
+[[card]]
+id = "t6-voc-050"
+kind = "vocab"
+front = "мечта́"
+back = "rêve (souhait)"
+level = 50
+
+[[card]]
+id = "t6-voc-051"
+kind = "vocab"
+front = "стара́ться"
+back = "s'efforcer"
+level = 51
+
+[[card]]
+id = "t6-voc-052"
+kind = "vocab"
+front = "стреми́ться"
+back = "aspirer à"
+level = 52
+
+[[card]]
+id = "t6-voc-053"
+kind = "vocab"
+front = "добива́ться"
+back = "obtenir (par l'effort)"
+level = 53
+
+[[card]]
+id = "t6-voc-054"
+kind = "vocab"
+front = "привыка́ть"
+back = "s'habituer"
+level = 54
+
+[[card]]
+id = "t6-voc-055"
+kind = "vocab"
+front = "скуча́ть"
+back = "s'ennuyer, regretter quelqu'un"
+level = 55
+
+[[card]]
+id = "t6-voc-056"
+kind = "vocab"
+front = "жале́ть"
+back = "regretter, plaindre"
+level = 56
+
+[[card]]
+id = "t6-voc-057"
+kind = "vocab"
+front = "изменя́ть"
+back = "changer, tromper"
+level = 57
+
+[[card]]
+id = "t6-voc-058"
+kind = "vocab"
+front = "признава́ть"
+back = "reconnaître, avouer"
+level = 58
+
+[[card]]
+id = "t6-voc-059"
+kind = "vocab"
+front = "убежда́ть"
+back = "convaincre"
+level = 59
+
+[[card]]
+id = "t6-voc-060"
+kind = "vocab"
+front = "избега́ть"
+back = "éviter"
+level = 60
+
+[[card]]
+id = "t6-voc-061"
+kind = "vocab"
+front = "зави́довать"
+back = "envier"
+level = 61
+
+[[card]]
+id = "t6-voc-062"
+kind = "vocab"
+front = "проща́ть"
+back = "pardonner"
+level = 62
+
+[[card]]
+id = "t6-voc-063"
+kind = "vocab"
+front = "пережива́ть"
+back = "s'inquiéter, vivre (une épreuve)"
+level = 63
+
+[[card]]
+id = "t6-voc-064"
+kind = "vocab"
+front = "уважа́ть"
+back = "respecter"
+level = 64
+
+[[card]]
+id = "t6-voc-065"
+kind = "vocab"
+front = "доверя́ть"
+back = "faire confiance"
+level = 65
+
+[[card]]
+id = "t6-voc-066"
+kind = "vocab"
+front = "обраща́ть внима́ние"
+back = "faire attention"
+level = 66
+
+[[card]]
+id = "t6-voc-067"
+kind = "vocab"
+front = "приходи́ть в го́лову"
+back = "venir à l'esprit"
+level = 67
+
+[[card]]
+id = "t6-voc-068"
+kind = "vocab"
+front = "выходи́ть из себя́"
+back = "perdre son calme"
+level = 68
+
+[[card]]
+id = "t6-voc-069"
+kind = "vocab"
+front = "подходи́ть"
+back = "convenir, s'approcher"
+level = 69
+
+[[card]]
+id = "t6-voc-070"
+kind = "vocab"
+front = "переходи́ть"
+back = "traverser"
+level = 70
+
+[[card]]
+id = "t6-voc-071"
+kind = "vocab"
+front = "обходи́ть"
+back = "contourner"
+level = 71
+
+[[card]]
+id = "t6-voc-072"
+kind = "vocab"
+front = "заходи́ть"
+back = "passer (chez quelqu'un)"
+level = 72
+
+[[card]]
+id = "t6-voc-073"
+kind = "vocab"
+front = "доходи́ть"
+back = "atteindre (à pied)"
+level = 73
+
+[[card]]
+id = "t6-voc-074"
+kind = "vocab"
+front = "проходи́ть"
+back = "passer, traverser"
+level = 74
+
+[[card]]
+id = "t6-voc-075"
+kind = "vocab"
+front = "расходи́ться"
+back = "se séparer"
+level = 75
+
+[[card]]
+id = "t6-voc-076"
+kind = "vocab"
+front = "наоборо́т"
+back = "au contraire"
+level = 76
+
+[[card]]
+id = "t6-voc-077"
+kind = "vocab"
+front = "всё-таки"
+back = "quand même"
+level = 77
+
+[[card]]
+id = "t6-voc-078"
+kind = "vocab"
+front = "вряд ли"
+back = "peu probable"
+level = 78
+
+[[card]]
+id = "t6-voc-079"
+kind = "vocab"
+front = "тем не ме́нее"
+back = "néanmoins"
+level = 79
+
+[[card]]
+id = "t6-voc-080"
+kind = "vocab"
+front = "и так да́лее"
+back = "et ainsi de suite"
+level = 80
+
+[[card]]
+id = "t6-voc-081"
+kind = "vocab"
+front = "в конце́ концо́в"
+back = "finalement"
+level = 81
+
+[[card]]
+id = "t6-voc-082"
+kind = "vocab"
+front = "пре́жде всего́"
+back = "avant tout"
+level = 82
+
+[[card]]
+id = "t6-voc-083"
+kind = "vocab"
+front = "и́менно"
+back = "justement, précisément"
+level = 83
+
+[[card]]
+id = "t6-voc-084"
+kind = "vocab"
+front = "впро́чем"
+back = "d'ailleurs"
+level = 84
+
+[[card]]
+id = "t6-voc-085"
+kind = "vocab"
+front = "ина́че"
+back = "sinon, autrement"
+level = 85
+
+[[card]]
+id = "t6-voc-086"
+kind = "vocab"
+front = "то́чно"
+back = "exactement, sûrement"
+level = 86
+
+[[card]]
+id = "t6-voc-087"
+kind = "vocab"
+front = "соверше́нно"
+back = "complètement"
+level = 87
+
+[[card]]
+id = "t6-voc-088"
+kind = "vocab"
+front = "доста́точно"
+back = "assez, suffisamment"
+level = 88
+
+[[card]]
+id = "t6-voc-089"
+kind = "vocab"
+front = "сли́шком"
+back = "trop"
+level = 89
+
+[[card]]
+id = "t6-voc-090"
+kind = "vocab"
+front = "почти́"
+back = "presque"
+level = 90
+
+[[card]]
+id = "t6-voc-091"
+kind = "vocab"
+front = "едва́"
+back = "à peine"
+level = 91
+
+[[card]]
+id = "t6-voc-092"
+kind = "vocab"
+front = "неуже́ли"
+back = "vraiment ? (surprise)"
+level = 92
+
+[[card]]
+id = "t6-voc-093"
+kind = "vocab"
+front = "ведь"
+back = "car, pourtant"
+note = "Mot de liaison qui insiste : Ведь ты зна́ешь! = Mais tu le sais bien !"
+level = 93
+
+[[card]]
+id = "t6-voc-094"
+kind = "vocab"
+front = "же"
+back = "donc, bien"
+note = "Particule d'insistance : Я же говори́л! = Je te l'avais bien dit !"
+level = 94
+
+[[card]]
+id = "t6-voc-095"
+kind = "vocab"
+front = "ли"
+back = "est-ce que"
+note = "Зна́ешь ли ты…? = Sais-tu… ?"
+level = 95
+
+[[card]]
+id = "t6-voc-096"
+kind = "vocab"
+front = "ну"
+back = "eh bien, bon"
+level = 96
+
+[[card]]
+id = "t6-voc-097"
+kind = "vocab"
+front = "вот"
+back = "voici, voilà"
+level = 97
+
+[[card]]
+id = "t6-voc-098"
+kind = "vocab"
+front = "да́же"
+back = "même"
+level = 98
+
+[[card]]
+id = "t6-voc-099"
+kind = "vocab"
+front = "ско́рее"
+back = "plutôt"
+level = 99
+
+[[card]]
+id = "t6-voc-100"
+kind = "vocab"
+front = "глубо́кий"
+back = "profond"
+level = 100
+
+[[card]]
+id = "t6-voc-101"
+kind = "vocab"
+front = "и́скренний"
+back = "sincère"
+level = 101
+
+[[card]]
+id = "t6-voc-102"
+kind = "vocab"
+front = "равноду́шный"
+back = "indifférent"
+level = 102
+
+[[card]]
+id = "t6-voc-103"
+kind = "vocab"
+front = "упря́мый"
+back = "têtu"
+level = 103
+
+[[card]]
+id = "t6-voc-104"
+kind = "vocab"
+front = "ще́дрый"
+back = "généreux"
+level = 104
+
+[[card]]
+id = "t6-voc-105"
+kind = "vocab"
+front = "скро́мный"
+back = "modeste"
+level = 105
+
+[[card]]
+id = "t6-voc-106"
+kind = "vocab"
+front = "надёжный"
+back = "fiable"
+level = 106
+
+[[card]]
+id = "t6-voc-107"
+kind = "vocab"
+front = "о́стрый"
+back = "pointu, épicé, vif"
+level = 107
+
+[[card]]
+id = "t6-voc-108"
+kind = "vocab"
+front = "ре́дкий"
+back = "rare"
+level = 108
+
+[[card]]
+id = "t6-voc-109"
+kind = "vocab"
+front = "ло́вкий"
+back = "adroit"
+level = 109
+
+[[card]]
+id = "t6-voc-110"
+kind = "vocab"
+front = "неожи́данный"
+back = "inattendu"
+level = 110
+
+[[card]]
+id = "t6-voc-111"
+kind = "vocab"
+front = "одино́кий"
+back = "seul, solitaire"
+level = 111
+
+[[card]]
+id = "t6-voc-112"
+kind = "vocab"
+front = "благода́рный"
+back = "reconnaissant"
+level = 112
+
+[[card]]
+id = "t6-voc-113"
+kind = "vocab"
+front = "внима́тельный"
+back = "attentif"
+level = 113
+
+[[card]]
+id = "t6-voc-114"
+kind = "vocab"
+front = "вероя́тный"
+back = "probable"
+level = 114
+
+[[card]]
+id = "t6-phr-001"
+kind = "phrase"
+front = "Ни пу́ха ни пера́!"
+back = "Bonne chance ! (avant un examen)"
+note = "Mot à mot : « ni duvet ni plume ». On répond : К чёрту! (k TCHOR-tou) = Au diable !"
+level = 1
+
+[[card]]
+id = "t6-phr-002"
+kind = "phrase"
+front = "Вот э́то да!"
+back = "Ça alors !"
+level = 2
+
+[[card]]
+id = "t6-phr-003"
+kind = "phrase"
+front = "Бо́же мой!"
+back = "Mon Dieu !"
+level = 3
+
+[[card]]
+id = "t6-phr-004"
+kind = "phrase"
+front = "Ну ты даёшь!"
+back = "Tu exagères ! / Chapeau !"
+level = 4
+
+[[card]]
+id = "t6-phr-005"
+kind = "phrase"
+front = "Де́ло в шля́пе"
+back = "C'est dans la poche"
+note = "Mot à mot : « l'affaire est dans le chapeau »."
+level = 5
+
+[[card]]
+id = "t6-phr-006"
+kind = "phrase"
+front = "Ве́шать лапшу́ на у́ши"
+back = "Raconter des salades"
+note = "Mot à mot : « accrocher des nouilles aux oreilles »."
+level = 6
+
+[[card]]
+id = "t6-phr-007"
+kind = "phrase"
+front = "Когда́ рак на горе́ сви́стнет"
+back = "Quand les poules auront des dents"
+note = "Mot à mot : « quand l'écrevisse sifflera sur la montagne »."
+level = 7
+
+[[card]]
+id = "t6-phr-008"
+kind = "phrase"
+front = "Не в свое́й таре́лке"
+back = "Pas dans son assiette"
+note = "Même image qu'en français !"
+level = 8
+
+[[card]]
+id = "t6-phr-009"
+kind = "phrase"
+front = "Бить баклу́ши"
+back = "Glander, ne rien faire"
+level = 9
+
+[[card]]
+id = "t6-phr-010"
+kind = "phrase"
+front = "Как две ка́пли воды́"
+back = "Comme deux gouttes d'eau"
+level = 10
+
+[[card]]
+id = "t6-phr-011"
+kind = "phrase"
+front = "Ру́ки не дохо́дят"
+back = "Je n'ai pas le temps de m'en occuper"
+note = "Mot à mot : « les mains n'y arrivent pas »."
+level = 11
+
+[[card]]
+id = "t6-phr-012"
+kind = "phrase"
+front = "Без труда́ не вы́ловишь и ры́бку из пруда́"
+back = "On n'a rien sans peine"
+note = "Proverbe : sans effort, on ne sort même pas un petit poisson de l'étang."
+level = 12
+
+[[card]]
+id = "t6-phr-013"
+kind = "phrase"
+front = "Ти́ше е́дешь — да́льше бу́дешь"
+back = "Qui va lentement va sûrement"
+level = 13
+
+[[card]]
+id = "t6-phr-014"
+kind = "phrase"
+front = "Не име́й сто рубле́й, а име́й сто друзе́й"
+back = "Mieux vaut cent amis que cent roubles"
+level = 14
+
+[[card]]
+id = "t6-phr-015"
+kind = "phrase"
+front = "Я́блоко от я́блони недалеко́ па́дает"
+back = "Tel père, tel fils"
+note = "Mot à mot : « la pomme ne tombe pas loin du pommier »."
+level = 15
+
+[[card]]
+id = "t6-phr-016"
+kind = "phrase"
+front = "У́тро ве́чера мудрене́е"
+back = "La nuit porte conseil"
+note = "Mot à mot : « le matin est plus sage que le soir »."
+level = 16
+
+[[card]]
+id = "t6-phr-017"
+kind = "phrase"
+front = "Лу́чше по́здно, чем никогда́"
+back = "Mieux vaut tard que jamais"
+level = 17
+
+[[card]]
+id = "t6-phr-018"
+kind = "phrase"
+front = "Каки́ми судьба́ми?"
+back = "Quel bon vent t'amène ?"
+level = 18
+
+[[card]]
+id = "t6-phr-019"
+kind = "phrase"
+front = "Ско́лько лет, ско́лько зим!"
+back = "Ça fait une éternité !"
+note = "Mot à mot : « combien d'étés, combien d'hivers ! »"
+level = 19
+
+[[card]]
+id = "t6-phr-020"
+kind = "phrase"
+front = "Всё я́сно"
+back = "Tout est clair"
+level = 20
+
+[[card]]
+id = "t6-phr-021"
+kind = "phrase"
+front = "Само́ собо́й"
+back = "Ça va de soi"
+level = 21
+
+[[card]]
+id = "t6-phr-022"
+kind = "phrase"
+front = "Ка́к бы не так!"
+back = "Tu parles ! / Certainement pas !"
+level = 22
+
+[[card]]
+id = "t6-phr-023"
+kind = "phrase"
+front = "Ничего́ себе́!"
+back = "Pas mal ! / Incroyable !"
+level = 23
+
+[[card]]
+id = "t6-phr-024"
+kind = "phrase"
+front = "Ещё бы!"
+back = "Et comment !"
+level = 24
+
+[[card]]
+id = "t6-phr-025"
+kind = "phrase"
+front = "Так и быть"
+back = "Soit, d'accord"
+level = 25
+
+[[card]]
+id = "t6-phr-026"
+kind = "phrase"
+front = "Ни за что!"
+back = "Jamais de la vie !"
+level = 26
+
+[[card]]
+id = "t6-phr-027"
+kind = "phrase"
+front = "Будь здоро́в!"
+back = "À tes souhaits !"
+note = "Après un éternuement. À une femme : Будь здоро́ва!"
+level = 27
+
+[[card]]
+id = "t6-phr-028"
+kind = "phrase"
+front = "Пе́рвый блин ко́мом"
+back = "Le premier essai rate toujours"
+note = "Mot à mot : « la première crêpe fait une boule »."
+level = 28
+
+[[card]]
+id = "t6-phr-029"
+kind = "phrase"
+front = "Мне не до э́того"
+back = "J'ai d'autres soucis"
+level = 29
+
+[[card]]
+id = "t6-phr-030"
+kind = "phrase"
+front = "Ты в своём уме́?"
+back = "Tu as perdu la tête ?"
+level = 30
+
+[[card]]
+id = "t6-gra-001"
+kind = "grammar"
+front = "приходи́ть / уходи́ть"
+question = "Que change le début при- / у- ?"
+back = "при- = arriver, у- = partir"
+wrong = ["при- = partir, у- = arriver", "aucune différence"]
+note = "Les préfixes changent le sens du verbe : в- (entrer), вы- (sortir), пере- (traverser), под- (s'approcher)."
+level = 1
+
+[[card]]
+id = "t6-gra-002"
+kind = "grammar"
+front = "Он вошёл в ко́мнату."
+question = "Que veut dire cette phrase ?"
+back = "Il est entré dans la pièce."
+wrong = ["Il est sorti de la pièce.", "Il a traversé la pièce."]
+note = "в- + aller = entrer ; вы́- + aller = sortir : Он вы́шел из ко́мнаты."
+level = 2
+
+[[card]]
+id = "t6-gra-003"
+kind = "grammar"
+front = "Я же тебе́ говори́л!"
+question = "Que fait же dans cette phrase ?"
+back = "Il insiste : « je te l'avais bien dit »"
+wrong = ["Il pose une question", "Il dit le contraire"]
+note = "же renforce la phrase, souvent avec un ton de reproche ou d'évidence."
+level = 3
+
+[[card]]
+id = "t6-gra-004"
+kind = "grammar"
+front = "Неуже́ли ты не зна́ешь?"
+question = "Que veut dire la phrase ?"
+back = "Tu ne sais vraiment pas ? (surpris)"
+wrong = ["Tu ne sais pas, donc ?", "Tu le sais déjà ?"]
+note = "неуже́ли exprime l'étonnement : « est-ce possible que… ? »"
+level = 4
+
+[[card]]
+id = "t6-gra-005"
+kind = "grammar"
+front = "Мне не спи́тся."
+question = "Que veut dire cette phrase ?"
+back = "Je n'arrive pas à dormir."
+wrong = ["Je ne veux pas dormir.", "Je dors mal la nuit."]
+note = "Tournure impersonnelle avec -ся : мне не спи́тся / не рабо́тается = je n'arrive pas à dormir / travailler."
+level = 5
+
+[[card]]
+id = "t6-gra-006"
+kind = "grammar"
+front = "чита́я"
+question = "Он ест, чита́я газе́ту. Que veut dire чита́я ?"
+back = "en lisant"
+wrong = ["après avoir lu", "pour lire"]
+note = "Le gérondif en -я / -а dit « en faisant » : слу́шая му́зыку = en écoutant de la musique."
+level = 6
+
+[[card]]
+id = "t6-gra-007"
+kind = "grammar"
+front = "прочита́в"
+question = "Прочита́в письмо́, он улыбну́лся. Que veut dire прочита́в ?"
+back = "après avoir lu"
+wrong = ["en lisant", "avant de lire"]
+note = "Le gérondif en -в (sur un verbe « terminé ») dit « après avoir fait »."
+level = 7
+
+[[card]]
+id = "t6-gra-008"
+kind = "grammar"
+front = "чита́ющий"
+question = "челове́к, чита́ющий газе́ту. Que veut dire чита́ющий ?"
+back = "qui lit"
+wrong = ["qui a lu", "qui va lire"]
+note = "Le participe en -ющий / -ащий remplace « qui + verbe » : en style écrit surtout."
+level = 8
+
+[[card]]
+id = "t6-gra-009"
+kind = "grammar"
+front = "Ему́ на́до бы́ло уйти́."
+question = "Que veut dire cette phrase ?"
+back = "Il a dû partir."
+wrong = ["Il veut partir.", "Il partira."]
+note = "на́до / ну́жно + бы́ло = il fallait. Avec бу́дет : il faudra."
+level = 9
+
+[[card]]
+id = "t6-gra-010"
+kind = "grammar"
+front = "Ни оди́н студе́нт не пришёл."
+question = "Que veut dire cette phrase ?"
+back = "Aucun étudiant n'est venu."
+wrong = ["Un seul étudiant est venu.", "Tous les étudiants sont venus."]
+note = "ни оди́н… не = pas un seul, aucun."
+level = 10
+
+[[card]]
+id = "t6-gra-011"
+kind = "grammar"
+front = "Чем бо́льше, тем лу́чше."
+question = "Que veut dire cette phrase ?"
+back = "Plus il y en a, mieux c'est."
+wrong = ["Plus ou moins bien.", "Le plus grand est le meilleur."]
+note = "чем…, тем… = plus…, plus…"
+level = 11
+
+[[card]]
+id = "t6-gra-012"
+kind = "grammar"
+front = "кое-что́ / что́-нибудь"
+question = "Купи́ что́-нибудь. Que veut dire что́-нибудь ?"
+back = "n'importe quoi, quelque chose (peu importe quoi)"
+wrong = ["une chose précise", "rien"]
+note = "-нибудь = n'importe lequel ; кое- = quelque chose de précis que je ne dis pas."
+level = 12

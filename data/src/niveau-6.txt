@@ -1,0 +1,164 @@
+# niveau = 6
+# Nuances : expressions idiomatiques, mots abstraits, préfixes, nuances de sens.
+
+@vocab
+поня́тие | notion, idée |
+смысл | sens |
+значе́ние | signification, importance |
+свобо́да | liberté |
+пра́вда | vérité |
+ложь | mensonge |
+справедли́вость | justice |
+отве́тственность | responsabilité |
+уваже́ние | respect |
+дове́рие | confiance |
+сме́лость | courage |
+терпе́ние | patience |
+сове́сть | conscience |
+наде́жда | espoir |
+судьба́ | destin |
+душа́ | âme |
+тоска́ | mélancolie, nostalgie | Un mot très russe : un manque profond, souvent sans objet précis.
+быт | vie quotidienne |
+обще́ние | communication, échanges |
+отноше́ния | relations |
+дру́жба | amitié |
+ссо́ра | dispute |
+разгово́р | conversation |
+по́мощь | aide |
+забо́та | souci, attention |
+благода́рность | gratitude |
+изви́нение | excuse |
+обеща́ние | promesse |
+сле́дствие | conséquence |
+усло́вие | condition |
+спо́соб | moyen, façon |
+вариа́нт | option |
+разви́тие | développement |
+измене́ние | changement |
+сравне́ние | comparaison |
+связь | lien |
+вли́яние | influence |
+предме́т | objet, matière |
+вещь | chose |
+собы́тие | événement |
+слу́чай | cas, occasion |
+состоя́ние | état |
+у́ровень | niveau |
+вид | aspect, sorte |
+ра́зница | différence |
+доказа́тельство | preuve |
+досто́инство | qualité, dignité |
+недоста́ток | défaut |
+привы́чка | habitude |
+мечта́ | rêve (souhait) |
+стара́ться | s'efforcer |
+стреми́ться | aspirer à |
+добива́ться | obtenir (par l'effort) |
+привыка́ть | s'habituer |
+скуча́ть | s'ennuyer, regretter quelqu'un |
+жале́ть | regretter, plaindre |
+изменя́ть | changer, tromper |
+признава́ть | reconnaître, avouer |
+убежда́ть | convaincre |
+избега́ть | éviter |
+зави́довать | envier |
+проща́ть | pardonner |
+пережива́ть | s'inquiéter, vivre (une épreuve) |
+уважа́ть | respecter |
+доверя́ть | faire confiance |
+обраща́ть внима́ние | faire attention |
+приходи́ть в го́лову | venir à l'esprit |
+выходи́ть из себя́ | perdre son calme |
+подходи́ть | convenir, s'approcher |
+переходи́ть | traverser |
+обходи́ть | contourner |
+заходи́ть | passer (chez quelqu'un) |
+доходи́ть | atteindre (à pied) |
+проходи́ть | passer, traverser |
+расходи́ться | se séparer |
+наоборо́т | au contraire |
+всё-таки | quand même |
+вряд ли | peu probable |
+тем не ме́нее | néanmoins |
+и так да́лее | et ainsi de suite |
+в конце́ концо́в | finalement |
+пре́жде всего́ | avant tout |
+и́менно | justement, précisément |
+впро́чем | d'ailleurs |
+ина́че | sinon, autrement |
+то́чно | exactement, sûrement |
+соверше́нно | complètement |
+доста́точно | assez, suffisamment |
+сли́шком | trop |
+почти́ | presque |
+едва́ | à peine |
+неуже́ли | vraiment ? (surprise) |
+ведь | car, pourtant | Mot de liaison qui insiste : Ведь ты зна́ешь! = Mais tu le sais bien !
+же | donc, bien | Particule d'insistance : Я же говори́л! = Je te l'avais bien dit !
+ли | est-ce que | Зна́ешь ли ты…? = Sais-tu… ?
+ну | eh bien, bon |
+вот | voici, voilà |
+да́же | même |
+ско́рее | plutôt |
+глубо́кий | profond |
+и́скренний | sincère |
+равноду́шный | indifférent |
+упря́мый | têtu |
+ще́дрый | généreux |
+скро́мный | modeste |
+надёжный | fiable |
+о́стрый | pointu, épicé, vif |
+ре́дкий | rare |
+ло́вкий | adroit |
+неожи́данный | inattendu |
+одино́кий | seul, solitaire |
+благода́рный | reconnaissant |
+внима́тельный | attentif |
+вероя́тный | probable |
+
+@phrase
+Ни пу́ха ни пера́! | Bonne chance ! (avant un examen) | Mot à mot : « ni duvet ni plume ». On répond : К чёрту! (k TCHOR-tou) = Au diable !
+Вот э́то да! | Ça alors ! |
+Бо́же мой! | Mon Dieu ! |
+Ну ты даёшь! | Tu exagères ! / Chapeau ! |
+Де́ло в шля́пе | C'est dans la poche | Mot à mot : « l'affaire est dans le chapeau ».
+Ве́шать лапшу́ на у́ши | Raconter des salades | Mot à mot : « accrocher des nouilles aux oreilles ».
+Когда́ рак на горе́ сви́стнет | Quand les poules auront des dents | Mot à mot : « quand l'écrevisse sifflera sur la montagne ».
+Не в свое́й таре́лке | Pas dans son assiette | Même image qu'en français !
+Бить баклу́ши | Glander, ne rien faire |
+Как две ка́пли воды́ | Comme deux gouttes d'eau |
+Ру́ки не дохо́дят | Je n'ai pas le temps de m'en occuper | Mot à mot : « les mains n'y arrivent pas ».
+Без труда́ не вы́ловишь и ры́бку из пруда́ | On n'a rien sans peine | Proverbe : sans effort, on ne sort même pas un petit poisson de l'étang.
+Ти́ше е́дешь — да́льше бу́дешь | Qui va lentement va sûrement |
+Не име́й сто рубле́й, а име́й сто друзе́й | Mieux vaut cent amis que cent roubles |
+Я́блоко от я́блони недалеко́ па́дает | Tel père, tel fils | Mot à mot : « la pomme ne tombe pas loin du pommier ».
+У́тро ве́чера мудрене́е | La nuit porte conseil | Mot à mot : « le matin est plus sage que le soir ».
+Лу́чше по́здно, чем никогда́ | Mieux vaut tard que jamais |
+Каки́ми судьба́ми? | Quel bon vent t'amène ? |
+Ско́лько лет, ско́лько зим! | Ça fait une éternité ! | Mot à mot : « combien d'étés, combien d'hivers ! »
+Всё я́сно | Tout est clair |
+Само́ собо́й | Ça va de soi |
+Ка́к бы не так! | Tu parles ! / Certainement pas ! |
+Ничего́ себе́! | Pas mal ! / Incroyable ! |
+Ещё бы! | Et comment ! |
+Так и быть | Soit, d'accord |
+Ни за что! | Jamais de la vie ! |
+Будь здоро́в! | À tes souhaits ! | Après un éternuement. À une femme : Будь здоро́ва!
+Пе́рвый блин ко́мом | Le premier essai rate toujours | Mot à mot : « la première crêpe fait une boule ».
+Мне не до э́того | J'ai d'autres soucis |
+Ты в своём уме́? | Tu as perdu la tête ? |
+
+@grammar
+приходи́ть / уходи́ть | Que change le début при- / у- ? | при- = arriver, у- = partir | при- = partir, у- = arriver ; aucune différence | Les préfixes changent le sens du verbe : в- (entrer), вы- (sortir), пере- (traverser), под- (s'approcher).
+Он вошёл в ко́мнату. | Que veut dire cette phrase ? | Il est entré dans la pièce. | Il est sorti de la pièce. ; Il a traversé la pièce. | в- + aller = entrer ; вы́- + aller = sortir : Он вы́шел из ко́мнаты.
+Я же тебе́ говори́л! | Que fait же dans cette phrase ? | Il insiste : « je te l'avais bien dit » | Il pose une question ; Il dit le contraire | же renforce la phrase, souvent avec un ton de reproche ou d'évidence.
+Неуже́ли ты не зна́ешь? | Que veut dire la phrase ? | Tu ne sais vraiment pas ? (surpris) | Tu ne sais pas, donc ? ; Tu le sais déjà ? | неуже́ли exprime l'étonnement : « est-ce possible que… ? »
+Мне не спи́тся. | Que veut dire cette phrase ? | Je n'arrive pas à dormir. | Je ne veux pas dormir. ; Je dors mal la nuit. | Tournure impersonnelle avec -ся : мне не спи́тся / не рабо́тается = je n'arrive pas à dormir / travailler.
+чита́я | Он ест, чита́я газе́ту. Que veut dire чита́я ? | en lisant | après avoir lu ; pour lire | Le gérondif en -я / -а dit « en faisant » : слу́шая му́зыку = en écoutant de la musique.
+прочита́в | Прочита́в письмо́, он улыбну́лся. Que veut dire прочита́в ? | après avoir lu | en lisant ; avant de lire | Le gérondif en -в (sur un verbe « terminé ») dit « après avoir fait ».
+чита́ющий | челове́к, чита́ющий газе́ту. Que veut dire чита́ющий ? | qui lit | qui a lu ; qui va lire | Le participe en -ющий / -ащий remplace « qui + verbe » : en style écrit surtout.
+Ему́ на́до бы́ло уйти́. | Que veut dire cette phrase ? | Il a dû partir. | Il veut partir. ; Il partira. | на́до / ну́жно + бы́ло = il fallait. Avec бу́дет : il faudra.
+Ни оди́н студе́нт не пришёл. | Que veut dire cette phrase ? | Aucun étudiant n'est venu. | Un seul étudiant est venu. ; Tous les étudiants sont venus. | ни оди́н… не = pas un seul, aucun.
+Чем бо́льше, тем лу́чше. | Que veut dire cette phrase ? | Plus il y en a, mieux c'est. | Plus ou moins bien. ; Le plus grand est le meilleur. | чем…, тем… = plus…, plus…
+кое-что́ / что́-нибудь | Купи́ что́-нибудь. Que veut dire что́-нибудь ? | n'importe quoi, quelque chose (peu importe quoi) | une chose précise ; rien | -нибудь = n'importe lequel ; кое- = quelque chose de précis que je ne dis pas.

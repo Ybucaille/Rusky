@@ -1,0 +1,168 @@
+# niveau = 5
+# Discuter : donner son avis, le travail, les études, la technologie, les loisirs.
+
+@vocab
+мне́ние | avis, opinion |
+счита́ть | considérer, estimer |
+ве́рить | croire |
+наде́яться | espérer |
+сомнева́ться | douter |
+сове́товать | conseiller |
+объясня́ть | expliquer |
+обсужда́ть | discuter (de) |
+спо́рить | se disputer, débattre |
+предлага́ть | proposer |
+реша́ть | décider, résoudre |
+выбира́ть | choisir |
+сра́внивать | comparer |
+согла́сен | d'accord |
+пра́вильно | correct, juste |
+непра́вильно | faux, incorrect |
+наве́рное | probablement |
+мо́жет быть | peut-être |
+к сожале́нию | malheureusement |
+наприме́р | par exemple |
+поэ́тому | c'est pourquoi |
+потому́ что | parce que |
+хотя́ | bien que |
+е́сли | si |
+и́ли | ou |
+но | mais |
+зато́ | en revanche |
+кро́ме того́ | de plus |
+во-пе́рвых | premièrement |
+в о́бщем | en somme |
+вообще́ | en général, du tout |
+на са́мом де́ле | en fait |
+по-мо́ему | à mon avis |
+профе́ссия | métier |
+рабо́чий | ouvrier |
+инжене́р | ingénieur |
+учи́тель | professeur (école) |
+студе́нт | étudiant |
+нача́льник | chef |
+колле́га | collègue |
+компа́ния | entreprise |
+о́фис | bureau |
+зарпла́та | salaire |
+зада́ча | tâche, problème |
+прое́кт | projet |
+собра́ние | réunion |
+о́пыт | expérience |
+успе́х | succès |
+оши́бка | erreur |
+пра́вило | règle |
+уро́к | leçon, cours |
+экза́мен | examen |
+оце́нка | note |
+зна́ние | connaissance |
+нау́ка | science |
+перево́д | traduction |
+слова́рь | dictionnaire |
+вопро́с | question |
+отве́т | réponse |
+приме́р | exemple |
+причи́на | cause, raison |
+результа́т | résultat |
+цель | but |
+пробле́ма | problème |
+реше́ние | décision, solution |
+возмо́жность | possibilité |
+интерне́т | internet |
+сайт | site |
+сообще́ние | message |
+паро́ль | mot de passe |
+экра́н | écran |
+програ́мма | programme |
+скача́ть | télécharger |
+отпра́вить | envoyer |
+получи́ть | recevoir |
+сохрани́ть | enregistrer |
+удали́ть | supprimer |
+спорт | sport |
+футбо́л | football |
+бег | course à pied |
+пла́вать | nager |
+трениро́вка | entraînement |
+игра́ | jeu, match |
+кома́нда | équipe |
+выи́грать | gagner |
+проигра́ть | perdre (un match) |
+хо́бби | loisir |
+чита́тель | lecteur |
+писа́тель | écrivain |
+худо́жник | peintre, artiste |
+вы́ставка | exposition |
+конце́рт | concert |
+спекта́кль | pièce de théâtre |
+сериа́л | série |
+но́вости | informations, actualités |
+полити́ка | politique |
+эконо́мика | économie |
+о́бщество | société |
+культу́ра | culture |
+приро́да | nature |
+бу́дущее | avenir |
+про́шлое | passé |
+ва́жный | important |
+гла́вный | principal |
+пра́вый | qui a raison |
+необходи́мый | indispensable |
+возмо́жный | possible |
+просто́й | simple |
+сло́жный | compliqué |
+поле́зный | utile |
+опа́сный | dangereux |
+серьёзный | sérieux |
+сме́шной | drôle |
+ску́чный | ennuyeux |
+занима́ться | s'occuper de, pratiquer | Я занима́юсь спо́ртом = Je fais du sport.
+интересова́ться | s'intéresser à |
+нра́виться | plaire |
+зави́сеть | dépendre |
+
+@phrase
+По-мо́ему, ты прав | À mon avis, tu as raison | À une femme : ты права́.
+Я так не ду́маю | Je ne pense pas |
+Я с тобо́й согла́сен | Je suis d'accord avec toi |
+Ты шу́тишь? | Tu plaisantes ? |
+Э́то зави́сит от… | Ça dépend de… |
+Не мо́жет быть! | Pas possible ! |
+Ты уве́рен? | Tu es sûr ? |
+Я не уве́рен | Je ne suis pas sûr |
+Что ты об э́том ду́маешь? | Qu'en penses-tu ? |
+Как сказа́ть по-ру́сски…? | Comment dit-on en russe… ? |
+Что зна́чит э́то сло́во? | Que veut dire ce mot ? |
+Говори́те ме́дленнее, пожа́луйста | Parlez plus lentement, s'il vous plaît |
+Я ничего́ не по́нял | Je n'ai rien compris |
+Кем ты рабо́таешь? | Quel est ton métier ? |
+Я рабо́таю инжене́ром | Je suis ingénieur |
+У меня́ мно́го рабо́ты | J'ai beaucoup de travail |
+Я за́нят | Je suis occupé | Une femme dit : Я занята́.
+Дава́й на ты? | On se tutoie ? |
+Без пробле́м | Pas de problème |
+Отли́чная иде́я! | Excellente idée ! |
+Э́то не ва́жно | Ce n'est pas important |
+Ла́дно | D'accord, bon |
+Я не про́тив | Je n'ai rien contre |
+Как хо́чешь | Comme tu veux |
+Мне всё равно́ | Ça m'est égal |
+Посмо́трим | On verra |
+Вот и́менно! | Exactement ! |
+Ты прав | Tu as raison |
+Ты не прав | Tu as tort |
+Наско́лько я зна́ю… | Pour autant que je sache… |
+
+@grammar
+Я рабо́таю врачо́м. | Que veut dire cette phrase ? | Je travaille comme médecin. | Je travaille avec un médecin. ; Je vais chez le médecin. | Pour un métier : рабо́тать + mot en -ом / -ем (masc.) ou -ой (fém.) : учи́тельницей.
+Я занима́юсь му́зыкой. | Que veut dire cette phrase ? | Je fais de la musique. | J'écoute de la musique. ; J'aime la musique. | занима́ться + mot en -ом / -ой = pratiquer : спо́ртом, футбо́лом.
+Мне нра́вится э́тот фильм. | Qui aime le film ? | moi | le film ; quelqu'un d'autre | Mot à mot : « à moi plaît ce film ». Celui qui aime est au « мне », la chose aimée est le sujet.
+Мне нра́вятся цветы́. | Pourquoi нра́вятся et pas нра́вится ? | Parce que цветы́ (fleurs) est au pluriel | Parce que c'est au passé ; Parce que c'est poli | Le verbe s'accorde avec la chose qui plaît : une chose → нра́вится, plusieurs → нра́вятся.
+Я ду́маю, что он прав. | Que veut dire что ici ? | que | quoi ; qui | Après « je pense », « je sais », « il dit », что (chto) veut dire « que ».
+кото́рый | Челове́к, кото́рый живёт здесь. Que veut dire кото́рый ? | qui (lequel) | quand ; pourquoi | кото́рый relie deux phrases comme « qui » en français et s'accorde : кото́рая (fém.), кото́рое (neutre).
+бо́льше / ме́ньше | Москва́ бо́льше Пари́жа. Que veut dire la phrase ? | Moscou est plus grande que Paris. | Moscou est plus petite que Paris. ; Moscou est aussi grande que Paris. | бо́льше = plus, ме́ньше = moins. Ce qui suit change de fin : Пари́ж → Пари́жа.
+са́мый | са́мый краси́вый го́род. Que veut dire са́мый ? | le plus | très ; assez | са́мый + adjectif = le plus… : са́мая интере́сная кни́га = le livre le plus intéressant.
+Я хочу́, что́бы ты пришёл. | Que veut dire что́бы ici ? | que (pour un souhait) | parce que ; si | Après « je veux que », on met что́бы + verbe au passé.
+Е́сли бы я знал… | Que veut dire cette phrase ? | Si j'avais su… | Si je sais… ; Quand je saurai… | бы + passé = conditionnel : я бы хоте́л = je voudrais.
+Я хоте́л бы ко́фе. | Que veut dire cette phrase ? | Je voudrais un café. | Je voulais un café. ; Je veux un café. | хоте́л бы (kha-TIEL by) est la façon polie de demander.
+себя́ | Он ду́мает то́лько о себе́. Que veut dire о себе́ ? | à lui-même | à elle ; à toi | себя́ (si-BIA) renvoie au sujet de la phrase : soi-même, lui-même, moi-même…

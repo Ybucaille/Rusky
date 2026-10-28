@@ -8,6 +8,9 @@ const BUILTIN: &[&str] = &[
     include_str!("../data/niveau-1-alphabet.toml"),
     include_str!("../data/niveau-2.toml"),
     include_str!("../data/niveau-3.toml"),
+    include_str!("../data/niveau-4.toml"),
+    include_str!("../data/niveau-5.toml"),
+    include_str!("../data/niveau-6.toml"),
 ];
 
 #[derive(Debug, Deserialize)]
@@ -83,7 +86,7 @@ mod tests {
     #[test]
     fn builtin_deck_is_valid() {
         let deck = builtin().unwrap();
-        assert!(deck.card.len() > 80);
+        assert!(deck.card.len() > 900);
         let mut ids = HashSet::new();
         for c in &deck.card {
             assert!(ids.insert(c.id.clone()), "id en double : {}", c.id);

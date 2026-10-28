@@ -22,7 +22,7 @@ def q(s):
 def check_stress(text, where):
     # Chaque mot russe de 2 syllabes ou plus doit porter un accent (ou un ё).
     bad = []
-    for w in text.replace("-", " ").split():
+    for w in text.split():
         w2 = "".join(ch for ch in w if ch.isalpha() or ch == ACUTE)
         if not any("Ѐ" <= ch <= "ӿ" for ch in w2):
             continue

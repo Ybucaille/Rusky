@@ -2,8 +2,20 @@
 
 Une popup toutes les 25 minutes pour apprendre le russe : un mot, une expression, une lettre ou une règle de grammaire. Tu choisis la bonne réponse parmi trois, et la répétition espacée (façon Anki) décide quand la carte revient.
 
-126 cartes de départ (niveau débutant, accents toniques indiqués) :
-alphabet (22), vocabulaire (63), grammaire (20), expressions (21).
+965 cartes réparties en 6 niveaux, avec les accents toniques et la prononciation :
+
+| Niveau | Thème | Cartes |
+|---|---|---|
+| 1 | Premiers pas : l'alphabet complet, les premiers mots | 137 |
+| 2 | Le quotidien : nombres, jours, repas, famille, couleurs | 184 |
+| 3 | En ville : transports, courses, restaurant, chemin | 165 |
+| 4 | Raconter : le passé, le corps, la météo, les sentiments | 163 |
+| 5 | Discuter : donner son avis, travail, études, loisirs | 160 |
+| 6 | Nuances : expressions idiomatiques, proverbes, préfixes | 156 |
+
+## Niveaux et XP
+
+Chaque réponse rapporte de l'XP : +10 si elle est juste, +2 sinon (l'effort compte). Les nouvelles cartes ne viennent que des niveaux débloqués. Le niveau suivant s'ouvre quand 70 % des cartes du niveau en cours sont acquises (réussies deux fois d'affilée) ; une popup te prévient. `rusky stats` montre ton XP et où tu en es.
 
 ## Installation sur Arch
 
@@ -70,6 +82,8 @@ kinds = ["alphabet", "vocab", "grammar", "phrase"]
 
 ## Ajouter tes propres cartes
 
+La prononciation est calculée toute seule à partir du mot accentué (`pron` reste possible pour corriger une exception).
+
 Même format que `data/cards.toml`. Le caractère ´ des accents se tape avec la touche morte, ou copie-colle-le.
 
 ```toml
@@ -77,7 +91,6 @@ Même format que `data/cards.toml`. Le caractère ´ des accents se tape avec la
 id = "perso-cuisine-001"   # unique, sert à garder ta progression
 kind = "vocab"
 front = "сыр"
-pron = "syr"               # prononciation, syllabe accentuée en MAJUSCULES
 back = "fromage"
 note = "Я люблю́ сыр (ya liou-BLIOU syr) = J'aime le fromage."
 level = 1                  # plus petit = apparaît plus tôt
@@ -94,3 +107,13 @@ Réimporter un fichier met à jour le texte des cartes sans perdre ta progressio
 - Une fois connue, une carte de vocabulaire ou d'expression est parfois posée à l'envers (français → russe).
 
 Les données sont dans `~/.local/share/rusky/rusky.db` (SQLite).
+
+## Modifier le paquet intégré
+
+Les cartes intégrées s'écrivent dans `data/src/niveau-N.txt`, une carte par ligne (`russe accentué | sens | note`), puis se convertissent avec :
+
+```bash
+python3 data/src/build.py data/src/niveau-2.txt data/niveau-2.toml t2
+```
+
+Le script refuse un mot de plusieurs syllabes sans accent tonique, un doublon ou une question de grammaire mal formée.
