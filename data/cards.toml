@@ -1,0 +1,971 @@
+# Cartes de départ de rusky.
+# Format : id unique, kind (alphabet | vocab | grammar | phrase), front, back, note (optionnel),
+# level = ordre d'apparition des nouvelles cartes (plus petit = plus tôt).
+
+[[card]]
+id = "abc-001"
+kind = "alphabet"
+front = "Ы ы"
+back = "« i » dur, langue tirée en arrière"
+note = "сын (fils), мы (nous), ты (tu)"
+level = 1
+
+[[card]]
+id = "abc-002"
+kind = "alphabet"
+front = "Щ щ"
+back = "« chtch », un « ch » long et doux"
+note = "борщ, щи (soupe aux choux), ещё (encore)"
+level = 2
+
+[[card]]
+id = "abc-003"
+kind = "alphabet"
+front = "Ж ж"
+back = "« j » comme dans « jour »"
+note = "жена́ (épouse), жить (vivre)"
+level = 3
+
+[[card]]
+id = "abc-004"
+kind = "alphabet"
+front = "Ц ц"
+back = "« ts »"
+note = "цирк (cirque), у́лица (rue)"
+level = 4
+
+[[card]]
+id = "abc-005"
+kind = "alphabet"
+front = "Х х"
+back = "« kh », comme la jota espagnole"
+note = "хлеб (pain), хорошо́ (bien)"
+level = 5
+
+[[card]]
+id = "abc-006"
+kind = "alphabet"
+front = "Ч ч"
+back = "« tch »"
+note = "чай (thé), что (quoi, se dit « chto »)"
+level = 6
+
+[[card]]
+id = "abc-007"
+kind = "alphabet"
+front = "Ш ш"
+back = "« ch » dur"
+note = "шко́ла (école), ша́пка (bonnet)"
+level = 7
+
+[[card]]
+id = "abc-008"
+kind = "alphabet"
+front = "Й й"
+back = "« y » bref, comme dans « paille »"
+note = "мой (mon), чай (thé)"
+level = 8
+
+[[card]]
+id = "abc-009"
+kind = "alphabet"
+front = "Ё ё"
+back = "« io », toujours accentué"
+note = "ёлка (sapin), ещё (encore)"
+level = 9
+
+[[card]]
+id = "abc-010"
+kind = "alphabet"
+front = "Э э"
+back = "« è »"
+note = "э́то (c'est), эта́ж (étage)"
+level = 10
+
+[[card]]
+id = "abc-011"
+kind = "alphabet"
+front = "Ю ю"
+back = "« iou »"
+note = "юг (sud), люблю́ (j'aime)"
+level = 11
+
+[[card]]
+id = "abc-012"
+kind = "alphabet"
+front = "Я я"
+back = "« ia »"
+note = "я (je), моя́ (ma)"
+level = 12
+
+[[card]]
+id = "abc-013"
+kind = "alphabet"
+front = "Ь ь"
+back = "Signe mou : aucun son, il adoucit la consonne d'avant"
+note = "мать (mère), день (jour), соль (sel)"
+level = 13
+
+[[card]]
+id = "abc-014"
+kind = "alphabet"
+front = "Ъ ъ"
+back = "Signe dur : aucun son, il sépare la consonne de la voyelle qui suit"
+note = "подъе́зд (entrée d'immeuble), объясни́ть (expliquer)"
+level = 14
+
+[[card]]
+id = "abc-015"
+kind = "alphabet"
+front = "Р р"
+back = "« r » roulé — piège : ce n'est pas un P"
+note = "ры́ба (poisson), рука́ (main)"
+level = 15
+
+[[card]]
+id = "abc-016"
+kind = "alphabet"
+front = "В в"
+back = "« v » — piège : ce n'est pas un B"
+note = "вода́ (eau), ваш (votre)"
+level = 16
+
+[[card]]
+id = "abc-017"
+kind = "alphabet"
+front = "Н н"
+back = "« n » — piège : ce n'est pas un H"
+note = "нос (nez), нет (non)"
+level = 17
+
+[[card]]
+id = "abc-018"
+kind = "alphabet"
+front = "С с"
+back = "« s » — piège : ce n'est pas un K"
+note = "сок (jus), сын (fils)"
+level = 18
+
+[[card]]
+id = "abc-019"
+kind = "alphabet"
+front = "У у"
+back = "« ou » — piège : ce n'est pas un Y"
+note = "у́тро (matin), суп (soupe)"
+level = 19
+
+[[card]]
+id = "abc-020"
+kind = "alphabet"
+front = "Б б / В в"
+back = "Б = « b », В = « v »"
+note = "банк (banque), вино́ (vin)"
+level = 20
+
+[[card]]
+id = "abc-021"
+kind = "alphabet"
+front = "Г г"
+back = "« g » dur, comme dans « gare »"
+note = "год (année), го́род (ville)"
+level = 21
+
+[[card]]
+id = "abc-022"
+kind = "alphabet"
+front = "Л л"
+back = "« l », plus sombre qu'en français"
+note = "ла́мпа (lampe), стол (table)"
+level = 22
+
+[[card]]
+id = "voc-001"
+kind = "vocab"
+front = "приве́т"
+back = "salut"
+note = "Приве́т! Как дела́?"
+level = 1
+
+[[card]]
+id = "voc-002"
+kind = "vocab"
+front = "спаси́бо"
+back = "merci"
+note = "Большо́е спаси́бо! = Merci beaucoup !"
+level = 1
+
+[[card]]
+id = "voc-003"
+kind = "vocab"
+front = "пожа́луйста"
+back = "s'il te plaît / de rien"
+note = "Sert aussi à répondre à « merci »"
+level = 2
+
+[[card]]
+id = "voc-004"
+kind = "vocab"
+front = "извини́те"
+back = "excusez-moi"
+note = "Извини́те, где метро́?"
+level = 2
+
+[[card]]
+id = "voc-005"
+kind = "vocab"
+front = "хорошо́"
+back = "bien / d'accord"
+note = "Prononcé « kharachó »"
+level = 3
+
+[[card]]
+id = "voc-006"
+kind = "vocab"
+front = "пло́хо"
+back = "mal"
+note = "Мне пло́хо. = Je me sens mal."
+level = 3
+
+[[card]]
+id = "voc-007"
+kind = "vocab"
+front = "да / нет"
+back = "oui / non"
+level = 4
+
+[[card]]
+id = "voc-008"
+kind = "vocab"
+front = "вода́"
+back = "eau"
+note = "Prononcé « vadá »"
+level = 4
+
+[[card]]
+id = "voc-009"
+kind = "vocab"
+front = "хлеб"
+back = "pain"
+note = "Prononcé « khlep » (b final → p)"
+level = 5
+
+[[card]]
+id = "voc-010"
+kind = "vocab"
+front = "молоко́"
+back = "lait"
+note = "Prononcé « malakó »"
+level = 5
+
+[[card]]
+id = "voc-011"
+kind = "vocab"
+front = "ко́фе"
+back = "café"
+note = "Masculin malgré le -е : чёрный ко́фе"
+level = 6
+
+[[card]]
+id = "voc-012"
+kind = "vocab"
+front = "чай"
+back = "thé"
+note = "чай с молоко́м = thé au lait"
+level = 6
+
+[[card]]
+id = "voc-013"
+kind = "vocab"
+front = "я́блоко"
+back = "pomme"
+level = 7
+
+[[card]]
+id = "voc-014"
+kind = "vocab"
+front = "дом"
+back = "maison"
+note = "до́ма = à la maison"
+level = 7
+
+[[card]]
+id = "voc-015"
+kind = "vocab"
+front = "кварти́ра"
+back = "appartement"
+level = 8
+
+[[card]]
+id = "voc-016"
+kind = "vocab"
+front = "у́лица"
+back = "rue"
+note = "на у́лице = dans la rue / dehors"
+level = 8
+
+[[card]]
+id = "voc-017"
+kind = "vocab"
+front = "го́род"
+back = "ville"
+note = "Pluriel irrégulier : города́"
+level = 9
+
+[[card]]
+id = "voc-018"
+kind = "vocab"
+front = "рабо́та"
+back = "travail"
+note = "на рабо́те = au travail"
+level = 9
+
+[[card]]
+id = "voc-019"
+kind = "vocab"
+front = "друг"
+back = "ami"
+note = "Pluriel irrégulier : друзья́"
+level = 10
+
+[[card]]
+id = "voc-020"
+kind = "vocab"
+front = "семья́"
+back = "famille"
+level = 10
+
+[[card]]
+id = "voc-021"
+kind = "vocab"
+front = "мать / ма́ма"
+back = "mère / maman"
+level = 11
+
+[[card]]
+id = "voc-022"
+kind = "vocab"
+front = "оте́ц / па́па"
+back = "père / papa"
+level = 11
+
+[[card]]
+id = "voc-023"
+kind = "vocab"
+front = "брат"
+back = "frère"
+level = 12
+
+[[card]]
+id = "voc-024"
+kind = "vocab"
+front = "сестра́"
+back = "sœur"
+level = 12
+
+[[card]]
+id = "voc-025"
+kind = "vocab"
+front = "кни́га"
+back = "livre"
+note = "Я чита́ю кни́гу."
+level = 13
+
+[[card]]
+id = "voc-026"
+kind = "vocab"
+front = "стол"
+back = "table"
+note = "на столе́ = sur la table"
+level = 13
+
+[[card]]
+id = "voc-027"
+kind = "vocab"
+front = "окно́"
+back = "fenêtre"
+note = "Pluriel : о́кна"
+level = 14
+
+[[card]]
+id = "voc-028"
+kind = "vocab"
+front = "маши́на"
+back = "voiture"
+level = 14
+
+[[card]]
+id = "voc-029"
+kind = "vocab"
+front = "сего́дня"
+back = "aujourd'hui"
+note = "Prononcé « sivódnia » (г → v)"
+level = 15
+
+[[card]]
+id = "voc-030"
+kind = "vocab"
+front = "за́втра"
+back = "demain"
+level = 15
+
+[[card]]
+id = "voc-031"
+kind = "vocab"
+front = "вчера́"
+back = "hier"
+level = 16
+
+[[card]]
+id = "voc-032"
+kind = "vocab"
+front = "у́тро"
+back = "matin"
+note = "у́тром = le matin"
+level = 16
+
+[[card]]
+id = "voc-033"
+kind = "vocab"
+front = "ве́чер"
+back = "soir"
+note = "ве́чером = le soir"
+level = 17
+
+[[card]]
+id = "voc-034"
+kind = "vocab"
+front = "большо́й"
+back = "grand"
+level = 17
+
+[[card]]
+id = "voc-035"
+kind = "vocab"
+front = "ма́ленький"
+back = "petit"
+level = 18
+
+[[card]]
+id = "voc-036"
+kind = "vocab"
+front = "краси́вый"
+back = "beau"
+level = 18
+
+[[card]]
+id = "voc-037"
+kind = "vocab"
+front = "но́вый"
+back = "nouveau"
+level = 19
+
+[[card]]
+id = "voc-038"
+kind = "vocab"
+front = "говори́ть"
+back = "parler"
+note = "Я говорю́ по-ру́сски."
+level = 19
+
+[[card]]
+id = "voc-039"
+kind = "vocab"
+front = "понима́ть"
+back = "comprendre"
+note = "Я понима́ю. / Я не понима́ю."
+level = 20
+
+[[card]]
+id = "voc-040"
+kind = "vocab"
+front = "знать"
+back = "savoir / connaître"
+note = "Я не зна́ю. = Je ne sais pas."
+level = 20
+
+[[card]]
+id = "voc-041"
+kind = "vocab"
+front = "хоте́ть"
+back = "vouloir"
+note = "Irrégulier : я хочу́, ты хо́чешь"
+level = 21
+
+[[card]]
+id = "voc-042"
+kind = "vocab"
+front = "люби́ть"
+back = "aimer"
+note = "я люблю́, ты лю́бишь"
+level = 21
+
+[[card]]
+id = "voc-043"
+kind = "vocab"
+front = "жить"
+back = "vivre / habiter"
+note = "Я живу́ в Пари́же."
+level = 22
+
+[[card]]
+id = "voc-044"
+kind = "vocab"
+front = "есть"
+back = "manger"
+note = "я ем, ты ешь, он ест — veut aussi dire « il y a »"
+level = 22
+
+[[card]]
+id = "voc-045"
+kind = "vocab"
+front = "пить"
+back = "boire"
+note = "я пью, ты пьёшь"
+level = 23
+
+[[card]]
+id = "voc-046"
+kind = "vocab"
+front = "идти́"
+back = "aller (à pied, en ce moment)"
+note = "Я иду́ домо́й."
+level = 23
+
+[[card]]
+id = "voc-047"
+kind = "vocab"
+front = "где"
+back = "où"
+note = "Где ты?"
+level = 24
+
+[[card]]
+id = "voc-048"
+kind = "vocab"
+front = "что"
+back = "quoi / que"
+note = "Prononcé « chto »"
+level = 24
+
+[[card]]
+id = "voc-049"
+kind = "vocab"
+front = "кто"
+back = "qui"
+note = "Кто э́то?"
+level = 25
+
+[[card]]
+id = "voc-050"
+kind = "vocab"
+front = "почему́"
+back = "pourquoi"
+level = 25
+
+[[card]]
+id = "voc-051"
+kind = "vocab"
+front = "когда́"
+back = "quand"
+level = 26
+
+[[card]]
+id = "voc-052"
+kind = "vocab"
+front = "мно́го"
+back = "beaucoup"
+level = 26
+
+[[card]]
+id = "voc-053"
+kind = "vocab"
+front = "немно́го"
+back = "un peu"
+level = 27
+
+[[card]]
+id = "voc-054"
+kind = "vocab"
+front = "сейча́с"
+back = "maintenant"
+level = 27
+
+[[card]]
+id = "voc-055"
+kind = "vocab"
+front = "всегда́"
+back = "toujours"
+level = 28
+
+[[card]]
+id = "voc-056"
+kind = "vocab"
+front = "ничего́"
+back = "rien"
+note = "Prononcé « nitchivó »"
+level = 28
+
+[[card]]
+id = "voc-057"
+kind = "vocab"
+front = "сло́во"
+back = "mot"
+level = 29
+
+[[card]]
+id = "voc-058"
+kind = "vocab"
+front = "язы́к"
+back = "langue (et la langue dans la bouche)"
+note = "ру́сский язы́к"
+level = 29
+
+[[card]]
+id = "voc-059"
+kind = "vocab"
+front = "вре́мя"
+back = "temps"
+note = "Neutre malgré le -я !"
+level = 30
+
+[[card]]
+id = "voc-060"
+kind = "vocab"
+front = "день"
+back = "jour"
+note = "Masculin. До́брый день!"
+level = 30
+
+[[card]]
+id = "voc-061"
+kind = "vocab"
+front = "ночь"
+back = "nuit"
+note = "Féminin. Споко́йной но́чи!"
+level = 31
+
+[[card]]
+id = "voc-062"
+kind = "vocab"
+front = "ко́шка / кот"
+back = "chatte / chat"
+level = 31
+
+[[card]]
+id = "voc-063"
+kind = "vocab"
+front = "соба́ка"
+back = "chien"
+level = 32
+
+[[card]]
+id = "gram-001"
+kind = "grammar"
+front = "Le genre des noms"
+back = "Masculin : consonne ou -й (стол, чай). Féminin : -а/-я (ма́ма, неде́ля). Neutre : -о/-е (окно́, мо́ре). En -ь : les deux (день m., ночь f.)."
+level = 2
+
+[[card]]
+id = "gram-002"
+kind = "grammar"
+front = "Pas de « être » au présent"
+back = "Le verbe « être » disparaît au présent."
+note = "Я студе́нт. = Je suis étudiant. Э́то мой дом. = C'est ma maison."
+level = 4
+
+[[card]]
+id = "gram-003"
+kind = "grammar"
+front = "« Avoir » : у меня́ есть"
+back = "Pour dire « j'ai », on dit « chez moi il y a »."
+note = "У меня́ есть кот. У тебя́ есть брат?"
+level = 6
+
+[[card]]
+id = "gram-004"
+kind = "grammar"
+front = "Le pluriel"
+back = "-ы après une consonne dure : стол → столы́. -и après к, г, х, ж, ш, ч, щ ou -ь/-й/-я : кни́га → кни́ги. Neutre : -о → -а : окно́ → о́кна."
+level = 8
+
+[[card]]
+id = "gram-005"
+kind = "grammar"
+front = "La règle des 7 lettres"
+back = "Après г, к, х, ж, ш, ч, щ on n'écrit jamais ы, toujours и."
+note = "кни́ги, ма́льчики, ножи́"
+level = 10
+
+[[card]]
+id = "gram-006"
+kind = "grammar"
+front = "Conjugaison 1 (-ешь)"
+back = "чита́ть : я чита́ю, ты чита́ешь, он чита́ет, мы чита́ем, вы чита́ете, они́ чита́ют"
+note = "Même modèle : знать, понима́ть, де́лать"
+level = 12
+
+[[card]]
+id = "gram-007"
+kind = "grammar"
+front = "Conjugaison 2 (-ишь)"
+back = "говори́ть : я говорю́, ты говори́шь, он говори́т, мы говори́м, вы говори́те, они́ говоря́т"
+note = "Même modèle : люби́ть, смотре́ть"
+level = 14
+
+[[card]]
+id = "gram-008"
+kind = "grammar"
+front = "L'accusatif (le complément)"
+back = "Féminin : -а → -у, -я → -ю. Masculin et neutre non vivants : inchangés."
+note = "Я чита́ю кни́гу. Я люблю́ ма́му. Я ви́жу стол."
+level = 16
+
+[[card]]
+id = "gram-009"
+kind = "grammar"
+front = "Le prépositionnel (le lieu)"
+back = "в / на + terminaison -е. Les noms en -ия font -ии."
+note = "в до́ме, на столе́, в Москве́, в Росси́и"
+level = 18
+
+[[card]]
+id = "gram-010"
+kind = "grammar"
+front = "Les possessifs"
+back = "мой (masc.), моя́ (fém.), моё (neutre), мои́ (pluriel). Pareil : твой, твоя́, твоё, твои́."
+note = "мой брат, моя́ сестра́, моё окно́"
+level = 20
+
+[[card]]
+id = "gram-011"
+kind = "grammar"
+front = "La négation"
+back = "не se place juste avant le mot nié. нет = non, ou « il n'y a pas » + génitif."
+note = "Я не понима́ю. У меня́ нет вре́мени."
+level = 22
+
+[[card]]
+id = "gram-012"
+kind = "grammar"
+front = "Le о sans accent"
+back = "Sans accent, о se prononce « a ». D'où l'importance de l'accent tonique."
+note = "молоко́ → « malakó », хорошо́ → « kharachó »"
+level = 24
+
+[[card]]
+id = "gram-013"
+kind = "grammar"
+front = "Consonnes finales assourdies"
+back = "En fin de mot : б→p, в→f, г→k, д→t, ж→ch, з→s."
+note = "хлеб « khlep », го́род « górat », муж « mouch »"
+level = 26
+
+[[card]]
+id = "gram-014"
+kind = "grammar"
+front = "Ты ou Вы ?"
+back = "ты = tutoiement. Вы = vouvoiement ou pluriel."
+note = "Как тебя́ зову́т? / Как Вас зову́т?"
+level = 28
+
+[[card]]
+id = "gram-015"
+kind = "grammar"
+front = "идти́ ou ходи́ть ?"
+back = "идти́ : une direction, en ce moment. ходи́ть : habitude ou aller-retour."
+note = "Я иду́ домо́й. / Я хожу́ в шко́лу."
+level = 30
+
+[[card]]
+id = "gram-016"
+kind = "grammar"
+front = "Les aspects (intro)"
+back = "Imperfectif = action en cours ou répétée. Perfectif = action terminée, avec un résultat."
+note = "чита́ть / прочита́ть, де́лать / сде́лать"
+level = 32
+
+[[card]]
+id = "gram-017"
+kind = "grammar"
+front = "Les nombres et le génitif"
+back = "1 → nominatif, 2 à 4 → génitif singulier, 5 et plus → génitif pluriel."
+note = "оди́н час, два часа́, пять часо́в"
+level = 34
+
+[[card]]
+id = "gram-018"
+kind = "grammar"
+front = "хоте́ть est irrégulier"
+back = "я хочу́, ты хо́чешь, он хо́чет, мы хоти́м, вы хоти́те, они́ хотя́т"
+note = "Я хочу́ ко́фе."
+level = 36
+
+[[card]]
+id = "gram-019"
+kind = "grammar"
+front = "Le passé"
+back = "Radical + -л (masc.), -ла (fém.), -ло (neutre), -ли (pluriel)."
+note = "Он чита́л. Она́ чита́ла. Мы чита́ли."
+level = 38
+
+[[card]]
+id = "gram-020"
+kind = "grammar"
+front = "Les adjectifs"
+back = "Masc. -ый/-ий/-ой, fém. -ая/-яя, neutre -ое/-ее, pluriel -ые/-ие."
+note = "но́вый дом, но́вая кни́га, но́вое окно́"
+level = 40
+
+[[card]]
+id = "phr-001"
+kind = "phrase"
+front = "Как дела́?"
+back = "Comment ça va ?"
+note = "Хорошо́, спаси́бо! А у тебя́?"
+level = 1
+
+[[card]]
+id = "phr-002"
+kind = "phrase"
+front = "Меня́ зову́т…"
+back = "Je m'appelle…"
+note = "Littéralement « on m'appelle »"
+level = 2
+
+[[card]]
+id = "phr-003"
+kind = "phrase"
+front = "О́чень прия́тно"
+back = "Enchanté"
+level = 3
+
+[[card]]
+id = "phr-004"
+kind = "phrase"
+front = "Я не понима́ю"
+back = "Je ne comprends pas"
+level = 4
+
+[[card]]
+id = "phr-005"
+kind = "phrase"
+front = "Повтори́те, пожа́луйста"
+back = "Répétez, s'il vous plaît"
+level = 5
+
+[[card]]
+id = "phr-006"
+kind = "phrase"
+front = "Ско́лько сто́ит?"
+back = "Combien ça coûte ?"
+level = 6
+
+[[card]]
+id = "phr-007"
+kind = "phrase"
+front = "Где туале́т?"
+back = "Où sont les toilettes ?"
+level = 7
+
+[[card]]
+id = "phr-008"
+kind = "phrase"
+front = "До свида́ния"
+back = "Au revoir"
+level = 8
+
+[[card]]
+id = "phr-009"
+kind = "phrase"
+front = "Пока́!"
+back = "Salut ! (en partant)"
+note = "Familier"
+level = 9
+
+[[card]]
+id = "phr-010"
+kind = "phrase"
+front = "До́брое у́тро"
+back = "Bonjour (le matin)"
+level = 10
+
+[[card]]
+id = "phr-011"
+kind = "phrase"
+front = "До́брый день"
+back = "Bonjour (la journée)"
+level = 11
+
+[[card]]
+id = "phr-012"
+kind = "phrase"
+front = "До́брый ве́чер"
+back = "Bonsoir"
+level = 12
+
+[[card]]
+id = "phr-013"
+kind = "phrase"
+front = "Споко́йной но́чи"
+back = "Bonne nuit"
+level = 13
+
+[[card]]
+id = "phr-014"
+kind = "phrase"
+front = "Ничего́ стра́шного"
+back = "Pas grave"
+level = 14
+
+[[card]]
+id = "phr-015"
+kind = "phrase"
+front = "Коне́чно!"
+back = "Bien sûr !"
+note = "Prononcé « kaniéchna »"
+level = 15
+
+[[card]]
+id = "phr-016"
+kind = "phrase"
+front = "Я немно́го говорю́ по-ру́сски"
+back = "Je parle un peu russe"
+level = 16
+
+[[card]]
+id = "phr-017"
+kind = "phrase"
+front = "Мне нра́вится…"
+back = "J'aime… (ça me plaît)"
+note = "Мне нра́вится э́та кни́га."
+level = 17
+
+[[card]]
+id = "phr-018"
+kind = "phrase"
+front = "Дава́й!"
+back = "Allez ! / D'accord !"
+note = "Дава́й пойдём! = Allons-y !"
+level = 18
+
+[[card]]
+id = "phr-019"
+kind = "phrase"
+front = "Всё хорошо́"
+back = "Tout va bien"
+level = 19
+
+[[card]]
+id = "phr-020"
+kind = "phrase"
+front = "Я из Фра́нции"
+back = "Je viens de France"
+level = 20
+
+[[card]]
+id = "phr-021"
+kind = "phrase"
+front = "Не́ за что"
+back = "De rien"
+note = "Prononcé « niéza chta »"
+level = 21
