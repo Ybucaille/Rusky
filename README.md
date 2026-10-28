@@ -1,6 +1,6 @@
 # rusky 🇷🇺
 
-Une popup toutes les 25 minutes pour apprendre le russe : un mot, une expression, une lettre ou une règle de grammaire. Tu réponds « Je savais » ou « Pas su », et la répétition espacée (façon Anki) décide quand la carte revient.
+Une popup toutes les 25 minutes pour apprendre le russe : un mot, une expression, une lettre ou une règle de grammaire. Tu choisis la bonne réponse parmi trois, et la répétition espacée (façon Anki) décide quand la carte revient.
 
 126 cartes de départ (niveau débutant, accents toniques indiqués) :
 alphabet (22), vocabulaire (63), grammaire (20), expressions (21).
@@ -89,8 +89,8 @@ Réimporter un fichier met à jour le texte des cartes sans perdre ta progressio
 
 ## Comment marche la répétition
 
-- Nouvelle carte sue → revient dans 4 h, puis 1 jour, 3 jours, puis l'intervalle est multiplié (×2,5 au départ).
-- Pas sue → revient dans 10 minutes, et deviendra un peu plus fréquente à l'avenir.
+- Bonne réponse → revient dans 4 h, puis 1 jour, 3 jours, puis l'intervalle est multiplié (×2,5 au départ).
+- Mauvaise réponse → revient dans 10 minutes, et deviendra un peu plus fréquente à l'avenir.
 - Une fois connue, une carte de vocabulaire ou d'expression est parfois posée à l'envers (français → russe).
 
 Les données sont dans `~/.local/share/rusky/rusky.db` (SQLite).
