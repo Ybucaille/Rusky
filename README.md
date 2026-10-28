@@ -8,9 +8,12 @@ alphabet (22), vocabulaire (63), grammaire (20), expressions (21).
 ## Installation sur Arch
 
 ```bash
-cd rusky
-makepkg -si
+./install.sh            # paquet Arch + service systemd lancé
+./install.sh --cargo    # sans sudo, binaire dans ~/.cargo/bin
+./install.sh --uninstall
 ```
+
+À la main : `makepkg -si`
 
 Ou sans paquet : `cargo install --path .` (le binaire va dans `~/.cargo/bin`).
 
