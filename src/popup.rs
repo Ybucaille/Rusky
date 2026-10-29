@@ -45,8 +45,17 @@ pub fn present(quiz: &Quiz) -> Result<Outcome> {
     let m = popup.main.clone();
     popup.view.show(quiz, on_answer, Rc::new(move || m.quit()));
 
+    #[cfg(feature = "demo")]
+    let rec = if crate::demo::active() { Some(demo_script(&popup, quiz)?) } else { None };
     let expired = popup.run();
     let outcome = outcome.replace(Outcome::Dismissed);
+    #[cfg(feature = "demo")]
+    if let Some(rec) = rec {
+        // On filme aussi la sortie de la carte.
+        popup.card.add_css_class("hidden");
+        pump(500);
+        rec.stop();
+    }
     popup.close();
     Ok(match outcome {
         // Partie toute seule avant toute réponse : reportée.
@@ -54,6 +63,22 @@ pub fn present(quiz: &Quiz) -> Result<Outcome> {
         o => o,
     })
 }
+
+/// Vidéo du README : la popup répond juste toute seule, puis continue.
+#[cfg(feature = "demo")]
+fn demo_script(popup: &Popup, quiz: &Quiz) -> Result<Rc<crate::demo::Recorder>> {
+    let rec = crate::demo::Recorder::start(&popup.win.child().unwrap(), DEMO_W, DEMO_H, "popup")?;
+    let (v, c) = (popup.view.clone(), quiz.correct);
+    crate::demo::after(3000, move || v.press(c));
+    let v = popup.view.clone();
+    crate::demo::after(8000, move || v.next());
+    Ok(rec)
+}
+
+#[cfg(feature = "demo")]
+const DEMO_W: i32 = 432;
+#[cfg(feature = "demo")]
+const DEMO_H: i32 = 560;
 
 /// Petite popup d'info (niveau débloqué, pause…), refermée au bout de 6 s.
 pub fn info(title: &str, body: &str) {
@@ -147,6 +172,11 @@ impl Popup {
         let bar = gtk::ProgressBar::builder().fraction(1.0).css_classes(["timer"]).build();
         card.append(&bar);
         win.set_child(Some(&card));
+        #[cfg(feature = "demo")]
+        if crate::demo::active() {
+            crate::demo::hide(&win);
+            win.set_size_request(DEMO_W, DEMO_H);
+        }
 
         let main = glib::MainLoop::new(None, false);
         let m = main.clone();
@@ -217,6 +247,10 @@ impl Popup {
 }
 
 fn update_input_region(win: &gtk::Window, card: &gtk::Box) {
+    #[cfg(feature = "demo")]
+    if crate::demo::active() {
+        return;
+    }
     if let (Some(b), Some(s)) = (card.compute_bounds(win), win.surface()) {
         let r = gtk::cairo::RectangleInt::new(b.x() as i32, b.y() as i32, b.width() as i32, b.height() as i32);
         s.set_input_region(Some(&gtk::cairo::Region::create_rectangle(&r)));

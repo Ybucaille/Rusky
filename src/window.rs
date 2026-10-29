@@ -92,6 +92,10 @@ pub fn open(db: Db) -> Result<()> {
         .build();
     stack.add_named(&summary, Some("summary"));
     win.set_child(Some(&stack));
+    #[cfg(feature = "demo")]
+    if crate::demo::active() {
+        demo_window(&win, &stack);
+    }
 
     let app = Rc::new(App {
         db,
@@ -142,6 +146,10 @@ pub fn open(db: Db) -> Result<()> {
     };
     heartbeat();
     glib::timeout_add_seconds_local(60, heartbeat);
+    #[cfg(feature = "demo")]
+    if crate::demo::active() {
+        demo_script(&app)?;
+    }
     let main = glib::MainLoop::new(None, false);
     let m = main.clone();
     win.connect_close_request(move |_| {
@@ -354,6 +362,8 @@ impl App {
         if cards.is_empty() {
             return;
         }
+        #[cfg(feature = "demo")]
+        let cards = if crate::demo::active() { cards.into_iter().take(3).collect() } else { cards };
         self.session.replace(Some(SessionState { cards, index: 0, good: 0, xp: 0, unlocked: None }));
         self.stack.set_visible_child_name("session");
         self.next_card();
@@ -400,6 +410,8 @@ impl App {
             // Hors du gestionnaire de clic : la carte est reconstruite.
             glib::idle_add_local_once(move || a.next_card());
         });
+        #[cfg(feature = "demo")]
+        DEMO_CORRECT.with(|c| c.set(quiz.correct));
         self.view.show(&quiz, on_answer, on_next);
     }
 
@@ -561,3 +573,55 @@ fn plural(n: i64, one: &str, many: &str) -> String {
 }
 
 use chrono::TimeZone;
+
+#[cfg(feature = "demo")]
+thread_local!(static DEMO_CORRECT: std::cell::Cell<usize> = const { std::cell::Cell::new(0) });
+
+#[cfg(feature = "demo")]
+const DEMO_SIZE: (i32, i32) = (1124, 980);
+
+/// Vidéo du README : fenêtre invisible à l'écran, encadrée comme une fenêtre d'application.
+#[cfg(feature = "demo")]
+fn demo_window(win: &gtk::Window, stack: &gtk::Stack) {
+    use gtk4_layer_shell::LayerShell;
+    win.init_layer_shell();
+    win.set_namespace(Some("rusky-demo"));
+    // La fenêtre layer-shell prend la taille de son contenu : on fixe celle du cadre.
+    stack.set_size_request(DEMO_SIZE.0 - 60, DEMO_SIZE.1 - 60);
+    win.add_css_class("demo");
+    stack.add_css_class("demo-frame");
+    stack.set_overflow(gtk::Overflow::Hidden);
+    crate::demo::hide(win);
+}
+
+/// Tableau de bord, une session de 3 cartes (dont une ratée), le bilan, retour au tableau.
+#[cfg(feature = "demo")]
+fn demo_script(app: &Rc<App>) -> Result<()> {
+    let rec = crate::demo::Recorder::start(&app.win.child().unwrap(), DEMO_SIZE.0, DEMO_SIZE.1, "window")?;
+    let (a, tick) = (app.clone(), std::rc::Rc::new(std::cell::Cell::new(0u32)));
+    glib::timeout_add_local(std::time::Duration::from_millis(1800), move || {
+        let n = tick.get();
+        tick.set(n + 1);
+        match a.stack.visible_child_name().as_deref() {
+            Some("dashboard") if n == 2 => a.start_session(Session::Review),
+            Some("dashboard") if n > 3 => {
+                rec.stop();
+                a.win.close();
+                return glib::ControlFlow::Break;
+            }
+            Some("session") if a.view.root.last_child().is_some_and(|w| w.has_css_class("next")) => a.view.next(),
+            Some("session") => {
+                let c = DEMO_CORRECT.with(std::cell::Cell::get);
+                // La deuxième carte est ratée, pour montrer la correction.
+                a.view.press(if n == 5 { (c + 1) % 3 } else { c });
+            }
+            Some("summary") if n % 3 == 0 => {
+                a.show_dashboard();
+                tick.set(2 + 2);
+            }
+            _ => {}
+        }
+        glib::ControlFlow::Continue
+    });
+    Ok(())
+}

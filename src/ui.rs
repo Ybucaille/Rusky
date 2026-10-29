@@ -88,8 +88,15 @@ progressbar.timer trough, progressbar.meter trough
 progressbar.timer progress { min-height: 2px; background: alpha(@accent, 0.7); border-radius: 2px; }
 
 /* ---- Fenêtre de révision ---- */
-window.rusky-app, window.rusky-app > * { background: @bg; color: @text; }
+window.rusky-app { background: @bg; color: @text; }
+window.rusky-app stack { background: @bg; }
 .page { padding: 28px 32px; }
+/* Vidéo du README : la fenêtre encadrée comme une fenêtre d'application. */
+window.rusky-app.demo { background: transparent; }
+window.rusky-app.demo stack.demo-frame {
+  border-radius: 18px; border: 1px solid @line; margin: 30px;
+  box-shadow: 0 16px 48px alpha(black, 0.55);
+}
 .wordmark { font-family: "Noto Serif Display", "Noto Serif", serif; font-size: 30px; font-weight: 600; }
 .wordmark-ru { font-family: "Noto Serif Display", "Noto Serif", serif; font-size: 16px; color: @muted; margin-left: 10px; }
 .panel { background: @surface; border: 1px solid @line; border-radius: 16px; padding: 18px 20px; }

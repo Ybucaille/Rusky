@@ -1,16 +1,38 @@
+<div align="center">
+
 # rusky
 
-Apprendre le russe par petites touches, sans y penser. Toutes les 25 minutes, une carte apparaît dans un coin de l'écran : une lettre, un mot, une expression ou une règle de grammaire, avec trois réponses au choix. La répétition espacée (façon Anki) décide quand chaque carte revient, et une fenêtre de révision montre ta progression.
+**Apprendre le russe par petites touches, sans y penser.**<br>
+Toutes les 25 minutes, une carte apparaît dans un coin de l'écran : trois réponses, la prononciation à la française, une explication en une phrase.
 
-- **2 007 cartes** sur **10 niveaux**, du premier alphabet jusqu'à l'argot, aux proverbes et aux références qu'un natif reconnaît.
-- **Prononciation à la française** sur chaque mot russe, calculée depuis l'accent tonique : молоко́ → ma·la·**ko**.
-- **Choix multiple** : trois réponses, verdict immédiat, explication en une phrase, sans jargon.
-- **XP et niveaux** qui se débloquent quand tu maîtrises le précédent.
-- **Fenêtre de révision** : statistiques, activité sur 30 jours, points faibles, sessions à la demande.
+[![CI](https://github.com/Ybucaille/Rusky/actions/workflows/ci.yml/badge.svg)](https://github.com/Ybucaille/Rusky/actions/workflows/ci.yml)
+[![Rust 2024](https://img.shields.io/badge/rust-2024-dea584?logo=rust&logoColor=white)](Cargo.toml)
+[![GTK 4](https://img.shields.io/badge/GTK-4-4a86cf?logo=gtk&logoColor=white)](https://gtk.org)
+[![Wayland](https://img.shields.io/badge/Wayland-layer--shell-ffbc00?logo=wayland&logoColor=white)](#installation-arch-linux)
+[![Cartes](https://img.shields.io/badge/cartes-2%20007-7aa2f7)](#les-10-niveaux)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-<p>
-  <img src="docs/popup.png" alt="La popup : une carte et trois réponses" height="360">
-  <img src="docs/tableau-de-bord.png" alt="La fenêtre de révision" height="360">
+[Installation](#installation-arch-linux) · [Les 10 niveaux](#les-10-niveaux) · [Utilisation](#utilisation) · [Tes cartes](#ajouter-tes-propres-cartes)
+
+<a href="docs/demo.mp4"><img src="docs/demo.gif" alt="Démo de rusky : une carte apparaît, la bonne réponse passe au vert avec +10 XP, puis la fenêtre de révision montre la progression et une session de trois cartes" width="860"></a>
+
+<sub>Une vraie session, filmée hors écran par rusky lui-même (base de démonstration avec un mois d'historique). <a href="docs/demo.mp4">MP4 avec musique</a>.</sub>
+
+</div>
+
+## Pourquoi rusky
+
+- **Sans effort de volonté.** Les cartes viennent à toi pendant que tu travailles ; une réponse prend cinq secondes.
+- **2 007 cartes sur 10 niveaux**, du premier alphabet jusqu'à l'argot, aux proverbes et aux sous-entendus qu'un natif seul entend.
+- **Lisible dès le premier jour.** Chaque mot russe a sa prononciation à la française, calculée depuis l'accent tonique : молоко́ → ma·la·**ko**.
+- **Choix multiple**, verdict immédiat et explication sans jargon.
+- **XP et niveaux** qui s'ouvrent quand tu maîtrises le précédent, et une répétition espacée façon Anki.
+- **Une fenêtre de révision** : statistiques, activité sur 30 jours, points faibles, sessions à la demande.
+
+<p align="center">
+  <img src="docs/popup.png" alt="La popup : une phrase russe, sa prononciation et trois réponses" height="380">
+  &nbsp;
+  <img src="docs/tableau-de-bord.png" alt="La fenêtre de révision : niveau, XP, statistiques et activité" height="380">
 </p>
 
 ## Les 10 niveaux
@@ -116,3 +138,15 @@ python3 data/src/build.py data/src/niveau-2.txt data/niveau-2.toml t2
 ```
 
 Le script refuse un mot de plusieurs syllabes sans accent, une lettre latine glissée dans un mot russe, un doublon ou une question de grammaire mal formée. `cargo test` vérifie ensuite le paquet entier.
+
+## Refaire la vidéo
+
+```bash
+python3 scripts/make-demo.py --db chemin/vers/une-base-de-demo.db
+```
+
+rusky est compilé avec l'option `demo` et filme lui-même ses fenêtres hors écran (rien du bureau n'apparaît), puis le script compose les scènes, ajoute la musique et écrit `docs/demo.mp4` et `docs/demo.gif`.
+
+## Licence
+
+[MIT](LICENSE)

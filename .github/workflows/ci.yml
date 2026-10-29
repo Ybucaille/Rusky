@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests, Clippy et paquet de cartes
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    # Arch : gtk4 et gtk4-layer-shell récents, comme sur la machine cible.
+    container: archlinux:latest
+    steps:
+      - name: Dépendances
+        run: pacman -Syu --noconfirm --needed base-devel git gtk4 gtk4-layer-shell rust python
+      - uses: actions/checkout@v7
+      - name: Paquet de cartes (accents, doublons, lettres mélangées)
+        run: |
+          for src in data/src/niveau-*.txt; do
+            name=$(basename "$src" .txt)
+            tmp=$(mktemp)
+            python3 data/src/build.py "$src" "$tmp" check >/dev/null
+          done
+      - name: Clippy
+        run: cargo clippy --locked --all-targets -- -D warnings
+      - name: Tests
+        run: cargo test --locked

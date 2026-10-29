@@ -1,6 +1,8 @@
 mod config;
 mod content;
 mod db;
+#[cfg(feature = "demo")]
+mod demo;
 mod popup;
 mod progress;
 mod pron;
@@ -69,6 +71,10 @@ enum Cmd {
     Resume,
     /// Montre où sont la config et la base
     Paths,
+    /// Enregistre les scènes de la vidéo du README (voir scripts/make-demo.sh)
+    #[cfg(feature = "demo")]
+    #[command(hide = true)]
+    DemoRecord { out: PathBuf },
 }
 
 fn now() -> i64 {
@@ -95,6 +101,14 @@ fn main() -> Result<()> {
     let cli = Cli::parse();
     match cli.cmd.unwrap_or(Cmd::Revision) {
         Cmd::Revision => window::open(open_db()?),
+        #[cfg(feature = "demo")]
+        Cmd::DemoRecord { out } => {
+            demo::enable(&out)?;
+            let cfg = config::load()?;
+            let db = open_db()?;
+            show_one(&db, &cfg)?;
+            window::open(db)
+        }
         Cmd::Run => run(),
         Cmd::Now => {
             let cfg = config::load()?;
