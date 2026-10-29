@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rusky — le russe par petites touches</title>
+<meta name="description" content="Une carte de russe toutes les 25 minutes, dans un coin de l'écran : 2 007 cartes sur 10 niveaux, la prononciation à la française, de l'alphabet à l'argot. Libre, pour Linux et Wayland.">
+<meta property="og:title" content="rusky — le russe par petites touches">
+<meta property="og:description" content="2 007 cartes, 10 niveaux, la prononciation à la française. Libre, pour Linux et Wayland.">
+<meta property="og:image" content="assets/tableau-de-bord.png?v=dev">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23f4efe4'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='42' text-anchor='middle' fill='%231a1814'%3E%D1%8F%3C/text%3E%3Cpath d='M38 10 l6 -6' stroke='%23c0392b' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4efe4;
+    --paper-deep: #ebe4d4;
+    --ink: #1a1814;
+    --ink-soft: #4a453c;
+    --ink-faint: #8a8273;
+    --rule: #cfc5b0;
+    --red: #c0392b;
+    --red-soft: rgba(192, 57, 43, 0.12);
+    --green: #2e7d4f;
+    --mark: #f6e7a8;
+    --serif: "Noto Serif", Georgia, serif;
+    --display: "Noto Serif Display", "Noto Serif", Georgia, serif;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+    --hand: "Caveat", "Segoe Print", cursive;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1b1915; --paper-deep: #24211b; --ink: #ece5d6; --ink-soft: #c2baa8; --ink-faint: #8a8273;
+      --rule: #3d382e; --red: #e0705f; --red-soft: rgba(224, 112, 95, 0.14); --green: #7fc79a; --mark: #4a3f1a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1b1915; --paper-deep: #24211b; --ink: #ece5d6; --ink-soft: #c2baa8; --ink-faint: #8a8273;
+    --rule: #3d382e; --red: #e0705f; --red-soft: rgba(224, 112, 95, 0.14); --green: #7fc79a; --mark: #4a3f1a;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.6 var(--serif);
+    /* grain de papier, discret */
+    background-image: radial-gradient(rgba(0,0,0,0.035) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+  a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
+  a:hover { color: var(--red); }
+  .page { max-width: 1120px; margin: 0 auto; padding: 0 40px; }
+
+  /* ---- En-tête courant du dictionnaire ---- */
+  .running-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font: 500 12px/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-faint);
+    padding: 26px 0 12px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .running-head b { color: var(--ink); font-weight: 500; }
+  .running-head nav a { margin-left: 22px; text-decoration: none; }
+  .double-rule { border-top: 1px solid var(--ink); margin-top: 3px; }
+
+  /* ---- Entrées ---- */
+  .ru { font-family: var(--display); }
+  .acc { position: relative; color: var(--red); }
+  .acc::after {   /* le cercle au crayon rouge autour de la voyelle accentuée */
+    content: ""; position: absolute; left: -0.18em; right: -0.18em; top: 0.08em; bottom: -0.02em;
+    border: 2px solid var(--red); border-radius: 50% 45% 55% 50%; transform: rotate(-8deg); opacity: 0.75;
+  }
+  .headword { font: 400 clamp(64px, 11vw, 132px)/0.95 var(--display); letter-spacing: -0.01em; margin: 0; }
+  .ipa { font: 400 18px var(--mono); color: var(--ink-soft); }
+  .ipa .s { color: var(--red); font-weight: 500; }
+  .pos { font-style: italic; color: var(--ink-faint); }
+  .sense-num { font-weight: 600; margin-right: 6px; }
+  .see { font-variant: small-caps; letter-spacing: 0.04em; }
+
+  .hand {
+    font-family: var(--hand); color: var(--red); font-size: 26px; line-height: 1.1;
+    transform: rotate(-4deg); display: inline-block;
+  }
+
+  /* ---- Ouverture ---- */
+  .hero {
+    display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 56px;
+    padding: 56px 0 64px; border-bottom: 1px solid var(--rule);
+  }
+  .entry-meta { display: flex; flex-wrap: wrap; gap: 14px; align-items: baseline; margin: 18px 0 6px; }
+  .margin-note { position: relative; }
+  .margin-note .hand { position: absolute; left: 62%; top: -34px; white-space: nowrap; }
+  .margin-note svg { position: absolute; left: 58%; top: -6px; width: 70px; height: 42px; overflow: visible; }
+  .definition { max-width: 600px; }
+  .definition p { margin: 10px 0; }
+  .lede { font: 400 clamp(26px, 3vw, 34px)/1.25 var(--display); margin: 30px 0 22px; max-width: 620px; }
+  .lede em { background: linear-gradient(transparent 58%, var(--mark) 58%); font-style: normal; padding: 0 2px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 28px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    font: 500 15px var(--mono); text-decoration: none; letter-spacing: 0.02em;
+    padding: 12px 18px; border: 1.5px solid var(--ink); border-radius: 2px;
+    background: var(--ink); color: var(--paper); transition: transform .15s, box-shadow .15s;
+    box-shadow: 3px 3px 0 var(--red);
+  }
+  .btn:hover { color: var(--paper); transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--red); }
+  .btn.ghost { background: transparent; color: var(--ink); box-shadow: none; }
+  .btn.ghost:hover { color: var(--red); border-color: var(--red); }
+  .fine { font: 13px var(--mono); color: var(--ink-faint); }
+
+  /* ---- Le marque-page : un vrai quiz ---- */
+  .bookmark {
+    position: relative; align-self: start; margin-top: 8px;
+    background: var(--paper-deep); border: 1px solid var(--rule);
+    padding: 26px 24px 30px; box-shadow: 0 1px 0 var(--rule), 8px 10px 0 -2px rgba(0,0,0,0.06);
+    transform: rotate(1.2deg);
+  }
+  .bookmark::before {   /* le ruban */
+    content: ""; position: absolute; top: -18px; right: 34px; width: 22px; height: 64px;
+    background: var(--red); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
+  }
+  .bm-head { font: 500 11px var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); }
+  .bm-word { font: 400 56px/1.05 var(--display); text-align: center; margin: 18px 0 2px; }
+  .bm-pron { font: 15px var(--mono); text-align: center; color: var(--ink-soft); }
+  .bm-pron .s { color: var(--red); font-weight: 500; }
+  .bm-q { text-align: center; font-style: italic; color: var(--ink-soft); margin: 12px 0 14px; }
+  .bm-choices { display: grid; gap: 8px; }
+  .bm-choices button {
+    font: 16px var(--serif); color: var(--ink); background: var(--paper);
+    border: 1px solid var(--rule); border-radius: 2px; padding: 10px 12px; cursor: pointer; text-align: left;
+    transition: border-color .12s, background .12s;
+  }
+  .bm-choices button:hover:not(:disabled) { border-color: var(--ink); }
+  .bm-choices button:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+  .bm-choices button .n { font: 12px var(--mono); color: var(--ink-faint); margin-right: 8px; }
+  .bm-choices button.right { border-color: var(--green); background: color-mix(in srgb, var(--green) 12%, var(--paper)); }
+  .bm-choices button.wrong { border-color: var(--red); background: var(--red-soft); text-decoration: line-through var(--red); }
+  .bm-choices button:disabled { cursor: default; }
+  .bm-verdict { min-height: 64px; margin-top: 14px; font-size: 15px; color: var(--ink-soft); }
+  .bm-verdict .hand { font-size: 28px; transform: rotate(-3deg); }
+  .bm-verdict .hand.ok { color: var(--green); }
+  .bm-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+  .bm-next { font: 500 13px var(--mono); background: none; border: none; color: var(--ink); cursor: pointer; padding: 0; text-decoration: underline var(--red); text-underline-offset: 4px; }
+  .bm-score { font: 13px var(--mono); color: var(--ink-faint); }
+
+  /* ---- Sections ---- */
+  section { padding: 64px 0; border-bottom: 1px solid var(--rule); }
+  .section-head { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 32px; margin-bottom: 28px; }
+  .section-label { font: 500 12px var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); padding-top: 12px; }
+  .section-head h2 { font: 400 clamp(32px, 4vw, 44px)/1.15 var(--display); margin: 0; }
+  .body-col { margin-left: 212px; }
+
+  /* sens numérotés */
+  .senses { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 48px; }
+  .sense h3 { font: 600 19px var(--serif); margin: 0 0 6px; }
+  .sense h3 .sense-num { color: var(--red); font-family: var(--display); font-size: 26px; font-weight: 400; }
+  .sense p { margin: 0; color: var(--ink-soft); }
+  .example { display: block; margin-top: 8px; font-size: 15px; color: var(--ink-faint); }
+  .example .ru { color: var(--ink); font-size: 18px; }
+
+  /* planche */
+  .plate { margin: 0; }
+  .plate-frame { border: 1px solid var(--ink); padding: 10px; background: var(--paper-deep); }
+  .plate-frame video, .plate-frame img { display: block; width: 100%; height: auto; background: #111; }
+  .plate figcaption { display: flex; justify-content: space-between; gap: 20px; margin-top: 10px; font-size: 14px; color: var(--ink-soft); }
+  .plate figcaption b { font-variant: small-caps; letter-spacing: 0.06em; font-weight: 600; color: var(--ink); }
+  .sound { flex-shrink: 0; white-space: nowrap; align-self: flex-start; font: 500 13px var(--mono); background: none; border: 1px solid var(--rule); padding: 4px 10px; cursor: pointer; color: var(--ink); }
+  .sound:hover { border-color: var(--ink); }
+
+  /* table des matières */
+  .toc { list-style: none; padding: 0; margin: 0; counter-reset: none; }
+  .toc li { display: grid; grid-template-columns: 52px auto 1fr auto; align-items: baseline; gap: 0 10px; padding: 9px 0; }
+  .toc .num { font: 400 26px var(--display); color: var(--red); }
+  .toc .title { font-weight: 600; }
+  .toc .title small { font-weight: 400; color: var(--ink-faint); margin-left: 8px; font-style: italic; }
+  .toc .leader { border-bottom: 1.5px dotted var(--ink-faint); transform: translateY(-5px); min-width: 20px; }
+  .toc .pages { font: 15px var(--mono); color: var(--ink-soft); }
+  .toc li.last .title::after { content: " ✎"; color: var(--red); }
+
+  /* mode d'emploi */
+  .howto { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
+  pre {
+    margin: 10px 0 0; padding: 16px 18px; overflow-x: auto;
+    background: var(--ink); color: var(--paper); font: 13px/1.7 var(--mono); border-radius: 2px;
+    white-space: pre-wrap; overflow-wrap: anywhere;
+    box-shadow: 3px 3px 0 var(--red);
+  }
+  pre .c { color: var(--ink-faint); }
+  .steps { margin: 0; padding-left: 0; list-style: none; counter-reset: s; }
+  .steps li { counter-increment: s; position: relative; padding-left: 40px; margin-bottom: 16px; color: var(--ink-soft); }
+  .steps li::before { content: counter(s, lower-roman) "."; position: absolute; left: 0; font: italic 400 20px var(--display); color: var(--red); }
+  .steps li b { color: var(--ink); }
+  kbd { font: 13px var(--mono); border: 1px solid var(--rule); border-bottom-width: 2px; padding: 0 5px; border-radius: 3px; background: var(--paper); }
+
+  /* colophon */
+  footer { padding: 48px 0 60px; text-align: center; color: var(--ink-faint); font-size: 14px; }
+  .fleuron { font: 28px var(--display); color: var(--red); display: block; margin-bottom: 10px; }
+  footer p { margin: 4px 0; }
+
+  @media (max-width: 900px) {
+    .page { padding: 0 20px; }
+    .hero { grid-template-columns: 1fr; gap: 48px; padding-top: 40px; }
+    .bookmark { transform: none; }
+    .section-head { grid-template-columns: 1fr; gap: 6px; }
+    .body-col { margin-left: 0; }
+    .senses, .howto { grid-template-columns: 1fr; }
+    .running-head nav { display: none; }
+    .margin-note .hand { left: auto; right: 0; top: -40px; font-size: 22px; }
+    .margin-note svg { display: none; }
+    .toc li { grid-template-columns: 40px 1fr auto; }
+    .toc .leader { display: none; }
+    .toc .title small { display: block; margin-left: 0; }
+    .plate figcaption { flex-direction: column; gap: 6px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="running-head">
+      <span><b>Русский</b> · Français</span>
+      <nav><a href="#sens">Sens</a><a href="#planche">Planche</a><a href="#table">Table</a><a href="#emploi">Mode d'emploi</a><a href="https://github.com/Ybucaille/Rusky">GitHub</a></nav>
+      <span>p. 1 / 2 007</span>
+    </div>
+    <div class="double-rule"></div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <div class="margin-note">
+          <span class="hand">ici, on appuie !</span>
+          <svg viewBox="0 0 70 42" aria-hidden="true"><path d="M66 4 C 46 6, 28 18, 10 36" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round"/><path d="M10 36 l3 -11 M10 36 l11 -3" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round"/></svg>
+          <h1 class="headword ru">р<span class="acc">у́</span>сский</h1>
+        </div>
+        <div class="entry-meta">
+          <span class="ipa">[ <span class="s">rous</span>·kiï ]</span>
+          <span class="pos">adj.</span>
+          <span class="fine">→ voir aussi <span class="see">rusky</span></span>
+        </div>
+        <div class="definition">
+          <p><span class="sense-num">1.</span>Russe, qui a trait à la Russie ou à sa langue.</p>
+          <p><span class="sense-num">2.</span><span class="see">rusky</span> <span class="pos">n. m.</span> — Petit programme libre qui pose une carte de russe dans un coin de l'écran, toutes les 25 minutes.</p>
+        </div>
+        <p class="lede">Apprendre le russe <em>par petites touches</em>, sans y penser, de l'alphabet jusqu'à l'argot.</p>
+        <div class="actions">
+          <a class="btn" href="#emploi">Installer rusky</a>
+          <a class="btn ghost" href="https://github.com/Ybucaille/Rusky">Le code sur GitHub</a>
+        </div>
+        <p class="fine" style="margin-top:16px">Libre (MIT) · Linux, Wayland · Rust et GTK&nbsp;4</p>
+      </div>
+
+      <aside class="bookmark" aria-label="Essayer une carte">
+        <div class="bm-head" id="bm-head">Vocabulaire · niveau 1</div>
+        <div class="bm-word ru" id="bm-word" lang="ru"></div>
+        <div class="bm-pron" id="bm-pron"></div>
+        <div class="bm-q" id="bm-q"></div>
+        <div class="bm-choices" id="bm-choices"></div>
+        <div class="bm-verdict" id="bm-verdict" aria-live="polite"></div>
+        <div class="bm-foot">
+          <span class="bm-score" id="bm-score">0 / 0</span>
+          <button class="bm-next" id="bm-next" type="button">Carte suivante →</button>
+        </div>
+      </aside>
+    </div>
+
+    <section id="sens">
+      <div class="section-head">
+        <div class="section-label">Sens</div>
+        <h2>Ce que fait rusky, en six définitions.</h2>
+      </div>
+      <div class="body-col senses">
+        <div class="sense">
+          <h3><span class="sense-num">1</span>Une carte, puis rien.</h3>
+          <p>Toutes les 25 minutes, une carte se pose dans un coin de l'écran, par-dessus tes fenêtres. Une réponse prend cinq secondes ; sans réponse, elle repart seule.</p>
+        </div>
+        <div class="sense">
+          <h3><span class="sense-num">2</span>Lisible dès le premier jour.</h3>
+          <p>Chaque mot russe porte sa prononciation à la française, calculée depuis l'accent tonique : le о sans accent se dit « a », les consonnes finales s'assourdissent.</p>
+          <span class="example"><span class="ru" lang="ru">молок<span class="acc">о́</span></span> → ma·la·<b style="color:var(--red)">ko</b></span>
+        </div>
+        <div class="sense">
+          <h3><span class="sense-num">3</span>Trois réponses, une phrase d'explication.</h3>
+          <p>Un choix multiple, un verdict immédiat, puis une explication courte et sans jargon : pas de « génitif pluriel », mais « après beaucoup, le mot change de fin ».</p>
+        </div>
+        <div class="sense">
+          <h3><span class="sense-num">4</span>La mémoire, à la façon d'Anki.</h3>
+          <p>Une bonne réponse espace la carte (4 h, 1 jour, 3 jours, puis de plus en plus) ; une erreur la ramène dans dix minutes.</p>
+        </div>
+        <div class="sense">
+          <h3><span class="sense-num">5</span>Des niveaux qui s'ouvrent.</h3>
+          <p>De l'XP à chaque réponse, et le niveau suivant s'ouvre quand tu maîtrises 70 % du précédent. Les mauvaises réponses proposées viennent des niveaux voisins.</p>
+        </div>
+        <div class="sense">
+          <h3><span class="sense-num">6</span>Jusqu'aux sous-entendus.</h3>
+          <p>Au dernier niveau : l'argot, les particules, les faux amis, les répliques de films cultes et l'ironie d'un « ну да » qu'un natif seul entend.</p>
+          <span class="example"><span class="ru" lang="ru">Да нет</span> — « oui non », c'est-à-dire… non.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="planche">
+      <div class="section-head">
+        <div class="section-label">Planche I</div>
+        <h2>Une session, du début à la fin.</h2>
+      </div>
+      <figure class="plate body-col">
+        <div class="plate-frame">
+          <video id="demo" src="assets/demo.mp4?v=dev" poster="assets/tableau-de-bord.png?v=dev" autoplay muted loop playsinline preload="metadata"
+                 aria-label="Démo : une carte apparaît, la bonne réponse passe au vert, puis la fenêtre de révision montre la progression et une session de trois cartes"></video>
+        </div>
+        <figcaption>
+          <span><b>Fig. 1.</b> — La carte, puis la fenêtre de révision : niveau, XP, activité, et une session de trois cartes. Filmé hors écran par rusky lui-même, sur une base de démonstration.</span>
+          <button class="sound" id="sound" type="button" aria-pressed="false">♪ Son</button>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="table">
+      <div class="section-head">
+        <div class="section-label">Table</div>
+        <h2>Dix niveaux, 2 007 cartes.</h2>
+      </div>
+      <ol class="toc body-col">
+        <li><span class="num">I</span><span class="title">Premiers pas<small>l'alphabet complet, les premiers mots</small></span><span class="leader"></span><span class="pages">137</span></li>
+        <li><span class="num">II</span><span class="title">Le quotidien<small>nombres, jours, repas, famille</small></span><span class="leader"></span><span class="pages">184</span></li>
+        <li><span class="num">III</span><span class="title">En ville<small>transports, courses, restaurant</small></span><span class="leader"></span><span class="pages">165</span></li>
+        <li><span class="num">IV</span><span class="title">Raconter<small>le passé, le corps, la météo</small></span><span class="leader"></span><span class="pages">163</span></li>
+        <li><span class="num">V</span><span class="title">Discuter<small>avis, travail, métiers, cuisine</small></span><span class="leader"></span><span class="pages">273</span></li>
+        <li><span class="num">VI</span><span class="title">Nuances<small>expressions, proverbes, préfixes</small></span><span class="leader"></span><span class="pages">156</span></li>
+        <li><span class="num">VII</span><span class="title">Approfondir<small>paires de verbes, voyage, numérique</small></span><span class="leader"></span><span class="pages">335</span></li>
+        <li><span class="num">VIII</span><span class="title">Aisance<small>société, émotions fines, registre soutenu</small></span><span class="leader"></span><span class="pages">229</span></li>
+        <li><span class="num">IX</span><span class="title">Maîtrise<small>langue littéraire, diminutifs</small></span><span class="leader"></span><span class="pages">183</span></li>
+        <li class="last"><span class="num">X</span><span class="title">Comme un natif<small>argot, particules, faux amis, culture</small></span><span class="leader"></span><span class="pages">182</span></li>
+      </ol>
+    </section>
+
+    <section id="emploi">
+      <div class="section-head">
+        <div class="section-label">Mode d'emploi</div>
+        <h2>Installer, puis oublier.</h2>
+      </div>
+      <div class="howto body-col">
+        <div>
+          <p>Sur Arch Linux :</p>
+<pre><span class="c"># paquet, service et entrée de menu</span>
+git clone https://github.com/Ybucaille/Rusky
+cd Rusky && ./install.sh</pre>
+          <p class="fine" style="margin-top:14px">Sans sudo : <code>./install.sh --cargo</code>. Il faut un compositeur Wayland avec layer-shell (Hyprland, Sway, niri…).</p>
+        </div>
+        <ol class="steps">
+          <li><b>Laisse venir les cartes.</b> Clique une réponse, lis l'explication, continue. « Plus tard » si tu es occupé.</li>
+          <li><b>Ouvre la fenêtre de révision</b> avec <code>rusky</code> : ta progression, ton activité, tes points faibles, et des sessions de dix cartes. Au clavier : <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> puis <kbd>Entrée</kbd>.</li>
+          <li><b>Ajoute tes propres mots</b> avec <code>rusky add "сыр" "fromage"</code> : la prononciation se calcule toute seule.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="fleuron">❦</span>
+    <p>Composé en Noto Serif Display, Noto Serif et IBM Plex Mono · annotations en Caveat.</p>
+    <p>rusky est libre, sous licence MIT · <a href="https://github.com/Ybucaille/Rusky">github.com/Ybucaille/Rusky</a></p>
+  </footer>
+</div>
+
+<script>
+  // Quelques cartes du paquet, pour essayer sans rien installer.
+  const CARDS = [
+    { kind: "Vocabulaire · niveau 1", word: "молоко́", pron: "ma-la-KO", q: "Que veut dire ce mot ?", answer: "lait", wrong: ["miel", "pain"], note: "Le о sans accent se dit « a » : seul le dernier est accentué." },
+    { kind: "Alphabet · niveau 1", word: "Ы ы", pron: "", q: "Comment se prononce cette lettre ?", answer: "un « i » sourd, venu de la gorge", wrong: ["« ou » comme dans « loup »", "« ch » comme dans « chat »"], note: "мы (my) = nous, ты (ty) = tu, сын (syn) = fils." },
+    { kind: "Expression · niveau 1", word: "Как дела́?", pron: "kak di-LA", q: "Que veut dire cette phrase ?", answer: "Comment ça va ?", wrong: ["Où vas-tu ?", "Quelle heure est-il ?"], note: "Réponse : Хорошо́, спаси́бо ! (kha-ra-CHO, spa-SI-ba) = Bien, merci !" },
+    { kind: "Grammaire · niveau 2", word: "Мне два́дцать лет.", pron: "mnié DVA-tsat liet", q: "Que veut dire cette phrase ?", answer: "J'ai vingt ans.", wrong: ["Il a vingt ans.", "Dans vingt ans."], note: "Pour l'âge, on dit « à moi vingt ans » : мне (à moi), тебе́ (à toi)." },
+    { kind: "Vocabulaire · niveau 4", word: "сча́стье", pron: "CHTCHAS-tié", q: "Que veut dire ce mot ?", answer: "bonheur", wrong: ["peur", "fête"], note: "счастли́вый (chtchas-LI-vyï) = heureux." },
+    { kind: "Comme un natif · niveau 10", word: "Да нет", pron: "da niet", q: "Que veut dire cette réponse ?", answer: "non (en fait non)", wrong: ["oui et non", "je ne sais pas"], note: "« Oui non » est un non adouci. Да нет, всё норма́льно = Mais non, tout va bien." },
+    { kind: "Comme un natif · niveau 10", word: "Ни пу́ха ни пера́!", pron: "ni POU-kha ni pi-RA", q: "Quand dit-on cela ?", answer: "Pour souhaiter bonne chance", wrong: ["Pour dire bonne nuit", "Pour s'excuser"], note: "Mot à mot : « ni duvet ni plume ». On répond : К чёрту ! (k TCHOR-tou), au diable !" },
+  ];
+
+  const $ = id => document.getElementById(id);
+  const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  // La voyelle accentuée (suivie de l'accent aigu combinant) entourée au crayon rouge.
+  const markStress = s => esc(s).replace(/(.)́/g, '<span class="acc">$1́</span>');
+  // « ma-la-KO » → « ma·la·ko » avec la syllabe accentuée en rouge.
+  const markPron = p => p.split(" ").map(w => w.split("-").map(syl =>
+    w.includes("-") && /\p{L}/u.test(syl) && syl === syl.toUpperCase()
+      ? `<span class="s">${esc(syl.toLowerCase())}</span>` : esc(syl.toLowerCase())).join("·")).join(" ");
+  const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+  let index = 0, good = 0, total = 0;
+  function show() {
+    const c = CARDS[index % CARDS.length];
+    $("bm-head").textContent = c.kind;
+    $("bm-word").innerHTML = markStress(c.word);
+    $("bm-pron").innerHTML = c.pron ? markPron(c.pron) : "&nbsp;";
+    $("bm-q").textContent = c.q;
+    $("bm-verdict").innerHTML = "";
+    const box = $("bm-choices");
+    box.innerHTML = "";
+    shuffle([c.answer, ...c.wrong]).forEach((text, i) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.innerHTML = `<span class="n">${i + 1}</span>${esc(text)}`;
+      b.dataset.right = text === c.answer ? "1" : "";
+      b.addEventListener("click", () => answer(b, c));
+      box.appendChild(b);
+    });
+  }
+  function answer(btn, c) {
+    const buttons = [...$("bm-choices").children];
+    if (buttons[0].disabled) return;
+    const ok = btn.dataset.right === "1";
+    buttons.forEach(b => { b.disabled = true; if (b.dataset.right) b.classList.add("right"); });
+    if (!ok) btn.classList.add("wrong");
+    total++; if (ok) good++;
+    $("bm-score").textContent = `${good} / ${total}`;
+    $("bm-verdict").innerHTML = `<span class="hand ${ok ? "ok" : ""}">${ok ? "Отли́чно ! +10 XP" : "Pas tout à fait…"}</span><br>${markStress(c.note)}`;
+    $("bm-next").focus({ preventScroll: true });
+  }
+  $("bm-next").addEventListener("click", () => { index++; show(); });
+  document.addEventListener("keydown", e => {
+    const r = $("bm-choices").getBoundingClientRect();
+    if (r.bottom < 0 || r.top > innerHeight) return;           // seulement quand le marque-page est visible
+    const n = Number(e.key);
+    if (n >= 1 && n <= 3) $("bm-choices").children[n - 1]?.click();
+  });
+  show();
+
+  // Le son de la vidéo, à la demande.
+  const video = $("demo"), sound = $("sound");
+  sound.addEventListener("click", () => {
+    video.muted = !video.muted;
+    if (!video.muted) video.play();
+    sound.setAttribute("aria-pressed", String(!video.muted));
+    sound.textContent = video.muted ? "♪ Son" : "♪ Couper le son";
+  });
+</script>
+</body>
+</html>

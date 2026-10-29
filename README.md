@@ -12,7 +12,7 @@ Toutes les 25 minutes, une carte apparaît dans un coin de l'écran : trois rép
 [![Cartes](https://img.shields.io/badge/cartes-2%20007-7aa2f7)](#les-10-niveaux)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-[Installation](#installation-arch-linux) · [Les 10 niveaux](#les-10-niveaux) · [Utilisation](#utilisation) · [Tes cartes](#ajouter-tes-propres-cartes)
+[**Site**](https://ybucaille.github.io/Rusky/) · [Installation](#installation-arch-linux) · [Les 10 niveaux](#les-10-niveaux) · [Utilisation](#utilisation) · [Tes cartes](#ajouter-tes-propres-cartes)
 
 <a href="docs/demo.mp4"><img src="docs/demo.gif" alt="Démo de rusky : une carte apparaît, la bonne réponse passe au vert avec +10 XP, puis la fenêtre de révision montre la progression et une session de trois cartes" width="860"></a>
 
