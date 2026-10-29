@@ -64,7 +64,7 @@ Il faut un compositeur Wayland qui gère `wlr-layer-shell` (Hyprland, Sway, niri
 
 ## Utilisation
 
-**La popup** arrive toute seule. Clique sur une réponse : elle passe au vert ou au rouge, l'explication s'affiche, puis « Continuer ». « Plus tard », ✕ ou Échap la ferment sans noter. Sans réponse, elle se referme au bout de 45 s : la fine barre en bas montre le temps restant et se met en pause sous la souris.
+**La popup** arrive toute seule. Chaque type de carte a sa couleur : ambre pour l'alphabet, bleu pour le vocabulaire, vert pour la grammaire, rose pour les expressions. Clique sur une réponse : elle passe au vert ou au rouge, l'explication s'affiche, puis « Continuer ». « Plus tard », ✕ ou Échap la ferment sans noter. Sans réponse, elle se referme au bout de 45 s : la fine barre en bas montre le temps restant et se met en pause sous la souris.
 
 **La fenêtre de révision** s'ouvre avec `rusky` tout court, ou depuis le lanceur d'applications :
 

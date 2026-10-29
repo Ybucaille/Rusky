@@ -11,6 +11,16 @@ use std::rc::Rc;
 /// Couleur d'accent, aussi utilisée dans le balisage Pango (syllabe accentuée).
 pub const ACCENT: &str = "#7aa2f7";
 
+/// Couleur propre à chaque type de carte (la même que dans le CSS).
+pub fn kind_color(kind: &str) -> &'static str {
+    match kind {
+        "alphabet" => "#e0b973",
+        "grammar" => "#8bd5a0",
+        "phrase" => "#f0a3c0",
+        _ => ACCENT,
+    }
+}
+
 pub const CSS: &str = r#"
 @define-color bg #111214;
 @define-color surface #18191c;
@@ -30,10 +40,33 @@ pub const CSS: &str = r#"
 .quiz { color: @text; }
 .head { font-size: 11px; font-weight: 600; letter-spacing: 1px; color: @muted; }
 .dot { min-width: 7px; min-height: 7px; border-radius: 4px; margin: 0 2px; }
-.k-alphabet { background: #e0b973; }
-.k-vocab { background: @accent; }
-.k-grammar { background: @ok; }
-.k-phrase { background: #f0a3c0; }
+@define-color k-alphabet #e0b973;
+@define-color k-vocab #7aa2f7;
+@define-color k-grammar #8bd5a0;
+@define-color k-phrase #f0a3c0;
+.k-alphabet { background: @k-alphabet; }
+.k-vocab { background: @k-vocab; }
+.k-grammar { background: @k-grammar; }
+.k-phrase { background: @k-phrase; }
+
+/* Chaque type de carte a sa couleur : fond légèrement teinté, liseré, en-tête, bouton. */
+box.tint-alphabet { background-color: mix(@surface, @k-alphabet, 0.11); border-color: alpha(@k-alphabet, 0.5); }
+box.tint-vocab { background-color: mix(@surface, @k-vocab, 0.11); border-color: alpha(@k-vocab, 0.5); }
+box.tint-grammar { background-color: mix(@surface, @k-grammar, 0.11); border-color: alpha(@k-grammar, 0.5); }
+box.tint-phrase { background-color: mix(@surface, @k-phrase, 0.11); border-color: alpha(@k-phrase, 0.5); }
+.tint-alphabet .head { color: @k-alphabet; }
+.tint-vocab .head    { color: @k-vocab; }
+.tint-grammar .head  { color: @k-grammar; }
+.tint-phrase .head   { color: @k-phrase; }
+.tint-alphabet button.primary { background: @k-alphabet; }
+.tint-vocab button.primary    { background: @k-vocab; }
+.tint-grammar button.primary  { background: @k-grammar; }
+.tint-phrase button.primary   { background: @k-phrase; }
+.tint-alphabet button.primary:hover, .tint-vocab button.primary:hover,
+.tint-grammar button.primary:hover, .tint-phrase button.primary:hover { filter: brightness(1.08); }
+.tint-alphabet progressbar.timer progress { background: alpha(@k-alphabet, 0.75); }
+.tint-grammar progressbar.timer progress  { background: alpha(@k-grammar, 0.75); }
+.tint-phrase progressbar.timer progress   { background: alpha(@k-phrase, 0.75); }
 .question { font-size: 26px; font-weight: 700; margin-top: 14px; }
 .question.ru { font-family: "Noto Serif Display", "Noto Serif", serif; font-weight: 500; font-size: 40px; }
 .pron { font-size: 15px; color: @muted; margin-top: 2px; letter-spacing: 0.5px; }
@@ -150,8 +183,8 @@ pub fn init() -> Result<()> {
     Ok(())
 }
 
-/// « ma-la-KO » → « ma·la·ko », la syllabe accentuée en gras et en couleur.
-pub fn pron_markup(pron: &str) -> String {
+/// « ma-la-KO » → « ma·la·ko », la syllabe accentuée en gras, dans la couleur donnée.
+pub fn pron_markup_in(pron: &str, color: &str) -> String {
     pron.split(' ')
         .map(|word| {
             word.split('-')
@@ -161,7 +194,7 @@ pub fn pron_markup(pron: &str) -> String {
                         && word.contains('-');
                     let text = glib::markup_escape_text(&syl.to_lowercase()).to_string();
                     if stressed {
-                        format!("<span weight=\"bold\" foreground=\"{ACCENT}\">{text}</span>")
+                        format!("<span weight=\"bold\" foreground=\"{color}\">{text}</span>")
                     } else {
                         text
                     }
@@ -201,7 +234,11 @@ pub struct QuizView {
     prompt: gtk::Label,
     note: gtk::Label,
     choices: gtk::Box,
+    /// Le cadre de la carte (popup ou session) : il prend la couleur du type de carte.
+    frame: RefCell<Option<gtk::Widget>>,
 }
+
+const KINDS: [&str; 4] = ["alphabet", "vocab", "grammar", "phrase"];
 
 impl QuizView {
     pub fn new() -> Rc<Self> {
@@ -231,17 +268,34 @@ impl QuizView {
         root.append(&choices);
         root.append(&note);
         root.append(&extra);
-        Rc::new(Self { root, top, extra, dot, head, question, pron, prompt, note, choices })
+        Rc::new(Self { root, top, extra, dot, head, question, pron, prompt, note, choices, frame: RefCell::new(None) })
+    }
+
+    /// Le cadre à teinter selon le type de carte.
+    pub fn set_frame(&self, frame: &impl IsA<gtk::Widget>) {
+        self.frame.replace(Some(frame.clone().upcast()));
+    }
+
+    fn tint(&self, kind: Option<&str>) {
+        if let Some(f) = self.frame.borrow().as_ref() {
+            for k in KINDS {
+                f.remove_css_class(&format!("tint-{k}"));
+            }
+            if let Some(k) = kind.filter(|k| KINDS.contains(k)) {
+                f.add_css_class(&format!("tint-{k}"));
+            }
+        }
     }
 
     /// Pose la question. `on_answer(juste)` est appelé au clic sur une réponse,
     /// `on_next()` au clic sur « Continuer ».
     pub fn show(&self, quiz: &Quiz, on_answer: Rc<dyn Fn(bool)>, on_next: Rc<dyn Fn()>) {
         self.dot.set_css_classes(&["dot", &format!("k-{}", quiz.kind)]);
+        self.tint(Some(&quiz.kind));
         self.head.set_label(&quiz.header());
         self.set_question(&quiz.big);
         match &quiz.pron {
-            Some(p) => self.pron.set_markup(&pron_markup(p)),
+            Some(p) => self.pron.set_markup(&pron_markup_in(p, kind_color(&quiz.kind))),
             None => self.pron.set_label(""),
         }
         self.pron.set_visible(quiz.pron.is_some());
@@ -320,6 +374,7 @@ impl QuizView {
     /// Un simple message (déblocage de niveau, pause…), sans réponses.
     pub fn message(&self, title: &str, body: &str) {
         self.dot.set_css_classes(&["dot", "k-vocab"]);
+        self.tint(None);
         self.head.set_label("RUSKY");
         self.set_question(title);
         self.pron.set_visible(false);
@@ -340,14 +395,14 @@ impl QuizView {
 
 #[cfg(test)]
 mod tests {
-    use super::pron_markup;
+    use super::{ACCENT, pron_markup_in};
 
     #[test]
     fn stressed_syllable_is_highlighted() {
-        let m = pron_markup("ma-la-KO");
+        let m = pron_markup_in("ma-la-KO", ACCENT);
         assert!(m.starts_with("ma·la·<span"));
         assert!(m.contains(">ko</span>"));
         // Un mot d'une syllabe n'est pas mis en valeur.
-        assert_eq!(pron_markup("kot"), "kot");
+        assert_eq!(pron_markup_in("kot", ACCENT), "kot");
     }
 }

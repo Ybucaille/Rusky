@@ -166,6 +166,7 @@ impl Popup {
             .width_request(432) // 360 px de carte + marges de l'ombre
             .build();
         let view = QuizView::new();
+        view.set_frame(&card);
         let close = gtk::Button::builder().icon_name("window-close-symbolic").css_classes(["close"]).build();
         view.top.append(&close);
         card.append(&view.root);

@@ -81,6 +81,7 @@ pub fn open(db: Db) -> Result<()> {
     let view = QuizView::new();
     let card = gtk::Box::builder().orientation(gtk::Orientation::Vertical).css_classes(["session-card"]).build();
     card.append(&view.root);
+    view.set_frame(&card);
     session_page.append(&card);
     stack.add_named(&session_page, Some("session"));
 
