@@ -25,5 +25,6 @@ package() {
   install -Dm755 "$srcdir/target/release/rusky" "$pkgdir/usr/bin/rusky"
   install -Dm644 "$startdir/packaging/rusky.service" "$pkgdir/usr/lib/systemd/user/rusky.service"
   install -Dm644 "$startdir/packaging/rusky.desktop" "$pkgdir/usr/share/applications/rusky.desktop"
+  install -Dm644 "$startdir/packaging/rusky.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/rusky.svg"
   install -Dm644 -t "$pkgdir/usr/share/rusky/cartes" "$startdir"/data/niveau-*.toml
 }

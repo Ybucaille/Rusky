@@ -140,6 +140,8 @@ pub fn init() -> Result<()> {
         return Ok(());
     }
     gtk::init()?;
+    // Le logo installé dans le thème d'icônes (packaging/rusky.svg).
+    gtk::Window::set_default_icon_name("rusky");
     let css = gtk::CssProvider::new();
     css.load_from_string(CSS);
     let display = gtk::gdk::Display::default().ok_or_else(|| anyhow::anyhow!("pas d'écran"))?;

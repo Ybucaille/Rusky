@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="packaging/rusky.svg" alt="Logo de rusky : un Я crème sur fond d'encre, avec le ruban rouge d'un marque-page" width="112">
+
 # rusky
 
 **Apprendre le russe par petites touches, sans y penser.**<br>

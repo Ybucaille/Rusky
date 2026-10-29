@@ -3,7 +3,7 @@ name: Site
 on:
   push:
     branches: [main]
-    paths: [site/**, docs/**, .github/workflows/pages.yml]
+    paths: [site/**, docs/**, packaging/rusky.svg, .github/workflows/pages.yml]
   workflow_dispatch:
 
 permissions:
@@ -25,6 +25,7 @@ jobs:
           mkdir -p _site/assets
           cp site/index.html _site/
           cp docs/demo.mp4 docs/tableau-de-bord.png docs/popup.png _site/assets/
+          cp packaging/rusky.svg _site/assets/logo.svg
           # Chaque déploiement pointe vers ses propres fichiers : pas de vieille vidéo en cache.
           sed -i "s/?v=dev/?v=${GITHUB_SHA::7}/g" _site/index.html
       - uses: actions/configure-pages@v6

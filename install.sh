@@ -10,7 +10,8 @@ say() { printf '\033[1;34m==>\033[0m %s\n' "$*"; }
 
 if [[ "${1:-}" == "--uninstall" ]]; then
   systemctl --user disable --now rusky.service 2>/dev/null || true
-  rm -f ~/.config/systemd/user/rusky.service ~/.local/share/applications/rusky.desktop
+  rm -f ~/.config/systemd/user/rusky.service ~/.local/share/applications/rusky.desktop \
+        ~/.local/share/icons/hicolor/scalable/apps/rusky.svg
   pacman -Qq rusky &>/dev/null && sudo pacman -R rusky
   cargo uninstall rusky 2>/dev/null || true
   systemctl --user daemon-reload
@@ -27,6 +28,7 @@ if [[ "${1:-}" == "--cargo" ]] || ! command -v makepkg &>/dev/null; then
   sed "s|/usr/bin/rusky|$bin|" packaging/rusky.service > ~/.config/systemd/user/rusky.service
   mkdir -p ~/.local/share/applications
   sed "s|^Exec=rusky|Exec=$bin|" packaging/rusky.desktop > ~/.local/share/applications/rusky.desktop
+  install -Dm644 packaging/rusky.svg ~/.local/share/icons/hicolor/scalable/apps/rusky.svg
 else
   say "Construction du paquet Arch…"
   makepkg -sif --noconfirm  # -f : reconstruit même à version égale
