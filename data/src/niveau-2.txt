@@ -22,16 +22,16 @@
 четве́рг | jeudi |
 пя́тница | vendredi |
 суббо́та | samedi |
-воскресе́нье | dimanche |
+воскресе́нье | dimanche |  | vas-kri-SIÉN-yé
 неде́ля | semaine |
 ме́сяц | mois |
 год | année |
 час | heure |
 мину́та | minute |
-по́здно | tard |
+по́здно | tard |  | POZ-na
 ра́но | tôt |
 пото́м | ensuite, après |
-ещё | encore |
+ещё | encore |  | yi-CHTCHO
 уже́ | déjà |
 о́чень | très |
 то́же | aussi |
@@ -41,7 +41,7 @@
 сле́ва | à gauche |
 спра́ва | à droite |
 пря́мо | tout droit |
-ко́мната | pièce, chambre |
+ко́мната | pièce (d'un logement) |
 ку́хня | cuisine |
 ва́нная | salle de bain |
 спа́льня | chambre à coucher |
@@ -50,13 +50,13 @@
 крова́ть | lit |
 шкаф | armoire |
 телефо́н | téléphone |
-компью́тер | ordinateur |
+компью́тер | ordinateur |  | kam-PIOU-tèr
 ключ | clé |
 су́мка | sac |
 де́ньги | argent | Toujours au pluriel.
 еда́ | nourriture |
 за́втрак | petit-déjeuner |
-обе́д | déjeuner |
+обе́д | déjeuner (repas de midi) |
 у́жин | dîner |
 суп | soupe |
 мя́со | viande |
@@ -79,7 +79,7 @@
 горя́чий | chaud (pour un plat) |
 холо́дный | froid |
 ма́льчик | garçon |
-де́вочка | petite fille |
+де́вочка | fillette (petite fille, enfant) |
 ребёнок | enfant | Pluriel : де́ти (des enfants).
 де́ти | enfants |
 муж | mari |
@@ -90,27 +90,27 @@
 де́душка | grand-père |
 челове́к | personne, être humain | Pluriel : лю́ди (des gens).
 лю́ди | gens |
-мужчи́на | homme |
+мужчи́на | homme |  | mou-CHTCHI-na
 же́нщина | femme |
 сосе́д | voisin |
 бе́лый | blanc |
-чёрный | noir |
+чёрный | noir |  | TCHOR-nyï
 кра́сный | rouge |
 си́ний | bleu (foncé) |
 голубо́й | bleu clair |
 зелёный | vert |
-жёлтый | jaune |
+жёлтый | jaune |  | JOL-tyï
 се́рый | gris |
 ста́рый | vieux |
 молодо́й | jeune |
-хоро́ший | bon, bien |
+хоро́ший | bon (adjectif : un bon livre) |
 плохо́й | mauvais |
 люби́мый | préféré |
 весёлый | joyeux |
-гру́стный | triste |
+гру́стный | triste |  | GROUS-nyï
 у́мный | intelligent |
 до́брый | gentil |
-лёгкий | facile, léger |
+лёгкий | facile, léger |  | LIOKH-kiï
 тру́дный | difficile |
 де́лать | faire | Что ты де́лаешь? = Qu'est-ce que tu fais ?
 чита́ть | lire |
@@ -125,7 +125,7 @@
 гуля́ть | se promener |
 гото́вить | cuisiner |
 покупа́ть | acheter |
-отдыха́ть | se reposer |
+отдыха́ть | se reposer |  | ad-dy-KHAT
 ду́мать | penser |
 звони́ть | téléphoner |
 отвеча́ть | répondre |
@@ -150,29 +150,29 @@
 Мне два́дцать лет | J'ai vingt ans | Pour l'âge, on dit « à moi vingt ans ».
 Как тебя́ зову́т? | Comment tu t'appelles ? |
 Отку́да ты? | D'où viens-tu ? |
-Где ты живёшь? | Où habites-tu ? |
+Где ты живёшь? | Où habites-tu ? |  | gdié ty ji-VOCH?
 Я рабо́таю | Je travaille |
 Я учу́сь | Je fais des études |
 Я голо́дный | J'ai faim | Une femme dit : Я голо́дная.
 Я уста́л | Je suis fatigué | Une femme dit : Я уста́ла.
 Прия́тного аппети́та! | Bon appétit ! |
 За ва́ше здоро́вье! | À votre santé ! |
-Пое́хали! | C'est parti ! |
-Как ты? | Comment tu vas ? |
-Норма́льно | Ça va, normal |
+Пое́хали! | C'est parti ! |  |  | Attends ! ; Viens ici !
+Как ты? | Comment tu vas ? |  |  | Qui es-tu ? ; Où es-tu ?
+Норма́льно | Ça va, normal |  |  | Pas du tout ; C'est vrai ?
 Так себе́ | Comme ci, comme ça |
 Отли́чно! | Excellent ! |
 Я согла́сен | Je suis d'accord | Une femme dit : Я согла́сна.
 Мо́жно? | Je peux ? / C'est permis ? |
-Коне́чно, мо́жно | Bien sûr, vas-y |
+Коне́чно, мо́жно | Bien sûr, vas-y |  |  | Non, c'est interdit ; Je ne sais pas
 Я не зна́ю | Je ne sais pas |
 Мне ну́жно идти́ | Je dois y aller |
 До за́втра! | À demain ! |
-Уви́димся! | On se voit ! |
+Уви́димся! | À la prochaine ! (on se reverra) |  |  | Attends ! ; Bonne chance !
 Уда́чи! | Bonne chance ! |
 С днём рожде́ния! | Joyeux anniversaire ! |
 С Но́вым го́дом! | Bonne année ! |
-Ничего́ | Ça va, ce n'est rien | Réponse polie à « Как дела́? » ou à une excuse.
+Ничего́ | Pas mal / Ce n'est rien | Deux usages : en réponse à Как дела́ ? = « pas mal » ; en réponse à une excuse = « ce n'est rien ».
 Подожди́! | Attends ! |
 Иди́ сюда́! | Viens ici ! |
 Пра́вда? | C'est vrai ? |
@@ -184,9 +184,9 @@
 Я могу́ чита́ть. | Que veut dire cette phrase ? | Je peux lire. | Je veux lire. ; Je dois lire. | мочь (pouvoir) + verbe à l'infinitif, comme en français.
 Мне ну́жно рабо́тать. | Que veut dire cette phrase ? | Je dois travailler. | J'aime travailler. ; Je vais travailler. | Мне ну́жно + verbe = il me faut, je dois.
 Я люблю́ чита́ть. | Que veut dire cette phrase ? | J'aime lire. | Je lis beaucoup. ; Je sais lire. | люби́ть + verbe = aimer faire quelque chose.
-в понеде́льник | Que veut dire в понеде́льник ? | lundi (ce lundi-là) | avant lundi ; tous les lundis | Pour un jour de la semaine, on dit в + jour : в сре́ду (f SRIÉ-dou), в пя́тницу.
+в понеде́льник | Que veut dire в понеде́льник ? | lundi (ce lundi-là) | avant lundi ; tous les lundis | Pour un jour de la semaine, on dit в + jour : в сре́ду (f SRIÉ-dou), в пя́тницу. | f pa-ni-DIEL-nik
 Э́то моя́ ма́ма. | Que veut dire cette phrase ? | C'est ma mère. | Où est ma mère ? ; J'aime ma mère. | Э́то (È-ta) = c'est, voici. Il ne change jamais.
-Я встаю́ в семь часо́в. | Que veut dire cette phrase ? | Je me lève à sept heures. | Je me lève dans sept heures. ; Il est sept heures. | в + heure : в два часа́ = à deux heures, в пять часо́в = à cinq heures.
+Я встаю́ в семь часо́в. | Que veut dire cette phrase ? | Je me lève à sept heures. | Je me lève dans sept heures. ; Il est sept heures. | в + heure : в два часа́ = à deux heures, в пять часо́в = à cinq heures. | ya fsta-YOU f siem tcha-SOF.
 Ты говори́шь по-ру́сски? | Que veut dire cette phrase ? | Tu parles russe ? | Tu es russe ? ; Tu apprends le russe ? | по-ру́сски = en russe, по-францу́зски (pa-fran-TSOUS-ki) = en français.
-Он чита́ет, а она́ спит. | Que veut dire а ici ? | et (en opposant), alors que | mais pas ; ou bien | а sert à opposer deux choses ; и (i) veut dire « et » tout court ; но (no) veut dire « mais ».
+Он чита́ет, а она́ спит. | Que veut dire а ici ? | et (en opposant), alors que | donc ; ou bien | а sert à opposer deux choses ; и (i) veut dire « et » tout court ; но (no) veut dire « mais ».
 краси́вая де́вочка | Pourquoi краси́вая et pas краси́вый ? | Parce que де́вочка est féminin | Parce que c'est au pluriel ; Parce que c'est une question | L'adjectif s'accorde : -ый pour masculin, -ая pour féminin, -ое pour neutre.

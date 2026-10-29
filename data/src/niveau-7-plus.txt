@@ -12,7 +12,7 @@
 прилёт | arrivée (d'un vol) |
 расписа́ние | horaire |
 опозда́ние | retard |
-переса́дка | correspondance |
+переса́дка | correspondance (transport) |
 бронь | réservation |
 но́мер в гости́нице | chambre d'hôtel |
 тури́ст | touriste |
@@ -54,7 +54,7 @@
 распрода́жа | soldes |
 доста́вка | livraison |
 зака́з | commande |
-верну́ть | rendre, rembourser |
+верну́ть | rendre, rembourser |  |  | échanger ; commander
 обме́н | échange |
 гаранти́я | garantie |
 приложе́ние | application |
@@ -75,26 +75,26 @@
 лайк | like |
 подпи́счик | abonné |
 блог | blog |
-ви́део | vidéo |
+ви́део | vidéo |  | VI-di-o
 стрим | stream |
 чат | chat (discussion) |
 сма́йлик | émoji |
-перепи́ска | correspondance, échange de messages |
+перепи́ска | échange de messages |  |  | réécriture ; signature
 выкла́дывать | publier, poster |
-листа́ть | faire défiler |
-скро́ллить | scroller |
+листа́ть | feuilleter, faire défiler |  |  | publier, poster ; transférer (un message)
+скро́ллить | scroller |  |  | googler ; transférer (un message)
 гугли́ть | googler |
 пересла́ть | transférer (un message) |
 вздремну́ть | faire une sieste |
 опереди́ть | devancer |
-отложи́ть | reporter, mettre de côté |
+отложи́ть | mettre de côté, remettre à plus tard |  |  | annuler ; prévenir
 отмени́ть | annuler |
-перенести́ | déplacer, reporter |
+перенести́ | déplacer (ailleurs ou à une autre date) |  |  | annuler ; rappeler (à quelqu'un)
 предупреди́ть | prévenir |
 напо́мнить | rappeler (à quelqu'un) |
 уговори́ть | persuader |
 отказа́ться | refuser |
-согласи́ться | accepter |
+согласи́ться | accepter |  |  | refuser ; promettre
 пообеща́ть | promettre |
 обиде́ться | se vexer |
 удиви́ть | surprendre |
@@ -103,7 +103,7 @@
 разочарова́ться | être déçu |
 привы́кнуть | s'habituer |
 оста́ться | rester |
-исче́знуть | disparaître |
+исче́знуть | disparaître |  | i-CHTCHIEZ-nout
 появи́ться | apparaître |
 случи́ться | arriver, se produire |
 зави́сеть от | dépendre de |

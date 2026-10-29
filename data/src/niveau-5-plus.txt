@@ -11,10 +11,10 @@
 по́вар | cuisinier |
 медсестра́ | infirmière |
 адвока́т | avocat |
-бухга́лтер | comptable |
+бухга́лтер | comptable |  | bou-GAL-tir
 программи́ст | programmeur |
 строи́тель | ouvrier du bâtiment |
-фе́рмер | agriculteur |
+фе́рмер | agriculteur |  | FÈR-mir
 музыка́нт | musicien |
 спортсме́н | sportif |
 перево́дчик | traducteur |
@@ -39,7 +39,7 @@
 очки́ | lunettes |
 часы́ | montre, horloge |
 кошелёк | porte-monnaie |
-рюкза́к | sac à dos |
+рюкза́к | sac à dos |  | rioug-ZAK
 чемода́н | valise |
 пи́сьменный стол | bureau (meuble) |
 каранда́ш | crayon |
@@ -96,14 +96,14 @@
 засыпа́ть | s'endormir |
 умыва́ться | se débarbouiller |
 причёсываться | se coiffer |
-бри́ться | se raser |
+бри́ться | se raser |  | BRI-tsa
 за́втракать | prendre le petit-déjeuner |
 обе́дать | déjeuner |
 у́жинать | dîner |
 спеши́ть | se dépêcher |
 успева́ть | avoir le temps, réussir à temps |
 про́бовать | goûter, essayer |
-теря́ть | perdre |
+теря́ть | perdre (un objet) |
 находи́ть | trouver |
 по́льзоваться | utiliser |
 сове́товаться | consulter, demander conseil |

@@ -44,8 +44,10 @@ level = 5
 [[card]]
 id = "t10-voc-006"
 kind = "vocab"
-front = "круто́"
+front = "кру́то"
+pron = "KROU-ta"
 back = "cool, génial"
+wrong = ["nul, naze", "flippant"]
 level = 6
 
 [[card]]
@@ -53,6 +55,7 @@ id = "t10-voc-007"
 kind = "vocab"
 front = "кла́ссно"
 back = "super"
+wrong = ["nul, naze", "bizarre"]
 level = 7
 
 [[card]]
@@ -102,7 +105,8 @@ level = 13
 [[card]]
 id = "t10-voc-014"
 kind = "vocab"
-front = "бра́тан"
+front = "брата́н"
+pron = "bra-TAN"
 back = "frérot"
 level = 14
 
@@ -111,6 +115,7 @@ id = "t10-voc-015"
 kind = "vocab"
 front = "ба́бки"
 back = "fric"
+wrong = ["bagnole", "fringues"]
 level = 15
 
 [[card]]
@@ -118,6 +123,7 @@ id = "t10-voc-016"
 kind = "vocab"
 front = "бабло́"
 back = "thune"
+wrong = ["bagnole", "baraque"]
 level = 16
 
 [[card]]
@@ -131,9 +137,11 @@ level = 17
 [[card]]
 id = "t10-voc-018"
 kind = "vocab"
-front = "лимо́н (арго́)"
-back = "un million (argot)"
-note = "Mot à mot : « citron »."
+front = "це́лый лимо́н"
+pron = "TSIÉ-lyï li-MON"
+back = "un million entier (argot)"
+note = "лимо́н veut dire « citron », et en argot « un million » (de roubles)."
+wrong = ["mille roubles", "un billet de cent"]
 level = 18
 
 [[card]]
@@ -162,6 +170,7 @@ id = "t10-voc-022"
 kind = "vocab"
 front = "жра́ть"
 back = "bouffer (vulgaire)"
+wrong = ["roupiller", "picoler"]
 level = 22
 
 [[card]]
@@ -169,6 +178,7 @@ id = "t10-voc-023"
 kind = "vocab"
 front = "хава́ть"
 back = "bouffer (argot)"
+wrong = ["roupiller", "piquer, voler"]
 level = 23
 
 [[card]]
@@ -335,6 +345,7 @@ kind = "vocab"
 front = "мол"
 back = "soi-disant, qu'il dit"
 note = "Он, мол, за́нят = Il dit qu'il est occupé (j'en doute)."
+wrong = ["pourtant", "justement"]
 level = 45
 
 [[card]]
@@ -343,6 +354,7 @@ kind = "vocab"
 front = "де́скать"
 back = "paraît-il, dit-il"
 note = "Rapporte les paroles d'un autre avec distance."
+wrong = ["pourtant", "justement"]
 level = 46
 
 [[card]]
@@ -365,6 +377,7 @@ level = 48
 id = "t10-voc-049"
 kind = "vocab"
 front = "ну́-ка"
+pron = "NOU-ka"
 back = "allez, voyons"
 note = "Ну-ка, покажи́! = Allez, montre !"
 level = 49
@@ -381,6 +394,7 @@ level = 50
 id = "t10-voc-051"
 kind = "vocab"
 front = "та́к-то"
+pron = "TAK-ta"
 back = "à vrai dire"
 level = 51
 
@@ -397,6 +411,7 @@ kind = "vocab"
 front = "как бы"
 back = "genre (tic de langage)"
 note = "Я как бы не про́тив = Je suis genre pas contre."
+wrong = ["exactement", "pourtant"]
 level = 53
 
 [[card]]
@@ -404,6 +419,7 @@ id = "t10-voc-054"
 kind = "vocab"
 front = "ти́па"
 back = "genre, du style"
+wrong = ["exactement", "pourtant"]
 level = 54
 
 [[card]]
@@ -430,7 +446,8 @@ level = 57
 [[card]]
 id = "t10-voc-058"
 kind = "vocab"
-front = "по ходу́"
+front = "по хо́ду"
+pron = "pa KHO-dou"
 back = "apparemment (familier)"
 level = 58
 
@@ -497,7 +514,7 @@ id = "t10-voc-067"
 kind = "vocab"
 front = "о́чень да́же"
 back = "plutôt pas mal"
-note = "Ironie douce : « très même » = mieux que prévu."
+note = "Approbation un peu surprise : « carrément pas mal », mieux que prévu (pas ironique)."
 level = 67
 
 [[card]]
@@ -598,7 +615,7 @@ level = 80
 id = "t10-voc-081"
 kind = "vocab"
 front = "трепло́"
-back = "moulin à paroles"
+back = "grande gueule, baratineur"
 level = 81
 
 [[card]]
@@ -647,6 +664,7 @@ level = 87
 id = "t10-voc-088"
 kind = "vocab"
 front = "сыр-бо́р"
+pron = "syr-BOR"
 back = "toute une histoire"
 note = "Из-за чего́ весь сыр-бо́р? = Pourquoi tout ce raffut ?"
 level = 88
@@ -702,7 +720,7 @@ id = "t10-voc-095"
 kind = "vocab"
 front = "аккура́тный"
 back = "soigné, soigneux"
-note = "Faux ami : pas « exact »."
+note = "Faux ami surtout pour qui pense à l'anglais accurate : аккура́тный = soigné, ordonné, ponctuel ; « exact » se dit то́чный."
 level = 95
 
 [[card]]
@@ -807,7 +825,8 @@ level = 108
 [[card]]
 id = "t10-voc-109"
 kind = "vocab"
-front = "тре́шка"
+front = "трёшка"
+pron = "TRIOCH-ka"
 back = "trois-pièces (appartement)"
 level = 109
 
@@ -867,7 +886,7 @@ id = "t10-voc-117"
 kind = "vocab"
 front = "ба́ня"
 back = "bain de vapeur russe"
-note = "С лёгким па́ром! = Bon bain ! (après la banya) — et titre d'un film culte."
+note = "С лёгким па́ром! = Bon bain ! (après la banya) — et sous-titre du film culte « Иро́ния судьбы́ »."
 level = 117
 
 [[card]]
@@ -964,7 +983,7 @@ id = "t10-voc-130"
 kind = "vocab"
 front = "и́мя-о́тчество"
 back = "prénom et patronyme"
-note = "Pour vouvoyer : Ива́н Петро́вич. Le patronyme vient du prénom du père."
+note = "Pour s'adresser poliment à quelqu'un (avec вы) : Ива́н Петро́вич. Le patronyme vient du prénom du père."
 level = 130
 
 [[card]]
@@ -1034,7 +1053,8 @@ level = 138
 [[card]]
 id = "t10-phr-001"
 kind = "phrase"
-front = "Ирони́я судьбы́"
+front = "Иро́ния судьбы́"
+pron = "i-RO-ni-ya soud-BY"
 back = "L'ironie du sort"
 note = "Titre du film culte que toute la Russie regarde chaque 31 décembre."
 level = 1
@@ -1043,6 +1063,7 @@ level = 1
 id = "t10-phr-002"
 kind = "phrase"
 front = "С лёгким па́ром!"
+pron = "s LIOKH-kim PA-ram!"
 back = "Bon bain !"
 note = "Formule après la banya ; c'est aussi le sous-titre du film « Ирония судьбы »."
 level = 2
@@ -1097,9 +1118,10 @@ level = 8
 [[card]]
 id = "t10-phr-009"
 kind = "phrase"
-front = "Без ба́зара"
+front = "Без база́ра"
+pron = "biz ba-ZA-ra"
 back = "Pas de souci, promis (argot)"
-note = "Mot à mot : « sans bazar »."
+note = "Mot à mot : « sans palabres » (база́р, en argot, c'est le bavardage, la discussion) : promis, pas besoin d'en discuter."
 level = 9
 
 [[card]]
@@ -1114,6 +1136,7 @@ id = "t10-phr-011"
 kind = "phrase"
 front = "Да ла́дно!"
 back = "Sans blague ! / Arrête !"
+wrong = ["Bien fait pour toi !", "À la tienne !"]
 level = 11
 
 [[card]]
@@ -1121,13 +1144,14 @@ id = "t10-phr-012"
 kind = "phrase"
 front = "Ага́, щас!"
 back = "C'est ça, compte là-dessus !"
+wrong = ["J'arrive tout de suite !", "Bonne chance !"]
 level = 12
 
 [[card]]
 id = "t10-phr-013"
 kind = "phrase"
 front = "Я в а́уте"
-back = "Je suis largué"
+back = "J'hallucine, je suis sonné"
 level = 13
 
 [[card]]
@@ -1142,6 +1166,7 @@ id = "t10-phr-015"
 kind = "phrase"
 front = "Ни фига́ себе́!"
 back = "Ben ça alors !"
+wrong = ["Bien fait !", "Tant pis !"]
 level = 15
 
 [[card]]
@@ -1149,6 +1174,7 @@ id = "t10-phr-016"
 kind = "phrase"
 front = "Да ну тебя́!"
 back = "Arrête avec ça !"
+wrong = ["Bien joué !", "À la tienne !"]
 level = 16
 
 [[card]]
@@ -1156,6 +1182,7 @@ id = "t10-phr-017"
 kind = "phrase"
 front = "Ни то ни сё"
 back = "Ni l'un ni l'autre, quelconque"
+wrong = ["Ni vu ni connu", "Tout ou rien"]
 level = 17
 
 [[card]]
@@ -1163,6 +1190,7 @@ id = "t10-phr-018"
 kind = "phrase"
 front = "Ещё чего́!"
 back = "Et puis quoi encore !"
+wrong = ["Encore un peu !", "Pourquoi pas !"]
 level = 18
 
 [[card]]
@@ -1170,6 +1198,7 @@ id = "t10-phr-019"
 kind = "phrase"
 front = "Вот тебе́ и на!"
 back = "Ça alors ! (mauvaise surprise)"
+wrong = ["Bien joué !", "Tant mieux !"]
 level = 19
 
 [[card]]
@@ -1178,6 +1207,7 @@ kind = "phrase"
 front = "Мне по бараба́ну"
 back = "Je m'en fiche"
 note = "Mot à mot : « c'est du tambour pour moi »."
+wrong = ["Ça me casse les oreilles", "Je suis pressé"]
 level = 20
 
 [[card]]
@@ -1186,6 +1216,7 @@ kind = "phrase"
 front = "Мне фиоле́тово"
 back = "Je m'en fiche"
 note = "Mot à mot : « c'est violet pour moi »."
+wrong = ["Je suis furieux", "Ça me rend jaloux"]
 level = 21
 
 [[card]]
@@ -1199,7 +1230,7 @@ level = 22
 id = "t10-phr-023"
 kind = "phrase"
 front = "Не учи́ учёного"
-back = "N'apprends pas au savant"
+back = "On n'apprend pas à un vieux singe à faire des grimaces"
 level = 23
 
 [[card]]
@@ -1229,7 +1260,7 @@ level = 26
 id = "t10-phr-027"
 kind = "phrase"
 front = "Где роди́лся, там и пригоди́лся"
-back = "On est mieux là où on est né"
+back = "On est plus utile là où on est né"
 level = 27
 
 [[card]]
@@ -1255,7 +1286,7 @@ front = "Да нет, всё норма́льно."
 question = "Que veut dire да нет ?"
 back = "non (en fait)"
 wrong = ["oui et non", "je ne sais pas"]
-note = "« Да нет » est un non adouci. « Нет, да » n'existe pas. « Ну да » peut être un oui… ou un « mon œil » ironique."
+note = "« Да нет » est un non adouci : le да ne compte pas, c'est le нет qui donne la réponse. « Ну да » peut être un oui… ou un « mon œil » ironique."
 level = 1
 
 [[card]]
@@ -1282,6 +1313,7 @@ level = 3
 id = "t10-gra-004"
 kind = "grammar"
 front = "Да́й-ка посмотрю́."
+pron = "DAÏ-ka pas-ma-TRIOU."
 question = "Que fait -ка ?"
 back = "Il adoucit et rend familier : donne voir"
 wrong = ["Il rend la phrase négative", "Il marque le passé"]
@@ -1292,7 +1324,7 @@ level = 4
 id = "t10-gra-005"
 kind = "grammar"
 front = "Щас!"
-question = "Dit sèchement en réponse à une demande, ça veut dire…"
+question = "Dit d'un ton ironique en réponse à une demande, ça veut dire…"
 back = "Tu rêves !"
 wrong = ["J'arrive tout de suite", "Maintenant"]
 note = "щас (pour сейча́с) devient un refus ironique selon le ton."

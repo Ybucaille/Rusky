@@ -187,7 +187,8 @@ level = 26
 [[card]]
 id = "t6-voc-027"
 kind = "vocab"
-front = "изви́нение"
+front = "извине́ние"
+pron = "iz-vi-NIÉ-ni-yé"
 back = "excuse"
 level = 27
 
@@ -384,7 +385,7 @@ level = 54
 id = "t6-voc-055"
 kind = "vocab"
 front = "скуча́ть"
-back = "s'ennuyer, regretter quelqu'un"
+back = "s'ennuyer ; (quelqu'un) me manque"
 level = 55
 
 [[card]]
@@ -517,7 +518,7 @@ level = 73
 id = "t6-voc-074"
 kind = "vocab"
 front = "проходи́ть"
-back = "passer, traverser"
+back = "passer (par, devant), parcourir"
 level = 74
 
 [[card]]
@@ -538,6 +539,7 @@ level = 76
 id = "t6-voc-077"
 kind = "vocab"
 front = "всё-таки"
+pron = "FSIO-ta-ki"
 back = "quand même"
 level = 77
 
@@ -650,7 +652,7 @@ level = 92
 id = "t6-voc-093"
 kind = "vocab"
 front = "ведь"
-back = "car, pourtant"
+back = "car, puisque (insistance)"
 note = "Mot de liaison qui insiste : Ведь ты зна́ешь! = Mais tu le sais bien !"
 level = 93
 
@@ -816,6 +818,7 @@ id = "t6-phr-002"
 kind = "phrase"
 front = "Вот э́то да!"
 back = "Ça alors !"
+wrong = ["Ah, ça non !", "Voilà, c'est tout !"]
 level = 2
 
 [[card]]
@@ -972,6 +975,7 @@ id = "t6-phr-023"
 kind = "phrase"
 front = "Ничего́ себе́!"
 back = "Pas mal ! / Incroyable !"
+wrong = ["Rien du tout !", "Ce n'est rien !"]
 level = 23
 
 [[card]]
@@ -985,7 +989,7 @@ level = 24
 id = "t6-phr-025"
 kind = "phrase"
 front = "Так и быть"
-back = "Soit, d'accord"
+back = "Bon, soit (à contrecœur)"
 level = 25
 
 [[card]]
@@ -1061,7 +1065,7 @@ kind = "grammar"
 front = "Неуже́ли ты не зна́ешь?"
 question = "Que veut dire la phrase ?"
 back = "Tu ne sais vraiment pas ? (surpris)"
-wrong = ["Tu ne sais pas, donc ?", "Tu le sais déjà ?"]
+wrong = ["Tu ne veux pas savoir ?", "Tu le sais déjà ?"]
 note = "неуже́ли exprime l'étonnement : « est-ce possible que… ? »"
 level = 4
 
@@ -1069,9 +1073,10 @@ level = 4
 id = "t6-gra-005"
 kind = "grammar"
 front = "Мне не спи́тся."
+pron = "mnié ni SPI-tsa."
 question = "Que veut dire cette phrase ?"
 back = "Je n'arrive pas à dormir."
-wrong = ["Je ne veux pas dormir.", "Je dors mal la nuit."]
+wrong = ["Je ne veux pas dormir.", "Il ne faut pas dormir."]
 note = "Tournure impersonnelle avec -ся : мне не спи́тся / не рабо́тается = je n'arrive pas à dormir / travailler."
 level = 5
 
@@ -1110,7 +1115,7 @@ id = "t6-gra-009"
 kind = "grammar"
 front = "Ему́ на́до бы́ло уйти́."
 question = "Que veut dire cette phrase ?"
-back = "Il a dû partir."
+back = "Il fallait qu'il parte."
 wrong = ["Il veut partir.", "Il partira."]
 note = "на́до / ну́жно + бы́ло = il fallait. Avec бу́дет : il faudra."
 level = 9
@@ -1139,8 +1144,9 @@ level = 11
 id = "t6-gra-012"
 kind = "grammar"
 front = "кое-что́ / что́-нибудь"
+pron = "ko-yé-CHTO / CHTO-ni-bout"
 question = "Купи́ что́-нибудь. Que veut dire что́-нибудь ?"
-back = "n'importe quoi, quelque chose (peu importe quoi)"
+back = "quelque chose (peu importe quoi)"
 wrong = ["une chose précise", "rien"]
 note = "-нибудь = n'importe lequel ; кое- = quelque chose de précis que je ne dis pas."
 level = 12

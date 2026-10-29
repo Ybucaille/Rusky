@@ -27,6 +27,7 @@ id = "t9-voc-004"
 kind = "vocab"
 front = "мерца́ть"
 back = "scintiller"
+wrong = ["bruisser", "ramper"]
 level = 4
 
 [[card]]
@@ -34,6 +35,7 @@ id = "t9-voc-005"
 kind = "vocab"
 front = "сверка́ть"
 back = "étinceler"
+wrong = ["trébucher", "errer"]
 level = 5
 
 [[card]]
@@ -41,6 +43,7 @@ id = "t9-voc-006"
 kind = "vocab"
 front = "шелесте́ть"
 back = "bruisser"
+wrong = ["étinceler", "ronchonner"]
 level = 6
 
 [[card]]
@@ -68,7 +71,8 @@ level = 9
 id = "t9-voc-010"
 kind = "vocab"
 front = "шурша́ть"
-back = "froisser, crisser"
+back = "bruire, froufrouter (papier, feuilles)"
+wrong = ["grincer", "gronder, tonner"]
 level = 10
 
 [[card]]
@@ -76,6 +80,7 @@ id = "t9-voc-011"
 kind = "vocab"
 front = "броди́ть"
 back = "errer"
+wrong = ["ramper", "trébucher"]
 level = 11
 
 [[card]]
@@ -83,6 +88,7 @@ id = "t9-voc-012"
 kind = "vocab"
 front = "слоня́ться"
 back = "traîner, flâner sans but"
+wrong = ["ramper", "se vanter"]
 level = 12
 
 [[card]]
@@ -103,6 +109,7 @@ level = 14
 id = "t9-voc-015"
 kind = "vocab"
 front = "кра́сться"
+pron = "KRAS-tsa"
 back = "avancer à pas de loup"
 level = 15
 
@@ -195,6 +202,7 @@ id = "t9-voc-028"
 kind = "vocab"
 front = "стесня́ться"
 back = "être gêné, timide"
+wrong = ["se vanter", "s'agiter"]
 level = 28
 
 [[card]]
@@ -202,6 +210,7 @@ id = "t9-voc-029"
 kind = "vocab"
 front = "смуща́ться"
 back = "se troubler"
+wrong = ["se vanter", "ronchonner"]
 level = 29
 
 [[card]]
@@ -230,13 +239,14 @@ id = "t9-voc-033"
 kind = "vocab"
 front = "тоскова́ть"
 back = "se languir"
+wrong = ["se vanter", "s'indigner"]
 level = 33
 
 [[card]]
 id = "t9-voc-034"
 kind = "vocab"
 front = "скуча́ть по"
-back = "regretter (quelqu'un)"
+back = "quelqu'un vous manque, s'ennuyer de quelqu'un"
 level = 34
 
 [[card]]
@@ -244,6 +254,7 @@ id = "t9-voc-035"
 kind = "vocab"
 front = "томи́ться"
 back = "se morfondre"
+wrong = ["s'attendrir", "ronchonner"]
 level = 35
 
 [[card]]
@@ -293,6 +304,7 @@ id = "t9-voc-042"
 kind = "vocab"
 front = "смека́лка"
 back = "débrouillardise"
+wrong = ["arrogance", "hypocrisie"]
 level = 42
 
 [[card]]
@@ -300,6 +312,7 @@ id = "t9-voc-043"
 kind = "vocab"
 front = "сноро́вка"
 back = "habileté, savoir-faire"
+wrong = ["arrogance", "trouble, désordre"]
 level = 43
 
 [[card]]
@@ -328,6 +341,7 @@ id = "t9-voc-047"
 kind = "vocab"
 front = "глушь"
 back = "coin perdu"
+wrong = ["bourbier", "clairière"]
 level = 47
 
 [[card]]
@@ -335,6 +349,7 @@ id = "t9-voc-048"
 kind = "vocab"
 front = "захолу́стье"
 back = "trou perdu"
+wrong = ["taudis", "carrefour"]
 level = 48
 
 [[card]]
@@ -520,13 +535,16 @@ id = "t9-voc-074"
 kind = "vocab"
 front = "чуто́к"
 back = "un tout petit peu (familier)"
+wrong = ["énormément", "tout de suite"]
 level = 74
 
 [[card]]
 id = "t9-voc-075"
 kind = "vocab"
 front = "чуть-чу́ть"
+pron = "tchout-TCHOUT"
 back = "un tout petit peu"
+wrong = ["énormément", "tout à l'heure"]
 level = 75
 
 [[card]]
@@ -534,6 +552,7 @@ id = "t9-voc-076"
 kind = "vocab"
 front = "пустя́к"
 back = "bagatelle"
+wrong = ["exploit", "allusion"]
 level = 76
 
 [[card]]
@@ -541,6 +560,7 @@ id = "t9-voc-077"
 kind = "vocab"
 front = "ерунда́"
 back = "bêtise, broutille"
+wrong = ["dispute", "chagrin"]
 level = 77
 
 [[card]]
@@ -548,6 +568,7 @@ id = "t9-voc-078"
 kind = "vocab"
 front = "чепуха́"
 back = "sottise"
+wrong = ["fatigue", "tapage"]
 level = 78
 
 [[card]]
@@ -555,6 +576,7 @@ id = "t9-voc-079"
 kind = "vocab"
 front = "вздор"
 back = "absurdités"
+wrong = ["querelle", "lassitude"]
 level = 79
 
 [[card]]
@@ -604,6 +626,7 @@ id = "t9-voc-086"
 kind = "vocab"
 front = "вы́думка"
 back = "invention, fiction"
+wrong = ["exploit", "allusion"]
 level = 86
 
 [[card]]
@@ -611,6 +634,7 @@ id = "t9-voc-087"
 kind = "vocab"
 front = "небыли́ца"
 back = "conte à dormir debout"
+wrong = ["exploit", "allusion"]
 level = 87
 
 [[card]]
@@ -639,6 +663,7 @@ id = "t9-voc-091"
 kind = "vocab"
 front = "у́дел"
 back = "sort, lot"
+wrong = ["exploit", "bienfait"]
 level = 91
 
 [[card]]
@@ -646,6 +671,7 @@ id = "t9-voc-092"
 kind = "vocab"
 front = "ро́к"
 back = "destin funeste"
+wrong = ["bienfait", "douce langueur"]
 level = 92
 
 [[card]]
@@ -709,6 +735,7 @@ id = "t9-voc-101"
 kind = "vocab"
 front = "впопыха́х"
 back = "à la hâte"
+wrong = ["à contrecœur", "à tâtons"]
 level = 101
 
 [[card]]
@@ -716,6 +743,7 @@ id = "t9-voc-102"
 kind = "vocab"
 front = "исподтишка́"
 back = "en douce"
+wrong = ["au grand jour", "à voix haute"]
 level = 102
 
 [[card]]
@@ -723,6 +751,7 @@ id = "t9-voc-103"
 kind = "vocab"
 front = "втихомо́лку"
 back = "en catimini"
+wrong = ["ouvertement", "à tue-tête"]
 level = 103
 
 [[card]]
@@ -737,6 +766,7 @@ id = "t9-voc-105"
 kind = "vocab"
 front = "на́спех"
 back = "à la va-vite"
+wrong = ["à reculons", "à tâtons"]
 level = 105
 
 [[card]]
@@ -928,6 +958,7 @@ kind = "vocab"
 front = "хлебосо́льный"
 back = "hospitalier"
 note = "De хлеб и соль, le pain et le sel offerts à l'invité."
+wrong = ["radin", "acariâtre"]
 level = 132
 
 [[card]]
@@ -935,6 +966,7 @@ id = "t9-voc-133"
 kind = "vocab"
 front = "раду́шный"
 back = "accueillant"
+wrong = ["maussade", "dépensier"]
 level = 133
 
 [[card]]
@@ -947,7 +979,8 @@ level = 134
 [[card]]
 id = "t9-voc-135"
 kind = "vocab"
-front = "у́ютный"
+front = "ую́тный"
+pron = "ou-YOUT-nyï"
 back = "douillet"
 level = 135
 
@@ -977,6 +1010,7 @@ id = "t9-phr-001"
 kind = "phrase"
 front = "Ни ры́ба ни мя́со"
 back = "Ni chair ni poisson"
+wrong = ["Ni vu ni connu", "Ni oui ni non"]
 level = 1
 
 [[card]]
@@ -993,6 +1027,7 @@ kind = "phrase"
 front = "Води́ть за нос"
 back = "Mener en bateau"
 note = "Mot à mot : « mener par le nez »."
+wrong = ["Tenir sa langue", "Rester les bras croisés"]
 level = 3
 
 [[card]]
@@ -1037,7 +1072,7 @@ level = 8
 id = "t9-phr-009"
 kind = "phrase"
 front = "Вы́йти сухи́м из воды́"
-back = "S'en tirer sans une égratignure"
+back = "S'en tirer à bon compte"
 level = 9
 
 [[card]]
@@ -1058,6 +1093,7 @@ level = 11
 id = "t9-phr-012"
 kind = "phrase"
 front = "Как с гу́ся вода́"
+pron = "kak z GOU-sia va-DA"
 back = "Comme l'eau sur les plumes d'un canard"
 level = 12
 
@@ -1071,7 +1107,8 @@ level = 13
 [[card]]
 id = "t9-phr-014"
 kind = "phrase"
-front = "Ку́ры не клюю́т"
+front = "Де́нег ку́ры не клюю́т"
+pron = "DIÉ-nik KOU-ry ni kliou-YOUT"
 back = "Avoir de l'argent à ne savoir qu'en faire"
 level = 14
 
@@ -1088,7 +1125,7 @@ id = "t9-phr-016"
 kind = "phrase"
 front = "Лови́ть воро́н"
 back = "Bayer aux corneilles"
-note = "Mot à mot : « attraper les corbeaux »."
+note = "Mot à mot : « attraper les corneilles »."
 level = 16
 
 [[card]]
@@ -1130,7 +1167,7 @@ level = 21
 id = "t9-phr-022"
 kind = "phrase"
 front = "Бе́лая воро́на"
-back = "Le mouton noir"
+back = "Celui qui ne fait pas comme les autres"
 note = "Mot à mot : « une corneille blanche »."
 level = 22
 
@@ -1139,6 +1176,7 @@ id = "t9-phr-023"
 kind = "phrase"
 front = "Втира́ть очки́"
 back = "Jeter de la poudre aux yeux"
+wrong = ["Tenir sa langue", "Faire d'une mouche un éléphant"]
 level = 23
 
 [[card]]
@@ -1174,7 +1212,8 @@ level = 27
 [[card]]
 id = "t9-phr-028"
 kind = "phrase"
-front = "Ру́ка ру́ку мо́ет"
+front = "Рука́ ру́ку мо́ет"
+pron = "ra-KA ROU-kou MO-yit"
 back = "Une main lave l'autre"
 level = 28
 
@@ -1182,6 +1221,7 @@ level = 28
 id = "t9-phr-029"
 kind = "phrase"
 front = "В ти́хом о́муте че́рти во́дятся"
+pron = "f TI-kham O-mou-tié TCHIER-ti VO-dia-tsa"
 back = "Méfie-toi de l'eau qui dort"
 level = 29
 
@@ -1327,7 +1367,7 @@ id = "t9-gra-014"
 kind = "grammar"
 front = "Я бы́ло поду́мал, но переду́мал."
 question = "Que veut dire бы́ло ici ?"
-back = "J'ai failli (mais non)"
+back = "J'avais d'abord pensé ça (mais c'est resté sans suite)"
 wrong = ["C'était hier", "Il y avait"]
 note = "бы́ло + verbe au passé = une action commencée puis abandonnée."
 level = 14

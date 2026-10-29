@@ -75,7 +75,7 @@ level = 10
 id = "t7b-voc-011"
 kind = "vocab"
 front = "переса́дка"
-back = "correspondance"
+back = "correspondance (transport)"
 level = 11
 
 [[card]]
@@ -370,6 +370,7 @@ id = "t7b-voc-053"
 kind = "vocab"
 front = "верну́ть"
 back = "rendre, rembourser"
+wrong = ["échanger", "commander"]
 level = 53
 
 [[card]]
@@ -516,6 +517,7 @@ level = 73
 id = "t7b-voc-074"
 kind = "vocab"
 front = "ви́део"
+pron = "VI-di-o"
 back = "vidéo"
 level = 74
 
@@ -544,7 +546,8 @@ level = 77
 id = "t7b-voc-078"
 kind = "vocab"
 front = "перепи́ска"
-back = "correspondance, échange de messages"
+back = "échange de messages"
+wrong = ["réécriture", "signature"]
 level = 78
 
 [[card]]
@@ -558,7 +561,8 @@ level = 79
 id = "t7b-voc-080"
 kind = "vocab"
 front = "листа́ть"
-back = "faire défiler"
+back = "feuilleter, faire défiler"
+wrong = ["publier, poster", "transférer (un message)"]
 level = 80
 
 [[card]]
@@ -566,6 +570,7 @@ id = "t7b-voc-081"
 kind = "vocab"
 front = "скро́ллить"
 back = "scroller"
+wrong = ["googler", "transférer (un message)"]
 level = 81
 
 [[card]]
@@ -600,7 +605,8 @@ level = 85
 id = "t7b-voc-086"
 kind = "vocab"
 front = "отложи́ть"
-back = "reporter, mettre de côté"
+back = "mettre de côté, remettre à plus tard"
+wrong = ["annuler", "prévenir"]
 level = 86
 
 [[card]]
@@ -614,7 +620,8 @@ level = 87
 id = "t7b-voc-088"
 kind = "vocab"
 front = "перенести́"
-back = "déplacer, reporter"
+back = "déplacer (ailleurs ou à une autre date)"
+wrong = ["annuler", "rappeler (à quelqu'un)"]
 level = 88
 
 [[card]]
@@ -650,6 +657,7 @@ id = "t7b-voc-093"
 kind = "vocab"
 front = "согласи́ться"
 back = "accepter"
+wrong = ["refuser", "promettre"]
 level = 93
 
 [[card]]
@@ -712,6 +720,7 @@ level = 101
 id = "t7b-voc-102"
 kind = "vocab"
 front = "исче́знуть"
+pron = "i-CHTCHIEZ-nout"
 back = "disparaître"
 level = 102
 

@@ -40,7 +40,7 @@ level = 5
 id = "t4-voc-006"
 kind = "vocab"
 front = "одна́жды"
-back = "un jour, une fois"
+back = "un jour (dans un récit), un beau jour"
 level = 6
 
 [[card]]
@@ -69,7 +69,7 @@ id = "t4-voc-010"
 kind = "vocab"
 front = "никогда́"
 back = "jamais"
-note = "Я никогда́ не был в Москве́ = Je ne suis jamais allé à Moscou."
+note = "Я никогда́ не́ был в Москве́ = Je ne suis jamais allé à Moscou."
 level = 10
 
 [[card]]
@@ -196,6 +196,7 @@ level = 27
 id = "t4-voc-028"
 kind = "vocab"
 front = "се́рдце"
+pron = "SIER-tsa"
 back = "cœur"
 level = 28
 
@@ -203,7 +204,7 @@ level = 28
 id = "t4-voc-029"
 kind = "vocab"
 front = "боле́ть"
-back = "avoir mal, être malade"
+back = "être malade, faire mal (verbe)"
 note = "У меня́ боли́т голова́ = J'ai mal à la tête."
 level = 29
 
@@ -260,6 +261,7 @@ level = 36
 id = "t4-voc-037"
 kind = "vocab"
 front = "со́лнце"
+pron = "SON-tsa"
 back = "soleil"
 level = 37
 
@@ -302,7 +304,7 @@ level = 42
 id = "t4-voc-043"
 kind = "vocab"
 front = "тепло́"
-back = "il fait doux"
+back = "il fait bon (doux)"
 level = 43
 
 [[card]]
@@ -477,6 +479,7 @@ level = 67
 id = "t4-voc-068"
 kind = "vocab"
 front = "сча́стье"
+pron = "CHTCHAS-tié"
 back = "bonheur"
 level = 68
 
@@ -484,6 +487,7 @@ level = 68
 id = "t4-voc-069"
 kind = "vocab"
 front = "счастли́вый"
+pron = "chtchis-LI-vyï"
 back = "heureux"
 level = 69
 
@@ -540,6 +544,7 @@ level = 76
 id = "t4-voc-077"
 kind = "vocab"
 front = "чу́вствовать"
+pron = "TCHOUS-tva-vat"
 back = "ressentir"
 level = 77
 
@@ -640,14 +645,15 @@ level = 90
 id = "t4-voc-091"
 kind = "vocab"
 front = "пое́здка"
-back = "voyage, trajet"
+pron = "pa-YEST-ka"
+back = "trajet, déplacement"
 level = 91
 
 [[card]]
 id = "t4-voc-092"
 kind = "vocab"
 front = "путеше́ствие"
-back = "voyage"
+back = "voyage (long, d'agrément)"
 level = 92
 
 [[card]]
@@ -696,6 +702,7 @@ level = 98
 id = "t4-voc-099"
 kind = "vocab"
 front = "пра́здник"
+pron = "PRAZ-nik"
 back = "fête"
 level = 99
 
@@ -745,6 +752,7 @@ level = 105
 id = "t4-voc-106"
 kind = "vocab"
 front = "жизнь"
+pron = "jizn"
 back = "vie"
 level = 106
 
@@ -815,7 +823,7 @@ level = 115
 id = "t4-voc-116"
 kind = "vocab"
 front = "кни́жка"
-back = "petit livre"
+back = "livre (familier), petit livre"
 level = 116
 
 [[card]]
@@ -923,6 +931,7 @@ level = 9
 id = "t4-phr-010"
 kind = "phrase"
 front = "Мы познако́мились в шко́ле"
+pron = "my paz-na-KO-mi-lis f CHKO-lié"
 back = "Nous nous sommes rencontrés à l'école"
 level = 10
 
@@ -1065,6 +1074,7 @@ level = 29
 id = "t4-phr-030"
 kind = "phrase"
 front = "Счастли́вого пути́!"
+pron = "chtchis-LI-va-va pou-TI!"
 back = "Bon voyage !"
 level = 30
 
@@ -1095,7 +1105,7 @@ front = "Я бу́ду рабо́тать."
 question = "Que veut dire cette phrase ?"
 back = "Je travaillerai."
 wrong = ["Je travaillais.", "Je travaille."]
-note = "Futur simple : бу́ду + verbe. я бу́ду, ты бу́дешь, он бу́дет…"
+note = "Futur composé : бу́ду + verbe à l'infinitif (action vue dans sa durée, pas « terminée »). я бу́ду, ты бу́дешь, он бу́дет…"
 level = 3
 
 [[card]]
@@ -1134,14 +1144,15 @@ kind = "grammar"
 front = "зимо́й"
 question = "Que veut dire зимо́й ?"
 back = "en hiver"
-wrong = ["l'hiver dernier", "vers l'hiver"]
-note = "Les saisons en -ой / -ом veulent dire « en … » : зимо́й, весно́й, ле́том, о́сенью."
+wrong = ["tout l'hiver", "avant l'hiver"]
+note = "Les saisons en -ой / -ом / -ью veulent dire « en … » : зимо́й, весно́й, ле́том, о́сенью."
 level = 7
 
 [[card]]
 id = "t4-gra-008"
 kind = "grammar"
 front = "Он роди́лся в 1990 году́."
+pron = "on ra-DIL-sia v TY-si-tcha di-vi-TSOT di-vi-NOS-tam ga-DOU."
 question = "Que veut dire cette phrase ?"
 back = "Il est né en 1990."
 wrong = ["Il a 1990 ans.", "Il vit depuis 1990."]
@@ -1151,7 +1162,8 @@ level = 8
 [[card]]
 id = "t4-gra-009"
 kind = "grammar"
-front = "Я никогда́ не был там."
+front = "Я никогда́ не́ был там."
+pron = "ya ni-kag-DA NIÉ-byl tam."
 question = "Pourquoi y a-t-il à la fois никогда́ et не ?"
 back = "En russe, « jamais » s'emploie avec не"
 wrong = ["C'est une faute", "Pour dire « toujours »"]
@@ -1172,6 +1184,7 @@ level = 10
 id = "t4-gra-011"
 kind = "grammar"
 front = "Пойдём в кино́!"
+pron = "paï-DIOM f ki-NO!"
 question = "Que veut dire cette phrase ?"
 back = "Allons au cinéma !"
 wrong = ["Je suis allé au cinéma.", "Le cinéma est fermé."]

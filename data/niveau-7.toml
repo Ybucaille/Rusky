@@ -26,6 +26,7 @@ level = 3
 id = "t7-voc-004"
 kind = "vocab"
 front = "полоте́нце"
+pron = "pa-la-TIEN-tsa"
 back = "serviette (de toilette)"
 level = 4
 
@@ -110,6 +111,7 @@ level = 15
 id = "t7-voc-016"
 kind = "vocab"
 front = "ле́стница"
+pron = "LIES-ni-tsa"
 back = "escalier"
 level = 16
 
@@ -137,7 +139,8 @@ level = 19
 [[card]]
 id = "t7-voc-020"
 kind = "vocab"
-front = "сте́на"
+front = "стена́"
+pron = "sti-NA"
 back = "mur"
 level = 20
 
@@ -564,7 +567,8 @@ level = 80
 [[card]]
 id = "t7-voc-081"
 kind = "vocab"
-front = "ре́клама"
+front = "рекла́ма"
+pron = "ri-KLA-ma"
 back = "publicité"
 level = 81
 
@@ -1072,6 +1076,7 @@ level = 152
 id = "t7-voc-153"
 kind = "vocab"
 front = "мя́гкий"
+pron = "MIAKH-kiï"
 back = "doux, mou"
 level = 153
 
@@ -1100,7 +1105,8 @@ level = 156
 id = "t7-voc-157"
 kind = "vocab"
 front = "гро́мкий"
-back = "fort (bruyant)"
+back = "bruyant, fort (son)"
+wrong = ["calme, silencieux", "vif, éclatant"]
 level = 157
 
 [[card]]
@@ -1233,7 +1239,8 @@ level = 175
 id = "t7-voc-176"
 kind = "vocab"
 front = "си́льный"
-back = "fort"
+back = "fort (puissant)"
+wrong = ["faible", "courageux"]
 level = 176
 
 [[card]]
@@ -1246,7 +1253,8 @@ level = 177
 [[card]]
 id = "t7-voc-178"
 kind = "vocab"
-front = "ле́нивый"
+front = "лени́вый"
+pron = "li-NI-vyï"
 back = "paresseux"
 level = 178
 
@@ -1268,6 +1276,7 @@ level = 180
 id = "t7-voc-181"
 kind = "vocab"
 front = "че́стный"
+pron = "TCHIES-nyï"
 back = "honnête"
 level = 181
 
@@ -1296,6 +1305,7 @@ level = 2
 id = "t7-phr-003"
 kind = "phrase"
 front = "Ни в ко́ем слу́чае"
+pron = "ni f KO-yim SLOU-tcha-yi"
 back = "En aucun cas"
 level = 3
 
@@ -1323,7 +1333,8 @@ level = 6
 [[card]]
 id = "t7-phr-007"
 kind = "phrase"
-front = "Не за что благодари́ть"
+front = "Не́ за что благодари́ть"
+pron = "NIÉ-za-chta bla-ga-da-RIT"
 back = "Il n'y a pas de quoi"
 level = 7
 
@@ -1345,6 +1356,7 @@ level = 9
 id = "t7-phr-010"
 kind = "phrase"
 front = "Чу́вствуй себя́ как до́ма"
+pron = "TCHOUS-tvouï si-BIA kak DO-ma"
 back = "Fais comme chez toi"
 level = 10
 
@@ -1380,6 +1392,7 @@ level = 14
 id = "t7-phr-015"
 kind = "phrase"
 front = "Где́-то здесь"
+pron = "GDIÉ-ta zdies"
 back = "Quelque part par ici"
 level = 15
 
@@ -1394,6 +1407,7 @@ level = 16
 id = "t7-phr-017"
 kind = "phrase"
 front = "Ка́к-нибудь пото́м"
+pron = "KAK-ni-bout pa-TOM"
 back = "Une autre fois"
 level = 17
 
@@ -1492,7 +1506,7 @@ level = 30
 id = "t7-gra-001"
 kind = "grammar"
 front = "идти́ / ходи́ть"
-question = "Каждый день я хожу́ на рабо́ту. Pourquoi ходи́ть ?"
+question = "Ка́ждый день я хожу́ на рабо́ту. Pourquoi ходи́ть ?"
 back = "C'est une habitude, un trajet répété"
 wrong = ["C'est un trajet en cours", "C'est au futur"]
 note = "Les verbes de mouvement vont par paires : un pour « en ce moment, dans une direction » (идти́, е́хать, лете́ть…), un pour « souvent, aller-retour » (ходи́ть, е́здить, лета́ть…)."
@@ -1614,7 +1628,7 @@ kind = "grammar"
 front = "Е́сли бы у меня́ бы́ли де́ньги…"
 question = "Que veut dire cette phrase ?"
 back = "Si j'avais de l'argent…"
-wrong = ["Si j'aurai de l'argent…", "Quand j'aurai de l'argent…"]
+wrong = ["Si j'ai de l'argent…", "Quand j'aurai de l'argent…"]
 note = "е́сли бы + passé = si (hypothèse irréelle)."
 level = 13
 

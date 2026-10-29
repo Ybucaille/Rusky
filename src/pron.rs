@@ -9,18 +9,32 @@ const ACUTE: char = '\u{301}';
 const VOWELS: &str = "аеёиоуыэюяАЕЁИОУЫЭЮЯ";
 
 pub fn pron(text: &str) -> String {
-    let mut out = String::new();
-    let mut word = String::new();
+    // Découpe en mots et séparateurs, pour que в, с, к prennent le son du mot suivant.
+    let mut tokens: Vec<(String, String)> = vec![(String::new(), String::new())];
     for c in text.chars() {
-        if c.is_alphabetic() || c == ACUTE || c == '-' && !word.is_empty() {
-            word.push(c);
+        let last = tokens.last_mut().unwrap();
+        if (c.is_alphabetic() || c == ACUTE || c == '-' && !last.0.is_empty()) && last.1.is_empty() {
+            last.0.push(c);
+        } else if c.is_alphabetic() || c == ACUTE {
+            tokens.push((c.to_string(), String::new()));
         } else {
-            out.push_str(&pron_word(&word));
-            word.clear();
-            out.push(c);
+            last.1.push(c);
         }
     }
-    out.push_str(&pron_word(&word));
+    let mut out = String::new();
+    for (i, (word, sep)) in tokens.iter().enumerate() {
+        let next = tokens.get(i + 1).and_then(|t| t.0.to_lowercase().chars().next());
+        out.push_str(&match (word.to_lowercase().as_str(), sep.as_str() == " ", next) {
+            // в парк → « f park », с дру́гом → « z drou… », к го́роду → « g ga… »
+            ("в" | "с" | "к", true, Some(n)) if "пфктшсхцчщ".contains(n) => {
+                if word.to_lowercase() == "в" { "f".into() } else { pron_word(word) }
+            }
+            ("с", true, Some(n)) if "бгджз".contains(n) => "z".into(),
+            ("к", true, Some(n)) if "бгджз".contains(n) => "g".into(),
+            _ => pron_word(word),
+        });
+        out.push_str(sep);
+    }
     out
 }
 
@@ -34,8 +48,19 @@ fn pron_word(word: &str) -> String {
         return String::new();
     }
     if word.contains('-') {
-        // по-ру́сски : chaque morceau à part.
-        return word.split('-').map(pron_word).collect::<Vec<_>>().join("-");
+        // по-ру́сски, ну́-ка : chaque morceau à part ; un morceau d'une syllabe porteur
+        // de l'accent passe en majuscules, puisque le mot entier en a plusieurs.
+        let pieces: Vec<&str> = word.split('-').collect();
+        let syllables = word.chars().filter(|c| is_vowel(*c)).count();
+        return pieces
+            .iter()
+            .map(|p| {
+                let out = pron_word(p);
+                let own = p.chars().filter(|c| is_vowel(*c)).count();
+                if syllables > 1 && own == 1 && (p.contains(ACUTE) || p.contains(['ё', 'Ё'])) { out.to_uppercase() } else { out }
+            })
+            .collect::<Vec<_>>()
+            .join("-");
     }
     let lower: Vec<char> = word.to_lowercase().chars().collect();
     let plain: String = lower.iter().filter(|&&c| c != ACUTE).collect();
@@ -76,12 +101,26 @@ fn pron_word(word: &str) -> String {
             letters.push((c, c == 'ё'));
         }
     }
+    // жч, сч, зч se disent comme щ : мужчи́на, счастли́вый.
+    for i in (0..letters.len().saturating_sub(1)).rev() {
+        if "жсз".contains(letters[i].0) && letters[i + 1].0 == 'ч' {
+            letters[i + 1].0 = 'щ';
+            letters.remove(i);
+        }
+    }
+    // Consonnes muettes : со́лнце, пра́здник, чу́вствовать, изве́стный, се́рдце, счастли́вый.
+    for (pattern, silent) in [("лнц", 0), ("здн", 1), ("стн", 1), ("вств", 0), ("рдц", 1), ("стл", 1)] {
+        let pat: Vec<char> = pattern.chars().collect();
+        while let Some(i) = letters.windows(pat.len()).position(|w| w.iter().map(|l| l.0).eq(pat.iter().copied())) {
+            letters.remove(i + silent);
+        }
+    }
     let n_vowels = letters.iter().filter(|(c, _)| is_vowel(*c)).count();
     // Pas d'accent indiqué sur un mot d'une syllabe : il est accentué.
     // Petits mots outils sans accent propre : по, до, не… (« pa », « da », « ni »).
     let clitic = n_vowels == 1
         && !letters.iter().any(|l| l.1)
-        && ["по", "до", "на", "за", "не", "ни", "но", "от", "об", "под", "над", "из", "без", "о"].contains(&plain.as_str());
+        && ["по", "до", "на", "за", "не", "ни", "от", "об", "под", "над", "из", "без", "о"].contains(&plain.as_str());
     if clitic {
         return letters
             .iter()
@@ -190,7 +229,7 @@ fn pron_word(word: &str) -> String {
         .iter()
         .map(|s| if s.stressed && n_vowels > 1 { s.text.to_uppercase() } else { s.text.clone() })
         .collect();
-    let mut res = joined.join("-").replace("stch", "chtch").replace("STCH", "CHTCH");
+    let mut res = joined.join("-").replace("stch", "chtch").replace("STCH", "CHTCH").replace("jtch", "chtch").replace("JTCH", "CHTCH");
     // Consonne doublée de part et d'autre d'un tiret : it-TI → i-TI, ROUS-ski → ROUS-ki.
     for c in ["t", "s", "k", "n", "m", "l", "r", "p", "f"] {
         let (l, u) = (c.to_string(), c.to_uppercase());
@@ -203,6 +242,8 @@ fn pron_word(word: &str) -> String {
 
 fn letter(c: char, prev: Option<char>, next: Option<char>, word_end: bool, stressed: bool, very_last: bool) -> String {
     let after_cons = prev.is_some_and(|p| !is_vowel(p) && !is_sign(p));
+    // Une sourde devient sonore devant б, г, д, ж, з (отдыха́ть → ad-dy-KHAT, сде́лать → ZDIÉ-lat).
+    let voiced_next = next.is_some_and(|n| "бгджз".contains(n));
     // Une consonne sonore devient sourde en fin de mot ou devant une sourde (за́втра → ZAF-tra).
     let word_end = word_end || next.is_some_and(|n| "пфктшсхцчщ".contains(n));
     let front_vowel_next = next.is_some_and(|n| "еёиыэюя".contains(n));
@@ -210,6 +251,7 @@ fn letter(c: char, prev: Option<char>, next: Option<char>, word_end: bool, stres
         'а' => "a",
         'б' => if word_end { "p" } else { "b" },
         'в' => if word_end { "f" } else { "v" },
+        'г' if next.is_some_and(|n| n == 'к' || n == 'ч') => "kh",   // лёгкий, облегче́ние
         'г' => if word_end { "k" } else if front_vowel_next { "gu" } else { "g" },
         'д' => if word_end { "t" } else { "d" },
         'е' if prev.is_some_and(|p| "жшц".contains(p)) => if stressed || very_last { "é" } else { "i" },
@@ -219,20 +261,22 @@ fn letter(c: char, prev: Option<char>, next: Option<char>, word_end: bool, stres
             (false, true) => "yé",
             (false, false) => if very_last { "yé" } else { "yi" },
         },
+        // После ж, ч, ш, щ : « o » (жёлтый, ещё), ailleurs « io » / « yo ».
+        'ё' if prev.is_some_and(|p| "жчшщ".contains(p)) => "o",
         'ё' => if after_cons { "io" } else { "yo" },
         'ж' => if word_end { "ch" } else { "j" },
         'з' => if word_end { "s" } else { "z" },
         'и' => "i",
         'й' => "ï",
-        'к' => "k",
+        'к' => if voiced_next { "g" } else { "k" },
         'л' => "l",
         'м' => "m",
         'н' => "n",
         'о' => if stressed { "o" } else { "a" },
-        'п' => "p",
+        'п' => if voiced_next { "b" } else { "p" },
         'р' => "r",
-        'с' => "s", // les tirets séparent les syllabes : pas de « z » à la française
-        'т' => "t",
+        'с' => if voiced_next { "z" } else { "s" }, // les tirets séparent les syllabes : pas de « z » à la française
+        'т' => if voiced_next { "d" } else { "t" },
         'у' => "ou",
         'ф' => "f",
         'х' => "kh",
@@ -292,6 +336,19 @@ mod tests {
             ("по-ру́сски", "pa-ROU-ski"),
             ("идти́", "i-TI"),
             ("по́езд", "PO-yist"),
+            ("со́лнце", "SON-tsé"),
+            ("пра́здник", "PRAZ-nik"),
+            ("изве́стный", "iz-VIES-nyï"),
+            ("в парк", "f park"),
+            ("жёлтый", "JOL-tyï"),
+            ("ну́-ка", "NOU-ka"),
+            ("сыр-бо́р", "syr-BOR"),
+            ("ещё", "yi-CHTCHO"),
+            ("мужчи́на", "mou-CHTCHI-na"),
+            ("отдыха́ть", "ad-dy-KHAT"),
+            ("лёгкий", "LIOKH-kiï"),
+            ("гру́стный", "GROUS-nyï"),
+            ("с дру́гом", "z DROU-gam"),
             ("жена́", "ji-NA"),
             ("же", "jé"),
             ("счита́ть", "chtchi-TAT"),

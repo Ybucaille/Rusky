@@ -3,9 +3,12 @@
 Format (une carte par ligne, champs séparés par « | ») :
   # niveau = 2            (ligne d'en-tête obligatoire)
   @vocab | @phrase | @grammar | @alphabet   (section)
-  vocab/phrase : russe accentué | sens | note facultative
+  vocab/phrase : russe accentué | sens | note | prononciation | mauvaise 1 ; mauvaise 2  (tout facultatif après le sens)
   alphabet     : lettre | son | note
-  grammar      : russe | consigne | bonne réponse | mauvaise 1 ; mauvaise 2 | note
+  grammar      : russe | consigne | bonne réponse | mauvaise 1 ; mauvaise 2 | note | prononciation
+  La prononciation n'est à écrire que pour corriger celle calculée par rusky.
+  Une ligne qui commence par « ~ » est une carte retirée : elle garde son numéro,
+  pour que les cartes suivantes gardent leur identifiant (et la progression).
 Usage : build_tier.py source.txt sortie.toml préfixe
 """
 import sys
@@ -65,10 +68,13 @@ def main(src, dst, prefix):
         if line.startswith("@"):
             section = line[1:].strip()
             continue
-        f = [x.strip() for x in line.split("|")]
-        ok &= all(check_chars(x, f"ligne {n}") for x in f)
+        retired = line.startswith("~")
+        f = [x.strip() for x in line.lstrip("~").split("|")]
         counts[section] = counts.get(section, 0) + 1
         i = counts[section]
+        if retired:
+            continue
+        ok &= all(check_chars(x, f"ligne {n}") for x in f)
         kind = {"vocab": "vocab", "phrase": "phrase", "grammar": "grammar", "alphabet": "alphabet"}[section]
         key = (kind, f[0])
         if key in seen:
@@ -83,6 +89,13 @@ def main(src, dst, prefix):
             card.append(f"back = {q(f[1])}")
             if len(f) > 2 and f[2]:
                 card.append(f"note = {q(f[2])}")
+            if len(f) > 3 and f[3]:
+                card.insert(4, f"pron = {q(f[3])}")
+            if len(f) > 4 and f[4]:
+                wrong = [w.strip() for w in f[4].split(";")]
+                if f[1] in wrong or len(wrong) != 2:
+                    print(f"ligne {n} : mauvaises réponses invalides", file=sys.stderr); ok = False
+                card.append("wrong = [" + ", ".join(q(w) for w in wrong) + "]")
         elif kind == "alphabet":
             card.append(f"back = {q(f[1])}")
             if len(f) > 2 and f[2]:
@@ -99,6 +112,8 @@ def main(src, dst, prefix):
             card.append("wrong = [" + ", ".join(q(w) for w in wrong) + "]")
             if len(f) > 4 and f[4]:
                 card.append(f"note = {q(f[4])}")
+            if len(f) > 5 and f[5]:
+                card.insert(4, f"pron = {q(f[5])}")
         card.append(f"level = {i}")
         out.append("\n".join(card))
     if tier is None:

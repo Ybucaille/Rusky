@@ -5,18 +5,18 @@
 гляде́ть | regarder (plus littéraire que смотре́ть) |
 взира́ть | contempler (soutenu) |
 мелька́ть | apparaître furtivement |
-мерца́ть | scintiller |
-сверка́ть | étinceler |
-шелесте́ть | bruisser |
+мерца́ть | scintiller |  |  | bruisser ; ramper
+сверка́ть | étinceler |  |  | trébucher ; errer
+шелесте́ть | bruisser |  |  | étinceler ; ronchonner
 журча́ть | murmurer (un ruisseau) |
 грохота́ть | gronder, tonner |
 скрипе́ть | grincer |
-шурша́ть | froisser, crisser |
-броди́ть | errer |
-слоня́ться | traîner, flâner sans but |
+шурша́ть | bruire, froufrouter (papier, feuilles) |  |  | grincer ; gronder, tonner
+броди́ть | errer |  |  | ramper ; trébucher
+слоня́ться | traîner, flâner sans but |  |  | ramper ; se vanter
 спотыка́ться | trébucher |
 ползти́ | ramper |
-кра́сться | avancer à pas de loup |
+кра́сться | avancer à pas de loup |  | KRAS-tsa
 ёрзать | se tortiller sur sa chaise |
 ворча́ть | ronchonner |
 бормота́ть | marmonner |
@@ -29,27 +29,27 @@
 лени́ться | avoir la flemme |
 суети́ться | s'agiter |
 ме́шкать | tarder, lambiner |
-стесня́ться | être gêné, timide |
-смуща́ться | se troubler |
+стесня́ться | être gêné, timide |  |  | se vanter ; s'agiter
+смуща́ться | se troubler |  |  | se vanter ; ronchonner
 теря́ться | perdre ses moyens |
 недоумева́ть | être perplexe |
 доса́довать | être dépité |
-тоскова́ть | se languir |
-скуча́ть по | regretter (quelqu'un) |
-томи́ться | se morfondre |
+тоскова́ть | se languir |  |  | se vanter ; s'indigner
+скуча́ть по | quelqu'un vous manque, s'ennuyer de quelqu'un |
+томи́ться | se morfondre |  |  | s'attendrir ; ronchonner
 восхища́ться | admirer |
 умиля́ться | s'attendrir |
 негодова́ть | s'indigner |
 презира́ть | mépriser |
 лицеме́рие | hypocrisie |
 высокоме́рие | arrogance |
-смека́лка | débrouillardise |
-сноро́вка | habileté, savoir-faire |
+смека́лка | débrouillardise |  |  | arrogance ; hypocrisie
+сноро́вка | habileté, savoir-faire |  |  | arrogance ; trouble, désordre
 сму́та | trouble, désordre |
 у́даль | bravoure insouciante |
 раздо́лье | grand espace libre |
-глушь | coin perdu |
-захолу́стье | trou perdu |
+глушь | coin perdu |  |  | bourbier ; clairière
+захолу́стье | trou perdu |  |  | taudis ; carrefour
 окра́ина | périphérie |
 су́мерки | crépuscule |
 рассве́т | aube |
@@ -75,25 +75,25 @@
 сыно́к | fiston |
 до́ченька | ma fillette |
 мину́тка | petite minute |
-чуто́к | un tout petit peu (familier) |
-чуть-чу́ть | un tout petit peu |
-пустя́к | bagatelle |
-ерунда́ | bêtise, broutille |
-чепуха́ | sottise |
-вздор | absurdités |
+чуто́к | un tout petit peu (familier) |  |  | énormément ; tout de suite
+чуть-чу́ть | un tout petit peu |  | tchout-TCHOUT | énormément ; tout à l'heure
+пустя́к | bagatelle |  |  | exploit ; allusion
+ерунда́ | bêtise, broutille |  |  | dispute ; chagrin
+чепуха́ | sottise |  |  | fatigue ; tapage
+вздор | absurdités |  |  | querelle ; lassitude
 спле́тни | ragots |
 слух | rumeur, ouïe |
 намёк | allusion |
 подво́х | piège, entourloupe |
 хи́трость | ruse |
 у́мысел | intention cachée |
-вы́думка | invention, fiction |
-небыли́ца | conte à dormir debout |
+вы́думка | invention, fiction |  |  | exploit ; allusion
+небыли́ца | conte à dormir debout |  |  | exploit ; allusion
 по́двиг | exploit |
 по́прище | domaine d'activité (soutenu) |
 стезя́ | voie, chemin (littéraire) |
-у́дел | sort, lot |
-ро́к | destin funeste |
+у́дел | sort, lot |  |  | exploit ; bienfait
+ро́к | destin funeste |  |  | bienfait ; douce langueur
 не́га | douce langueur |
 бла́го | bien, bienfait |
 вда́ль | au loin |
@@ -102,11 +102,11 @@
 напрома́х | à côté (de la cible) |
 вслепу́ю | à l'aveugle |
 нау́тро | le lendemain matin |
-впопыха́х | à la hâte |
-исподтишка́ | en douce |
-втихомо́лку | en catimini |
+впопыха́х | à la hâte |  |  | à contrecœur ; à tâtons
+исподтишка́ | en douce |  |  | au grand jour ; à voix haute
+втихомо́лку | en catimini |  |  | ouvertement ; à tue-tête
 восвоя́си | chez soi (ironique) |
-на́спех | à la va-vite |
+на́спех | à la va-vite |  |  | à reculons ; à tâtons
 воо́чию | de ses propres yeux |
 поне́воле | malgré soi |
 сплошь и ря́дом | très souvent, à tout bout de champ |
@@ -133,44 +133,44 @@
 сварли́вый | acariâtre |
 прижи́мистый | radin |
 расточи́тельный | dépensier |
-хлебосо́льный | hospitalier | De хлеб и соль, le pain et le sel offerts à l'invité.
-раду́шный | accueillant |
+хлебосо́льный | hospitalier | De хлеб и соль, le pain et le sel offerts à l'invité. |  | radin ; acariâtre
+раду́шный | accueillant |  |  | maussade ; dépensier
 задуше́вный | intime, chaleureux |
-у́ютный | douillet |
+ую́тный | douillet |  | ou-YOUT-nyï
 промо́зглый | froid et humide |
 па́смурный | couvert, gris |
 зно́йный | torride |
 
 @phrase
-Ни ры́ба ни мя́со | Ni chair ni poisson |
+Ни ры́ба ни мя́со | Ni chair ni poisson |  |  | Ni vu ni connu ; Ni oui ni non
 Бить ключо́м | Battre son plein | Mot à mot : « jaillir comme une source ».
-Води́ть за нос | Mener en bateau | Mot à mot : « mener par le nez ».
+Води́ть за нос | Mener en bateau | Mot à mot : « mener par le nez ». |  | Tenir sa langue ; Rester les bras croisés
 Спустя́ рукава́ | Par-dessus la jambe | Mot à mot : « les manches baissées ».
 Засучи́в рукава́ | En retroussant ses manches |
 Держа́ть язы́к за зуба́ми | Tenir sa langue |
 Кот напла́кал | Trois fois rien | Mot à mot : « ce que le chat a pleuré ».
 Медве́жья услу́га | Le pavé de l'ours | Un service qui fait plus de mal que de bien.
-Вы́йти сухи́м из воды́ | S'en tirer sans une égratignure |
+Вы́йти сухи́м из воды́ | S'en tirer à bon compte |
 Взять себя́ в ру́ки | Se ressaisir |
 Сиде́ть сложа́ ру́ки | Rester les bras croisés |
-Как с гу́ся вода́ | Comme l'eau sur les plumes d'un canard |
+Как с гу́ся вода́ | Comme l'eau sur les plumes d'un canard |  | kak z GOU-sia va-DA
 Паха́ть как ло́шадь | Travailler comme un forçat |
-Ку́ры не клюю́т | Avoir de l'argent à ne savoir qu'en faire |
+Де́нег ку́ры не клюю́т | Avoir de l'argent à ne savoir qu'en faire |  | DIÉ-nik KOU-ry ni kliou-YOUT
 За три́девять земе́ль | Au bout du monde | Formule des contes : « au-delà de trois fois neuf terres ».
-Лови́ть воро́н | Bayer aux corneilles | Mot à mot : « attraper les corbeaux ».
+Лови́ть воро́н | Bayer aux corneilles | Mot à mot : « attraper les corneilles ».
 Заруби́ть на носу́ | Se le tenir pour dit |
 Де́лать из му́хи слона́ | Faire d'une mouche un éléphant |
 Не по́ дням, а по часа́м | À vue d'œil |
 Па́лка о двух конца́х | Une arme à double tranchant |
 Я́блоку не́где упа́сть | Plein à craquer |
-Бе́лая воро́на | Le mouton noir | Mot à mot : « une corneille blanche ».
-Втира́ть очки́ | Jeter de la poudre aux yeux |
+Бе́лая воро́на | Celui qui ne fait pas comme les autres | Mot à mot : « une corneille blanche ».
+Втира́ть очки́ | Jeter de la poudre aux yeux |  |  | Tenir sa langue ; Faire d'une mouche un éléphant
 На седьмо́м не́бе | Au septième ciel |
 Ви́лами по воде́ пи́сано | Rien n'est moins sûr |
 Ко́нчить за упоко́й | Mal finir (un discours) | Начать за здра́вие, ко́нчить за упоко́й = commencer en fanfare, finir en eau de boudin.
 Не бо́ги горшки́ обжига́ют | Tout s'apprend | Mot à mot : « ce ne sont pas les dieux qui cuisent les pots ».
-Ру́ка ру́ку мо́ет | Une main lave l'autre |
-В ти́хом о́муте че́рти во́дятся | Méfie-toi de l'eau qui dort |
+Рука́ ру́ку мо́ет | Une main lave l'autre |  | ra-KA ROU-kou MO-yit
+В ти́хом о́муте че́рти во́дятся | Méfie-toi de l'eau qui dort |  | f TI-kham O-mou-tié TCHIER-ti VO-dia-tsa
 Сла́вно потруди́лись! | Beau travail ! |
 
 @grammar
@@ -187,5 +187,5 @@
 Хоть убе́й, не по́мню. | Que veut dire cette phrase ? | Je ne m'en souviens pas, même si on me tuait. | Tue-le, je ne m'en souviens pas. ; Je me souviens vaguement. | хоть + impératif = même si, quand bien même (très familier, emphatique).
 Знай себе́ рабо́тает. | Quel sens a знай себе́ ? | Il continue tranquillement, sans s'en soucier | Il sait travailler ; Il travaille pour lui-même | Particule familière : continuer imperturbablement.
 Ты бы позвони́л ма́ме. | Que veut dire cette phrase ? | Tu devrais appeler ta mère. | Tu as appelé ta mère. ; Tu appelleras ta mère. | бы + passé = conseil adouci.
-Я бы́ло поду́мал, но переду́мал. | Que veut dire бы́ло ici ? | J'ai failli (mais non) | C'était hier ; Il y avait | бы́ло + verbe au passé = une action commencée puis abandonnée.
+Я бы́ло поду́мал, но переду́мал. | Que veut dire бы́ло ici ? | J'avais d'abord pensé ça (mais c'est resté sans suite) | C'était hier ; Il y avait | бы́ло + verbe au passé = une action commencée puis abandonnée.
 Я вот-во́т уйду́. | Que veut dire вот-во́т ? | d'un instant à l'autre | jamais ; tout de suite après toi | вот-вот = sur le point de, d'une seconde à l'autre.

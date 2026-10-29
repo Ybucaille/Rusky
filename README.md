@@ -137,7 +137,7 @@ Chaque niveau s'écrit dans `data/src/niveau-N.txt`, une carte par ligne (`russe
 python3 data/src/build.py data/src/niveau-2.txt data/niveau-2.toml t2
 ```
 
-Le script refuse un mot de plusieurs syllabes sans accent, une lettre latine glissée dans un mot russe, un doublon ou une question de grammaire mal formée. `cargo test` vérifie ensuite le paquet entier.
+Une colonne facultative corrige la prononciation calculée, une autre fixe les mauvaises réponses (utile pour les synonymes). Le script refuse un mot de plusieurs syllabes sans accent, une lettre latine glissée dans un mot russe, un doublon ou une question de grammaire mal formée. `cargo test` vérifie ensuite le paquet entier.
 
 ## Refaire la vidéo
 

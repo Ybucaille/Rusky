@@ -28,7 +28,7 @@
 по́мощь | aide |
 забо́та | souci, attention |
 благода́рность | gratitude |
-изви́нение | excuse |
+извине́ние | excuse |  | iz-vi-NIÉ-ni-yé
 обеща́ние | promesse |
 сле́дствие | conséquence |
 усло́вие | condition |
@@ -56,7 +56,7 @@
 стреми́ться | aspirer à |
 добива́ться | obtenir (par l'effort) |
 привыка́ть | s'habituer |
-скуча́ть | s'ennuyer, regretter quelqu'un |
+скуча́ть | s'ennuyer ; (quelqu'un) me manque |
 жале́ть | regretter, plaindre |
 изменя́ть | changer, tromper |
 признава́ть | reconnaître, avouer |
@@ -75,10 +75,10 @@
 обходи́ть | contourner |
 заходи́ть | passer (chez quelqu'un) |
 доходи́ть | atteindre (à pied) |
-проходи́ть | passer, traverser |
+проходи́ть | passer (par, devant), parcourir |
 расходи́ться | se séparer |
 наоборо́т | au contraire |
-всё-таки | quand même |
+всё-таки | quand même |  | FSIO-ta-ki
 вряд ли | peu probable |
 тем не ме́нее | néanmoins |
 и так да́лее | et ainsi de suite |
@@ -94,7 +94,7 @@
 почти́ | presque |
 едва́ | à peine |
 неуже́ли | vraiment ? (surprise) |
-ведь | car, pourtant | Mot de liaison qui insiste : Ведь ты зна́ешь! = Mais tu le sais bien !
+ведь | car, puisque (insistance) | Mot de liaison qui insiste : Ведь ты зна́ешь! = Mais tu le sais bien !
 же | donc, bien | Particule d'insistance : Я же говори́л! = Je te l'avais bien dit !
 ли | est-ce que | Зна́ешь ли ты…? = Sais-tu… ?
 ну | eh bien, bon |
@@ -119,7 +119,7 @@
 
 @phrase
 Ни пу́ха ни пера́! | Bonne chance ! (avant un examen) | Mot à mot : « ni duvet ni plume ». On répond : К чёрту! (k TCHOR-tou) = Au diable !
-Вот э́то да! | Ça alors ! |
+Вот э́то да! | Ça alors ! |  |  | Ah, ça non ! ; Voilà, c'est tout !
 Бо́же мой! | Mon Dieu ! |
 Ну ты даёшь! | Tu exagères ! / Chapeau ! |
 Де́ло в шля́пе | C'est dans la poche | Mot à mot : « l'affaire est dans le chapeau ».
@@ -140,9 +140,9 @@
 Всё я́сно | Tout est clair |
 Само́ собо́й | Ça va de soi |
 Ка́к бы не так! | Tu parles ! / Certainement pas ! |
-Ничего́ себе́! | Pas mal ! / Incroyable ! |
+Ничего́ себе́! | Pas mal ! / Incroyable ! |  |  | Rien du tout ! ; Ce n'est rien !
 Ещё бы! | Et comment ! |
-Так и быть | Soit, d'accord |
+Так и быть | Bon, soit (à contrecœur) |
 Ни за что! | Jamais de la vie ! |
 Будь здоро́в! | À tes souhaits ! | Après un éternuement. À une femme : Будь здоро́ва!
 Пе́рвый блин ко́мом | Le premier essai rate toujours | Mot à mot : « la première crêpe fait une boule ».
@@ -153,12 +153,12 @@
 приходи́ть / уходи́ть | Que change le début при- / у- ? | при- = arriver, у- = partir | при- = partir, у- = arriver ; aucune différence | Les préfixes changent le sens du verbe : в- (entrer), вы- (sortir), пере- (traverser), под- (s'approcher).
 Он вошёл в ко́мнату. | Que veut dire cette phrase ? | Il est entré dans la pièce. | Il est sorti de la pièce. ; Il a traversé la pièce. | в- + aller = entrer ; вы́- + aller = sortir : Он вы́шел из ко́мнаты.
 Я же тебе́ говори́л! | Que fait же dans cette phrase ? | Il insiste : « je te l'avais bien dit » | Il pose une question ; Il dit le contraire | же renforce la phrase, souvent avec un ton de reproche ou d'évidence.
-Неуже́ли ты не зна́ешь? | Que veut dire la phrase ? | Tu ne sais vraiment pas ? (surpris) | Tu ne sais pas, donc ? ; Tu le sais déjà ? | неуже́ли exprime l'étonnement : « est-ce possible que… ? »
-Мне не спи́тся. | Que veut dire cette phrase ? | Je n'arrive pas à dormir. | Je ne veux pas dormir. ; Je dors mal la nuit. | Tournure impersonnelle avec -ся : мне не спи́тся / не рабо́тается = je n'arrive pas à dormir / travailler.
+Неуже́ли ты не зна́ешь? | Que veut dire la phrase ? | Tu ne sais vraiment pas ? (surpris) | Tu ne veux pas savoir ? ; Tu le sais déjà ? | неуже́ли exprime l'étonnement : « est-ce possible que… ? »
+Мне не спи́тся. | Que veut dire cette phrase ? | Je n'arrive pas à dormir. | Je ne veux pas dormir. ; Il ne faut pas dormir. | Tournure impersonnelle avec -ся : мне не спи́тся / не рабо́тается = je n'arrive pas à dormir / travailler. | mnié ni SPI-tsa.
 чита́я | Он ест, чита́я газе́ту. Que veut dire чита́я ? | en lisant | après avoir lu ; pour lire | Le gérondif en -я / -а dit « en faisant » : слу́шая му́зыку = en écoutant de la musique.
 прочита́в | Прочита́в письмо́, он улыбну́лся. Que veut dire прочита́в ? | après avoir lu | en lisant ; avant de lire | Le gérondif en -в (sur un verbe « terminé ») dit « après avoir fait ».
 чита́ющий | челове́к, чита́ющий газе́ту. Que veut dire чита́ющий ? | qui lit | qui a lu ; qui va lire | Le participe en -ющий / -ащий remplace « qui + verbe » : en style écrit surtout.
-Ему́ на́до бы́ло уйти́. | Que veut dire cette phrase ? | Il a dû partir. | Il veut partir. ; Il partira. | на́до / ну́жно + бы́ло = il fallait. Avec бу́дет : il faudra.
+Ему́ на́до бы́ло уйти́. | Que veut dire cette phrase ? | Il fallait qu'il parte. | Il veut partir. ; Il partira. | на́до / ну́жно + бы́ло = il fallait. Avec бу́дет : il faudra.
 Ни оди́н студе́нт не пришёл. | Que veut dire cette phrase ? | Aucun étudiant n'est venu. | Un seul étudiant est venu. ; Tous les étudiants sont venus. | ни оди́н… не = pas un seul, aucun.
 Чем бо́льше, тем лу́чше. | Que veut dire cette phrase ? | Plus il y en a, mieux c'est. | Plus ou moins bien. ; Le plus grand est le meilleur. | чем…, тем… = plus…, plus…
-кое-что́ / что́-нибудь | Купи́ что́-нибудь. Que veut dire что́-нибудь ? | n'importe quoi, quelque chose (peu importe quoi) | une chose précise ; rien | -нибудь = n'importe lequel ; кое- = quelque chose de précis que je ne dis pas.
+кое-что́ / что́-нибудь | Купи́ что́-нибудь. Que veut dire что́-нибудь ? | quelque chose (peu importe quoi) | une chose précise ; rien | -нибудь = n'importe lequel ; кое- = quelque chose de précis que je ne dis pas. | ko-yé-CHTO / CHTO-ni-bout

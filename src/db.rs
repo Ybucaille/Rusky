@@ -122,12 +122,28 @@ impl Db {
              ORDER BY random() LIMIT ?5",
         )?;
         // Mauvaises réponses prises aux niveaux voisins : ni trop faciles, ni des mots jamais vus.
-        let p = params![card.kind, card.id, card.back, card.front, n as i64, card.tier];
-        let rows = stmt.query_map(p, |r| {
-            let (front, pron, back): (String, Option<String>, String) = (r.get(0)?, r.get(1)?, r.get(2)?);
-            Ok(if reverse { crate::quiz::with_pron(&front, pron.as_deref()) } else { back })
-        })?;
-        Ok(rows.collect::<Result<_, _>>()?)
+        // On en tire davantage pour écarter celles qui ressemblent à la bonne (synonymes, sens partagé).
+        let p = params![card.kind, card.id, card.back, card.front, (n * 8) as i64, card.tier];
+        let rows = stmt.query_map(p, |r| Ok((r.get::<_, String>(0)?, r.get::<_, Option<String>>(1)?, r.get::<_, String>(2)?)))?;
+        let rows: Vec<(String, Option<String>, String)> = rows.collect::<Result<_, _>>()?;
+        let shown = |(front, pron, back): &(String, Option<String>, String)| {
+            if reverse { crate::quiz::with_pron(front, pron.as_deref()) } else { back.clone() }
+        };
+        let mut chosen: Vec<String> = Vec::new();
+        let mut meanings = vec![card.back.clone()];
+        for row in &rows {
+            if chosen.len() < n && !meanings.iter().any(|m| overlaps(m, &row.2)) {
+                meanings.push(row.2.clone());
+                chosen.push(shown(row));
+            }
+        }
+        // Rare : pas assez de sens bien distincts ; on complète sans jamais répéter la bonne réponse.
+        for row in &rows {
+            if chosen.len() < n && !overlaps(&card.back, &row.2) && !chosen.contains(&shown(row)) {
+                chosen.push(shown(row));
+            }
+        }
+        Ok(chosen)
     }
 
     /// Choisit la prochaine carte : d'abord celles à revoir, sinon une nouvelle
@@ -427,6 +443,21 @@ impl Db {
 
 }
 
+/// Deux sens se recoupent-ils ? (même mot significatif : « s'il te plaît / de rien » et « de rien »)
+fn overlaps(a: &str, b: &str) -> bool {
+    const SKIP: [&str; 16] =
+        ["les", "des", "une", "est", "pas", "que", "qui", "dans", "pour", "avec", "sur", "par", "aux", "son", "comme", "venu"];
+    let words = |s: &str| -> Vec<String> {
+        s.to_lowercase()
+            .split(|c: char| !c.is_alphanumeric())
+            .filter(|w| w.chars().count() >= 3 && !SKIP.contains(w))
+            .map(String::from)
+            .collect()
+    };
+    let (wa, wb) = (words(a), words(b));
+    a.trim().eq_ignore_ascii_case(b.trim()) || wa.iter().any(|w| wb.contains(w))
+}
+
 fn upsert(conn: &Connection, c: &CardDef) -> Result<()> {
     conn.execute(
         "INSERT INTO cards (id, kind, front, back, note, level, pron, question, wrong, tier)
@@ -529,7 +560,7 @@ mod tests {
         let mut db = Db::open(Path::new(":memory:")).unwrap();
         let mut cards: Vec<CardDef> = (0..6).map(|i| def(&format!("x{i}"), "vocab", 1)).collect();
         for (i, c) in cards.iter_mut().enumerate() {
-            c.back = format!("sens {i}");
+            c.back = ["chat", "chien", "lait", "pain", "eau", "sel"][i].to_string();
             c.front = format!("mot {i}");
             c.tier = Some(if i < 3 { 1 } else { 9 });
         }
@@ -537,6 +568,24 @@ mod tests {
         let card = db.card("x0").unwrap();
         let wrong = db.distractors(&card, false, 5).unwrap();
         assert_eq!(wrong.len(), 2, "seules les cartes du niveau 1 ou 2 : {wrong:?}");
+    }
+
+    #[test]
+    fn distractors_never_share_meaning_with_the_answer() {
+        assert!(overlaps("s'il te plaît / de rien", "De rien"));
+        assert!(overlaps("bien / d'accord", "d'accord"));
+        assert!(!overlaps("lait", "pain"));
+        let mut db = Db::open(Path::new(":memory:")).unwrap();
+        db.upsert_all(&crate::content::builtin().unwrap().card).unwrap();
+        for id in ["voc-003", "voc-005", "phr-021", "t2-voc-001"] {
+            let card = db.card(id).unwrap();
+            for _ in 0..30 {
+                let wrong = db.distractors(&card, false, 2).unwrap();
+                assert_eq!(wrong.len(), 2);
+                assert!(wrong.iter().all(|w| !overlaps(&card.back, w)), "{id} : {wrong:?}");
+                assert!(!overlaps(&wrong[0], &wrong[1]), "{id} : {wrong:?}");
+            }
+        }
     }
 }
 

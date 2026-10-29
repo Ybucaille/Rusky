@@ -27,10 +27,10 @@
 хотя́ | bien que |
 е́сли | si |
 и́ли | ou |
-но | mais |
+но | mais |  | no
 зато́ | en revanche |
 кро́ме того́ | de plus |
-во-пе́рвых | premièrement |
+во-пе́рвых | premièrement |  | va-PIER-vykh
 в о́бщем | en somme |
 вообще́ | en général, du tout |
 на са́мом де́ле | en fait |
@@ -43,9 +43,9 @@
 нача́льник | chef |
 колле́га | collègue |
 компа́ния | entreprise |
-о́фис | bureau |
+о́фис | bureau (lieu de travail) |
 зарпла́та | salaire |
-зада́ча | tâche, problème |
+зада́ча | tâche, mission |
 прое́кт | projet |
 собра́ние | réunion |
 о́пыт | expérience |
@@ -53,7 +53,7 @@
 оши́бка | erreur |
 пра́вило | règle |
 уро́к | leçon, cours |
-экза́мен | examen |
+экза́мен | examen |  | èg-ZA-min
 оце́нка | note |
 зна́ние | connaissance |
 нау́ка | science |
@@ -68,7 +68,7 @@
 пробле́ма | problème |
 реше́ние | décision, solution |
 возмо́жность | possibilité |
-интерне́т | internet |
+интерне́т | internet |  | in-tèr-NÈT
 сайт | site |
 сообще́ние | message |
 паро́ль | mot de passe |
@@ -86,7 +86,7 @@
 трениро́вка | entraînement |
 игра́ | jeu, match |
 кома́нда | équipe |
-выи́грать | gagner |
+вы́играть | gagner |  | VY-i-grat
 проигра́ть | perdre (un match) |
 хо́бби | loisir |
 чита́тель | lecteur |
@@ -106,7 +106,7 @@
 про́шлое | passé |
 ва́жный | important |
 гла́вный | principal |
-пра́вый | qui a raison |
+пра́вый | droit (côté) ; qui a raison |
 необходи́мый | indispensable |
 возмо́жный | possible |
 просто́й | simple |
@@ -114,20 +114,20 @@
 поле́зный | utile |
 опа́сный | dangereux |
 серьёзный | sérieux |
-сме́шной | drôle |
-ску́чный | ennuyeux |
+смешно́й | drôle |  | smiech-NOÏ
+ску́чный | ennuyeux |  | SKOUCH-nyï
 занима́ться | s'occuper de, pratiquer | Я занима́юсь спо́ртом = Je fais du sport.
 интересова́ться | s'intéresser à |
 нра́виться | plaire |
 зави́сеть | dépendre |
 
 @phrase
-По-мо́ему, ты прав | À mon avis, tu as raison | À une femme : ты права́.
+По-мо́ему, ты прав | À mon avis, tu as raison | À une femme : ты права́. |  | À mon avis, tu as tort ; Je pense que tu plaisantes
 Я так не ду́маю | Je ne pense pas |
 Я с тобо́й согла́сен | Je suis d'accord avec toi |
 Ты шу́тишь? | Tu plaisantes ? |
 Э́то зави́сит от… | Ça dépend de… |
-Не мо́жет быть! | Pas possible ! |
+Не мо́жет быть! | Pas possible ! |  |  | C'est sûr ! ; Ce n'est pas grave !
 Ты уве́рен? | Tu es sûr ? |
 Я не уве́рен | Je ne suis pas sûr |
 Что ты об э́том ду́маешь? | Qu'en penses-tu ? |
@@ -146,7 +146,7 @@
 Ла́дно | D'accord, bon |
 Я не про́тив | Je n'ai rien contre |
 Как хо́чешь | Comme tu veux |
-Мне всё равно́ | Ça m'est égal |
+Мне всё равно́ | Ça m'est égal |  |  | Ça me va très bien ; Tout est pareil chez moi
 Посмо́трим | On verra |
 Вот и́менно! | Exactement ! |
 Ты прав | Tu as raison |
@@ -154,15 +154,15 @@
 Наско́лько я зна́ю… | Pour autant que je sache… |
 
 @grammar
-Я рабо́таю врачо́м. | Que veut dire cette phrase ? | Je travaille comme médecin. | Je travaille avec un médecin. ; Je vais chez le médecin. | Pour un métier : рабо́тать + mot en -ом / -ем (masc.) ou -ой (fém.) : учи́тельницей.
+Я рабо́таю врачо́м. | Que veut dire cette phrase ? | Je travaille comme médecin. | Je travaille avec un médecin. ; Je vais chez le médecin. | Pour un métier : рабо́тать + mot en -ом / -ем (masc.) ou -ой / -ей (fém.) : врачо́м, учи́тельницей.
 Я занима́юсь му́зыкой. | Que veut dire cette phrase ? | Je fais de la musique. | J'écoute de la musique. ; J'aime la musique. | занима́ться + mot en -ом / -ой = pratiquer : спо́ртом, футбо́лом.
-Мне нра́вится э́тот фильм. | Qui aime le film ? | moi | le film ; quelqu'un d'autre | Mot à mot : « à moi plaît ce film ». Celui qui aime est au « мне », la chose aimée est le sujet.
+Мне нра́вится э́тот фильм. | Qui aime le film ? | celui qui parle (мне = à moi) | le film ; quelqu'un d'autre | Mot à mot : « à moi plaît ce film ». Celui qui aime est au « мне », la chose aimée est le sujet.
 Мне нра́вятся цветы́. | Pourquoi нра́вятся et pas нра́вится ? | Parce que цветы́ (fleurs) est au pluriel | Parce que c'est au passé ; Parce que c'est poli | Le verbe s'accorde avec la chose qui plaît : une chose → нра́вится, plusieurs → нра́вятся.
 Я ду́маю, что он прав. | Que veut dire что ici ? | que | quoi ; qui | Après « je pense », « je sais », « il dit », что (chto) veut dire « que ».
 кото́рый | Челове́к, кото́рый живёт здесь. Que veut dire кото́рый ? | qui (lequel) | quand ; pourquoi | кото́рый relie deux phrases comme « qui » en français et s'accorde : кото́рая (fém.), кото́рое (neutre).
 бо́льше / ме́ньше | Москва́ бо́льше Пари́жа. Que veut dire la phrase ? | Moscou est plus grande que Paris. | Moscou est plus petite que Paris. ; Moscou est aussi grande que Paris. | бо́льше = plus, ме́ньше = moins. Ce qui suit change de fin : Пари́ж → Пари́жа.
 са́мый | са́мый краси́вый го́род. Que veut dire са́мый ? | le plus | très ; assez | са́мый + adjectif = le plus… : са́мая интере́сная кни́га = le livre le plus intéressant.
-Я хочу́, что́бы ты пришёл. | Que veut dire что́бы ici ? | que (pour un souhait) | parce que ; si | Après « je veux que », on met что́бы + verbe au passé.
-Е́сли бы я знал… | Que veut dire cette phrase ? | Si j'avais su… | Si je sais… ; Quand je saurai… | бы + passé = conditionnel : я бы хоте́л = je voudrais.
-Я хоте́л бы ко́фе. | Que veut dire cette phrase ? | Je voudrais un café. | Je voulais un café. ; Je veux un café. | хоте́л бы (kha-TIEL by) est la façon polie de demander.
+Я хочу́, что́бы ты пришёл. | Que veut dire что́бы ici ? | que (pour un souhait) | parce que ; si | Quand on veut que QUELQU'UN D'AUTRE fasse quelque chose, on met что́бы + verbe au passé ; si c'est soi-même, on met l'infinitif : я хочу́ прийти́.
+Е́сли бы я знал… | Que veut dire cette phrase ? | Si j'avais su… | Si je sais… ; Quand je saurai… | бы + passé = conditionnel. Е́сли бы я знал = si je savais / si j'avais su (selon le contexte) ; я бы хоте́л = je voudrais.
+Я хоте́л бы ко́фе. | Que veut dire cette phrase ? | Je voudrais un café. | Je voulais un café. ; Je veux un café. | хоте́л бы (kha-TIEL by) est la façon polie de demander. | ya kha-TIEL by KO-fè.
 себя́ | Он ду́мает то́лько о себе́. Que veut dire о себе́ ? | à lui-même | à elle ; à toi | себя́ (si-BIA) renvoie au sujet de la phrase : soi-même, lui-même, moi-même…

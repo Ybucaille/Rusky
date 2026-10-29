@@ -180,6 +180,7 @@ level = 25
 id = "t5-voc-026"
 kind = "vocab"
 front = "но"
+pron = "no"
 back = "mais"
 level = 26
 
@@ -201,6 +202,7 @@ level = 28
 id = "t5-voc-029"
 kind = "vocab"
 front = "во-пе́рвых"
+pron = "va-PIER-vykh"
 back = "premièrement"
 level = 29
 
@@ -292,7 +294,7 @@ level = 41
 id = "t5-voc-042"
 kind = "vocab"
 front = "о́фис"
-back = "bureau"
+back = "bureau (lieu de travail)"
 level = 42
 
 [[card]]
@@ -306,7 +308,7 @@ level = 43
 id = "t5-voc-044"
 kind = "vocab"
 front = "зада́ча"
-back = "tâche, problème"
+back = "tâche, mission"
 level = 44
 
 [[card]]
@@ -362,6 +364,7 @@ level = 51
 id = "t5-voc-052"
 kind = "vocab"
 front = "экза́мен"
+pron = "èg-ZA-min"
 back = "examen"
 level = 52
 
@@ -467,6 +470,7 @@ level = 66
 id = "t5-voc-067"
 kind = "vocab"
 front = "интерне́т"
+pron = "in-tèr-NÈT"
 back = "internet"
 level = 67
 
@@ -592,7 +596,8 @@ level = 84
 [[card]]
 id = "t5-voc-085"
 kind = "vocab"
-front = "выи́грать"
+front = "вы́играть"
+pron = "VY-i-grat"
 back = "gagner"
 level = 85
 
@@ -733,7 +738,7 @@ level = 104
 id = "t5-voc-105"
 kind = "vocab"
 front = "пра́вый"
-back = "qui a raison"
+back = "droit (côté) ; qui a raison"
 level = 105
 
 [[card]]
@@ -788,7 +793,8 @@ level = 112
 [[card]]
 id = "t5-voc-113"
 kind = "vocab"
-front = "сме́шной"
+front = "смешно́й"
+pron = "smiech-NOÏ"
 back = "drôle"
 level = 113
 
@@ -796,6 +802,7 @@ level = 113
 id = "t5-voc-114"
 kind = "vocab"
 front = "ску́чный"
+pron = "SKOUCH-nyï"
 back = "ennuyeux"
 level = 114
 
@@ -834,6 +841,7 @@ kind = "phrase"
 front = "По-мо́ему, ты прав"
 back = "À mon avis, tu as raison"
 note = "À une femme : ты права́."
+wrong = ["À mon avis, tu as tort", "Je pense que tu plaisantes"]
 level = 1
 
 [[card]]
@@ -869,6 +877,7 @@ id = "t5-phr-006"
 kind = "phrase"
 front = "Не мо́жет быть!"
 back = "Pas possible !"
+wrong = ["C'est sûr !", "Ce n'est pas grave !"]
 level = 6
 
 [[card]]
@@ -1003,6 +1012,7 @@ id = "t5-phr-025"
 kind = "phrase"
 front = "Мне всё равно́"
 back = "Ça m'est égal"
+wrong = ["Ça me va très bien", "Tout est pareil chez moi"]
 level = 25
 
 [[card]]
@@ -1047,7 +1057,7 @@ front = "Я рабо́таю врачо́м."
 question = "Que veut dire cette phrase ?"
 back = "Je travaille comme médecin."
 wrong = ["Je travaille avec un médecin.", "Je vais chez le médecin."]
-note = "Pour un métier : рабо́тать + mot en -ом / -ем (masc.) ou -ой (fém.) : учи́тельницей."
+note = "Pour un métier : рабо́тать + mot en -ом / -ем (masc.) ou -ой / -ей (fém.) : врачо́м, учи́тельницей."
 level = 1
 
 [[card]]
@@ -1065,7 +1075,7 @@ id = "t5-gra-003"
 kind = "grammar"
 front = "Мне нра́вится э́тот фильм."
 question = "Qui aime le film ?"
-back = "moi"
+back = "celui qui parle (мне = à moi)"
 wrong = ["le film", "quelqu'un d'autre"]
 note = "Mot à mot : « à moi plaît ce film ». Celui qui aime est au « мне », la chose aimée est le sujet."
 level = 3
@@ -1127,7 +1137,7 @@ front = "Я хочу́, что́бы ты пришёл."
 question = "Que veut dire что́бы ici ?"
 back = "que (pour un souhait)"
 wrong = ["parce que", "si"]
-note = "Après « je veux que », on met что́бы + verbe au passé."
+note = "Quand on veut que QUELQU'UN D'AUTRE fasse quelque chose, on met что́бы + verbe au passé ; si c'est soi-même, on met l'infinitif : я хочу́ прийти́."
 level = 9
 
 [[card]]
@@ -1137,13 +1147,14 @@ front = "Е́сли бы я знал…"
 question = "Que veut dire cette phrase ?"
 back = "Si j'avais su…"
 wrong = ["Si je sais…", "Quand je saurai…"]
-note = "бы + passé = conditionnel : я бы хоте́л = je voudrais."
+note = "бы + passé = conditionnel. Е́сли бы я знал = si je savais / si j'avais su (selon le contexte) ; я бы хоте́л = je voudrais."
 level = 10
 
 [[card]]
 id = "t5-gra-011"
 kind = "grammar"
 front = "Я хоте́л бы ко́фе."
+pron = "ya kha-TIEL by KO-fè."
 question = "Que veut dire cette phrase ?"
 back = "Je voudrais un café."
 wrong = ["Je voulais un café.", "Je veux un café."]

@@ -68,6 +68,7 @@ level = 9
 id = "t5b-voc-010"
 kind = "vocab"
 front = "бухга́лтер"
+pron = "bou-GAL-tir"
 back = "comptable"
 level = 10
 
@@ -89,6 +90,7 @@ level = 12
 id = "t5b-voc-013"
 kind = "vocab"
 front = "фе́рмер"
+pron = "FÈR-mir"
 back = "agriculteur"
 level = 13
 
@@ -264,6 +266,7 @@ level = 37
 id = "t5b-voc-038"
 kind = "vocab"
 front = "рюкза́к"
+pron = "rioug-ZAK"
 back = "sac à dos"
 level = 38
 
@@ -664,6 +667,7 @@ level = 94
 id = "t5b-voc-095"
 kind = "vocab"
 front = "бри́ться"
+pron = "BRI-tsa"
 back = "se raser"
 level = 95
 
@@ -713,7 +717,7 @@ level = 101
 id = "t5b-voc-102"
 kind = "vocab"
 front = "теря́ть"
-back = "perdre"
+back = "perdre (un objet)"
 level = 102
 
 [[card]]

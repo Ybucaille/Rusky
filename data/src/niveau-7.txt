@@ -5,7 +5,7 @@
 холоди́льник | réfrigérateur |
 плита́ | cuisinière |
 посу́да | vaisselle |
-полоте́нце | serviette (de toilette) |
+полоте́нце | serviette (de toilette) |  | pa-la-TIEN-tsa
 мы́ло | savon |
 зе́ркало | miroir |
 поду́шка | oreiller |
@@ -17,11 +17,11 @@
 балко́н | balcon |
 эта́ж | étage |
 лифт | ascenseur |
-ле́стница | escalier |
+ле́стница | escalier |  | LIES-ni-tsa
 двор | cour |
 забо́р | clôture |
 кры́ша | toit |
-сте́на | mur |
+стена́ | mur |  | sti-NA
 пол | sol, plancher |
 потоло́к | plafond |
 ремо́нт | travaux, rénovation |
@@ -82,7 +82,7 @@
 овца́ | mouton |
 журна́л | magazine |
 переда́ча | émission |
-ре́клама | publicité |
+рекла́ма | publicité |  | ri-KLA-ma
 статья́ | article |
 заголо́вок | titre |
 журнали́ст | journaliste |
@@ -154,11 +154,11 @@
 води́ть | conduire, mener (souvent) |
 вести́ | conduire, mener (maintenant) |
 тяжёлый | lourd |
-мя́гкий | doux, mou |
+мя́гкий | doux, mou |  | MIAKH-kiï
 твёрдый | dur |
 гла́дкий | lisse |
 ти́хий | calme, silencieux |
-гро́мкий | fort (bruyant) |
+гро́мкий | bruyant, fort (son) |  |  | calme, silencieux ; vif, éclatant
 я́ркий | vif, éclatant |
 тёмный | sombre |
 све́тлый | clair |
@@ -177,32 +177,32 @@
 сухо́й | sec |
 мо́крый | mouillé |
 сла́бый | faible |
-си́льный | fort |
+си́льный | fort (puissant) |  |  | faible ; courageux
 сме́лый | courageux |
-ле́нивый | paresseux |
+лени́вый | paresseux |  | li-NI-vyï
 ве́жливый | poli |
 гру́бый | grossier |
-че́стный | honnête |
+че́стный | honnête |  | TCHIES-nyï
 стра́нный | étrange |
 
 @phrase
 Ничего́ не поде́лаешь | On n'y peut rien |
 Так ему́ и на́до | Bien fait pour lui |
-Ни в ко́ем слу́чае | En aucun cas |
+Ни в ко́ем слу́чае | En aucun cas |  | ni f KO-yim SLOU-tcha-yi
 Что́ за вопро́с! | Quelle question ! |
 Мне не до сме́ха | Je n'ai pas le cœur à rire |
 Как дела́ на рабо́те? | Comment ça va au travail ? |
-Не за что благодари́ть | Il n'y a pas de quoi |
+Не́ за что благодари́ть | Il n'y a pas de quoi |  | NIÉ-za-chta bla-ga-da-RIT
 Я тебе́ перезвоню́ | Je te rappelle |
 Переда́й приве́т | Passe le bonjour |
-Чу́вствуй себя́ как до́ма | Fais comme chez toi |
+Чу́вствуй себя́ как до́ма | Fais comme chez toi |  | TCHOUS-tvouï si-BIA kak DO-ma
 Мне пора́ | Il est temps que j'y aille |
 С удово́льствием! | Avec plaisir ! |
 Как жаль! | Quel dommage ! |
 Ну и пого́да! | Quel temps ! |
-Где́-то здесь | Quelque part par ici |
+Где́-то здесь | Quelque part par ici |  | GDIÉ-ta zdies
 Когда́-нибудь | Un jour (n'importe quand) |
-Ка́к-нибудь пото́м | Une autre fois |
+Ка́к-нибудь пото́м | Une autre fois |  | KAK-ni-bout pa-TOM
 Ты что, с ума́ сошёл? | T'es fou ou quoi ? |
 Не в э́том де́ло | Ce n'est pas la question |
 Де́ло в том, что… | Le fait est que… |
@@ -218,7 +218,7 @@
 На вся́кий слу́чай | Au cas où |
 
 @grammar
-идти́ / ходи́ть | Каждый день я хожу́ на рабо́ту. Pourquoi ходи́ть ? | C'est une habitude, un trajet répété | C'est un trajet en cours ; C'est au futur | Les verbes de mouvement vont par paires : un pour « en ce moment, dans une direction » (идти́, е́хать, лете́ть…), un pour « souvent, aller-retour » (ходи́ть, е́здить, лета́ть…).
+идти́ / ходи́ть | Ка́ждый день я хожу́ на рабо́ту. Pourquoi ходи́ть ? | C'est une habitude, un trajet répété | C'est un trajet en cours ; C'est au futur | Les verbes de mouvement vont par paires : un pour « en ce moment, dans une direction » (идти́, е́хать, лете́ть…), un pour « souvent, aller-retour » (ходи́ть, е́здить, лета́ть…).
 Я написа́л письмо́. | Que veut dire cette phrase ? | J'ai écrit la lettre (elle est finie). | J'écrivais une lettre. ; J'écrirai une lettre. | написа́ть est la forme « terminée » de писа́ть : l'action est allée au bout.
 Я писа́л письмо́ два часа́. | Pourquoi писа́л et pas написа́л ? | On insiste sur la durée, pas sur le résultat | Parce que la lettre est finie ; Parce que c'est poli | Avec une durée (два часа́, весь день), on prend la forme « en cours ».
 мно́го книг | Pourquoi книг et pas кни́ги ? | Après мно́го, le mot prend la forme « de » au pluriel | C'est une faute ; C'est au singulier | Après мно́го (beaucoup), ма́ло (peu), ско́лько (combien), le nom se met au génitif pluriel : книг, домо́в, люде́й.
@@ -230,6 +230,6 @@
 Я е́ду к врачу́. | Que veut dire к врачу́ ? | chez le médecin | du médecin ; avec le médecin | к + personne = chez, vers quelqu'un : к ма́ме, к дру́гу.
 Я иду́ из магази́на. | Que veut dire из магази́на ? | du magasin (j'en sors) | au magasin ; dans le magasin | из + génitif = d'où l'on vient (с pour les lieux qui prennent на : с рабо́ты).
 Пойду́ погуля́ю. | Que veut dire cette phrase ? | Je vais aller me promener. | Je me suis promené. ; Promène-toi. | Tournure familière : пойду́ + verbe au futur = je vais aller faire…
-Е́сли бы у меня́ бы́ли де́ньги… | Que veut dire cette phrase ? | Si j'avais de l'argent… | Si j'aurai de l'argent… ; Quand j'aurai de l'argent… | е́сли бы + passé = si (hypothèse irréelle).
+Е́сли бы у меня́ бы́ли де́ньги… | Que veut dire cette phrase ? | Si j'avais de l'argent… | Si j'ai de l'argent… ; Quand j'aurai de l'argent… | е́сли бы + passé = si (hypothèse irréelle).
 сам / сама́ | Я сде́лал э́то сам. Que veut dire сам ? | moi-même, tout seul | ensemble ; déjà | сам (masc.), сама́ (fém.), са́ми (pluriel) = soi-même, sans aide.
 друг дру́га | Они́ лю́бят друг дру́га. Que veut dire друг дру́га ? | l'un l'autre | des amis ; un ami | друг дру́га = l'un l'autre (réciproque). Они́ говоря́т друг с дру́гом = Ils se parlent.

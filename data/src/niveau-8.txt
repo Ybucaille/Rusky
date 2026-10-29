@@ -39,7 +39,7 @@
 повыше́ние | promotion |
 кандида́т | candidat |
 собесе́дование | entretien d'embauche |
-резюме́ | CV |
+резюме́ | CV |  | ri-ziou-MÉ
 о́тпуск по боле́зни | arrêt maladie |
 командиро́вка | déplacement professionnel |
 наро́д | peuple |
@@ -69,7 +69,7 @@
 оби́да | rancune, vexation |
 отча́яние | désespoir |
 тре́вога | anxiété, alarme |
-облегче́ние | soulagement |
+облегче́ние | soulagement |  | a-blikh-TCHIÉ-ni-yé
 восто́рг | enthousiasme |
 не́жность | tendresse |
 равноду́шие | indifférence |
@@ -79,7 +79,7 @@
 волне́ние | émotion, trac |
 впечатле́ние | impression |
 воспомина́ние | souvenir |
-предчу́вствие | pressentiment |
+предчу́вствие | pressentiment |  | prit-TCHOUS-tvi-yé
 намере́ние | intention |
 сомне́ние | doute |
 убежде́ние | conviction |
@@ -111,24 +111,24 @@
 влюби́ться | tomber amoureux |
 развести́сь | divorcer |
 подружи́ться | devenir amis |
-поссо́риться | se fâcher |
+поссо́риться | se disputer, se brouiller (avec qqn) |
 помири́ться | se réconcilier |
 вы́расти | grandir (avoir grandi) |
-переезжа́ть | déménager |
+переезжа́ть | déménager |  | pi-ri-yi-JAT
 устра́иваться | s'installer, trouver un emploi |
 увольня́ться | démissionner |
 зараба́тывать | gagner (de l'argent) |
 тра́тить | dépenser |
 копи́ть | économiser |
-одолжи́ть | prêter |
+одолжи́ть | prêter | одолжи́ть кому́-то = prêter à quelqúun ; одолжи́ть у кого́-то = emprunter à quelqúun.
 занима́ть | emprunter, occuper |
-возвраща́ть | rendre |
+возвраща́ть | rendre |  |  | prêter ; dépenser
 переходи́ть доро́гу | traverser la rue |
 переводи́ть | traduire, transférer |
 передава́ть | transmettre |
 пересма́тривать | revoir, réexaminer |
 переду́мать | changer d'avis |
-перегиба́ть | exagérer |
+перегиба́ть | exagérer | Surtout dans перегиба́ть па́лку (mot à mot « tordre trop le bâton ») ; seul, перегиба́ть veut dire « plier ».
 подде́рживать | soutenir |
 подгота́вливать | préparer |
 подпи́сывать | signer |
@@ -138,10 +138,10 @@
 признава́ться | avouer |
 производи́ть | produire |
 проверя́ть | vérifier |
-рассчи́тывать | compter sur |
+рассчи́тывать | compter sur |  | ra-CHTCHI-ty-vat
 распространя́ть | répandre |
 сокраща́ть | réduire, abréger |
-соглаша́ться | accepter, être d'accord |
+соглаша́ться | accepter, être d'accord |  |  | refuser ; se plaindre
 сопровожда́ть | accompagner |
 уделя́ть внима́ние | consacrer de l'attention |
 удивля́ться | s'étonner |
@@ -157,7 +157,7 @@
 благодаря́ | grâce à |
 всле́дствие | par suite de |
 в тече́ние | pendant |
-в связи́ с | en lien avec |
+в связи́ с | en lien avec |  | f svi-ZI s
 по сравне́нию с | par rapport à |
 с одно́й стороны́ | d'un côté |
 с друго́й стороны́ | d'un autre côté |
@@ -182,7 +182,7 @@
 насто́йчивый | insistant |
 ре́зкий | brusque, tranchant |
 осторо́жный | prudent |
-легкомы́сленный | frivole, insouciant |
+легкомы́сленный | frivole, insouciant |  | likh-ka-MY-sli-nyï
 отве́тственный | responsable |
 самостоя́тельный | autonome |
 доброжела́тельный | bienveillant |
@@ -191,12 +191,12 @@
 Я бы так не сказа́л | Je ne dirais pas ça |
 Пожа́луй, ты прав | Tu as peut-être raison |
 Соверше́нно ве́рно | Tout à fait exact |
-Ни в ко́ем ра́зе | Sûrement pas (familier) |
+Ни в ко́ем ра́зе | Sûrement pas (familier) |  | ni f KO-yim RA-zi
 Ещё как! | Et comment ! |
 Как бы то ни бы́ло | Quoi qu'il en soit |
 Само́ собо́й разуме́ется | Cela va de soi |
 Ре́чь идёт о… | Il s'agit de… |
-Де́ло не в де́ньгах | Ce n'est pas une question d'argent |
+Де́ло не в деньга́х | Ce n'est pas une question d'argent |  | DIÉ-la ni v din-GAKH
 С мое́й то́чки зре́ния | De mon point de vue |
 Я приде́рживаюсь друго́го мне́ния | Je suis d'un autre avis |
 Э́то спо́рный вопро́с | C'est une question discutable |
@@ -209,11 +209,11 @@
 Как ни в чём не быва́ло | Comme si de rien n'était |
 Всему́ своё вре́мя | Chaque chose en son temps |
 Не вопро́с! | Pas de souci ! |
-В то́м-то и де́ло | C'est bien ça le problème |
+В то́м-то и де́ло | C'est bien ça le problème |  | f TOM-ta i DIÉ-la
 Мне от э́того ни хо́лодно ни жа́рко | Ça ne me fait ni chaud ni froid |
 Ру́ки прочь! | Bas les pattes ! |
 Ла́дно, прое́хали | Bon, passons |
-Я в шо́ке | Je suis choqué |
+Я в шо́ке | Je suis choqué |  | ya f CHO-ki
 Ну ты и ска́жешь! | Tu en as de bonnes ! |
 Э́то уже́ сли́шком | Là, c'est trop |
 Ничего́ не попи́шешь | On n'y peut rien |
@@ -221,13 +221,13 @@
 
 @grammar
 несмотря́ на дождь | Que veut dire cette expression ? | malgré la pluie | à cause de la pluie ; après la pluie | несмотря́ на + complément = malgré. благодаря́ + datif = grâce à.
-Москва́ явля́ется столи́цей. | Pourquoi столи́цей ? | Après явля́ться, l'attribut prend la forme en -ой / -ом | Parce que c'est au pluriel ; C'est une faute | явля́ться (être, style écrit) et стать (devenir) veulent l'instrumental : стать врачо́м.
+Москва́ явля́ется столи́цей. | Pourquoi столи́цей ? | Après явля́ться, l'attribut se met à l'instrumental (-ой/-ей, -ом/-ем) | Parce que c'est au pluriel ; C'est une faute | явля́ться (être, style écrit) et стать (devenir) veulent l'instrumental : стать врачо́м. | mas-KVA yi-VLIA-yi-tsa sta-LI-tsaï.
 Он стал врачо́м. | Que veut dire cette phrase ? | Il est devenu médecin. | Il est allé chez le médecin. ; Il était médecin. | стать + instrumental = devenir.
-Кни́га, напи́санная в 1900 году́ | Que veut dire напи́санная ? | écrite | qui écrit ; à écrire | Participe passé passif : напи́санный = écrit. Style surtout écrit.
+Кни́га, напи́санная в 1900 году́ | Que veut dire напи́санная ? | écrite | qui écrit ; à écrire | Participe passé passif : напи́санный = écrit. Style surtout écrit. | KNI-ga, na-PI-sa-na-ya v ty-SIA-tcha di-vi-ti-SO-tam ga-DOU
 Я ду́маю об э́том. | Pourquoi об et pas о ? | о devient об devant une voyelle | C'est une autre préposition ; C'est plus poli | о ма́ме, об э́том, обо мне́ : la préposition s'adapte au son qui suit.
 Он сказа́л, что придёт. | Que veut dire cette phrase ? | Il a dit qu'il viendrait. | Il a dit qu'il est venu. ; Il dit qu'il vient. | En russe, le discours rapporté garde le temps d'origine : « il viendra » reste au futur.
 Он спроси́л, придёт ли она́. | Que veut dire ли ici ? | si (question indirecte) | quand ; parce que | Pour une question indirecte oui/non : verbe + ли. Не зна́ю, придёт ли он = Je ne sais pas s'il viendra.
-Чем бо́льше чита́ешь, тем бо́льше зна́ешь. | Que veut dire la phrase ? | Plus on lit, plus on sait. | On lit plus qu'on ne sait. ; Il faut lire pour savoir. | чем…, тем… = plus…, plus…
+Чем бо́льше чита́ешь, тем бо́льше зна́ешь. | Que veut dire la phrase ? | Plus on lit, plus on sait. | Plus on lit, moins on sait. ; On lit plus qu'on ne sait. | чем…, тем… = plus…, plus…
 Ему́ не́куда идти́. | Que veut dire cette phrase ? | Il n'a nulle part où aller. | Il ne veut aller nulle part. ; Il est allé quelque part. | не́куда, не́где, не́кого + infinitif = il n'y a pas où, personne à…
 Кому́-то звони́л. | Que veut dire кому́-то ? | à quelqu'un (on ne sait pas qui) | à n'importe qui ; à personne | -то = quelqu'un de précis mais inconnu ; -нибудь = n'importe qui.
 Предлага́ю пойти́ в кино́. | Que veut dire cette phrase ? | Je propose d'aller au cinéma. | Je suis allé au cinéma. ; On m'a proposé le cinéma. | предлага́ть + infinitif = proposer de faire.

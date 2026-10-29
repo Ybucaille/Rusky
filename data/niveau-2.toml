@@ -145,6 +145,7 @@ level = 20
 id = "t2-voc-021"
 kind = "vocab"
 front = "воскресе́нье"
+pron = "vas-kri-SIÉN-yé"
 back = "dimanche"
 level = 21
 
@@ -187,6 +188,7 @@ level = 26
 id = "t2-voc-027"
 kind = "vocab"
 front = "по́здно"
+pron = "POZ-na"
 back = "tard"
 level = 27
 
@@ -208,6 +210,7 @@ level = 29
 id = "t2-voc-030"
 kind = "vocab"
 front = "ещё"
+pron = "yi-CHTCHO"
 back = "encore"
 level = 30
 
@@ -278,7 +281,7 @@ level = 39
 id = "t2-voc-040"
 kind = "vocab"
 front = "ко́мната"
-back = "pièce, chambre"
+back = "pièce (d'un logement)"
 level = 40
 
 [[card]]
@@ -341,6 +344,7 @@ level = 48
 id = "t2-voc-049"
 kind = "vocab"
 front = "компью́тер"
+pron = "kam-PIOU-tèr"
 back = "ordinateur"
 level = 49
 
@@ -384,7 +388,7 @@ level = 54
 id = "t2-voc-055"
 kind = "vocab"
 front = "обе́д"
-back = "déjeuner"
+back = "déjeuner (repas de midi)"
 level = 55
 
 [[card]]
@@ -545,7 +549,7 @@ level = 77
 id = "t2-voc-078"
 kind = "vocab"
 front = "де́вочка"
-back = "petite fille"
+back = "fillette (petite fille, enfant)"
 level = 78
 
 [[card]]
@@ -624,6 +628,7 @@ level = 88
 id = "t2-voc-089"
 kind = "vocab"
 front = "мужчи́на"
+pron = "mou-CHTCHI-na"
 back = "homme"
 level = 89
 
@@ -652,6 +657,7 @@ level = 92
 id = "t2-voc-093"
 kind = "vocab"
 front = "чёрный"
+pron = "TCHOR-nyï"
 back = "noir"
 level = 93
 
@@ -687,6 +693,7 @@ level = 97
 id = "t2-voc-098"
 kind = "vocab"
 front = "жёлтый"
+pron = "JOL-tyï"
 back = "jaune"
 level = 98
 
@@ -715,7 +722,7 @@ level = 101
 id = "t2-voc-102"
 kind = "vocab"
 front = "хоро́ший"
-back = "bon, bien"
+back = "bon (adjectif : un bon livre)"
 level = 102
 
 [[card]]
@@ -743,6 +750,7 @@ level = 105
 id = "t2-voc-106"
 kind = "vocab"
 front = "гру́стный"
+pron = "GROUS-nyï"
 back = "triste"
 level = 106
 
@@ -764,6 +772,7 @@ level = 108
 id = "t2-voc-109"
 kind = "vocab"
 front = "лёгкий"
+pron = "LIOKH-kiï"
 back = "facile, léger"
 level = 109
 
@@ -870,6 +879,7 @@ level = 123
 id = "t2-voc-124"
 kind = "vocab"
 front = "отдыха́ть"
+pron = "ad-dy-KHAT"
 back = "se reposer"
 level = 124
 
@@ -1033,6 +1043,7 @@ level = 4
 id = "t2-phr-005"
 kind = "phrase"
 front = "Где ты живёшь?"
+pron = "gdié ty ji-VOCH?"
 back = "Où habites-tu ?"
 level = 5
 
@@ -1085,6 +1096,7 @@ id = "t2-phr-012"
 kind = "phrase"
 front = "Пое́хали!"
 back = "C'est parti !"
+wrong = ["Attends !", "Viens ici !"]
 level = 12
 
 [[card]]
@@ -1092,6 +1104,7 @@ id = "t2-phr-013"
 kind = "phrase"
 front = "Как ты?"
 back = "Comment tu vas ?"
+wrong = ["Qui es-tu ?", "Où es-tu ?"]
 level = 13
 
 [[card]]
@@ -1099,6 +1112,7 @@ id = "t2-phr-014"
 kind = "phrase"
 front = "Норма́льно"
 back = "Ça va, normal"
+wrong = ["Pas du tout", "C'est vrai ?"]
 level = 14
 
 [[card]]
@@ -1135,6 +1149,7 @@ id = "t2-phr-019"
 kind = "phrase"
 front = "Коне́чно, мо́жно"
 back = "Bien sûr, vas-y"
+wrong = ["Non, c'est interdit", "Je ne sais pas"]
 level = 19
 
 [[card]]
@@ -1162,7 +1177,8 @@ level = 22
 id = "t2-phr-023"
 kind = "phrase"
 front = "Уви́димся!"
-back = "On se voit !"
+back = "À la prochaine ! (on se reverra)"
+wrong = ["Attends !", "Bonne chance !"]
 level = 23
 
 [[card]]
@@ -1190,8 +1206,8 @@ level = 26
 id = "t2-phr-027"
 kind = "phrase"
 front = "Ничего́"
-back = "Ça va, ce n'est rien"
-note = "Réponse polie à « Как дела́? » ou à une excuse."
+back = "Pas mal / Ce n'est rien"
+note = "Deux usages : en réponse à Как дела́ ? = « pas mal » ; en réponse à une excuse = « ce n'est rien »."
 level = 27
 
 [[card]]
@@ -1279,6 +1295,7 @@ level = 6
 id = "t2-gra-007"
 kind = "grammar"
 front = "в понеде́льник"
+pron = "f pa-ni-DIEL-nik"
 question = "Que veut dire в понеде́льник ?"
 back = "lundi (ce lundi-là)"
 wrong = ["avant lundi", "tous les lundis"]
@@ -1299,6 +1316,7 @@ level = 8
 id = "t2-gra-009"
 kind = "grammar"
 front = "Я встаю́ в семь часо́в."
+pron = "ya fsta-YOU f siem tcha-SOF."
 question = "Que veut dire cette phrase ?"
 back = "Je me lève à sept heures."
 wrong = ["Je me lève dans sept heures.", "Il est sept heures."]
@@ -1321,7 +1339,7 @@ kind = "grammar"
 front = "Он чита́ет, а она́ спит."
 question = "Que veut dire а ici ?"
 back = "et (en opposant), alors que"
-wrong = ["mais pas", "ou bien"]
+wrong = ["donc", "ou bien"]
 note = "а sert à opposer deux choses ; и (i) veut dire « et » tout court ; но (no) veut dire « mais »."
 level = 11
 

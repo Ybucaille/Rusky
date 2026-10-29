@@ -264,6 +264,7 @@ level = 37
 id = "t8-voc-038"
 kind = "vocab"
 front = "резюме́"
+pron = "ri-ziou-MÉ"
 back = "CV"
 level = 38
 
@@ -474,6 +475,7 @@ level = 67
 id = "t8-voc-068"
 kind = "vocab"
 front = "облегче́ние"
+pron = "a-blikh-TCHIÉ-ni-yé"
 back = "soulagement"
 level = 68
 
@@ -544,6 +546,7 @@ level = 77
 id = "t8-voc-078"
 kind = "vocab"
 front = "предчу́вствие"
+pron = "prit-TCHOUS-tvi-yé"
 back = "pressentiment"
 level = 78
 
@@ -768,7 +771,7 @@ level = 109
 id = "t8-voc-110"
 kind = "vocab"
 front = "поссо́риться"
-back = "se fâcher"
+back = "se disputer, se brouiller (avec qqn)"
 level = 110
 
 [[card]]
@@ -789,6 +792,7 @@ level = 112
 id = "t8-voc-113"
 kind = "vocab"
 front = "переезжа́ть"
+pron = "pi-ri-yi-JAT"
 back = "déménager"
 level = 113
 
@@ -832,6 +836,7 @@ id = "t8-voc-119"
 kind = "vocab"
 front = "одолжи́ть"
 back = "prêter"
+note = "одолжи́ть кому́-то = prêter à quelqúun ; одолжи́ть у кого́-то = emprunter à quelqúun."
 level = 119
 
 [[card]]
@@ -846,6 +851,7 @@ id = "t8-voc-121"
 kind = "vocab"
 front = "возвраща́ть"
 back = "rendre"
+wrong = ["prêter", "dépenser"]
 level = 121
 
 [[card]]
@@ -888,6 +894,7 @@ id = "t8-voc-127"
 kind = "vocab"
 front = "перегиба́ть"
 back = "exagérer"
+note = "Surtout dans перегиба́ть па́лку (mot à mot « tordre trop le bâton ») ; seul, перегиба́ть veut dire « plier »."
 level = 127
 
 [[card]]
@@ -957,6 +964,7 @@ level = 136
 id = "t8-voc-137"
 kind = "vocab"
 front = "рассчи́тывать"
+pron = "ra-CHTCHI-ty-vat"
 back = "compter sur"
 level = 137
 
@@ -979,6 +987,7 @@ id = "t8-voc-140"
 kind = "vocab"
 front = "соглаша́ться"
 back = "accepter, être d'accord"
+wrong = ["refuser", "se plaindre"]
 level = 140
 
 [[card]]
@@ -1091,6 +1100,7 @@ level = 155
 id = "t8-voc-156"
 kind = "vocab"
 front = "в связи́ с"
+pron = "f svi-ZI s"
 back = "en lien avec"
 level = 156
 
@@ -1266,6 +1276,7 @@ level = 180
 id = "t8-voc-181"
 kind = "vocab"
 front = "легкомы́сленный"
+pron = "likh-ka-MY-sli-nyï"
 back = "frivole, insouciant"
 level = 181
 
@@ -1315,6 +1326,7 @@ level = 3
 id = "t8-phr-004"
 kind = "phrase"
 front = "Ни в ко́ем ра́зе"
+pron = "ni f KO-yim RA-zi"
 back = "Sûrement pas (familier)"
 level = 4
 
@@ -1349,7 +1361,8 @@ level = 8
 [[card]]
 id = "t8-phr-009"
 kind = "phrase"
-front = "Де́ло не в де́ньгах"
+front = "Де́ло не в деньга́х"
+pron = "DIÉ-la ni v din-GAKH"
 back = "Ce n'est pas une question d'argent"
 level = 9
 
@@ -1442,6 +1455,7 @@ level = 21
 id = "t8-phr-022"
 kind = "phrase"
 front = "В то́м-то и де́ло"
+pron = "f TOM-ta i DIÉ-la"
 back = "C'est bien ça le problème"
 level = 22
 
@@ -1470,6 +1484,7 @@ level = 25
 id = "t8-phr-026"
 kind = "phrase"
 front = "Я в шо́ке"
+pron = "ya f CHO-ki"
 back = "Je suis choqué"
 level = 26
 
@@ -1515,8 +1530,9 @@ level = 1
 id = "t8-gra-002"
 kind = "grammar"
 front = "Москва́ явля́ется столи́цей."
+pron = "mas-KVA yi-VLIA-yi-tsa sta-LI-tsaï."
 question = "Pourquoi столи́цей ?"
-back = "Après явля́ться, l'attribut prend la forme en -ой / -ом"
+back = "Après явля́ться, l'attribut se met à l'instrumental (-ой/-ей, -ом/-ем)"
 wrong = ["Parce que c'est au pluriel", "C'est une faute"]
 note = "явля́ться (être, style écrit) et стать (devenir) veulent l'instrumental : стать врачо́м."
 level = 2
@@ -1535,6 +1551,7 @@ level = 3
 id = "t8-gra-004"
 kind = "grammar"
 front = "Кни́га, напи́санная в 1900 году́"
+pron = "KNI-ga, na-PI-sa-na-ya v ty-SIA-tcha di-vi-ti-SO-tam ga-DOU"
 question = "Que veut dire напи́санная ?"
 back = "écrite"
 wrong = ["qui écrit", "à écrire"]
@@ -1577,7 +1594,7 @@ kind = "grammar"
 front = "Чем бо́льше чита́ешь, тем бо́льше зна́ешь."
 question = "Que veut dire la phrase ?"
 back = "Plus on lit, plus on sait."
-wrong = ["On lit plus qu'on ne sait.", "Il faut lire pour savoir."]
+wrong = ["Plus on lit, moins on sait.", "On lit plus qu'on ne sait."]
 note = "чем…, тем… = plus…, plus…"
 level = 8
 

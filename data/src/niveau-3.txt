@@ -30,7 +30,7 @@
 магази́н | magasin |
 ры́нок | marché |
 рестора́н | restaurant |
-кафе́ | café (l'endroit) |
+кафе́ | café (l'endroit) |  | ka-FÈ
 гости́ница | hôtel |
 шко́ла | école |
 университе́т | université |
@@ -39,7 +39,7 @@
 вход | entrée |
 вы́ход | sortie |
 туале́т | toilettes |
-ме́сто | place, endroit |
+ме́сто | endroit, place (assise) |
 а́дрес | adresse |
 ка́рта | carte, plan |
 недалеко́ | pas loin |
@@ -58,7 +58,7 @@
 до́рого | cher |
 рубль | rouble |
 сда́ча | monnaie (qu'on rend) |
-чек | ticket de caisse |
+чек | ticket de caisse |  | tchek
 раз | fois |
 паке́т | sac (plastique) |
 буты́лка | bouteille |
@@ -96,7 +96,7 @@
 ме́дленно | lentement |
 оде́жда | vêtements |
 руба́шка | chemise |
-пла́тье | robe |
+пла́тье | robe |  | PLA-tié
 брю́ки | pantalon |
 ку́ртка | veste, blouson |
 пальто́ | manteau |
@@ -105,7 +105,7 @@
 разме́р | taille |
 цена́ | prix |
 пода́рок | cadeau |
-пятьдеся́т | cinquante |
+пятьдеся́т | cinquante |  | pi-di-SIAT
 два́дцать | vingt |
 три́дцать | trente |
 со́рок | quarante |
@@ -122,7 +122,7 @@
 столи́ца | capitale |
 туристи́ческий | touristique |
 интере́сный | intéressant |
-изве́стный | célèbre |
+изве́стный | célèbre |  | iz-VIES-nyï
 пусто́й | vide |
 по́лный | plein |
 
@@ -151,7 +151,7 @@
 Я ищу́ апте́ку | Je cherche une pharmacie |
 Я заблуди́лся | Je suis perdu | Une femme dit : Я заблуди́лась.
 Помоги́те, пожа́луйста | Aidez-moi, s'il vous plaît |
-Во ско́лько открыва́ется? | À quelle heure ça ouvre ? |
+Во ско́лько открыва́ется? | À quelle heure ça ouvre ? |  | va SKOL-ka at-kry-VA-yi-tsa?
 Там откры́то? | C'est ouvert là-bas ? |
 Мо́жно посмотре́ть? | Je peux regarder ? |
 Мне э́то не подхо́дит | Ça ne me va pas |
@@ -159,9 +159,9 @@
 Вот, пожа́луйста | Voilà, tenez |
 
 @grammar
-Я иду́ в парк. | Que veut dire cette phrase ? | Je vais au parc. | Je suis au parc. ; Je viens du parc. | Pour dire où l'on va : в + mot qui ne change pas (masculin) ou -а → -у (féminin) : в шко́лу (f CHKO-lou).
-Я в па́рке. | Que veut dire cette phrase ? | Je suis au parc. | Je vais au parc. ; J'aime le parc. | Pour dire où l'on est : в + mot en -е. Comparer : в парк (on y va), в па́рке (on y est).
-на метро́ | Que veut dire е́хать на метро́ ? | prendre le métro | sortir du métro ; habiter près du métro | Pour un moyen de transport : на + véhicule. на авто́бусе (na af-TOU-bou-sié) = en bus.
+Я иду́ в парк. | Que veut dire cette phrase ? | Je vais au parc. | Je suis au parc. ; Je viens du parc. | Pour dire où l'on va : в + mot qui ne change pas (masculin) ou -а → -у (féminin) : в шко́лу (f CHKO-lou). | ya i-DOU f park.
+Я в па́рке. | Que veut dire cette phrase ? | Je suis au parc. | Je vais au parc. ; J'aime le parc. | Pour dire où l'on est : в + mot en -е. Comparer : в парк (on y va), в па́рке (on y est). | ya f PAR-kié.
+на метро́ | Que veut dire е́хать на метро́ ? | prendre le métro | sortir du métro ; habiter près du métro | Pour un moyen de transport : на + véhicule. на авто́бусе (na af-TO-bou-sié) = en bus.
 Я е́ду в Москву́. | Que veut dire cette phrase ? | Je vais à Moscou (en véhicule). | Je vais à Moscou à pied. ; J'habite à Moscou. | е́хать = aller en véhicule ; идти́ = aller à pied. Москва́ devient Москву́ quand on y va.
 Где? / Куда́? | Quelle question pose-t-on pour « où vas-tu ? » | Куда́ ты идёшь? | Где ты идёшь? ; Отку́да ты идёшь? | Где (gdié) = où l'on est ; куда́ (kou-DA) = où l'on va ; отку́да (at-KOU-da) = d'où l'on vient.
 два биле́та | Que veut dire два биле́та ? | deux billets | un billet ; cinq billets | Après 2, 3, 4 : -а (masculin). Après 5 et plus : -ов : пять биле́тов (piat bi-LIÉ-taf).

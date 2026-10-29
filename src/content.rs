@@ -109,3 +109,24 @@ mod tests {
         }
     }
 }
+
+#[cfg(test)]
+mod dump {
+    /// `RUSKY_DUMP=fichier.jsonl cargo test dump_deck -- --ignored` : tout le paquet, tel qu'affiché.
+    #[test]
+    #[ignore]
+    fn dump_deck() {
+        let path = std::env::var("RUSKY_DUMP").expect("RUSKY_DUMP");
+        let mut out = String::new();
+        for c in super::builtin().unwrap().card {
+            let esc = |s: &str| s.replace('\\', "\\\\").replace('"', "\\\"");
+            let wrong: Vec<String> = c.wrong.iter().map(|w| format!("\"{}\"", esc(w))).collect();
+            out.push_str(&format!(
+                "{{\"id\":\"{}\",\"tier\":{},\"kind\":\"{}\",\"front\":\"{}\",\"pron\":\"{}\",\"question\":\"{}\",\"back\":\"{}\",\"wrong\":[{}],\"note\":\"{}\"}}\n",
+                c.id, c.tier.unwrap_or(1), c.kind, esc(&c.front), esc(c.pron.as_deref().unwrap_or("")),
+                esc(c.question.as_deref().unwrap_or("")), esc(&c.back), wrong.join(","), esc(c.note.as_deref().unwrap_or(""))
+            ));
+        }
+        std::fs::write(path, out).unwrap();
+    }
+}

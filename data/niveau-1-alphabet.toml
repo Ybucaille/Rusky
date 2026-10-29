@@ -62,7 +62,7 @@ id = "t1-alp-008"
 kind = "alphabet"
 front = "Д д"
 back = "« d » comme dans « dame »"
-note = "Ressemble à un petit d grec. да (da) = oui, дом (dom) = maison."
+note = "Ressemble au Δ (delta) grec majuscule. да (da) = oui, дом (dom) = maison."
 level = 8
 
 [[card]]
@@ -85,6 +85,6 @@ level = 10
 id = "t1-alp-011"
 kind = "alphabet"
 front = "Ф ф"
-back = "« f » comme dans « fête »"
-note = "фи́льм (film) = film, фо́то (FO-ta) = photo."
+back = "« f » comme dans « fil »"
+note = "фильм (film) = film, фо́то (FO-ta) = photo."
 level = 11

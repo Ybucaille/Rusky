@@ -16,8 +16,8 @@
 id = "abc-001"
 kind = "alphabet"
 front = "Ы ы"
-back = "un « i » sourd, venu du fond de la gorge"
-note = "Dis « i » en reculant la langue, presque comme « oui » avalé. On l'écrit « y » dans la prononciation. мы (my) = nous, ты (ty) = tu, сын (syn) = fils."
+back = "« y » : un « i » dit avec la langue reculée"
+note = "Dis « i » avec les lèvres écartées, puis recule la langue vers le fond de la bouche, comme pour « ou », sans arrondir les lèvres : le son est entre « i » et « ou ». On l'écrit « y » dans la prononciation. мы (my) = nous, ты (ty) = tu, сын (syn) = fils."
 level = 1
 
 [[card]]
@@ -25,7 +25,7 @@ id = "abc-002"
 kind = "alphabet"
 front = "Щ щ"
 back = "« chtch », un « ch » long et doux"
-note = "борщ (borchtch) = bortsch, ещё (i-CHTCHO) = encore."
+note = "Aujourd'hui on le dit surtout comme un « ch » long et doux, lèvres souriantes, langue contre le palais ; « chtch » est une façon simple de le noter. борщ (borchtch) = bortsch, ещё (yi-CHTCHO) = encore."
 level = 2
 
 [[card]]
@@ -81,7 +81,7 @@ id = "abc-009"
 kind = "alphabet"
 front = "Ё ё"
 back = "« yo » comme dans « yoga »"
-note = "Cette syllabe est toujours celle qu'on appuie. ёлка (YOL-ka) = sapin, ещё (i-CHTCHO) = encore."
+note = "Cette syllabe est toujours celle qu'on appuie. ёлка (YOL-ka) = sapin, ещё (yi-CHTCHO) = encore."
 level = 9
 
 [[card]]
@@ -97,7 +97,7 @@ id = "abc-011"
 kind = "alphabet"
 front = "Ю ю"
 back = "« you » comme dans « youpi »"
-note = "юг (youk) = sud, люблю́ (lyou-BLIOU) = j'aime."
+note = "юг (youk) = sud, люблю́ (liou-BLIOU) = j'aime."
 level = 11
 
 [[card]]
@@ -120,8 +120,8 @@ level = 13
 id = "abc-014"
 kind = "alphabet"
 front = "Ъ ъ"
-back = "aucun son : il marque une petite pause"
-note = "Très rare. подъе́зд (pad-YEST) = entrée d'immeuble."
+back = "aucun son : il sépare la consonne de la voyelle"
+note = "Très rare. Il garde la consonne d'avant « dure » et fait entendre un « y » devant la voyelle suivante : подъе́зд (pad-YEST) = entrée d'immeuble."
 level = 14
 
 [[card]]
@@ -177,7 +177,7 @@ id = "abc-021"
 kind = "alphabet"
 front = "Г г"
 back = "« g » comme dans « gare »"
-note = "Toujours « g » dur, jamais « j ». год (got) = année, го́род (GO-rat) = ville."
+note = "Presque toujours « g » dur, jamais « j ». Exception : dans les fins -ого / -его, il se dit « v » (сего́дня, ничего́). год (got) = année, го́род (GO-rat) = ville."
 level = 21
 
 [[card]]
@@ -212,7 +212,7 @@ kind = "vocab"
 front = "пожа́луйста"
 pron = "pa-JA-lous-ta"
 back = "s'il te plaît / de rien"
-note = "On l'utilise aussi pour répondre à « merci »."
+note = "Deux sens selon la situation : pour demander, il veut dire « s'il te plaît / s'il vous plaît » ; en réponse à спаси́бо (merci), il veut dire « de rien »."
 level = 2
 
 [[card]]
@@ -656,7 +656,7 @@ id = "voc-055"
 kind = "vocab"
 front = "всегда́"
 pron = "fsig-DA"
-back = "toujours"
+back = "toujours (à chaque fois)"
 level = 28
 
 [[card]]
@@ -665,7 +665,7 @@ kind = "vocab"
 front = "ничего́"
 pron = "ni-tchi-VO"
 back = "rien"
-note = "Le г se dit « v » dans ce mot."
+note = "Le г se dit « v » dans ce mot. En réponse à Как дела́ ?, ничего́ veut dire « pas mal, ça va »."
 level = 28
 
 [[card]]
@@ -680,7 +680,7 @@ level = 29
 id = "voc-058"
 kind = "vocab"
 front = "язы́к"
-pron = "i-ZYK"
+pron = "yi-ZYK"
 back = "langue"
 note = "Aussi la langue dans la bouche. ру́сский язы́к (ROUS-kiï i-ZYK) = la langue russe."
 level = 29
@@ -777,7 +777,7 @@ kind = "grammar"
 front = "кни́га → кни́ги"
 pron = "KNI-ga → KNI-gui"
 question = "Pourquoi « des livres » s'écrit кни́ги, avec и, et pas avec ы ?"
-back = "Après г, к, х, ж, ш, ч, щ, on écrit toujours и"
+back = "Après г, к, х, ж, ш, ч, щ, on n'écrit jamais ы : on met и"
 wrong = ["Parce que кни́га est neutre", "Parce que le mot est accentué au début"]
 note = "C'est une règle d'orthographe à apprendre telle quelle. Autres exemples : ма́льчики (MAL-tchi-ki) = des garçons, ножи́ (na-JI) = des couteaux."
 level = 10
@@ -865,7 +865,7 @@ front = "хлеб"
 question = "Comment se prononce хлеб (pain) ?"
 back = "khliep"
 wrong = ["khlieb", "khlié-bé"]
-note = "En fin de mot, certaines lettres se durcissent : б se dit « p », д se dit « t », в se dit « f », г se dit « k ». го́род (GO-rat) = ville, муж (mouch) = mari."
+note = "En fin de mot, certaines consonnes perdent leur « voix » (on ne fait plus vibrer la gorge) : б se dit « p », д se dit « t », в se dit « f », г se dit « k », ж se dit « ch », з se dit « s ». го́род (GO-rat) = ville, муж (mouch) = mari."
 level = 26
 
 [[card]]
@@ -909,7 +909,7 @@ pron = "dva tcha-SA"
 question = "Que veut dire два часа́ ?"
 back = "deux heures"
 wrong = ["une heure", "cinq heures"]
-note = "Après un nombre, la fin du mot change : оди́н час (a-DIN tchas) = 1 heure, два часа́ = 2 heures, пять часо́в (piat tcha-SOF) = 5 heures. Après 2, 3 et 4 : -а ; à partir de 5 : -ов."
+note = "Après un nombre, la fin du mot change : оди́н час (a-DIN tchas) = 1 heure, два часа́ = 2 heures, пять часо́в (piat tcha-SOF) = 5 heures. Pour час : après 2, 3 et 4 → -а ; de 5 à 20 → -ов."
 level = 34
 
 [[card]]
@@ -931,7 +931,7 @@ pron = "a-NA tchi-TA-la"
 question = "Que veut dire cette phrase ?"
 back = "Elle lisait."
 wrong = ["Elle lit.", "Elle lira."]
-note = "Pour le passé, on remplace -ть par -л (il), -ла (elle) ou -ли (ils, elles) : он чита́л (on tchi-TAL), она́ чита́ла, они́ чита́ли (a-NI tchi-TA-li)."
+note = "Pour le passé, on remplace -ть par -л (il), -ла (elle) ou -ли (ils, elles) : он чита́л (on tchi-TAL), она́ чита́ла, они́ чита́ли (a-NI tchi-TA-li). Selon le contexte, чита́ла veut dire « elle lisait » ou « elle a lu »."
 level = 38
 
 [[card]]
@@ -952,6 +952,7 @@ front = "Как дела́?"
 pron = "kak di-LA ?"
 back = "Comment ça va ?"
 note = "Réponse : Хорошо́, спаси́бо! (kha-ra-CHO, spa-SI-ba) = Bien, merci !"
+wrong = ["Comment tu t'appelles ?", "Où es-tu ?"]
 level = 1
 
 [[card]]
@@ -1067,6 +1068,7 @@ front = "Коне́чно!"
 pron = "ka-NIECH-na !"
 back = "Bien sûr !"
 note = "Le ч se dit ici « ch »."
+wrong = ["Peut-être !", "Pas du tout !"]
 level = 15
 
 [[card]]
@@ -1093,6 +1095,7 @@ front = "Дава́й!"
 pron = "da-VAÏ !"
 back = "Allez ! / D'accord !"
 note = "Дава́й пойдём! (da-VAÏ paï-DIOM !) = Allons-y !"
+wrong = ["Attends !", "Pas question !"]
 level = 18
 
 [[card]]
@@ -1101,13 +1104,14 @@ kind = "phrase"
 front = "Всё хорошо́"
 pron = "fsio kha-ra-CHO"
 back = "Tout va bien"
+wrong = ["Tout est fini", "Rien du tout"]
 level = 19
 
 [[card]]
 id = "phr-020"
 kind = "phrase"
 front = "Я из Фра́нции"
-pron = "ya iz FRAN-tsi-i"
+pron = "ya is FRAN-tsy-i"
 back = "Je viens de France"
 level = 20
 

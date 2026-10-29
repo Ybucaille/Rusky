@@ -7,11 +7,11 @@
 в про́шлом году́ | l'année dernière |
 давно́ | il y a longtemps |
 неда́вно | récemment |
-одна́жды | un jour, une fois |
+одна́жды | un jour (dans un récit), un beau jour |
 снача́ла | d'abord |
 наконе́ц | enfin |
 вдруг | soudain |
-никогда́ | jamais | Я никогда́ не был в Москве́ = Je ne suis jamais allé à Moscou.
+никогда́ | jamais | Я никогда́ не́ был в Москве́ = Je ne suis jamais allé à Moscou.
 иногда́ | parfois |
 ча́сто | souvent |
 ре́дко | rarement |
@@ -29,8 +29,8 @@
 па́лец | doigt |
 спина́ | dos |
 живо́т | ventre |
-се́рдце | cœur |
-боле́ть | avoir mal, être malade | У меня́ боли́т голова́ = J'ai mal à la tête.
+се́рдце | cœur |  | SIER-tsa
+боле́ть | être malade, faire mal (verbe) | У меня́ боли́т голова́ = J'ai mal à la tête.
 врач | médecin |
 лека́рство | médicament |
 температу́ра | fièvre, température |
@@ -38,13 +38,13 @@
 здоро́вый | en bonne santé |
 больно́й | malade |
 пого́да | temps (qu'il fait) |
-со́лнце | soleil |
+со́лнце | soleil |  | SON-tsa
 дождь | pluie |
 снег | neige |
 ве́тер | vent |
 не́бо | ciel |
 о́блако | nuage |
-тепло́ | il fait doux |
+тепло́ | il fait bon (doux) |
 жа́рко | il fait chaud |
 хо́лодно | il fait froid |
 мо́кро | c'est mouillé |
@@ -69,8 +69,8 @@
 ра́дость | joie |
 страх | peur |
 любо́вь | amour |
-сча́стье | bonheur |
-счастли́вый | heureux |
+сча́стье | bonheur |  | CHTCHAS-tié
+счастли́вый | heureux |  | chtchis-LI-vyï
 серди́тый | fâché |
 споко́йный | calme |
 удивлён | surpris |
@@ -78,7 +78,7 @@
 смея́ться | rire |
 пла́кать | pleurer |
 улыба́ться | sourire |
-чу́вствовать | ressentir |
+чу́вствовать | ressentir |  | TCHOUS-tva-vat
 по́мнить | se souvenir |
 забы́ть | oublier |
 узна́ть | apprendre (une nouvelle), reconnaître |
@@ -92,22 +92,22 @@
 верну́ться | revenir |
 уе́хать | partir (en véhicule) |
 прие́хать | arriver (en véhicule) |
-пое́здка | voyage, trajet |
-путеше́ствие | voyage |
+пое́здка | trajet, déplacement |  | pa-YEST-ka
+путеше́ствие | voyage (long, d'agrément) |
 о́тпуск | vacances (du travail) |
 кани́кулы | vacances (scolaires) |
 фотогра́фия | photo |
 исто́рия | histoire |
 ска́зка | conte |
 сон | rêve, sommeil |
-пра́здник | fête |
+пра́здник | fête |  | PRAZ-nik
 сва́дьба | mariage |
 день рожде́ния | anniversaire |
 дере́вня | village |
 де́тство | enfance |
 мо́лодость | jeunesse |
 ста́рость | vieillesse |
-жизнь | vie |
+жизнь | vie |  | jizn
 смерть | mort |
 война́ | guerre |
 мир | paix, monde |
@@ -117,7 +117,7 @@
 петь | chanter |
 рисова́ть | dessiner |
 фильм | film |
-кни́жка | petit livre |
+кни́жка | livre (familier), petit livre |
 газе́та | journal |
 письмо́ | lettre (courrier) |
 сосе́дка | voisine |
@@ -134,7 +134,7 @@
 Идёт снег | Il neige |
 Кака́я сего́дня пого́да? | Quel temps fait-il aujourd'hui ? |
 Я был в Росси́и | J'ai été en Russie | Une femme dit : Я была́ в Росси́и.
-Мы познако́мились в шко́ле | Nous nous sommes rencontrés à l'école |
+Мы познако́мились в шко́ле | Nous nous sommes rencontrés à l'école |  | my paz-na-KO-mi-lis f CHKO-lié
 Я по тебе́ скуча́ю | Tu me manques |
 Я тебя́ люблю́ | Je t'aime |
 Мне стра́шно | J'ai peur |
@@ -154,18 +154,18 @@
 Жаль! | Dommage ! |
 Ну и что? | Et alors ? |
 Так быва́ет | Ça arrive |
-Счастли́вого пути́! | Bon voyage ! |
+Счастли́вого пути́! | Bon voyage ! |  | chtchis-LI-va-va pou-TI!
 
 @grammar
 Я чита́л. / Я прочита́л. | Laquelle veut dire « J'ai fini de lire » ? | Я прочита́л. | Я чита́л. ; Les deux veulent dire la même chose. | Au passé, le verbe « terminé » (avec про-, с-, на-…) dit qu'on est allé au bout ; l'autre raconte l'action en cours ou habituelle.
 Он был до́ма. | Que veut dire cette phrase ? | Il était à la maison. | Il est à la maison. ; Il sera à la maison. | Le verbe « être » réapparaît au passé : был (il), была́ (elle), бы́ло (neutre), бы́ли (ils).
-Я бу́ду рабо́тать. | Que veut dire cette phrase ? | Je travaillerai. | Je travaillais. ; Je travaille. | Futur simple : бу́ду + verbe. я бу́ду, ты бу́дешь, он бу́дет…
+Я бу́ду рабо́тать. | Que veut dire cette phrase ? | Je travaillerai. | Je travaillais. ; Je travaille. | Futur composé : бу́ду + verbe à l'infinitif (action vue dans sa durée, pas « terminée »). я бу́ду, ты бу́дешь, он бу́дет…
 Я прочита́ю кни́гу. | Que veut dire cette phrase ? | Je lirai le livre (jusqu'au bout). | Je lis le livre. ; J'ai lu le livre. | Un verbe « terminé » conjugué comme au présent donne un futur : прочита́ю = je lirai entièrement.
 У меня́ боли́т голова́. | Que veut dire cette phrase ? | J'ai mal à la tête. | J'ai une grosse tête. ; Ma tête va bien. | У меня́ боли́т + partie du corps = j'ai mal à… Au pluriel : боля́т (ba-LIAT).
 Мне хо́лодно. | Que veut dire cette phrase ? | J'ai froid. | Il est froid. ; Je suis froid. | Pour les sensations, le russe dit « à moi froid » : мне (à moi) + mot en -о. Ему́ жа́рко = Il a chaud.
-зимо́й | Que veut dire зимо́й ? | en hiver | l'hiver dernier ; vers l'hiver | Les saisons en -ой / -ом veulent dire « en … » : зимо́й, весно́й, ле́том, о́сенью.
-Он роди́лся в 1990 году́. | Que veut dire cette phrase ? | Il est né en 1990. | Il a 1990 ans. ; Il vit depuis 1990. | в + année + году́ (ga-DOU) : в 2020 году́ = en 2020.
-Я никогда́ не был там. | Pourquoi y a-t-il à la fois никогда́ et не ? | En russe, « jamais » s'emploie avec не | C'est une faute ; Pour dire « toujours » | Double négation obligatoire : никто́ не (personne ne), ничего́ не (rien ne), никогда́ не (jamais).
+зимо́й | Que veut dire зимо́й ? | en hiver | tout l'hiver ; avant l'hiver | Les saisons en -ой / -ом / -ью veulent dire « en … » : зимо́й, весно́й, ле́том, о́сенью.
+Он роди́лся в 1990 году́. | Que veut dire cette phrase ? | Il est né en 1990. | Il a 1990 ans. ; Il vit depuis 1990. | в + année + году́ (ga-DOU) : в 2020 году́ = en 2020. | on ra-DIL-sia v TY-si-tcha di-vi-TSOT di-vi-NOS-tam ga-DOU.
+Я никогда́ не́ был там. | Pourquoi y a-t-il à la fois никогда́ et не ? | En russe, « jamais » s'emploie avec не | C'est une faute ; Pour dire « toujours » | Double négation obligatoire : никто́ не (personne ne), ничего́ не (rien ne), никогда́ не (jamais). | ya ni-kag-DA NIÉ-byl tam.
 Я ду́маю о тебе́. | Que veut dire cette phrase ? | Je pense à toi. | Je pense comme toi. ; Je pense sans toi. | ду́мать о + personne = penser à. о ма́ме = à maman, обо мне́ = à moi.
-Пойдём в кино́! | Que veut dire cette phrase ? | Allons au cinéma ! | Je suis allé au cinéma. ; Le cinéma est fermé. | Пойдём / пое́дем = allons-y (à pied / en véhicule).
+Пойдём в кино́! | Que veut dire cette phrase ? | Allons au cinéma ! | Je suis allé au cinéma. ; Le cinéma est fermé. | Пойдём / пое́дем = allons-y (à pied / en véhicule). | paï-DIOM f ki-NO!
 Е́сли бу́дет дождь, я оста́нусь до́ма. | Que veut dire е́сли ? | si | quand ; parce que | е́сли (YÉ-sli) = si. Après е́сли, on met le futur : е́сли бу́дет = s'il y a.

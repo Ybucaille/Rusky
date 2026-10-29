@@ -201,6 +201,7 @@ level = 28
 id = "t3-voc-029"
 kind = "vocab"
 front = "кафе́"
+pron = "ka-FÈ"
 back = "café (l'endroit)"
 level = 29
 
@@ -264,7 +265,7 @@ level = 37
 id = "t3-voc-038"
 kind = "vocab"
 front = "ме́сто"
-back = "place, endroit"
+back = "endroit, place (assise)"
 level = 38
 
 [[card]]
@@ -398,6 +399,7 @@ level = 56
 id = "t3-voc-057"
 kind = "vocab"
 front = "чек"
+pron = "tchek"
 back = "ticket de caisse"
 level = 57
 
@@ -665,6 +667,7 @@ level = 94
 id = "t3-voc-095"
 kind = "vocab"
 front = "пла́тье"
+pron = "PLA-tié"
 back = "robe"
 level = 95
 
@@ -728,6 +731,7 @@ level = 103
 id = "t3-voc-104"
 kind = "vocab"
 front = "пятьдеся́т"
+pron = "pi-di-SIAT"
 back = "cinquante"
 level = 104
 
@@ -847,6 +851,7 @@ level = 120
 id = "t3-voc-121"
 kind = "vocab"
 front = "изве́стный"
+pron = "iz-VIES-nyï"
 back = "célèbre"
 level = 121
 
@@ -1038,6 +1043,7 @@ level = 24
 id = "t3-phr-025"
 kind = "phrase"
 front = "Во ско́лько открыва́ется?"
+pron = "va SKOL-ka at-kry-VA-yi-tsa?"
 back = "À quelle heure ça ouvre ?"
 level = 25
 
@@ -1080,6 +1086,7 @@ level = 30
 id = "t3-gra-001"
 kind = "grammar"
 front = "Я иду́ в парк."
+pron = "ya i-DOU f park."
 question = "Que veut dire cette phrase ?"
 back = "Je vais au parc."
 wrong = ["Je suis au parc.", "Je viens du parc."]
@@ -1090,6 +1097,7 @@ level = 1
 id = "t3-gra-002"
 kind = "grammar"
 front = "Я в па́рке."
+pron = "ya f PAR-kié."
 question = "Que veut dire cette phrase ?"
 back = "Je suis au parc."
 wrong = ["Je vais au parc.", "J'aime le parc."]
@@ -1103,7 +1111,7 @@ front = "на метро́"
 question = "Que veut dire е́хать на метро́ ?"
 back = "prendre le métro"
 wrong = ["sortir du métro", "habiter près du métro"]
-note = "Pour un moyen de transport : на + véhicule. на авто́бусе (na af-TOU-bou-sié) = en bus."
+note = "Pour un moyen de transport : на + véhicule. на авто́бусе (na af-TO-bou-sié) = en bus."
 level = 3
 
 [[card]]
